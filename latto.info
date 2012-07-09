@@ -1,6 +1,7 @@
 ;----------// Theme Information
   name        = latto
   description = Default theme for Ding2tal.
+  core        = 7.x
+  release     = 7.x-1.x
   screenshot  = screenshot.png
   base theme  = at_panels_everywhere
-
