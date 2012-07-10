@@ -189,11 +189,13 @@
               <p>This is the different tables styles available.
               <h3>Table default</h3>
               <table>
-                <tr>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                </tr>
+                <thead>
+                  <tr>
+                    <th>Header</th>
+                    <th>Header</th>
+                    <th>Header</th>
+                  </tr>
+                </thead>
                 <tr>
                   <td>Column</td>
                   <td>Column</td>
@@ -235,11 +237,13 @@
               </table>
               <h3>Table bordered</h3>
               <table class="table-bordered">
-                <tr>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                </tr>
+                <thead>
+                  <tr>
+                    <th>Header</th>
+                    <th>Header</th>
+                    <th>Header</th>
+                  </tr>
+                </thead>
                 <tr>
                   <td>Column</td>
                   <td>Column</td>
