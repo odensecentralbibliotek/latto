@@ -1,16 +1,3 @@
-// This file holds all the variables for the theme.
+// Compass imports.
 
-// TODO: Define variables.
-
-// Theme styles that should be defined in the styletile.
-
-$theme_background_color:      '#fff';
-$theme_logo_background_color: ''; // Optional
-$theme_font_family: 'arial, sans-serif';
-$theme_color1: 'red'; // Used for h1
-$theme_color2: 'green'; //
-$theme_color3: 'blue';
-$theme_color4: 'yellow';
-$theme_color5: 'orange';
-$theme_headline_color1: 'red';
-$theme_headline_color2: 'green';
+@import "compass/css3/border-radius";

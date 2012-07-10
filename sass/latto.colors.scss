@@ -1,0 +1,32 @@
+// Grays
+$black: #000 !default;
+$grayDarker: lighten($black, 10%) !default;
+$grayDark: lighten($black, 25%) !default;
+$gray: lighten($black, 50%) !default;
+$grayLight: lighten($black, 75%) !default;
+$grayLighter: lighten($black, 90%) !default;
+$white: #fff !default;
+
+// Accent colors
+$blue: #049cdb !default;
+$blueDark: #0064cd !default;
+$green: #46a546 !default;
+$red: #9d261d !default;
+$yellow: #ffc40d !default;
+$orange: #f89406 !default;
+$pink: #c3325f !default;
+$purple: #7a43b6 !default;
+
+
+// Color Scheme
+// Use this to roll your own color schemes if you like (unused by Bootstrap by default)
+$baseColor: $blue !default; // Set a base color
+$complement: adjust-hue($baseColor, 180) !default; // Determine a complementary color
+$split1: adjust-hue($baseColor, 158) !default; // Split complements
+$split2: adjust-hue($baseColor, -158) !default;
+$triad1: adjust-hue($baseColor, 135) !default; // Triads colors
+$triad2: adjust-hue($baseColor, -135) !default;
+$tetra1: adjust-hue($baseColor, 90) !default; // Tetra colors
+$tetra2: adjust-hue($baseColor, -90) !default;
+$analog1: adjust-hue($baseColor, 22) !default; // Analogs colors
+$analog2: adjust-hue($baseColor, -22) !default;
