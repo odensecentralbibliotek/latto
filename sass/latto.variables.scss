@@ -1,3 +1,18 @@
 // Compass imports.
 
+@import "zen";
 @import "compass/css3/border-radius";
+
+$zen-column-count: 16;
+$zen-gutter-width: 10px;
+
+.container {
+ @include zen-grid-container; // Apply this mixin to the container.
+}
+.aside1 {
+  /*
+  First param: grid span
+  Second param: column start position
+  */
+  @include zen-grid-item(2, 1); // Apply this mixin for each grid item in the container.
+}
