@@ -1,21 +1,13 @@
 <?php
+
 /**
  * @file
- * Adaptivetheme implementation to display a single Drupal page.
+ * Default theme implementation to display a single Drupal page.
+ *
+ * The doctype, html, head and body tags are not in this template. Instead they
+ * can be found in the html.tpl.php template in this directory.
  *
  * Available variables:
- *
- * Adaptivetheme supplied variables:
- * - $site_logo: Themed logo - linked to front with alt attribute.
- * - $site_name: Site name linked to the homepage.
- * - $site_name_unlinked: Site name without any link.
- * - $hide_site_name: Toggles the visibility of the site name.
- * - $visibility: Holds the class .element-invisible or is empty.
- * - $primary_navigation: Themed Main menu.
- * - $secondary_navigation: Themed Secondary/user menu.
- * - $primary_local_tasks: Split local tasks - primary.
- * - $secondary_local_tasks: Split local tasks - secondary.
- * - $tag: Prints the wrapper element for the main content.
  *
  * General utility variables:
  * - $base_path: The base URL path of the Drupal installation. At the very
@@ -31,6 +23,8 @@
  *   when linking to the front page. This includes the language domain or
  *   prefix.
  * - $logo: The path to the logo image, as defined in theme configuration.
+ * - $site_name: The name of the site, empty when display has been disabled
+ *   in theme settings.
  * - $site_slogan: The slogan of the site, empty when display has been disabled
  *   in theme settings.
  *
@@ -73,224 +67,114 @@
  * @see template_preprocess()
  * @see template_preprocess_page()
  * @see template_process()
- * @see adaptivetheme_preprocess_page()
- * @see adaptivetheme_process_page()
+ * @see html.tpl.php
  */
 ?>
-<div id="page" class="container <?php print $classes; ?>">
 
-  <!-- region: Leaderboard -->
-  <?php print render($page['leaderboard']); ?>
+<div id="page">
+  
+  <header id="header">
 
-  <header id="header" class="clearfix" role="banner">
-
-    <?php if ($site_logo || $site_name || $site_slogan): ?>
-      <!-- start: Branding -->
-      <div id="branding" class="branding-elements clearfix">
-
-        <?php if ($site_logo): ?>
-          <div id="logo">
-            <?php print $site_logo; ?>
-          </div>
-        <?php endif; ?>
-
-        <?php if ($site_name || $site_slogan): ?>
-          <!-- start: Site name and Slogan hgroup -->
-          <hgroup id="name-and-slogan"<?php print $hgroup_attributes; ?>>
-
-            <?php if ($site_name): ?>
-              <h1 id="site-name"<?php print $site_name_attributes; ?>><?php print $site_name; ?></h1>
-            <?php endif; ?>
-
-            <?php if ($site_slogan): ?>
-              <h2 id="site-slogan"<?php print $site_slogan_attributes; ?>><?php print $site_slogan; ?></h2>
-            <?php endif; ?>
-
-          </hgroup><!-- /end #name-and-slogan -->
-        <?php endif; ?>
-
-      </div><!-- /end #branding -->
-    <?php endif; ?>
-
-    <!-- region: Header -->
-    <?php print render($page['header']); ?>
-
+    <?php print render($page['header']); ?>    
+    
   </header>
+  
+  <div id="content">
+    
+    <?php print render($page['content']); ?>
+    
+    <div id="content">
+      <h1>Headers</h1>
+      <p>Example of headers available.</p>
+      <h1>Header 1</h1>
+      <h2>Header 2</h2>
+      <h3>Header 3</h3>
+      <h4>Header 4</h4>
+      <h5>Header 5</h5>
+      <h6>Header 6</h6>
+      <br />
+      <h1>Tables</h1>
+      <p>This is the different tables styles available.
+      <h3>Table default</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>Column</td>
+          <td>Column</td>
+          <td>Column</td>
+        </tr>
+        <tr>
+          <td>Column</td>
+          <td>Column</td>
+          <td>Column</td>
+        </tr>                
+        <tr>
+          <td>Column</td>
+          <td>Column</td>
+          <td>Column</td>
+        </tr>
+      </table>
+      <h3>Table stribed</h3>
+      <table class="table-stribed">
+        <tr>
+          <th>Header</th>
+          <th>Header</th>
+          <th>Header</th>
+        </tr>
+        <tr>
+          <td>Column</td>
+          <td>Column</td>
+          <td>Column</td>
+        </tr>
+        <tr>
+          <td>Column</td>
+          <td>Column</td>
+          <td>Column</td>
+        </tr>                
+        <tr>
+          <td>Column</td>
+          <td>Column</td>
+          <td>Column</td>
+        </tr>
+      </table>
+      <h3>Table bordered</h3>
+      <table class="table-bordered">
+        <thead>
+          <tr>
+            <th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>Column</td>
+          <td>Column</td>
+          <td>Column</td>
+        </tr>
+        <tr>
+          <td>Column</td>
+          <td>Column</td>
+          <td>Column</td>
+        </tr>                
+        <tr>
+          <td>Column</td>
+          <td>Column</td>
+          <td>Column</td>
+        </tr>
+      </table>    
+    
+  </div>
+  
+  <footer id="footer">
 
-  <!-- Navigation elements -->
-  <?php print render($page['menu_bar']); ?>
-  <?php if ($primary_navigation): print $primary_navigation; endif; ?>
-  <?php if ($secondary_navigation): print $secondary_navigation; endif; ?>
-
-  <!-- Breadcrumbs -->
-  <?php if ($breadcrumb): print $breadcrumb; endif; ?>
-
-  <!-- Messages and Help -->
-  <?php print $messages; ?>
-  <?php print render($page['help']); ?>
-
-  <!-- region: Secondary Content -->
-  <?php print render($page['secondary_content']); ?>
-
-  <div id="columns" class="clearfix">
-    <div id="content-column" role="main">
-      <div class="content-inner">
-
-        <!-- region: Highlighted -->
-        <?php print render($page['highlighted']); ?>
-
-        <<?php print $tag; ?> id="main-content">
-
-          <?php print render($title_prefix); // Does nothing by default in D7 core ?>
-
-          <?php if ($title || $primary_local_tasks || $secondary_local_tasks || $action_links = render($action_links)): ?>
-            <header id="main-content-header">
-
-              <?php if ($title): ?>
-                <h1 id="page-title"<?php print $attributes; ?>>
-                  <?php print $title; ?>
-                </h1>
-              <?php endif; ?>
-
-              <?php if ($primary_local_tasks || $secondary_local_tasks || $action_links): ?>
-                <div id="tasks">
-
-                  <?php if ($primary_local_tasks): ?>
-                    <ul class="tabs primary clearfix"><?php print render($primary_local_tasks); ?></ul>
-                  <?php endif; ?>
-
-                  <?php if ($secondary_local_tasks): ?>
-                    <ul class="tabs secondary clearfix"><?php print render($secondary_local_tasks); ?></ul>
-                  <?php endif; ?>
-
-                  <?php if ($action_links = render($action_links)): ?>
-                    <ul class="action-links clearfix"><?php print $action_links; ?></ul>
-                  <?php endif; ?>
-
-                </div>
-              <?php endif; ?>
-
-            </header>
-          <?php endif; ?>
-
-          <!-- region: Main Content -->
-          <?php if ($content = render($page['content'])): ?>
-            <div id="content">
-              <h1>Headers</h1>
-              <p>Example of headers available.</p>
-              <h1>Header 1</h1>
-              <h2>Header 2</h2>
-              <h3>Header 3</h3>
-              <h4>Header 4</h4>
-              <h5>Header 5</h5>
-              <h6>Header 6</h6>
-              <br />
-              <h1>Tables</h1>
-              <p>This is the different tables styles available.
-              <h3>Table default</h3>
-              <table>
-                <thead>
-                  <tr>
-                    <th>Header</th>
-                    <th>Header</th>
-                    <th>Header</th>
-                  </tr>
-                </thead>
-                <tr>
-                  <td>Column</td>
-                  <td>Column</td>
-                  <td>Column</td>
-                </tr>
-                <tr>
-                  <td>Column</td>
-                  <td>Column</td>
-                  <td>Column</td>
-                </tr>                
-                <tr>
-                  <td>Column</td>
-                  <td>Column</td>
-                  <td>Column</td>
-                </tr>
-              </table>
-              <h3>Table stribed</h3>
-              <table class="table-stribed">
-                <tr>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                </tr>
-                <tr>
-                  <td>Column</td>
-                  <td>Column</td>
-                  <td>Column</td>
-                </tr>
-                <tr>
-                  <td>Column</td>
-                  <td>Column</td>
-                  <td>Column</td>
-                </tr>                
-                <tr>
-                  <td>Column</td>
-                  <td>Column</td>
-                  <td>Column</td>
-                </tr>
-              </table>
-              <h3>Table bordered</h3>
-              <table class="table-bordered">
-                <thead>
-                  <tr>
-                    <th>Header</th>
-                    <th>Header</th>
-                    <th>Header</th>
-                  </tr>
-                </thead>
-                <tr>
-                  <td>Column</td>
-                  <td>Column</td>
-                  <td>Column</td>
-                </tr>
-                <tr>
-                  <td>Column</td>
-                  <td>Column</td>
-                  <td>Column</td>
-                </tr>                
-                <tr>
-                  <td>Column</td>
-                  <td>Column</td>
-                  <td>Column</td>
-                </tr>
-              </table>              
-              <?php // print $content; ?>
-            </div>
-          <?php endif; ?>
-
-          <!-- Feed icons (RSS, Atom icons etc -->
-          <?php print $feed_icons; ?>
-
-          <?php print render($title_suffix); // Prints page level contextual links ?>
-
-        </<?php print $tag; ?>><!-- /end #main-content -->
-
-        <!-- region: Content Aside -->
-        <?php print render($page['content_aside']); ?>
-
-      </div><!-- /end .content-inner -->
-    </div><!-- /end #content-column -->
-
-    <!-- regions: Sidebar first and Sidebar second -->
-    <?php $sidebar_first = render($page['sidebar_first']); print $sidebar_first; ?>
-    <?php $sidebar_second = render($page['sidebar_second']); print $sidebar_second; ?>
-
-  </div><!-- /end #columns -->
-
-  <!-- region: Tertiary Content -->
-  <?php print render($page['tertiary_content']); ?>
-
-  <!-- region: Footer -->
-  <?php if ($page['footer']): ?>
-    <footer id="footer" class="clearfix" role="contentinfo">
-      <?php print render($page['footer']); ?>
-    </footer>
-  <?php endif; ?>
-
+    <?php print render($page['footer']); ?>    
+    
+  </footer>
+  
 </div>
