@@ -1,3 +1,32 @@
+/* line 52, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+.container:before, .container:after {
+  content: "";
+  display: table;
+}
+/* line 56, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+.container:after {
+  clear: both;
+}
+
+/* line 12, ../sass/latto.variables.scss */
+.aside1 {
+  /*
+  First param: grid span
+  Second param: column start position
+  */
+  float: left;
+  width: 12.5%;
+  margin-left: 0%;
+  margin-right: -12.5%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
 /* line 17, ../sass/latto.tables.scss */
 table {
   max-width: 100%;
