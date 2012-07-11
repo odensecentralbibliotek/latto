@@ -36,15 +36,16 @@
     display: block;
     color: white;
     font-size: 20px;
-    font-family: verdana, sans-serif;
+    font-family: arial, sans-serif;
     margin: 0;
     padding: 10px;
+    border: 1px solid #91ab06;
     text-shadow: 0 -1px rgba(0,0,0,0.1);
-    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #add8e6), color-stop(100%, #96cddf));
-    background: -webkit-linear-gradient(top, #add8e6, #96cddf);
-    background: -moz-linear-gradient(top, #add8e6, #96cddf);
-    background: -o-linear-gradient(top, #add8e6, #96cddf);
-    background: linear-gradient(top, #add8e6, #96cddf);
+    /*background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #add8e6), color-stop(100%, #96cddf));*/
+    background: -webkit-linear-gradient(top, #bee30e, #8eaa06);
+    background: -moz-linear-gradient(top, #bee30e, #8eaa06);
+    background: -o-linear-gradient(top, #bee30e, #8eaa06);
+    background: linear-gradient(top, #bee30e, #8eaa06);
 }
 .tdcss-section .tdcss-h2:after {
     content: "\25BC";
@@ -76,27 +77,34 @@
 }
 .tdcss-code-example {
     position: relative;
-    border-left: 1px solid #add8e6;
+    border-left: 1px solid #333;
     background-color: white;
     z-index: 1000;
     width: 40%;
     padding: 1em;
 }
 .tdcss-code-example .tdcss-h3 {
+    font-family: arial, sans-serif;  
     font-weight: bold;
-    color: white;
-    background-color: #add8e6;
+    color: #333;
+    border: 1px solid #333;
+    text-shadow: 0 -1px rgba(0,0,0,0.1);
+    background: -webkit-linear-gradient(top, #F2F2F2, #c4c4c4);
+    background: -moz-linear-gradient(top, #F2F2F2, #c4c4c4);
+    background: -o-linear-gradient(top, #F2F2F2, #c4c4c4);
+    background: linear-gradient(top, #F2F2F2, #c4c4c4);
     margin-top: 0;
+    padding: 0.25em;
 }
 .tdcss-code-example .tdcss-textarea {
     display: block;
     width: 100%;
     height: 100%;
-    min-height: 100px;
+    min-height: 75px;
     border: 1px solid #bbb;
     font-size: 0.9em;
     line-height: 1.25em;
     padding: 0.25em;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
