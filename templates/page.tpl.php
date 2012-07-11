@@ -83,91 +83,94 @@
     
     <?php print render($page['content']); ?>
     
-    <div id="content">
-      <h1>Headers</h1>
-      <p>Example of headers available.</p>
-      <h1>Header 1</h1>
-      <h2>Header 2</h2>
-      <h3>Header 3</h3>
-      <h4>Header 4</h4>
-      <h5>Header 5</h5>
-      <h6>Header 6</h6>
-      <br />
-      <h1>Tables</h1>
-      <p>This is the different tables styles available.
-      <h3>Table default</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Header</th>
-            <th>Header</th>
-            <th>Header</th>
-          </tr>
-        </thead>
-        <tr>
-          <td>Column</td>
-          <td>Column</td>
-          <td>Column</td>
-        </tr>
-        <tr>
-          <td>Column</td>
-          <td>Column</td>
-          <td>Column</td>
-        </tr>                
-        <tr>
-          <td>Column</td>
-          <td>Column</td>
-          <td>Column</td>
-        </tr>
-      </table>
-      <h3>Table stribed</h3>
-      <table class="table-stribed">
+    <h1>HTML examples</h1>
+    
+    <h2>Headers</h2>
+    <p>Example of headers available.</p>
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <h3>Header 3</h3>
+    <h4>Header 4</h4>
+    <h5>Header 5</h5>
+    <h6>Header 6</h6>
+    <br />
+    <h2>Tables</h2>
+    <p>This is the different tables styles available.
+    <h3>Table default</h3>
+    <table class="table">
+      <thead>
         <tr>
           <th>Header</th>
           <th>Header</th>
           <th>Header</th>
         </tr>
+      </thead>
+      <tr>
+        <td>Column</td>
+        <td>Column</td>
+        <td>Column</td>
+      </tr>
+      <tr>
+        <td>Column</td>
+        <td>Column</td>
+        <td>Column</td>
+      </tr>                
+      <tr>
+        <td>Column</td>
+        <td>Column</td>
+        <td>Column</td>
+      </tr>
+    </table>
+    <h3>Table stribed</h3>
+    <table class="table table-stribed">
+      <tr>
+        <th>Header</th>
+        <th>Header</th>
+        <th>Header</th>
+      </tr>
+      <tr>
+        <td>Column</td>
+        <td>Column</td>
+        <td>Column</td>
+      </tr>
+      <tr>
+        <td>Column</td>
+        <td>Column</td>
+        <td>Column</td>
+      </tr>                
+      <tr>
+        <td>Column</td>
+        <td>Column</td>
+        <td>Column</td>
+      </tr>
+    </table>
+    <h3>Table bordered</h3>
+    <table class="table table-bordered">
+      <thead>
         <tr>
-          <td>Column</td>
-          <td>Column</td>
-          <td>Column</td>
+          <th>Header</th>
+          <th>Header</th>
+          <th>Header</th>
         </tr>
-        <tr>
-          <td>Column</td>
-          <td>Column</td>
-          <td>Column</td>
-        </tr>                
-        <tr>
-          <td>Column</td>
-          <td>Column</td>
-          <td>Column</td>
-        </tr>
-      </table>
-      <h3>Table bordered</h3>
-      <table class="table-bordered">
-        <thead>
-          <tr>
-            <th>Header</th>
-            <th>Header</th>
-            <th>Header</th>
-          </tr>
-        </thead>
-        <tr>
-          <td>Column</td>
-          <td>Column</td>
-          <td>Column</td>
-        </tr>
-        <tr>
-          <td>Column</td>
-          <td>Column</td>
-          <td>Column</td>
-        </tr>                
-        <tr>
-          <td>Column</td>
-          <td>Column</td>
-          <td>Column</td>
-        </tr>
-      </table>    
+      </thead>
+      <tr>
+        <td>Column</td>
+        <td>Column</td>
+        <td>Column</td>
+      </tr>
+      <tr>
+        <td>Column</td>
+        <td>Column</td>
+        <td>Column</td>
+      </tr>                
+      <tr>
+        <td>Column</td>
+        <td>Column</td>
+        <td>Column</td>
+      </tr>
+    </table>
+    <br />
+    <h2>Buttons</h2>
     
   </div>
   
