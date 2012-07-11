@@ -83,11 +83,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .content {
   background-color: red;
   float: left;
-  width: 83.333%;
+  width: 50%;
   margin-left: 25%;
-  margin-right: -108.333%;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin-right: -75%;
+  padding-left: 5px;
+  padding-right: 5px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -102,8 +102,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 25%;
   margin-left: 0%;
   margin-right: -25%;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -116,13 +116,69 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: blue;
   float: left;
   width: 25%;
-  margin-left: 108.333%;
-  margin-right: -133.333%;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin-left: 75%;
+  margin-right: -100%;
+  padding-left: 5px;
+  padding-right: 5px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+}
+
+@media screen
+and (max-width: 768px) {
+  /* line 47, ../sass/latto.grid.scss */
+  body {
+    background-color: red;
+  }
+
+  /* line 51, ../sass/latto.grid.scss */
+  .content {
+    background-color: red;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+
+  /* line 56, ../sass/latto.grid.scss */
+  .sidebar-first {
+    background-color: green;
+    float: left;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+
+  /* line 61, ../sass/latto.grid.scss */
+  .sidebar-second {
+    background-color: blue;
+    float: left;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
 }

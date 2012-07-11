@@ -3,7 +3,7 @@
 @import "zen";
 
 $zen-column-count: 12;
-$zen-gutter-width: 20px;
+$zen-gutter-width: 10px;
 
 #page {
  @include zen-grid-container; // Apply this mixin to the container.
@@ -29,7 +29,7 @@ $zen-gutter-width: 20px;
 
 .content {
   background-color: red;
-  @include zen-grid-item(10,4); // Apply this mixin for each grid item in the container.
+  @include zen-grid-item(6,4); // Apply this mixin for each grid item in the container.
 }
 
 .sidebar-first {
@@ -39,5 +39,28 @@ $zen-gutter-width: 20px;
 
 .sidebar-second {
   background-color: blue;
-  @include zen-grid-item(3,14); // Apply this mixin for each grid item in the container.  
+  @include zen-grid-item(3,10); // Apply this mixin for each grid item in the container.  
+}
+
+@media screen
+and (max-width: 768px) {
+  body {
+    background-color: red;
+  }
+
+  .content {
+    background-color: red;
+    @include zen-grid-item(12,1); // Apply this mixin for each grid item in the container.
+  }
+
+  .sidebar-first {
+    background-color: green;
+    @include zen-grid-item(6,1); // Apply this mixin for each grid item in the container.
+  }
+
+  .sidebar-second {
+    background-color: blue;
+    @include zen-grid-item(6,1); // Apply this mixin for each grid item in the container.  
+  }  
+
 }
