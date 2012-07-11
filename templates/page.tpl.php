@@ -75,153 +75,37 @@
   
   <header id="header">
 
+    <h1>Header</h1>
     <?php print render($page['header']); ?>    
-    
+
   </header>
   
-  <div id="content">
+  <div id="main-content">
     
     <?php print render($page['content']); ?>
     
-    <h1>HTML examples</h1>
+    <h1>Grid 1</h1>
+      
+    <aside class="sidebar sidebar-first">
+      aside first
+    </aside>
     
-    <h2>Headers</h2>
-    <p>Example of headers available.</p>
-    <h1>Header 1</h1>
-    <h2>Header 2</h2>
-    <h3>Header 3</h3>
-    <h4>Header 4</h4>
-    <h5>Header 5</h5>
-    <h6>Header 6</h6>
-    <br />
-    <h2>Tables</h2>
-    <p>This is the different tables styles available.
-    <h3>Table default</h3>
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Header</th>
-          <th>Header</th>
-          <th>Header</th>
-        </tr>
-      </thead>
-      <tr>
-        <td>Column</td>
-        <td>Column</td>
-        <td>Column</td>
-      </tr>
-      <tr>
-        <td>Column</td>
-        <td>Column</td>
-        <td>Column</td>
-      </tr>                
-      <tr>
-        <td>Column</td>
-        <td>Column</td>
-        <td>Column</td>
-      </tr>
-    </table>
-    <h3>Table stribed</h3>
-    <table class="table table-stribed">
-      <tr>
-        <th>Header</th>
-        <th>Header</th>
-        <th>Header</th>
-      </tr>
-      <tr>
-        <td>Column</td>
-        <td>Column</td>
-        <td>Column</td>
-      </tr>
-      <tr>
-        <td>Column</td>
-        <td>Column</td>
-        <td>Column</td>
-      </tr>                
-      <tr>
-        <td>Column</td>
-        <td>Column</td>
-        <td>Column</td>
-      </tr>
-    </table>
-    <h3>Table bordered</h3>
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th>Header</th>
-          <th>Header</th>
-          <th>Header</th>
-        </tr>
-      </thead>
-      <tr>
-        <td>Column</td>
-        <td>Column</td>
-        <td>Column</td>
-      </tr>
-      <tr>
-        <td>Column</td>
-        <td>Column</td>
-        <td>Column</td>
-      </tr>                
-      <tr>
-        <td>Column</td>
-        <td>Column</td>
-        <td>Column</td>
-      </tr>
-    </table>
-    <br />
-    <h2>Buttons</h2>
-    <table class="table table-bordered table-striped">
-      <thead>
-        <tr>
-          <th>Button</th>
-          <th>class=""</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><button href="#" class="btn">Default</button></td>
-          <td><code>btn</code></td>
-          <td>Standard gray button with gradient</td>
-        </tr>
-        <tr>
-          <td><button href="#" class="btn btn-primary">Primary</button></td>
-          <td><code>btn btn-primary</code></td>
-          <td>Provides extra visual weight and identifies the primary action in a set of buttons</td>
-        </tr>
-        <tr>
-          <td><button href="#" class="btn btn-info">Info</button></td>
-          <td><code>btn btn-info</code></td>
-          <td>Used as an alternative to the default styles</td>
-        </tr>
-        <tr>
-          <td><button href="#" class="btn btn-success">Success</button></td>
-          <td><code>btn btn-success</code></td>
-          <td>Indicates a successful or positive action</td>
-        </tr>
-        <tr>
-          <td><button href="#" class="btn btn-warning">Warning</button></td>
-          <td><code>btn btn-warning</code></td>
-          <td>Indicates caution should be taken with this action</td>
-        </tr>
-        <tr>
-          <td><button href="#" class="btn btn-danger">Danger</button></td>
-          <td><code>btn btn-danger</code></td>
-          <td>Indicates a dangerous or potentially negative action</td>
-        </tr>
-        <tr>
-          <td><button href="#" class="btn btn-inverse">Inverse</button></td>
-          <td><code>btn btn-inverse</code></td>
-          <td>Alternate dark gray button, not tied to a semantic action or use</td>
-        </tr>
-      </tbody>
-    </table>    
+    <div class="content">
+      Content
+    </div>
+
+    <aside class="sidebar sidebar-second">
+      aside second
+    </aside>
+    
+    <h1>Grid 1</h1>
+
   </div>
   
   <footer id="footer">
 
-    <?php print render($page['footer']); ?>    
+    <h1>Footer</h1>
+    <?php print render($page['footer']); ?>
     
   </footer>
   

@@ -1,25 +1,60 @@
+/* line 8, ../sass/latto.grid.scss */
+#page {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* line 52, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
-.container:before, .container:after {
+#page:before, #page:after {
   content: "";
   display: table;
 }
 /* line 56, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
-.container:after {
+#page:after {
   clear: both;
 }
 
-/* line 12, ../sass/latto.variables.scss */
-.aside1 {
-  /*
-  First param: grid span
-  Second param: column start position
-  */
+/* line 30, ../sass/latto.grid.scss */
+.content {
+  background-color: red;
   float: left;
-  width: 12.5%;
+  width: 83.333%;
+  margin-left: 25%;
+  margin-right: -108.333%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* line 35, ../sass/latto.grid.scss */
+.sidebar-first {
+  background-color: green;
+  float: left;
+  width: 25%;
   margin-left: 0%;
-  margin-right: -12.5%;
-  padding-left: 5px;
-  padding-right: 5px;
+  margin-right: -25%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* line 40, ../sass/latto.grid.scss */
+.sidebar-second {
+  background-color: blue;
+  float: left;
+  width: 25%;
+  margin-left: 108.333%;
+  margin-right: -133.333%;
+  padding-left: 10px;
+  padding-right: 10px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;

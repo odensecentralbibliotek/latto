@@ -1,0 +1,43 @@
+// Grid system based on http://zengrids.com.
+
+@import "zen";
+
+$zen-column-count: 12;
+$zen-gutter-width: 20px;
+
+#page {
+ @include zen-grid-container; // Apply this mixin to the container.
+ max-width: 1200px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.content-left {} // 8 columns positioned left
+.content-right {} // 8 columns positioned right
+
+.content-half-left {} // 6 columns positioned left
+.content-half-right {} // 6 columns positioned right
+
+.sidebar-wide-left {} // 4 columns positioned left
+.sidebar-wide-center {} // 4 columns positioned center
+.sidebar-wide-right {} // 4 columns positioned right
+
+.sidebar-left {} // 3 columns positioned left
+.sidebar-center-left {} // 3 columns positioned center left
+.sidebar-center-right {} // 3 columns positioned center right
+.sidebar-right {} // 3 columns positioned right
+
+.content {
+  background-color: red;
+  @include zen-grid-item(10,4); // Apply this mixin for each grid item in the container.
+}
+
+.sidebar-first {
+  background-color: green;
+  @include zen-grid-item(3,1); // Apply this mixin for each grid item in the container.
+}
+
+.sidebar-second {
+  background-color: blue;
+  @include zen-grid-item(3,14); // Apply this mixin for each grid item in the container.  
+}

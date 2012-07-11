@@ -1,11 +1,4 @@
 // Typography
 
-@import 'latto.colors.scss';
+@import 'latto.variables.scss';
 
-$baseFontSize: 13px !default;
-$baseFontFamily: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$serifFontFamily: Georgia, "Times New Roman", Times, serif;
-$sansSerifFontFamily:	$baseFontFamily;
-$monospaceFontFamily: Menlo, Monaco, "Courier New", monospace;
-$baseLineHeight: 18px !default;
-$textColor: $grayDark !default;
