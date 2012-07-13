@@ -28,38 +28,31 @@ $zen-gutter-width: 10px;
 .sidebar-right {} // 3 columns positioned right
 
 .content {
-  background-color: red;
   @include zen-grid-item(6,4); // Apply this mixin for each grid item in the container.
 }
 
 .sidebar-first {
-  background-color: green;
   @include zen-grid-item(3,1); // Apply this mixin for each grid item in the container.
 }
 
 .sidebar-second {
-  background-color: blue;
   @include zen-grid-item(3,10); // Apply this mixin for each grid item in the container.  
 }
 
 @media screen
 and (max-width: 768px) {
   body {
-    background-color: red;
   }
 
   .content {
-    background-color: red;
     @include zen-grid-item(12,1); // Apply this mixin for each grid item in the container.
   }
 
   .sidebar-first {
-    background-color: green;
     @include zen-grid-item(6,1); // Apply this mixin for each grid item in the container.
   }
 
   .sidebar-second {
-    background-color: blue;
     @include zen-grid-item(6,1); // Apply this mixin for each grid item in the container.  
   }  
 

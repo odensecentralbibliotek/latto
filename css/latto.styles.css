@@ -16,7 +16,6 @@
 
 /* line 30, ../sass/latto.grid.scss */
 .content {
-  background-color: red;
   float: left;
   width: 50%;
   margin-left: 25%;
@@ -30,9 +29,8 @@
   word-wrap: break-word;
 }
 
-/* line 35, ../sass/latto.grid.scss */
+/* line 34, ../sass/latto.grid.scss */
 .sidebar-first {
-  background-color: green;
   float: left;
   width: 25%;
   margin-left: 0%;
@@ -46,9 +44,8 @@
   word-wrap: break-word;
 }
 
-/* line 40, ../sass/latto.grid.scss */
+/* line 38, ../sass/latto.grid.scss */
 .sidebar-second {
-  background-color: blue;
   float: left;
   width: 25%;
   margin-left: 75%;
@@ -65,13 +62,7 @@
 @media screen
 and (max-width: 768px) {
   /* line 47, ../sass/latto.grid.scss */
-  body {
-    background-color: red;
-  }
-
-  /* line 51, ../sass/latto.grid.scss */
   .content {
-    background-color: red;
     float: left;
     width: 100%;
     margin-left: 0%;
@@ -85,9 +76,8 @@ and (max-width: 768px) {
     word-wrap: break-word;
   }
 
-  /* line 56, ../sass/latto.grid.scss */
+  /* line 51, ../sass/latto.grid.scss */
   .sidebar-first {
-    background-color: green;
     float: left;
     width: 50%;
     margin-left: 0%;
@@ -101,9 +91,8 @@ and (max-width: 768px) {
     word-wrap: break-word;
   }
 
-  /* line 61, ../sass/latto.grid.scss */
+  /* line 55, ../sass/latto.grid.scss */
   .sidebar-second {
-    background-color: blue;
     float: left;
     width: 50%;
     margin-left: 0%;
