@@ -64,9 +64,9 @@ and (max-width: 768px) {
   /* line 47, ../sass/latto.grid.scss */
   .content {
     float: left;
-    width: 100%;
+    width: 75%;
     margin-left: 0%;
-    margin-right: -100%;
+    margin-right: -75%;
     padding-left: 5px;
     padding-right: 5px;
     -moz-box-sizing: border-box;
@@ -79,9 +79,9 @@ and (max-width: 768px) {
   /* line 51, ../sass/latto.grid.scss */
   .sidebar-first {
     float: left;
-    width: 50%;
+    width: 37.5%;
     margin-left: 0%;
-    margin-right: -50%;
+    margin-right: -37.5%;
     padding-left: 5px;
     padding-right: 5px;
     -moz-box-sizing: border-box;
@@ -94,9 +94,9 @@ and (max-width: 768px) {
   /* line 55, ../sass/latto.grid.scss */
   .sidebar-second {
     float: left;
-    width: 50%;
+    width: 37.5%;
     margin-left: 0%;
-    margin-right: -50%;
+    margin-right: -37.5%;
     padding-left: 5px;
     padding-right: 5px;
     -moz-box-sizing: border-box;

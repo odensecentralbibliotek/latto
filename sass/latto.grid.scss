@@ -2,7 +2,7 @@
 
 @import "zen";
 
-$zen-column-count: 12;
+$zen-column-count: 16;
 $zen-gutter-width: 10px;
 
 #page {
@@ -28,15 +28,15 @@ $zen-gutter-width: 10px;
 .sidebar-right {} // 3 columns positioned right
 
 .content {
-  @include zen-grid-item(6,4); // Apply this mixin for each grid item in the container.
+  @include zen-grid-item(8,5); // Apply this mixin for each grid item in the container.
 }
 
 .sidebar-first {
-  @include zen-grid-item(3,1); // Apply this mixin for each grid item in the container.
+  @include zen-grid-item(4,1); // Apply this mixin for each grid item in the container.
 }
 
 .sidebar-second {
-  @include zen-grid-item(3,10); // Apply this mixin for each grid item in the container.  
+  @include zen-grid-item(4,13); // Apply this mixin for each grid item in the container.  
 }
 
 @media screen
