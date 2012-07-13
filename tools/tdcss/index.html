@@ -53,9 +53,128 @@
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis.</p>
   <small>Optional cite of <cite title="">source</cite></small>
 </blockquote>
-
+<!-- : Unordered list -->
+<ul>
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Consectetur adipiscing elit</li>
+  <li>Integer molestie lorem at massa</li>
+  <li>Facilisis in pretium nisl aliquet</li>
+  <li>Nulla volutpat aliquam velit
+    <ul>
+      <li>Phasellus iaculis neque</li>
+      <li>Purus sodales ultricies</li>
+      <li>Vestibulum laoreet porttitor sem</li>
+      <li>Ac tristique libero volutpat at</li>
+    </ul>
+  </li>
+  <li>Faucibus porta lacus fringilla vel</li>
+  <li>Aenean sit amet erat nunc</li>
+  <li>Eget porttitor lorem</li>
+</ul>
+<!-- : Unordered list unstyled -->
+<ul class="unstyled">
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Consectetur adipiscing elit</li>
+  <li>Integer molestie lorem at massa</li>
+  <li>Facilisis in pretium nisl aliquet</li>
+  <li>Nulla volutpat aliquam velit
+    <ul>
+      <li>Phasellus iaculis neque</li>
+      <li>Purus sodales ultricies</li>
+      <li>Vestibulum laoreet porttitor sem</li>
+      <li>Ac tristique libero volutpat at</li>
+    </ul>
+  </li>
+  <li>Faucibus porta lacus fringilla vel</li>
+  <li>Aenean sit amet erat nunc</li>
+  <li>Eget porttitor lorem</li>
+</ul>
+<!-- : Ordered list -->
+<ol>
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Consectetur adipiscing elit</li>
+  <li>Integer molestie lorem at massa</li>
+  <li>Facilisis in pretium nisl aliquet</li>
+  <li>Nulla volutpat aliquam velit</li>
+  <li>Faucibus porta lacus fringilla vel</li>
+  <li>Aenean sit amet erat nunc</li>
+  <li>Eget porttitor lorem</li>
+</ol>
+<!-- : Description list -->
+<dl>
+  <dt>Description lists</dt>
+  <dd>A description list is perfect for defining terms.</dd>
+  <dt>Euismod</dt>
+  <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+  <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+  <dt>Malesuada porta</dt>
+  <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+</dl>
+<!-- : Description -->
+<dl class="dl-horizontal">
+  <dt>Description lists</dt>
+  <dd>A description list is perfect for defining terms.</dd>
+  <dt>Euismod</dt>
+  <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+  <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+  <dt>Malesuada porta</dt>
+  <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+  <dt>Felis euismod semper eget lacinia</dt>
+  <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+</dl>
 
 <!-- # Forms -->
+
+<!-- : Basic form elements -->
+<form class="well">
+  <label>Label name</label>
+  <input type="text" class="span3" placeholder="Type something...">
+  <span class="help-block">Example block-level help text here.</span>
+  <select id="select01">
+    <option>something</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+  </select>
+  <label class="checkbox">
+    <input type="checkbox"> Check me out
+  </label>
+  <button type="submit" class="btn">Submit</button>
+</form>
+
+<!-- : Inline form -->
+<form class="well form-inline">
+  <input type="text" class="input-small" placeholder="Email">
+  <input type="password" class="input-small" placeholder="Password">
+  <label class="checkbox">
+    <input type="checkbox"> Remember me
+  </label>
+  <button type="submit" class="btn">Sign in</button>
+</form>
+
+<!-- : Horizontal forms -->
+<form class="form-horizontal">
+  <fieldset>
+    <legend>Legend text</legend>
+    <div class="control-group">
+      <label class="control-label" for="input01">Text input</label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="input01">
+        <p class="help-block">Supporting help text</p>
+      </div>
+    </div>
+  </fieldset>
+</form>
+
+<!-- : Form validation, error -->
+<div class="control-group warning">
+  <label class="control-label" for="inputWarning">Input with warning</label>
+  <div class="controls">
+    <input type="text" id="inputWarning">
+    <span class="help-inline">Something may have gone wrong</span>
+  </div>
+</div>
 
 <!-- # Buttons -->
 
