@@ -12,15 +12,27 @@ $zen-gutter-width: 20px;
  margin-right: auto;
 }
 
-.content-left {} // 8 columns positioned left
-.content-right {} // 8 columns positioned right
+.content-left { // 8 columns positioned left
+  @include zen-grid-item(9,1); // Apply this mixin for each grid item in the container.
+}
 
-.content-half-left {} // 6 columns positioned left
-.content-half-right {} // 6 columns positioned right
+.content-right { // 8 columns positioned right
+}
+  
+.content-half-left { // 6 columns positioned left
+}
+  
+.content-half-right { // 6 columns positioned right
+}
 
-.sidebar-wide-left {} // 4 columns positioned left
-.sidebar-wide-center {} // 4 columns positioned center
-.sidebar-wide-right {} // 4 columns positioned right
+.sidebar-wide-left { // 4 columns positioned left
+}
+  
+.sidebar-wide-center { // 4 columns positioned center
+}
+
+.sidebar-wide-right { // 4 columns positioned right
+}
 
 .sidebar-left {} // 3 columns positioned left
 .sidebar-center-left {} // 3 columns positioned center left
@@ -33,6 +45,16 @@ $zen-gutter-width: 20px;
   background-color: #e1e1e1;
   border: 1px dashed gray;
   padding: 1em;
+}
+
+.add-spacing-after {
+  margin-bottom: 1em;
+}
+
+.grid-container:after {
+  clear: both;
+  content: "";
+  display: table;
 }
 
 .grid-content {
@@ -54,18 +76,21 @@ $zen-gutter-width: 20px;
 @media screen
 and (max-width: 768px) {
   body {
+    background-color: red;
   }
 
   .content {
-    @include zen-grid-item(12,1); // Apply this mixin for each grid item in the container.
+    @include zen-clear(both);
+    @include zen-grid-item(16,1); // Apply this mixin for each grid item in the container.
   }
-
+  
   .sidebar-first {
-    @include zen-grid-item(6,1); // Apply this mixin for each grid item in the container.
+    @include zen-clear(both);
+    @include zen-grid-item(8,1); // Apply this mixin for each grid item in the container.
   }
 
   .sidebar-second {
-    @include zen-grid-item(6,1); // Apply this mixin for each grid item in the container.  
-  }  
+    @include zen-grid-item(8,1, right); // Apply this mixin for each grid item in the container.  
+  }
 
 }

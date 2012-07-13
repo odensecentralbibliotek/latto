@@ -83,22 +83,45 @@
   <div id="main-content">
     
     <?php print render($page['content']); ?>
-         
-    <aside class="sidebar sidebar-first">
-      <div class="grid-content">aside first</div>
-    </aside>
-    
-    <div class="content">
-      <div class="grid-content">
-        <h1>Grid 1</h1>
-        Content
+
+    <div class="grid-container add-spacing-after">
+      
+      <div class="content">
+        <div class="grid-content">
+          <h1>Grid 1</h1>
+          Content
+        </div>
       </div>
+
+      <aside class="sidebar sidebar-first">
+        <div class="grid-content">aside first</div>
+      </aside>      
+
+      <aside class="sidebar sidebar-second">
+        <div class="grid-content">aside second</div>
+      </aside>      
+      
     </div>
 
-    <aside class="sidebar sidebar-second">
-      <div class="grid-content">aside second</div>
-    </aside>
-    
+    <div class="grid-container add-spacing-after">
+     
+      <div class="content">
+        <div class="grid-content">
+          <h1>Grid 2</h1>
+          Content
+        </div>
+      </div>            
+      
+      <aside class="sidebar sidebar-first">
+        <div class="grid-content">aside first</div>
+      </aside>      
+
+      <aside class="sidebar sidebar-second">
+        <div class="grid-content">aside second</div>
+      </aside>
+      
+    </div>
+      
   </div>
   
   <footer id="footer" style="clear: both;">
