@@ -1571,3 +1571,274 @@ legend + .control-group {
 .form-horizontal .form-actions {
   padding-left: 160px;
 }
+
+/* line 9, ../sass/latto.bootstrap.type.scss */
+p {
+  margin: 0 0 9px;
+}
+/* line 11, ../sass/latto.bootstrap.type.scss */
+p small {
+  font-size: 11px;
+  color: #999999;
+}
+
+/* line 16, ../sass/latto.bootstrap.type.scss */
+.lead {
+  margin-bottom: 18px;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 27px;
+}
+
+/* line 26, ../sass/latto.bootstrap.type.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: inherit;
+  font-weight: bold;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+/* line 32, ../sass/latto.bootstrap.type.scss */
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  font-weight: normal;
+  color: #999999;
+}
+
+/* line 37, ../sass/latto.bootstrap.type.scss */
+h1 {
+  font-size: 30px;
+  line-height: 36px;
+}
+/* line 40, ../sass/latto.bootstrap.type.scss */
+h1 small {
+  font-size: 18px;
+}
+
+/* line 44, ../sass/latto.bootstrap.type.scss */
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+/* line 47, ../sass/latto.bootstrap.type.scss */
+h2 small {
+  font-size: 18px;
+}
+
+/* line 51, ../sass/latto.bootstrap.type.scss */
+h3 {
+  font-size: 18px;
+  line-height: 27px;
+}
+/* line 54, ../sass/latto.bootstrap.type.scss */
+h3 small {
+  font-size: 14px;
+}
+
+/* line 58, ../sass/latto.bootstrap.type.scss */
+h4, h5, h6 {
+  line-height: 18px;
+}
+
+/* line 61, ../sass/latto.bootstrap.type.scss */
+h4 {
+  font-size: 14px;
+}
+/* line 63, ../sass/latto.bootstrap.type.scss */
+h4 small {
+  font-size: 12px;
+}
+
+/* line 67, ../sass/latto.bootstrap.type.scss */
+h5 {
+  font-size: 12px;
+}
+
+/* line 70, ../sass/latto.bootstrap.type.scss */
+h6 {
+  font-size: 11px;
+  color: #999999;
+  text-transform: uppercase;
+}
+
+/* line 77, ../sass/latto.bootstrap.type.scss */
+.page-header {
+  padding-bottom: 17px;
+  margin: 18px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+/* line 82, ../sass/latto.bootstrap.type.scss */
+.page-header h1 {
+  line-height: 1;
+}
+
+/* line 92, ../sass/latto.bootstrap.type.scss */
+ul, ol {
+  padding: 0;
+  margin: 0 0 9px 25px;
+}
+
+/* line 99, ../sass/latto.bootstrap.type.scss */
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+
+/* line 102, ../sass/latto.bootstrap.type.scss */
+ul {
+  list-style: disc;
+}
+
+/* line 105, ../sass/latto.bootstrap.type.scss */
+ol {
+  list-style: decimal;
+}
+
+/* line 108, ../sass/latto.bootstrap.type.scss */
+li {
+  line-height: 18px;
+}
+
+/* line 112, ../sass/latto.bootstrap.type.scss */
+ul.unstyled,
+ol.unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+
+/* line 118, ../sass/latto.bootstrap.type.scss */
+dl {
+  margin-bottom: 18px;
+}
+
+/* line 122, ../sass/latto.bootstrap.type.scss */
+dt,
+dd {
+  line-height: 18px;
+}
+
+/* line 125, ../sass/latto.bootstrap.type.scss */
+dt {
+  font-weight: bold;
+  line-height: 17px;
+}
+
+/* line 129, ../sass/latto.bootstrap.type.scss */
+dd {
+  margin-left: 9px;
+}
+
+/* line 134, ../sass/latto.bootstrap.type.scss */
+.dl-horizontal dt {
+  float: left;
+  width: 120px;
+  clear: left;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* line 141, ../sass/latto.bootstrap.type.scss */
+.dl-horizontal dd {
+  margin-left: 130px;
+}
+
+/* line 150, ../sass/latto.bootstrap.type.scss */
+hr {
+  margin: 18px 0;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid white;
+}
+
+/* line 158, ../sass/latto.bootstrap.type.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 161, ../sass/latto.bootstrap.type.scss */
+em {
+  font-style: italic;
+}
+
+/* line 164, ../sass/latto.bootstrap.type.scss */
+.muted {
+  color: #999999;
+}
+
+/* line 169, ../sass/latto.bootstrap.type.scss */
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted #999999;
+}
+
+/* line 173, ../sass/latto.bootstrap.type.scss */
+abbr.initialism {
+  font-size: 90%;
+  text-transform: uppercase;
+}
+
+/* line 179, ../sass/latto.bootstrap.type.scss */
+blockquote {
+  padding: 0 0 0 15px;
+  margin: 0 0 18px;
+  border-left: 5px solid #eeeeee;
+}
+/* line 183, ../sass/latto.bootstrap.type.scss */
+blockquote p {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22.5px;
+}
+/* line 187, ../sass/latto.bootstrap.type.scss */
+blockquote small {
+  display: block;
+  line-height: 18px;
+  color: #999999;
+}
+/* line 191, ../sass/latto.bootstrap.type.scss */
+blockquote small:before {
+  content: '\2014 \00A0';
+}
+/* line 197, ../sass/latto.bootstrap.type.scss */
+blockquote.pull-right {
+  float: right;
+  padding-right: 15px;
+  padding-left: 0;
+  border-right: 5px solid #eeeeee;
+  border-left: 0;
+}
+/* line 204, ../sass/latto.bootstrap.type.scss */
+blockquote.pull-right p,
+blockquote.pull-right small {
+  text-align: right;
+}
+
+/* line 214, ../sass/latto.bootstrap.type.scss */
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+}
+
+/* line 219, ../sass/latto.bootstrap.type.scss */
+address {
+  display: block;
+  margin-bottom: 18px;
+  font-style: normal;
+  line-height: 18px;
+}
+
+/* line 227, ../sass/latto.bootstrap.type.scss */
+small {
+  font-size: 100%;
+}
+
+/* line 230, ../sass/latto.bootstrap.type.scss */
+cite {
+  font-style: normal;
+}

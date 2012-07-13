@@ -6,5 +6,6 @@
   screenshot  = screenshot.png
 
   ; Import stylesheets.
+  stylesheets[all][] = css/latto.reset.css
   stylesheets[all][] = css/latto.bootstrap.css
   stylesheets[all][] = css/latto.styles.css
