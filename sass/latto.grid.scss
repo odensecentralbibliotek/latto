@@ -3,7 +3,7 @@
 @import "zen";
 
 $zen-column-count: 16;
-$zen-gutter-width: 10px;
+$zen-gutter-width: 20px;
 
 #page {
  @include zen-grid-container; // Apply this mixin to the container.
@@ -26,6 +26,18 @@ $zen-gutter-width: 10px;
 .sidebar-center-left {} // 3 columns positioned center left
 .sidebar-center-right {} // 3 columns positioned center right
 .sidebar-right {} // 3 columns positioned right
+
+// Debugging.
+
+@mixin border-debug() {
+  background-color: #e1e1e1;
+  border: 1px dashed gray;
+  padding: 1em;
+}
+
+.grid-content {
+  @include border-debug;
+}
 
 .content {
   @include zen-grid-item(9,4); // Apply this mixin for each grid item in the container.

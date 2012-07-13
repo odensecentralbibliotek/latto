@@ -83,26 +83,25 @@
   <div id="main-content">
     
     <?php print render($page['content']); ?>
-    
-    <h1>Grid 1</h1>
-      
+         
     <aside class="sidebar sidebar-first">
-      aside first
+      <div class="grid-content">aside first</div>
     </aside>
     
     <div class="content">
-      Content
+      <div class="grid-content">
+        <h1>Grid 1</h1>
+        Content
+      </div>
     </div>
 
     <aside class="sidebar sidebar-second">
-      aside second
+      <div class="grid-content">aside second</div>
     </aside>
     
-    <h1>Grid 1</h1>
-
   </div>
   
-  <footer id="footer">
+  <footer id="footer" style="clear: both;">
 
     <h1>Footer</h1>
     <?php print render($page['footer']); ?>
