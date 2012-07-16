@@ -86,18 +86,18 @@
 
     <div class="grid-container add-spacing-after">
       
-      <div class="content">
+      <div class="grid-10-4">
         <div class="grid-content">
           <h1>Grid 1</h1>
           Content
         </div>
       </div>
 
-      <aside class="sidebar sidebar-first">
+      <aside class="grid-3-1">
         <div class="grid-content">aside first</div>
       </aside>      
 
-      <aside class="sidebar sidebar-second">
+      <aside class="grid-3-14">
         <div class="grid-content">aside second</div>
       </aside>      
       

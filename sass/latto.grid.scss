@@ -12,32 +12,150 @@ $zen-gutter-width: 20px;
  margin-right: auto;
 }
 
-.content-left { // 8 columns positioned left
-  @include zen-grid-item(9,1); // Apply this mixin for each grid item in the container.
+
+// Classes for the grid columns.
+// The number specifies the column count and left/center/center-left/center-right/right the position.
+
+// ----------------------------------
+// ##################################
+// ----------------------------------
+// Example of grid 3-10-3:
+// ---  ----------  ---
+// | |  |        |  | |
+// ---  ----------  ---
+//
+// Markup:
+// <div class="grid-3-left"></div>
+// <div class="grid-10-center"></div>
+// <div class="grid-3-right"></div>
+// ----------------------------------
+// ##################################
+// ----------------------------------
+//
+// ----------------------------------
+// ##################################
+// ----------------------------------
+// Example of grid 13-3:
+// -------------  ---
+// |           |  | |
+// -------------  ---
+//
+// Markup:
+// <div class="grid-13-left"></div>
+// <div class="grid-3-right"></div>
+// ----------------------------------
+// ##################################
+// ----------------------------------
+//
+// ----------------------------------
+// ##################################
+// ----------------------------------
+// Example of grid 8-8:
+// --------  --------
+// |      |  |      |
+// --------  --------
+//
+// Markup:
+// <div class="grid-8-left"></div>
+// <div class="grid-8-right"></div>
+// ----------------------------------
+// ##################################
+// ----------------------------------
+
+
+.grid-3-left {
+  @include zen-grid-item(3, 1);
 }
 
-.content-right { // 8 columns positioned right
-}
-  
-.content-half-left { // 6 columns positioned left
-}
-  
-.content-half-right { // 6 columns positioned right
+.grid-3-center-left {
+  @include zen-grid-item(3, 4);
 }
 
-.sidebar-wide-left { // 4 columns positioned left
-}
-  
-.sidebar-wide-center { // 4 columns positioned center
+.grid-3-center-right {
+  @include zen-grid-item(3, 7);
 }
 
-.sidebar-wide-right { // 4 columns positioned right
+.grid-3-right {
+  @include zen-grid-item(3, 1, right);
 }
 
-.sidebar-left {} // 3 columns positioned left
-.sidebar-center-left {} // 3 columns positioned center left
-.sidebar-center-right {} // 3 columns positioned center right
-.sidebar-right {} // 3 columns positioned right
+.grid-4-left {
+  @include zen-grid-item(4, 1);
+}
+
+.grid-4-center-left { 
+  @include zen-grid-item(4, 5);
+}
+
+.grid-4-center-right {
+  @include zen-grid-item(4, 9);
+}
+
+.grid-4-right {  
+  @include zen-grid-item(4, 4, right);  
+}
+
+.grid-8-left {
+  @include zen-grid-item(8, 1);
+}
+
+.grid-8-right {
+  @include zen-grid-item(8, 1, right);
+}
+
+.grid-10-left {
+  @include zen-grid-item(10, 1);
+}
+
+.grid-10-center {
+  @include zen-grid-item(10, 4);
+}
+
+.grid-10-right {
+  @include zen-grid-item(10, 1, right);
+}
+
+.grid-12-left {
+  @include zen-grid-item(12, 1);
+}
+
+.grid-12-right {
+  @include zen-grid-item(12, 1, right);
+}
+
+.grid-13-left {
+  @include zen-grid-item(13, 1);
+}
+
+.grid-13-right {
+  @include zen-grid-item(13, 1, right);
+}
+
+.grid-clear-both {
+  @include zen-clear(both);
+}
+
+.grid-clear-left {
+  @include zen-clear(left);
+}
+
+.grid-clear-right {
+  @include zen-clear(right);
+}
+
+.grid-stack {
+  @include zen-clear(both);
+  @include zen-grid-item($zen-column-count,1);  
+}
+
+
+
+
+
+
+
+
+
 
 // Debugging.
 
@@ -59,18 +177,6 @@ $zen-gutter-width: 20px;
 
 .grid-content {
   @include border-debug;
-}
-
-.content {
-  @include zen-grid-item(9,4); // Apply this mixin for each grid item in the container.
-}
-
-.sidebar-first {
-  @include zen-grid-item(3,1); // Apply this mixin for each grid item in the container.
-}
-
-.sidebar-second {
-  @include zen-grid-item(4,13); // Apply this mixin for each grid item in the container.  
 }
 
 @media screen
