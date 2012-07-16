@@ -10,12 +10,15 @@
   stylesheets[all][] = css/latto.bootstrap.css
   stylesheets[all][] = css/latto.styles.css
 
+;----------// Regions
+  regions[branding_top]    = Branding top
+  regions[header]          = Header
+  regions[content]         = Main Content
+  regions[footer]          = Footer
+  regions[branding_bottom] = Branding bottom
+
 ;----------// Panels
-  plugins[panels][layouts] = plugins/layouts
-  
-  ; Enable style plugins if required
-  ;plugins[panels][styles] = plugins/styles
-  ;api[panels][styles][version] = 2
+  plugins[panels][layouts] = layouts/panels
 
 
 ;----------// Page manager
