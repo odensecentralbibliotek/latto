@@ -41,7 +41,7 @@ $zen-gutter-width: 20px;
 }
 
 .grid-4-right {  
-  @include zen-grid-item(4, 4, right);  
+  @include zen-grid-item(4, 1, right);  
 }
 
 .grid-8-left {
