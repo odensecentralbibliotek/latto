@@ -9,3 +9,15 @@
   stylesheets[all][] = css/latto.reset.css
   stylesheets[all][] = css/latto.bootstrap.css
   stylesheets[all][] = css/latto.styles.css
+
+;----------// Panels
+  plugins[panels][layouts] = plugins/layouts
+  
+  ; Enable style plugins if required
+  ;plugins[panels][styles] = plugins/styles
+  ;api[panels][styles][version] = 2
+
+
+;----------// Page manager
+  ;api[page_manager][pages_default][version] = 1
+  ;api[page_manager][pages_default][path] = pages
