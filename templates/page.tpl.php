@@ -56,13 +56,11 @@
  *   comment/reply/12345).
  *
  * Regions:
- * - $page['help']: Dynamic help text, mostly for admin pages.
- * - $page['highlighted']: Items for the highlighted content region.
+ * - $page['page_Top']: Branding area.
+ * - $page['header']: Site navigation.
  * - $page['content']: The main content of the current page.
- * - $page['sidebar_first']: Items for the first sidebar.
- * - $page['sidebar_second']: Items for the second sidebar.
- * - $page['header']: Items for the header region.
- * - $page['footer']: Items for the footer region.
+ * - $page['footer']: Fat footer.
+ * - $page['page_bottom']: Branding, copyright, powered by area.
  *
  * @see template_preprocess()
  * @see template_preprocess_page()
@@ -73,62 +71,32 @@
 
 <div id="page">
   
-  <header id="header">
+    <?php if (!empty($page['branding_top'])): ?>
+    <div class="grid-full branding branding-top">
+      <?php print render($page['branding_top']); ?>
+    </div>
+  <?php endif; ?>
 
-    <h1>Header</h1>
-    <?php print render($page['header']); ?>    
+  <?php if (!empty($page['header'])): ?>
+    <header class="grid-full">
+      <?php print render($page['header']); ?>
+    </header>
+  <?php endif; ?>
 
-  </header>
-  
-  <div id="main-content">
-    
+  <article class="grid-full">
     <?php print render($page['content']); ?>
+  </article>
 
-    <div class="grid-container add-spacing-after">
-      
-      <div class="grid-10-4">
-        <div class="grid-content">
-          <h1>Grid 1</h1>
-          Content
-        </div>
-      </div>
-
-      <aside class="grid-3-1">
-        <div class="grid-content">aside first</div>
-      </aside>      
-
-      <aside class="grid-3-14">
-        <div class="grid-content">aside second</div>
-      </aside>      
-      
-    </div>
-
-    <div class="grid-container add-spacing-after">
-     
-      <div class="content">
-        <div class="grid-content">
-          <h1>Grid 2</h1>
-          Content
-        </div>
-      </div>            
-      
-      <aside class="sidebar sidebar-first">
-        <div class="grid-content">aside first</div>
-      </aside>      
-
-      <aside class="sidebar sidebar-second">
-        <div class="grid-content">aside second</div>
-      </aside>
-      
-    </div>
-      
-  </div>
+  <?php if (!empty($content['footer'])): ?>
+    <footer class="grid-full">
+      <?php print render($page['footer']); ?>
+    </footer>
+  <?php endif; ?>
   
-  <footer id="footer" style="clear: both;">
-
-    <h1>Footer</h1>
-    <?php print render($page['footer']); ?>
-    
-  </footer>
+  <?php if (!empty($page['branding_bottom'])): ?>
+    <div class="grid-full branding branding-bottom">
+      <?php print render($page['branding_bottom']); ?>
+    </div>
+  <?php endif; ?>
   
 </div>
