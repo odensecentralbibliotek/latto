@@ -1,3 +1,8 @@
+/* line 5, ../sass/latto.typography.scss */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 /* line 8, ../sass/latto.grid.scss */
 #page {
   max-width: 1200px;
