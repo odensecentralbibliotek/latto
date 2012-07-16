@@ -123,8 +123,8 @@
 .grid-4-right {
   float: right;
   width: 25%;
-  margin-right: 18.75%;
-  margin-left: -43.75%;
+  margin-right: 0%;
+  margin-left: -25%;
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;
@@ -270,21 +270,37 @@
 }
 
 /* line 83, ../sass/latto.grid.scss */
+.grid-full {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* line 88, ../sass/latto.grid.scss */
 .grid-clear-both {
   clear: both;
 }
 
-/* line 87, ../sass/latto.grid.scss */
+/* line 92, ../sass/latto.grid.scss */
 .grid-clear-left {
   clear: left;
 }
 
-/* line 91, ../sass/latto.grid.scss */
+/* line 96, ../sass/latto.grid.scss */
 .grid-clear-right {
   clear: right;
 }
 
-/* line 95, ../sass/latto.grid.scss */
+/* line 100, ../sass/latto.grid.scss */
 .grid-stack {
   clear: both;
   float: left;
@@ -300,19 +316,19 @@
   word-wrap: break-word;
 }
 
-/* line 117, ../sass/latto.grid.scss */
+/* line 122, ../sass/latto.grid.scss */
 .add-spacing-after {
   margin-bottom: 1em;
 }
 
-/* line 121, ../sass/latto.grid.scss */
+/* line 126, ../sass/latto.grid.scss */
 .grid-container:after {
   clear: both;
   content: "";
   display: table;
 }
 
-/* line 127, ../sass/latto.grid.scss */
+/* line 132, ../sass/latto.grid.scss */
 .grid-content {
   background-color: #e1e1e1;
   border: 1px dashed gray;
@@ -321,12 +337,12 @@
 
 @media screen
 and (max-width: 768px) {
-  /* line 133, ../sass/latto.grid.scss */
+  /* line 138, ../sass/latto.grid.scss */
   body {
     background-color: red;
   }
 
-  /* line 137, ../sass/latto.grid.scss */
+  /* line 142, ../sass/latto.grid.scss */
   .content {
     clear: both;
     float: left;
@@ -342,7 +358,7 @@ and (max-width: 768px) {
     word-wrap: break-word;
   }
 
-  /* line 142, ../sass/latto.grid.scss */
+  /* line 147, ../sass/latto.grid.scss */
   .sidebar-first {
     clear: both;
     float: left;
@@ -358,7 +374,7 @@ and (max-width: 768px) {
     word-wrap: break-word;
   }
 
-  /* line 147, ../sass/latto.grid.scss */
+  /* line 152, ../sass/latto.grid.scss */
   .sidebar-second {
     float: right;
     width: 50%;

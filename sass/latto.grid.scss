@@ -41,7 +41,7 @@ $zen-gutter-width: 20px;
 }
 
 .grid-4-right {  
-  @include zen-grid-item(4, 4, right);  
+  @include zen-grid-item(4, 1, right);  
 }
 
 .grid-8-left {
@@ -78,6 +78,11 @@ $zen-gutter-width: 20px;
 
 .grid-13-right {
   @include zen-grid-item(13, 1, right);
+}
+
+.grid-full {
+  @include zen-clear(both);
+  @include zen-grid-item($zen-column-count, 1);
 }
 
 .grid-clear-both {
