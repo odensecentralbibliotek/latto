@@ -167,13 +167,52 @@
   </fieldset>
 </form>
 
-<!-- : Form validation, error -->
+<!-- : Form validation, warning -->
 <div class="control-group warning">
   <label class="control-label" for="inputWarning">Input with warning</label>
   <div class="controls">
     <input type="text" id="inputWarning">
     <span class="help-inline">Something may have gone wrong</span>
   </div>
+</div>
+<!-- : Form validation, error -->
+<div class="control-group error">
+  <label class="control-label" for="inputError">Input with error</label>
+  <div class="controls">
+    <input type="text" id="inputError">
+    <span class="help-inline">Please correct the error</span>
+  </div>
+</div>
+<!-- : Form validation, success -->
+<div class="control-group success">
+  <label class="control-label" for="inputSuccess">Input with success</label>
+  <div class="controls">
+    <input type="text" id="inputSuccess">
+    <span class="help-inline">Woohoo!</span>
+  </div>
+</div>
+<!-- : Form validation, success, select box -->
+<div class="control-group success">
+  <label class="control-label" for="selectError">Select with success</label>
+  <div class="controls">
+    <select id="selectError">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+    <span class="help-inline">Woohoo!</span>
+  </div>
+</div>
+<!-- : Form validation, form actions -->
+<div class="form-actions">
+  <button type="submit" class="btn btn-primary">Save changes</button>
+  <button class="btn">Cancel</button>
+</div>
+<!-- : Prepended text -->
+<div class="input-prepend">
+  <span class="add-on">@</span><input class="span2" id="prependedInput" size="16" type="text">
 </div>
 
 <!-- # Buttons -->
