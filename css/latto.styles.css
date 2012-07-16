@@ -14,7 +14,7 @@
   clear: both;
 }
 
-/* line 66, ../sass/latto.grid.scss */
+/* line 15, ../sass/latto.grid.scss */
 .grid-3-left {
   float: left;
   width: 18.75%;
@@ -29,7 +29,7 @@
   word-wrap: break-word;
 }
 
-/* line 70, ../sass/latto.grid.scss */
+/* line 19, ../sass/latto.grid.scss */
 .grid-3-center-left {
   float: left;
   width: 18.75%;
@@ -44,7 +44,7 @@
   word-wrap: break-word;
 }
 
-/* line 74, ../sass/latto.grid.scss */
+/* line 23, ../sass/latto.grid.scss */
 .grid-3-center-right {
   float: left;
   width: 18.75%;
@@ -59,7 +59,7 @@
   word-wrap: break-word;
 }
 
-/* line 78, ../sass/latto.grid.scss */
+/* line 27, ../sass/latto.grid.scss */
 .grid-3-right {
   float: right;
   width: 18.75%;
@@ -74,7 +74,7 @@
   word-wrap: break-word;
 }
 
-/* line 82, ../sass/latto.grid.scss */
+/* line 31, ../sass/latto.grid.scss */
 .grid-4-left {
   float: left;
   width: 25%;
@@ -89,7 +89,7 @@
   word-wrap: break-word;
 }
 
-/* line 86, ../sass/latto.grid.scss */
+/* line 35, ../sass/latto.grid.scss */
 .grid-4-center-left {
   float: left;
   width: 25%;
@@ -104,7 +104,7 @@
   word-wrap: break-word;
 }
 
-/* line 90, ../sass/latto.grid.scss */
+/* line 39, ../sass/latto.grid.scss */
 .grid-4-center-right {
   float: left;
   width: 25%;
@@ -119,7 +119,7 @@
   word-wrap: break-word;
 }
 
-/* line 94, ../sass/latto.grid.scss */
+/* line 43, ../sass/latto.grid.scss */
 .grid-4-right {
   float: right;
   width: 25%;
@@ -134,7 +134,7 @@
   word-wrap: break-word;
 }
 
-/* line 98, ../sass/latto.grid.scss */
+/* line 47, ../sass/latto.grid.scss */
 .grid-8-left {
   float: left;
   width: 50%;
@@ -149,7 +149,7 @@
   word-wrap: break-word;
 }
 
-/* line 102, ../sass/latto.grid.scss */
+/* line 51, ../sass/latto.grid.scss */
 .grid-8-right {
   float: right;
   width: 50%;
@@ -164,7 +164,7 @@
   word-wrap: break-word;
 }
 
-/* line 106, ../sass/latto.grid.scss */
+/* line 55, ../sass/latto.grid.scss */
 .grid-10-left {
   float: left;
   width: 62.5%;
@@ -179,7 +179,7 @@
   word-wrap: break-word;
 }
 
-/* line 110, ../sass/latto.grid.scss */
+/* line 59, ../sass/latto.grid.scss */
 .grid-10-center {
   float: left;
   width: 62.5%;
@@ -194,7 +194,7 @@
   word-wrap: break-word;
 }
 
-/* line 114, ../sass/latto.grid.scss */
+/* line 63, ../sass/latto.grid.scss */
 .grid-10-right {
   float: right;
   width: 62.5%;
@@ -209,7 +209,7 @@
   word-wrap: break-word;
 }
 
-/* line 118, ../sass/latto.grid.scss */
+/* line 67, ../sass/latto.grid.scss */
 .grid-12-left {
   float: left;
   width: 75%;
@@ -224,7 +224,7 @@
   word-wrap: break-word;
 }
 
-/* line 122, ../sass/latto.grid.scss */
+/* line 71, ../sass/latto.grid.scss */
 .grid-12-right {
   float: right;
   width: 75%;
@@ -239,7 +239,7 @@
   word-wrap: break-word;
 }
 
-/* line 126, ../sass/latto.grid.scss */
+/* line 75, ../sass/latto.grid.scss */
 .grid-13-left {
   float: left;
   width: 81.25%;
@@ -254,7 +254,7 @@
   word-wrap: break-word;
 }
 
-/* line 130, ../sass/latto.grid.scss */
+/* line 79, ../sass/latto.grid.scss */
 .grid-13-right {
   float: right;
   width: 81.25%;
@@ -269,7 +269,7 @@
   word-wrap: break-word;
 }
 
-/* line 134, ../sass/latto.grid.scss */
+/* line 83, ../sass/latto.grid.scss */
 .grid-full {
   clear: both;
   float: left;
@@ -285,22 +285,22 @@
   word-wrap: break-word;
 }
 
-/* line 139, ../sass/latto.grid.scss */
+/* line 88, ../sass/latto.grid.scss */
 .grid-clear-both {
   clear: both;
 }
 
-/* line 143, ../sass/latto.grid.scss */
+/* line 92, ../sass/latto.grid.scss */
 .grid-clear-left {
   clear: left;
 }
 
-/* line 147, ../sass/latto.grid.scss */
+/* line 96, ../sass/latto.grid.scss */
 .grid-clear-right {
   clear: right;
 }
 
-/* line 151, ../sass/latto.grid.scss */
+/* line 100, ../sass/latto.grid.scss */
 .grid-stack {
   clear: both;
   float: left;
@@ -316,19 +316,19 @@
   word-wrap: break-word;
 }
 
-/* line 173, ../sass/latto.grid.scss */
+/* line 122, ../sass/latto.grid.scss */
 .add-spacing-after {
   margin-bottom: 1em;
 }
 
-/* line 177, ../sass/latto.grid.scss */
+/* line 126, ../sass/latto.grid.scss */
 .grid-container:after {
   clear: both;
   content: "";
   display: table;
 }
 
-/* line 183, ../sass/latto.grid.scss */
+/* line 132, ../sass/latto.grid.scss */
 .grid-content {
   background-color: #e1e1e1;
   border: 1px dashed gray;
@@ -337,12 +337,12 @@
 
 @media screen
 and (max-width: 768px) {
-  /* line 189, ../sass/latto.grid.scss */
+  /* line 138, ../sass/latto.grid.scss */
   body {
     background-color: red;
   }
 
-  /* line 193, ../sass/latto.grid.scss */
+  /* line 142, ../sass/latto.grid.scss */
   .content {
     clear: both;
     float: left;
@@ -358,7 +358,7 @@ and (max-width: 768px) {
     word-wrap: break-word;
   }
 
-  /* line 198, ../sass/latto.grid.scss */
+  /* line 147, ../sass/latto.grid.scss */
   .sidebar-first {
     clear: both;
     float: left;
@@ -374,7 +374,7 @@ and (max-width: 768px) {
     word-wrap: break-word;
   }
 
-  /* line 203, ../sass/latto.grid.scss */
+  /* line 152, ../sass/latto.grid.scss */
   .sidebar-second {
     float: right;
     width: 50%;
