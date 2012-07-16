@@ -2,10 +2,10 @@
   <div class="grid-3-left">
     <?php print render($content['left']); ?>
   </div>
-  <div class="grid-10-center">
-    <?php print render($content['center']); ?>
+  <div class="grid-3-center-left">
+    <?php print render($content['innerleft']); ?>
   </div>
-  <div class="grid-3-right">
+  <div class="grid-10-right">
     <?php print render($content['right']); ?>
   </div>
 </div>
