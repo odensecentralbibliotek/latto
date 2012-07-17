@@ -3,19 +3,28 @@
 @import 'latto.variables.scss';
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  
+  background: $theme-background;
+  color: $theme-primary-color;
+  font-family: $theme-font-family;
+  font-size: $theme-font-size;
+  line-height: $theme-line-height;
 }
 
 // Normal link.
 a {
   &:link {
+    color: $link-color;
   }
   &:visited {
+    color: darken($link-color, 25%);
   }  
   &:hover {
+    color: $link-color-hover;
   }
   &:focus {
+    color: $link-color-hover;
   }  
   &:active {
+    color: darken($link-color, 50%);
   }  
 }
