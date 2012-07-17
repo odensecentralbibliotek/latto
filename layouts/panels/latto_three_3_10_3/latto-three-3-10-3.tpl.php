@@ -1,8 +1,12 @@
 <?php
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * @file
+ * Latto implementation to present a Panels layout.
+ *
+ * Available variables:
+ * - $content: An array of content, each item in the array is keyed to one
+ *   panel of the layout.
+ * - $css_id: unique id if present.
  */
 ?>
 <div <?php if(!empty($css_id)) { print "id=\"$css_id\""; } ?>>
