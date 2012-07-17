@@ -8,6 +8,11 @@
   such as Panels Extra Layouts, will not be responsive with this theme, only
   the Panels layouts supplied with Latto are responsive.
   
+  # Panels everywhere
+
+  The latto theme support panels everywhere module and a default site template is provided in the folder latto_site_template.
+  Panels everywhere can be obtained from http://drupal.org/project/panels_everywhere
+
   # Usage
 
   The layouts will appear inside Panels when you select the layout for the Panel
