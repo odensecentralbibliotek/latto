@@ -5,11 +5,11 @@ $plugin = array(
   'icon'      => 'latto_site_template.png',
   'category'  => 'Ding2, Latto theme',
   'regions' => array(
-    'branding_top'    => t('Branding top'),
-    'header'          => t('Header'),
-    'content'         => t('Main content'),
-    'footer'          => t('Footer'),
-    'branding_bottom' => t('Branding bottom'),
+    'branding' => t('Branding'),
+    'header'       => t('Header'),
+    'content'      => t('Main content'),
+    'footer'       => t('Footer'),
+    'bottom'       => t('Page bottom'),
   ),
 );
 
