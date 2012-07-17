@@ -1,5 +1,5 @@
 <?php
-$plugin['latto_three_3_3_10'] = array(
+$plugin['latto_three_10_3_3'] = array(
   'title' => t('Three Columns, 10-3-3'),
   'icon' => 'latto_three_10_3_3.png',
   'theme' => 'latto_three_10_3_3',
