@@ -1,14 +1,12 @@
 <?php
-$plugin['latto_three3103'] = array(
+$plugin['latto_three_3_10_3'] = array(
   'title' => t('Three Columns, 3-10-3'),
-  'icon' => 'latto_three3103.png',
-  'css' => 'latto_three3103.css',
-  'theme' => 'latto_three3103',
+  'icon' => 'latto_three_3_10_3.png',
+  'theme' => 'latto_three_3_10_3',
   'category'  => 'Ding2, Latto theme',
-  'panels' => array(
-    'left' => t('left column'),
-    'center' => t('center column'),
-    'right' => t('right column'),  
+  'regions' => array(
+    'grid_10_center' => t('Main content'),
+    'grid_3_left' => t('Left sidebar'),
+    'grid_3_right' => t('Right sidebar'),  
   ),
 );
-

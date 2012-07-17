@@ -17,4 +17,10 @@
   instead of Drupals built in blocks and regions system.
   Latto does provide a page.tpl fallback in case you don't want to run your site
   using Panels everywhere.
+
+  # Documentation
+
+  Besides the various readme files you will find inside theme folders,
+  latto provide a full overview of available markup and classes.
+  This documentation can be found here: profiles/ding2/themes/latto/tools/tdcss/
   
