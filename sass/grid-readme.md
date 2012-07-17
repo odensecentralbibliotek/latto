@@ -86,7 +86,7 @@ The grid classes are specified by .grid- + a number (column count) + dash (-) + 
 		<td></td>
 	</tr>
 	<tr>
-		<td style="text-align: center;">x, 7</td>
+		<td style="text-align: center;">x, 4, right</td>
 		<td style="text-align: center;">grid-3-center-right</td>
 		<td style="text-align: center;"></td>
 		<td style="text-align: center;"></td>
@@ -154,7 +154,7 @@ The grid classes are specified by .grid- + a number (column count) + dash (-) + 
 		<td colspan="3" style="background-color: #f1f1f1; text-align: center;"><b>Grid 3-3-10</b></td>
 	</tr>
 	<tr>
-		<td style="width: 18%;">grid-3-right</td>
+		<td style="width: 18%;">grid-3-left</td>
 		<td style="width: 18%;">grid-3-center-left</td>
 		<td style="width: 54%;">grid-10-right</td>
 	</tr>
@@ -240,5 +240,17 @@ The grid classes are specified by .grid- + a number (column count) + dash (-) + 
 	<tr>
 		<td style="width: 18%;">grid-3-right</td>
 		<td style="width: 72%;">grid-13-left</td>
+	</tr>
+</table>
+
+<table>
+	<tr>
+		<td colspan="4" style="background-color: #f1f1f1; text-align: center;"><b>Grid 4-4-4-4</b></td>
+	</tr>
+	<tr>
+		<td style="width: 22%;">grid-4-left</td>
+		<td style="width: 22%;">grid-4-center-left</td>
+		<td style="width: 22%;">grid-4-center-right</td>
+		<td style="width: 22%;">grid-4-right</td>						
 	</tr>
 </table>

@@ -1,4 +1,21 @@
-// Typography
+// Default typography for the theme.
 
 @import 'latto.variables.scss';
 
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  
+}
+
+// Normal link.
+a {
+  &:link {
+  }
+  &:visited {
+  }  
+  &:hover {
+  }
+  &:focus {
+  }  
+  &:active {
+  }  
+}
