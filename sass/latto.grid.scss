@@ -21,7 +21,7 @@ $zen-gutter-width: 20px;
 }
 
 .grid-3-center-right {
-  @include zen-grid-item(3, 7);
+  @include zen-grid-item(3, 4, right);
 }
 
 .grid-3-right {
@@ -113,26 +113,25 @@ $zen-gutter-width: 20px;
 
 // Debugging.
 
-@mixin border-debug() {
-  background-color: #e1e1e1;
-  border: 1px dashed gray;
-  padding: 1em;
-}
-
 .add-spacing-after {
   margin-bottom: 1em;
 }
 
-.grid-container:after {
-  clear: both;
-  content: "";
-  display: table;
+.tdcss-fragment {
+  .grid-row {
+    .grid-inner {
+      background-color: #f1f1f1;
+      border: 1px dashed #e1e1e1;
+      padding: .5em;
+    }
+    &:after {
+      clear: both;
+      content: "";
+      display: table;    
+    }
+  }
 }
-
-.grid-content {
-  @include border-debug;
-}
-
+  
 @media screen
 and (max-width: 768px) {
   body {

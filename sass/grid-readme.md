@@ -86,7 +86,7 @@ The grid classes are specified by .grid- + a number (column count) + dash (-) + 
 		<td></td>
 	</tr>
 	<tr>
-		<td style="text-align: center;">x, 7</td>
+		<td style="text-align: center;">x, 4, right</td>
 		<td style="text-align: center;">grid-3-center-right</td>
 		<td style="text-align: center;"></td>
 		<td style="text-align: center;"></td>
