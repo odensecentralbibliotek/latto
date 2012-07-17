@@ -1,6 +1,131 @@
+/*
+
+#Theme elements
+background
+header background
+logo
+menu background
+menu colors
+submenu background
+submenu colors
+breadcrumb background
+breadcrumb colors
+block background
+block colors
+block inverse background
+block inverse colors
+content background
+content colors
+image border
+footer background
+footer colors
+
+#Text elements
+
+h1: header
+h2: subheader
+
+h2 -> block: blockheader
+
+h3, h4, h5
+
+h6
+
+a: inline
+
+a: read-more
+
+p
+
+p: manchet
+
+#Other elements
+
+btn: background
+
+btn: text
+
+
+
+*/
+/*
+
+#Theme elements
+background
+header background
+logo
+menu background
+menu colors
+submenu background
+submenu colors
+breadcrumb background
+breadcrumb colors
+block background
+block colors
+block inverse background
+block inverse colors
+content background
+content colors
+image border
+footer background
+footer colors
+
+#Text elements
+
+h1: header
+h2: subheader
+
+h2 -> block: blockheader
+
+h3, h4, h5
+
+h6
+
+a: inline
+
+a: read-more
+
+p
+
+p: manchet
+
+#Other elements
+
+btn: background
+
+btn: text
+
+
+
+*/
 /* line 5, ../sass/latto.typography.scss */
 body {
+  background: url("../images/default-bg-pattern.png");
+  color: black;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, ../sass/latto.typography.scss */
+a:link {
+  color: #0088cc;
+}
+/* line 18, ../sass/latto.typography.scss */
+a:visited {
+  color: #00334d;
+}
+/* line 21, ../sass/latto.typography.scss */
+a:hover {
+  color: #005580;
+}
+/* line 24, ../sass/latto.typography.scss */
+a:focus {
+  color: #005580;
+}
+/* line 27, ../sass/latto.typography.scss */
+a:active {
+  color: black;
 }
 
 /* line 8, ../sass/latto.grid.scss */
