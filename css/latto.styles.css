@@ -128,6 +128,31 @@ a:active {
   color: black;
 }
 
+/* line 35, ../sass/latto.typography.scss */
+.small {
+  font-size: 6.5px;
+}
+
+/* line 39, ../sass/latto.typography.scss */
+.medium {
+  font-size: 9.75px;
+}
+
+/* line 43, ../sass/latto.typography.scss */
+.big {
+  font-size: 16.25px;
+}
+
+/* line 47, ../sass/latto.typography.scss */
+.bigger {
+  font-size: 17.875px;
+}
+
+/* line 51, ../sass/latto.typography.scss */
+.biggest {
+  font-size: 19.5px;
+}
+
 /* line 8, ../sass/latto.grid.scss */
 #page {
   max-width: 1200px;
