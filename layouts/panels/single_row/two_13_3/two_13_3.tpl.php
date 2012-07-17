@@ -10,10 +10,10 @@
  */
 ?>
 <div class="grid-row<?php print $css_id ? " $css_id" : ''; ?>">
-  <div class="grid-13-right">
-    <div class="grid-inner"><?php print $content['grid_13_right']; ?></div>
+  <div class="grid-13-left">
+    <div class="grid-inner"><?php print $content['grid_13_left']; ?></div>
   </div>
-  <aside class="grid-3-left">
-    <div class="grid-inner"><?php print $content['grid_3_left']; ?></div>
+  <aside class="grid-3-right">
+    <div class="grid-inner"><?php print $content['grid_3_right']; ?></div>
   </aside>
 </div>
