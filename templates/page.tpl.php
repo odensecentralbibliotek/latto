@@ -56,11 +56,11 @@
  *   comment/reply/12345).
  *
  * Regions:
- * - $page['page_Top']: Branding area.
- * - $page['header']: Site navigation.
- * - $page['content']: The main content of the current page.
- * - $page['footer']: Fat footer.
- * - $page['page_bottom']: Branding, copyright, powered by area.
+ * - $page['branding']: Branding area.
+ * - $page['header']:   Site navigation.
+ * - $page['content']:  The main content of the current page.
+ * - $page['footer']:   Fat footer.
+ * - $page['bottom']:   Page bottom.
  *
  * @see template_preprocess()
  * @see template_preprocess_page()
@@ -71,9 +71,9 @@
 
 <div id="page">
   
-    <?php if (!empty($page['branding_top'])): ?>
-    <div class="grid-full branding branding-top">
-      <?php print render($page['branding_top']); ?>
+    <?php if (!empty($page['branding'])): ?>
+    <div class="grid-full branding">
+      <?php print render($page['branding']); ?>
     </div>
   <?php endif; ?>
 
@@ -93,9 +93,9 @@
     </footer>
   <?php endif; ?>
   
-  <?php if (!empty($page['branding_bottom'])): ?>
-    <div class="grid-full branding branding-bottom">
-      <?php print render($page['branding_bottom']); ?>
+  <?php if (!empty($page['bottom'])): ?>
+    <div class="grid-full bottom">
+      <?php print render($page['bottom']); ?>
     </div>
   <?php endif; ?>
   
