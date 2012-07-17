@@ -22,5 +22,5 @@
 
 
 ;----------// Page manager
-  ;api[page_manager][pages_default][version] = 1
-  ;api[page_manager][pages_default][path] = pages
+  api[page_manager][pages_default][version] = 1
+  api[page_manager][pages_default][path] = pages
