@@ -1,0 +1,14 @@
+// Basic elements
+
+hr {
+  @include colruler();
+  &.primary{
+    @include colruler($theme-primary-color);
+  }
+  &.secondary{
+    @include colruler($theme-secondary-color);
+  }
+  &.tertiary{
+    @include colruler($theme-tertiary-color);
+  }
+}

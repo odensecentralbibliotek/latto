@@ -6,7 +6,7 @@ $plugin['three_4_4_8'] = array(
   'category'  => 'Latto - single row, three column',
   'regions' => array(
     'grid_8_right' => t('Main content'),
-    'grid_4_center_left' => t('Center left sidebar'),
     'grid_4_left' => t('Left sidebar'),
+    'grid_4_center_left' => t('Center left sidebar'),
   ),
 );
