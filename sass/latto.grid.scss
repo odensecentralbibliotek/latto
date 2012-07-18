@@ -3,7 +3,7 @@
 @import "zen";
 
 $zen-column-count: 16;
-$zen-gutter-width: 20px;
+$zen-gutter-width: $default-spacing;
 
 #page {
  @include zen-grid-container; // Apply this mixin to the container.
@@ -102,9 +102,13 @@ $zen-gutter-width: 20px;
   @include zen-grid-item($zen-column-count,1);  
 }
 
-
-
-
+.grid-row {
+  @include zen-clear(both);
+  @include append-bottom();
+  &.last {
+    @include append-bottom(0);
+  }
+}
 
 
 

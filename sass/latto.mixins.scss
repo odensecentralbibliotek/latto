@@ -1,0 +1,24 @@
+// Various mixins to make our life easier
+
+// Adds trailing margin
+@mixin append-bottom($amount: $default-spacing) {
+  margin-bottom: $amount;
+}
+
+// Adds leading maring
+@mixin prepend-top($amount: $default-spacing) {
+  margin-top: $amount;
+}
+
+// Mixin this to an hr to make a horizontal ruler across a column.
+@mixin colruler($border-color: $gray) {
+  background: $border-color;
+  color: $border-color;
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 0.1em;
+  border: none;
+  @include prepend-top($default-spcing/2);
+  @include append-top($default-spcing/2);
+ }

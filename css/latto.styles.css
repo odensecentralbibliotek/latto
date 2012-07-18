@@ -471,18 +471,28 @@ a:active {
   word-wrap: break-word;
 }
 
-/* line 116, ../sass/latto.grid.scss */
+/* line 105, ../sass/latto.grid.scss */
+.grid-row {
+  clear: both;
+  margin-bottom: 20px;
+}
+/* line 108, ../sass/latto.grid.scss */
+.grid-row.last {
+  margin-bottom: 0;
+}
+
+/* line 120, ../sass/latto.grid.scss */
 .add-spacing-after {
   margin-bottom: 1em;
 }
 
-/* line 122, ../sass/latto.grid.scss */
+/* line 126, ../sass/latto.grid.scss */
 .tdcss-fragment .grid-row .grid-inner {
   background-color: #f1f1f1;
   border: 1px dashed #e1e1e1;
   padding: .5em;
 }
-/* line 127, ../sass/latto.grid.scss */
+/* line 131, ../sass/latto.grid.scss */
 .tdcss-fragment .grid-row:after {
   clear: both;
   content: "";
@@ -491,12 +501,12 @@ a:active {
 
 @media screen
 and (max-width: 768px) {
-  /* line 137, ../sass/latto.grid.scss */
+  /* line 141, ../sass/latto.grid.scss */
   body {
     background-color: red;
   }
 
-  /* line 141, ../sass/latto.grid.scss */
+  /* line 145, ../sass/latto.grid.scss */
   .content {
     clear: both;
     float: left;
@@ -512,7 +522,7 @@ and (max-width: 768px) {
     word-wrap: break-word;
   }
 
-  /* line 146, ../sass/latto.grid.scss */
+  /* line 150, ../sass/latto.grid.scss */
   .sidebar-first {
     clear: both;
     float: left;
@@ -528,7 +538,7 @@ and (max-width: 768px) {
     word-wrap: break-word;
   }
 
-  /* line 151, ../sass/latto.grid.scss */
+  /* line 155, ../sass/latto.grid.scss */
   .sidebar-second {
     float: right;
     width: 50%;

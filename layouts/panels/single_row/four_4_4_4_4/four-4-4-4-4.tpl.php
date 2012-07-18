@@ -11,7 +11,7 @@
 ?>
 <div class="grid-row<?php print $css_id ? " $css_id" : ''; ?>">
   <aside class="grid-4-left">
-    <div class="grid-inner"><?php print $content['grid-4-left']; ?></div>
+    <div class="grid-inner"><?php print $content['grid_4_left']; ?></div>
   </aside>
   <aside class="grid-4-center-left">
     <div class="grid-inner"><?php print $content['grid_4_center_left']; ?></div>
