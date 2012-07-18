@@ -9,7 +9,7 @@
  * - $css_id: unique id if present.
  */
 ?>
-<div<?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
+<div<?php if (!empty($css_id)) { print " id=\"$css_id\""; } ?>>
   <div class="grid-row">
     <aside class="grid-4-left">
       <div class="grid-inner"><?php print $content['grid_4_top_left']; ?></div>
