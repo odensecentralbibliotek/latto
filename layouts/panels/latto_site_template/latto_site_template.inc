@@ -6,10 +6,10 @@ $plugin = array(
   'category'  => 'Ding2, Latto theme',
   'regions' => array(
     'branding' => t('Branding'),
-    'header'       => t('Header'),
-    'content'      => t('Main content'),
-    'footer'       => t('Footer'),
-    'bottom'       => t('Page bottom'),
+    'header'   => t('Header'),
+    'content'  => t('Main content'),
+    'footer'   => t('Footer'),
+    'bottom'   => t('Page bottom'),
   ),
 );
 

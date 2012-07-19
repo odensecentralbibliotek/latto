@@ -1,8 +1,8 @@
 <?php
-$plugin['stacked_3_3_10_reverse'] = array(
-  'title' => t('Stacked, three columns 3-3-10'),
-  'icon' => 'stacked_3_3_10_reverse.png',
-  'theme' => 'stacked_3_3_10_reverse',
+$plugin['stacked_10_3_3_reverse'] = array(
+  'title' => t('Stacked, three columns 10-3-3'),
+  'icon' => 'stacked_10_3_3_reverse.png',
+  'theme' => 'stacked_10_3_3_reverse',
   'category'  => 'Latto - multiple rows, three columns',
   'regions' => array(
     'grid_10_top_left' => t('Top left content'),
