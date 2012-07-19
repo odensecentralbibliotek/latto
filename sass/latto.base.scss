@@ -1,3 +1,17 @@
+// Base styling
+
+body {
+  background: $theme-background;
+  margin: 0;
+  padding: 0;
+}
+
+.branding {
+  background: url('../images/primary-pattern.png');
+  padding-bottom: $default-spacing * 1.5;
+  padding-top: $default-spacing * 1.5;
+}
+
 // Basic elements
 // -------------------------
 

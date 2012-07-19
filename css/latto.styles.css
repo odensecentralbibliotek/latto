@@ -1,3 +1,35 @@
+@font-face {
+  font-family: "Amble Regular";
+  src: url('fonts/amble/Amble-Regular-webfont.eot');
+  src: url('fonts/amble/Amble-Regular-webfont.eot?#iefix') format('eot'), url('fonts/amble/Amble-Regular-webfont.woff') format('woff'), url('fonts/amble/Amble-Regular-webfont.ttf') format('truetype'), url('fonts/amble/Amble-Regular-webfont.svg') format('svg');
+  font-weight: "normal";
+  font-style: "normal";
+}
+
+@font-face {
+  font-family: "Amble Italic";
+  src: url('fonts/amble/Amble-Italic-webfont.eot');
+  src: url('fonts/amble/Amble-Italic-webfont.eot?#iefix') format('eot'), url('fonts/amble/Amble-Italic-webfont.woff') format('woff'), url('fonts/amble/Amble-Italic-webfont.ttf') format('truetype'), url('fonts/amble/Amble-Italic-webfont.svg') format('svg');
+  font-weight: "normal";
+  font-style: "italic";
+}
+
+@font-face {
+  font-family: "Amble Bold";
+  src: url('fonts/amble/Amble-Bold-webfont.eot');
+  src: url('fonts/amble/Amble-Bold-webfont.eot?#iefix') format('eot'), url('fonts/amble/Amble-Bold-webfont.woff') format('woff'), url('fonts/amble/Amble-Bold-webfont.ttf') format('truetype'), url('fonts/amble/Amble-Bold-webfont.svg') format('svg');
+  font-weight: "bold";
+  font-style: "normal";
+}
+
+@font-face {
+  font-family: "Amble Bold Italic";
+  src: url('fonts/amble/Amble-BoldItalic-webfont.eot');
+  src: url('fonts/amble/Amble-BoldItalic-webfont.eot?#iefix') format('eot'), url('fonts/amble/Amble-BoldItalic-webfont.woff') format('woff'), url('fonts/amble/Amble-BoldItalic-webfont.ttf') format('truetype'), url('fonts/amble/Amble-BoldItalic-webfont.svg') format('svg');
+  font-weight: "bold";
+  font-style: "italic";
+}
+
 /*
 
 #Theme elements
@@ -48,6 +80,38 @@ btn: text
 
 
 */
+@font-face {
+  font-family: "Amble Regular";
+  src: url('fonts/amble/Amble-Regular-webfont.eot');
+  src: url('fonts/amble/Amble-Regular-webfont.eot?#iefix') format('eot'), url('fonts/amble/Amble-Regular-webfont.woff') format('woff'), url('fonts/amble/Amble-Regular-webfont.ttf') format('truetype'), url('fonts/amble/Amble-Regular-webfont.svg') format('svg');
+  font-weight: "normal";
+  font-style: "normal";
+}
+
+@font-face {
+  font-family: "Amble Italic";
+  src: url('fonts/amble/Amble-Italic-webfont.eot');
+  src: url('fonts/amble/Amble-Italic-webfont.eot?#iefix') format('eot'), url('fonts/amble/Amble-Italic-webfont.woff') format('woff'), url('fonts/amble/Amble-Italic-webfont.ttf') format('truetype'), url('fonts/amble/Amble-Italic-webfont.svg') format('svg');
+  font-weight: "normal";
+  font-style: "italic";
+}
+
+@font-face {
+  font-family: "Amble Bold";
+  src: url('fonts/amble/Amble-Bold-webfont.eot');
+  src: url('fonts/amble/Amble-Bold-webfont.eot?#iefix') format('eot'), url('fonts/amble/Amble-Bold-webfont.woff') format('woff'), url('fonts/amble/Amble-Bold-webfont.ttf') format('truetype'), url('fonts/amble/Amble-Bold-webfont.svg') format('svg');
+  font-weight: "bold";
+  font-style: "normal";
+}
+
+@font-face {
+  font-family: "Amble Bold Italic";
+  src: url('fonts/amble/Amble-BoldItalic-webfont.eot');
+  src: url('fonts/amble/Amble-BoldItalic-webfont.eot?#iefix') format('eot'), url('fonts/amble/Amble-BoldItalic-webfont.woff') format('woff'), url('fonts/amble/Amble-BoldItalic-webfont.ttf') format('truetype'), url('fonts/amble/Amble-BoldItalic-webfont.svg') format('svg');
+  font-weight: "bold";
+  font-style: "italic";
+}
+
 /*
 
 #Theme elements
@@ -100,64 +164,76 @@ btn: text
 */
 /* line 5, ../sass/latto.typography.scss */
 body {
-  background: url("../images/default-bg-pattern.png");
   color: black;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Amble Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
 
-/* line 15, ../sass/latto.typography.scss */
+/* line 14, ../sass/latto.typography.scss */
 a:link {
   color: #0088cc;
 }
-/* line 18, ../sass/latto.typography.scss */
+/* line 17, ../sass/latto.typography.scss */
 a:visited {
   color: #00334d;
 }
-/* line 21, ../sass/latto.typography.scss */
+/* line 20, ../sass/latto.typography.scss */
 a:hover {
   color: #005580;
 }
-/* line 24, ../sass/latto.typography.scss */
+/* line 23, ../sass/latto.typography.scss */
 a:focus {
   color: #005580;
 }
-/* line 27, ../sass/latto.typography.scss */
+/* line 26, ../sass/latto.typography.scss */
 a:active {
   color: black;
 }
 
-/* line 35, ../sass/latto.typography.scss */
+/* line 32, ../sass/latto.typography.scss */
+b,
+strong {
+  font-family: "Amble Bold";
+  font-weight: bold;
+}
+
+/* line 37, ../sass/latto.typography.scss */
+em {
+  font-family: "Amble Bold Italic";
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 47, ../sass/latto.typography.scss */
 .small {
   font-size: 6.5px;
 }
 
-/* line 39, ../sass/latto.typography.scss */
+/* line 51, ../sass/latto.typography.scss */
 .medium {
   font-size: 9.75px;
 }
 
-/* line 43, ../sass/latto.typography.scss */
+/* line 55, ../sass/latto.typography.scss */
 .big {
   font-size: 16.25px;
 }
 
-/* line 47, ../sass/latto.typography.scss */
+/* line 59, ../sass/latto.typography.scss */
 .bigger {
   font-size: 17.875px;
 }
 
-/* line 51, ../sass/latto.typography.scss */
+/* line 63, ../sass/latto.typography.scss */
 .biggest {
   font-size: 19.5px;
 }
 
 /* line 8, ../sass/latto.grid.scss */
 #page {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  *position: relative;
+  *zoom: 1;
 }
 /* line 52, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:before, #page:after {
@@ -169,7 +245,14 @@ a:active {
   clear: both;
 }
 
-/* line 15, ../sass/latto.grid.scss */
+/* line 12, ../sass/latto.grid.scss */
+.grid-inner {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+/* line 18, ../sass/latto.grid.scss */
 .grid-3-left {
   float: left;
   width: 18.75%;
@@ -182,9 +265,12 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
 }
 
-/* line 19, ../sass/latto.grid.scss */
+/* line 22, ../sass/latto.grid.scss */
 .grid-3-center-left {
   float: left;
   width: 18.75%;
@@ -197,9 +283,12 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
 }
 
-/* line 23, ../sass/latto.grid.scss */
+/* line 26, ../sass/latto.grid.scss */
 .grid-3-center-right {
   float: right;
   width: 18.75%;
@@ -212,9 +301,12 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
 }
 
-/* line 27, ../sass/latto.grid.scss */
+/* line 30, ../sass/latto.grid.scss */
 .grid-3-right {
   float: right;
   width: 18.75%;
@@ -227,9 +319,12 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
 }
 
-/* line 31, ../sass/latto.grid.scss */
+/* line 34, ../sass/latto.grid.scss */
 .grid-4-left {
   float: left;
   width: 25%;
@@ -242,9 +337,12 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
 }
 
-/* line 35, ../sass/latto.grid.scss */
+/* line 38, ../sass/latto.grid.scss */
 .grid-4-center-left {
   float: left;
   width: 25%;
@@ -257,9 +355,12 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
 }
 
-/* line 39, ../sass/latto.grid.scss */
+/* line 42, ../sass/latto.grid.scss */
 .grid-4-center-right {
   float: left;
   width: 25%;
@@ -272,9 +373,12 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
 }
 
-/* line 43, ../sass/latto.grid.scss */
+/* line 46, ../sass/latto.grid.scss */
 .grid-4-right {
   float: right;
   width: 25%;
@@ -287,9 +391,12 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
 }
 
-/* line 47, ../sass/latto.grid.scss */
+/* line 50, ../sass/latto.grid.scss */
 .grid-8-left {
   float: left;
   width: 50%;
@@ -302,9 +409,12 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
 }
 
-/* line 51, ../sass/latto.grid.scss */
+/* line 54, ../sass/latto.grid.scss */
 .grid-8-right {
   float: right;
   width: 50%;
@@ -317,9 +427,12 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
 }
 
-/* line 55, ../sass/latto.grid.scss */
+/* line 58, ../sass/latto.grid.scss */
 .grid-10-left {
   float: left;
   width: 62.5%;
@@ -332,9 +445,12 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
 }
 
-/* line 59, ../sass/latto.grid.scss */
+/* line 62, ../sass/latto.grid.scss */
 .grid-10-center {
   float: left;
   width: 62.5%;
@@ -347,9 +463,12 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
 }
 
-/* line 63, ../sass/latto.grid.scss */
+/* line 66, ../sass/latto.grid.scss */
 .grid-10-right {
   float: right;
   width: 62.5%;
@@ -362,9 +481,12 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
 }
 
-/* line 67, ../sass/latto.grid.scss */
+/* line 70, ../sass/latto.grid.scss */
 .grid-12-left {
   float: left;
   width: 75%;
@@ -377,9 +499,12 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
 }
 
-/* line 71, ../sass/latto.grid.scss */
+/* line 74, ../sass/latto.grid.scss */
 .grid-12-right {
   float: right;
   width: 75%;
@@ -392,9 +517,12 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
 }
 
-/* line 75, ../sass/latto.grid.scss */
+/* line 78, ../sass/latto.grid.scss */
 .grid-13-left {
   float: left;
   width: 81.25%;
@@ -407,9 +535,12 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
 }
 
-/* line 79, ../sass/latto.grid.scss */
+/* line 82, ../sass/latto.grid.scss */
 .grid-13-right {
   float: right;
   width: 81.25%;
@@ -422,9 +553,12 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
 }
 
-/* line 83, ../sass/latto.grid.scss */
+/* line 86, ../sass/latto.grid.scss */
 .grid-full {
   clear: both;
   float: left;
@@ -438,24 +572,27 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
 }
 
-/* line 88, ../sass/latto.grid.scss */
+/* line 91, ../sass/latto.grid.scss */
 .grid-clear-both {
   clear: both;
 }
 
-/* line 92, ../sass/latto.grid.scss */
+/* line 95, ../sass/latto.grid.scss */
 .grid-clear-left {
   clear: left;
 }
 
-/* line 96, ../sass/latto.grid.scss */
+/* line 99, ../sass/latto.grid.scss */
 .grid-clear-right {
   clear: right;
 }
 
-/* line 100, ../sass/latto.grid.scss */
+/* line 103, ../sass/latto.grid.scss */
 .grid-stack {
   clear: both;
   float: left;
@@ -469,30 +606,33 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
 }
 
-/* line 105, ../sass/latto.grid.scss */
+/* line 108, ../sass/latto.grid.scss */
 .grid-row {
   clear: both;
   margin-bottom: 20px;
 }
-/* line 108, ../sass/latto.grid.scss */
+/* line 111, ../sass/latto.grid.scss */
 .grid-row.last {
   margin-bottom: 0;
 }
 
-/* line 120, ../sass/latto.grid.scss */
+/* line 123, ../sass/latto.grid.scss */
 .add-spacing-after {
   margin-bottom: 1em;
 }
 
-/* line 126, ../sass/latto.grid.scss */
+/* line 129, ../sass/latto.grid.scss */
 .tdcss-fragment .grid-row .grid-inner {
   background-color: #f1f1f1;
   border: 1px dashed #e1e1e1;
   padding: .5em;
 }
-/* line 131, ../sass/latto.grid.scss */
+/* line 134, ../sass/latto.grid.scss */
 .tdcss-fragment .grid-row:after {
   clear: both;
   content: "";
@@ -501,12 +641,12 @@ a:active {
 
 @media screen
 and (max-width: 768px) {
-  /* line 141, ../sass/latto.grid.scss */
+  /* line 144, ../sass/latto.grid.scss */
   body {
     background-color: red;
   }
 
-  /* line 145, ../sass/latto.grid.scss */
+  /* line 148, ../sass/latto.grid.scss */
   .content {
     clear: both;
     float: left;
@@ -520,9 +660,12 @@ and (max-width: 768px) {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
   }
 
-  /* line 150, ../sass/latto.grid.scss */
+  /* line 153, ../sass/latto.grid.scss */
   .sidebar-first {
     clear: both;
     float: left;
@@ -536,9 +679,12 @@ and (max-width: 768px) {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
   }
 
-  /* line 155, ../sass/latto.grid.scss */
+  /* line 158, ../sass/latto.grid.scss */
   .sidebar-second {
     float: right;
     width: 50%;
@@ -551,9 +697,26 @@ and (max-width: 768px) {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
   }
 }
-/* line 5, ../sass/latto.base.scss */
+/* line 3, ../sass/latto.base.scss */
+body {
+  background: url("../images/default-bg-pattern.png");
+  margin: 0;
+  padding: 0;
+}
+
+/* line 9, ../sass/latto.base.scss */
+.branding {
+  background: url("../images/primary-pattern.png");
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+/* line 19, ../sass/latto.base.scss */
 hr {
   background: #555555;
   color: #555555;
@@ -565,7 +728,7 @@ hr {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 7, ../sass/latto.base.scss */
+/* line 21, ../sass/latto.base.scss */
 hr.primary {
   background: black;
   color: black;
@@ -577,7 +740,7 @@ hr.primary {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 10, ../sass/latto.base.scss */
+/* line 24, ../sass/latto.base.scss */
 hr.secondary {
   background: red;
   color: red;
@@ -589,7 +752,7 @@ hr.secondary {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 13, ../sass/latto.base.scss */
+/* line 27, ../sass/latto.base.scss */
 hr.tertiary {
   background: lime;
   color: lime;

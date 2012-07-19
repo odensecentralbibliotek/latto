@@ -3,7 +3,6 @@
 @import 'latto.variables.scss';
 
 body {
-  background: $theme-background;
   color: $theme-primary-color;
   font-family: $theme-font-family;
   font-size: $theme-font-size;
@@ -28,6 +27,19 @@ a {
     color: darken($link-color, 50%);
   }  
 }
+
+b,
+strong {
+  font-family: "Amble Bold";
+  font-weight: bold;
+}
+
+em {
+  font-family: "Amble Bold Italic";
+  font-style: italic;
+  font-weight: bold;
+}
+
 
 // Size classes.
 // -------------------------
