@@ -8,6 +8,7 @@ body {
 
 .branding {
   background: url('../images/primary-pattern.png');
+  overflow: hidden;
   padding-bottom: $default-spacing * 1.5;
   padding-top: $default-spacing * 1.5;
 }

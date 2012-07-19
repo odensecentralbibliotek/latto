@@ -712,11 +712,12 @@ body {
 /* line 9, ../sass/latto.base.scss */
 .branding {
   background: url("../images/primary-pattern.png");
+  overflow: hidden;
   padding-bottom: 30px;
   padding-top: 30px;
 }
 
-/* line 19, ../sass/latto.base.scss */
+/* line 20, ../sass/latto.base.scss */
 hr {
   background: #555555;
   color: #555555;
@@ -728,7 +729,7 @@ hr {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 21, ../sass/latto.base.scss */
+/* line 22, ../sass/latto.base.scss */
 hr.primary {
   background: black;
   color: black;
@@ -740,7 +741,7 @@ hr.primary {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 24, ../sass/latto.base.scss */
+/* line 25, ../sass/latto.base.scss */
 hr.secondary {
   background: red;
   color: red;
@@ -752,7 +753,7 @@ hr.secondary {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 27, ../sass/latto.base.scss */
+/* line 28, ../sass/latto.base.scss */
 hr.tertiary {
   background: lime;
   color: lime;
