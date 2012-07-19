@@ -716,8 +716,13 @@ body {
   padding-bottom: 30px;
   padding-top: 30px;
 }
+/* line 14, ../sass/latto.base.scss */
+.branding .pane-page-site-name {
+  color: gray;
+  padding-top: 38px;
+}
 
-/* line 20, ../sass/latto.base.scss */
+/* line 24, ../sass/latto.base.scss */
 hr {
   background: #555555;
   color: #555555;
@@ -729,7 +734,7 @@ hr {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 22, ../sass/latto.base.scss */
+/* line 26, ../sass/latto.base.scss */
 hr.primary {
   background: black;
   color: black;
@@ -741,7 +746,7 @@ hr.primary {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 25, ../sass/latto.base.scss */
+/* line 29, ../sass/latto.base.scss */
 hr.secondary {
   background: red;
   color: red;
@@ -753,7 +758,7 @@ hr.secondary {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 28, ../sass/latto.base.scss */
+/* line 32, ../sass/latto.base.scss */
 hr.tertiary {
   background: lime;
   color: lime;
@@ -769,5 +774,4 @@ hr.tertiary {
 /* line 6, ../sass/latto.panels.scss */
 .branding .pane-page-logo {
   float: left;
-  margin-right: 20px;
 }
