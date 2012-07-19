@@ -1,0 +1,10 @@
+// Default panel panes
+// -------------------------
+
+// Default styling for branding region and default elements
+.branding {
+  .pane-page-logo {
+    @include zen-float(left);
+    margin-right: $default-spacing;
+  }
+}

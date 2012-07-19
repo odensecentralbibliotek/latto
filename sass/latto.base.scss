@@ -1,5 +1,7 @@
 // Basic elements
+// -------------------------
 
+// Default horizontal ruler styles
 hr {
   @include colruler();
   &.primary{
