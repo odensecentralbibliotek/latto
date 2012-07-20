@@ -70,8 +70,8 @@
 ?>
 
 <div id="page">
-  
-    <?php if (!empty($page['branding'])): ?>
+
+  <?php if (!empty($page['branding'])): ?>
     <div class="grid-full branding">
       <?php print render($page['branding']); ?>
     </div>
@@ -98,5 +98,5 @@
       <?php print render($page['bottom']); ?>
     </div>
   <?php endif; ?>
-  
+
 </div>
