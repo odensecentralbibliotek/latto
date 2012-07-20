@@ -1,7 +1,9 @@
 <?php if ($logo || $site_name || $site_slogan): ?>
   <?php if ($logo): ?>
     <div class="logo">
-      <?php print $logo; ?>
+      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
+        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+      </a>
     </div>
   <?php endif; ?>
   <?php if ($site_name || $site_slogan): ?>
