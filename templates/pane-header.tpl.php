@@ -1,7 +1,7 @@
-<?php if ($site_logo || $site_name || $site_slogan): ?>
-  <?php if ($site_logo): ?>
+<?php if ($logo || $site_name || $site_slogan): ?>
+  <?php if ($logo): ?>
     <div class="logo">
-      <?php print $site_logo; ?>
+      <?php print $logo; ?>
     </div>
   <?php endif; ?>
   <?php if ($site_name || $site_slogan): ?>
