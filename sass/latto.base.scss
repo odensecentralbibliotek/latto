@@ -11,9 +11,13 @@ body {
   overflow: hidden;
   padding-bottom: $default-spacing * 1.5;
   padding-top: $default-spacing * 1.5;
+  .pane-page-logo {
+    margin-right: $default-spacing;    
+  }
   .pane-page-site-name {
-    color: lighten($theme-primary-color, 50%);
-    padding-top: 38px;
+    color: $white;
+    font-size: 450%;
+    line-height: 100%;
   }
 }
 
