@@ -16,7 +16,7 @@
 /**
  * Render callback.
  *
- * @ingroup themeable
+ * Remove panels div separator.
  */
 function latto_panels_default_style_render_region($vars) {
   $output = '';
