@@ -12,3 +12,14 @@
  *    stylesheets for Internet Explorer and a browser detection script to add body classes.
  */
 
+/**
+ * Implements hook_preprocess_panels_pane().
+ *
+ */
+function latto_preprocess_panels_pane(&$vars) {
+  // Suggestions base on sub-type.
+  $vars['theme_hook_suggestions'][] = 'panels_pane__' . str_replace('-', '__', $vars['pane']->subtype);
+ 
+  // Suggestions on panel pane
+  $vars['theme_hook_suggestions'][] = 'panels_pane__' . $vars['pane']->panel;
+}
