@@ -1,33 +1,9 @@
 @font-face {
-  font-family: "Amble Regular";
-  src: url('fonts/amble/Amble-Regular-webfont.eot');
-  src: url('fonts/amble/Amble-Regular-webfont.eot?#iefix') format('eot'), url('fonts/amble/Amble-Regular-webfont.woff') format('woff'), url('fonts/amble/Amble-Regular-webfont.ttf') format('truetype'), url('fonts/amble/Amble-Regular-webfont.svg') format('svg');
+  font-family: "Amble Light Condensed";
+  src: url('fonts/amble/Amble-LightCondensed-webfont.eot');
+  src: url('fonts/amble/Amble-LightCondensed-webfont.eot?#iefix') format('eot'), url('fonts/amble/Amble-LightCondensed-webfont.woff') format('woff'), url('fonts/amble/Amble-LightCondensed-webfont.ttf') format('truetype'), url('fonts/amble/Amble-LightCondensed-webfont.svg') format('svg');
   font-weight: "normal";
   font-style: "normal";
-}
-
-@font-face {
-  font-family: "Amble Italic";
-  src: url('fonts/amble/Amble-Italic-webfont.eot');
-  src: url('fonts/amble/Amble-Italic-webfont.eot?#iefix') format('eot'), url('fonts/amble/Amble-Italic-webfont.woff') format('woff'), url('fonts/amble/Amble-Italic-webfont.ttf') format('truetype'), url('fonts/amble/Amble-Italic-webfont.svg') format('svg');
-  font-weight: "normal";
-  font-style: "italic";
-}
-
-@font-face {
-  font-family: "Amble Bold";
-  src: url('fonts/amble/Amble-Bold-webfont.eot');
-  src: url('fonts/amble/Amble-Bold-webfont.eot?#iefix') format('eot'), url('fonts/amble/Amble-Bold-webfont.woff') format('woff'), url('fonts/amble/Amble-Bold-webfont.ttf') format('truetype'), url('fonts/amble/Amble-Bold-webfont.svg') format('svg');
-  font-weight: "bold";
-  font-style: "normal";
-}
-
-@font-face {
-  font-family: "Amble Bold Italic";
-  src: url('fonts/amble/Amble-BoldItalic-webfont.eot');
-  src: url('fonts/amble/Amble-BoldItalic-webfont.eot?#iefix') format('eot'), url('fonts/amble/Amble-BoldItalic-webfont.woff') format('woff'), url('fonts/amble/Amble-BoldItalic-webfont.ttf') format('truetype'), url('fonts/amble/Amble-BoldItalic-webfont.svg') format('svg');
-  font-weight: "bold";
-  font-style: "italic";
 }
 
 /*
@@ -81,35 +57,11 @@ btn: text
 
 */
 @font-face {
-  font-family: "Amble Regular";
-  src: url('fonts/amble/Amble-Regular-webfont.eot');
-  src: url('fonts/amble/Amble-Regular-webfont.eot?#iefix') format('eot'), url('fonts/amble/Amble-Regular-webfont.woff') format('woff'), url('fonts/amble/Amble-Regular-webfont.ttf') format('truetype'), url('fonts/amble/Amble-Regular-webfont.svg') format('svg');
+  font-family: "Amble Light Condensed";
+  src: url('fonts/amble/Amble-LightCondensed-webfont.eot');
+  src: url('fonts/amble/Amble-LightCondensed-webfont.eot?#iefix') format('eot'), url('fonts/amble/Amble-LightCondensed-webfont.woff') format('woff'), url('fonts/amble/Amble-LightCondensed-webfont.ttf') format('truetype'), url('fonts/amble/Amble-LightCondensed-webfont.svg') format('svg');
   font-weight: "normal";
   font-style: "normal";
-}
-
-@font-face {
-  font-family: "Amble Italic";
-  src: url('fonts/amble/Amble-Italic-webfont.eot');
-  src: url('fonts/amble/Amble-Italic-webfont.eot?#iefix') format('eot'), url('fonts/amble/Amble-Italic-webfont.woff') format('woff'), url('fonts/amble/Amble-Italic-webfont.ttf') format('truetype'), url('fonts/amble/Amble-Italic-webfont.svg') format('svg');
-  font-weight: "normal";
-  font-style: "italic";
-}
-
-@font-face {
-  font-family: "Amble Bold";
-  src: url('fonts/amble/Amble-Bold-webfont.eot');
-  src: url('fonts/amble/Amble-Bold-webfont.eot?#iefix') format('eot'), url('fonts/amble/Amble-Bold-webfont.woff') format('woff'), url('fonts/amble/Amble-Bold-webfont.ttf') format('truetype'), url('fonts/amble/Amble-Bold-webfont.svg') format('svg');
-  font-weight: "bold";
-  font-style: "normal";
-}
-
-@font-face {
-  font-family: "Amble Bold Italic";
-  src: url('fonts/amble/Amble-BoldItalic-webfont.eot');
-  src: url('fonts/amble/Amble-BoldItalic-webfont.eot?#iefix') format('eot'), url('fonts/amble/Amble-BoldItalic-webfont.woff') format('woff'), url('fonts/amble/Amble-BoldItalic-webfont.ttf') format('truetype'), url('fonts/amble/Amble-BoldItalic-webfont.svg') format('svg');
-  font-weight: "bold";
-  font-style: "italic";
 }
 
 /*
@@ -165,7 +117,7 @@ btn: text
 /* line 5, ../sass/latto.typography.scss */
 body {
   color: black;
-  font-family: "Amble Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Amble Light Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
@@ -191,41 +143,27 @@ a:active {
   color: black;
 }
 
-/* line 32, ../sass/latto.typography.scss */
-b,
-strong {
-  font-family: "Amble Bold";
-  font-weight: bold;
-}
-
-/* line 37, ../sass/latto.typography.scss */
-em {
-  font-family: "Amble Bold Italic";
-  font-style: italic;
-  font-weight: bold;
-}
-
-/* line 47, ../sass/latto.typography.scss */
+/* line 44, ../sass/latto.typography.scss */
 .small {
   font-size: 6.5px;
 }
 
-/* line 51, ../sass/latto.typography.scss */
+/* line 48, ../sass/latto.typography.scss */
 .medium {
   font-size: 9.75px;
 }
 
-/* line 55, ../sass/latto.typography.scss */
+/* line 52, ../sass/latto.typography.scss */
 .big {
   font-size: 16.25px;
 }
 
-/* line 59, ../sass/latto.typography.scss */
+/* line 56, ../sass/latto.typography.scss */
 .bigger {
   font-size: 17.875px;
 }
 
-/* line 63, ../sass/latto.typography.scss */
+/* line 60, ../sass/latto.typography.scss */
 .biggest {
   font-size: 19.5px;
 }
