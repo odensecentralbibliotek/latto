@@ -12,3 +12,14 @@
  *    stylesheets for Internet Explorer and a browser detection script to add body classes.
  */
 
+
+/**
+ * Render callback.
+ *
+ * @ingroup themeable
+ */
+function latto_panels_default_style_render_region($vars) {
+  $output = '';
+  $output .= implode('', $vars['panes']);
+  return $output;
+}
