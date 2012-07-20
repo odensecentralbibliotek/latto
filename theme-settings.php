@@ -1,7 +1,10 @@
 <?php
 
-function latto_form_system_theme_settings_alter(&$form, $form_state) {
+/*
+ * Implements form_system_theme_settings_alter().
+ */
 
+function latto_form_system_theme_settings_alter(&$form, $form_state) {
   /*
    * CSS class and markup
    */

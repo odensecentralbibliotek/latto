@@ -1,6 +1,8 @@
 // Base styling
 // -------------------------
 
+@import 'latto.mixins.scss';
+
 body {
   background: $theme-background;
   margin: 0;
@@ -48,6 +50,14 @@ hr {
     @include colruler($theme-tertiary-color);
   }
 }
+
+// Navigation
+// -------------------------
+.nav-wrapper {
+  @include rgba-background($theme-primary-color,.60);
+  overflow: hidden;
+}
+
 
 // List styling
 // -------------------------

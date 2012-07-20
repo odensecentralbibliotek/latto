@@ -640,14 +640,14 @@ and (max-width: 768px) {
     _overflow-y: visible;
   }
 }
-/* line 4, ../sass/latto.base.scss */
+/* line 6, ../sass/latto.base.scss */
 body {
   background: url("../images/default-bg-pattern.png");
   margin: 0;
   padding: 0;
 }
 
-/* line 10, ../sass/latto.base.scss */
+/* line 12, ../sass/latto.base.scss */
 header {
   background: url("../images/primary-pattern.png");
   overflow: hidden;
@@ -655,13 +655,13 @@ header {
   padding-top: 30px;
 }
 
-/* line 17, ../sass/latto.base.scss */
+/* line 19, ../sass/latto.base.scss */
 .logo {
   float: left;
   margin-right: 20px;
 }
 
-/* line 22, ../sass/latto.base.scss */
+/* line 24, ../sass/latto.base.scss */
 .site-name {
   color: white;
   float: left;
@@ -669,13 +669,13 @@ header {
   line-height: 100%;
 }
 
-/* line 29, ../sass/latto.base.scss */
+/* line 31, ../sass/latto.base.scss */
 .site-slogan {
   clear: left;
   color: #999999;
 }
 
-/* line 39, ../sass/latto.base.scss */
+/* line 41, ../sass/latto.base.scss */
 hr {
   background: #555555;
   color: #555555;
@@ -687,7 +687,7 @@ hr {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 41, ../sass/latto.base.scss */
+/* line 43, ../sass/latto.base.scss */
 hr.primary {
   background: black;
   color: black;
@@ -699,7 +699,7 @@ hr.primary {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 44, ../sass/latto.base.scss */
+/* line 46, ../sass/latto.base.scss */
 hr.secondary {
   background: red;
   color: red;
@@ -711,7 +711,7 @@ hr.secondary {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 47, ../sass/latto.base.scss */
+/* line 49, ../sass/latto.base.scss */
 hr.tertiary {
   background: lime;
   color: lime;
@@ -725,11 +725,19 @@ hr.tertiary {
 }
 
 /* line 56, ../sass/latto.base.scss */
+.nav-wrapper {
+  background-color: rgba(0, 0, 0, 0.6);
+  zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+  overflow: hidden;
+}
+
+/* line 66, ../sass/latto.base.scss */
 ul.inline-list {
   float: left;
   margin: 0;
 }
-/* line 59, ../sass/latto.base.scss */
+/* line 69, ../sass/latto.base.scss */
 ul.inline-list li {
   display: block;
   float: left;

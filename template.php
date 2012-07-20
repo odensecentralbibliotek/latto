@@ -37,10 +37,10 @@ function latto_panels_default_style_render_region($vars) {
 }
 
 /**
- * Implements theme_menu_tree().
+ * Implements theme_menu_tree() for the default main menu.
  */
-function latto_menu_tree($vars) {
-  return '<ul class="menu inline-list">' . $vars['tree'] . '</ul>';
+function latto_menu_tree__menu_block__1($vars) { 
+  return '<ul class="main-menu inline-list">' . $vars['tree'] . '</ul>';
 }
 
 /**
