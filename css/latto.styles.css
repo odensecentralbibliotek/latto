@@ -640,32 +640,42 @@ and (max-width: 768px) {
     _overflow-y: visible;
   }
 }
-/* line 3, ../sass/latto.base.scss */
+/* line 4, ../sass/latto.base.scss */
 body {
   background: url("../images/default-bg-pattern.png");
   margin: 0;
   padding: 0;
 }
 
-/* line 9, ../sass/latto.base.scss */
-.branding {
+/* line 10, ../sass/latto.base.scss */
+header {
   background: url("../images/primary-pattern.png");
   overflow: hidden;
   padding-bottom: 30px;
   padding-top: 30px;
 }
-/* line 14, ../sass/latto.base.scss */
-.branding .pane-page-logo {
+
+/* line 17, ../sass/latto.base.scss */
+.logo {
+  float: left;
   margin-right: 20px;
 }
-/* line 17, ../sass/latto.base.scss */
-.branding .pane-page-site-name {
+
+/* line 22, ../sass/latto.base.scss */
+.site-name {
   color: white;
+  float: left;
   font-size: 450%;
   line-height: 100%;
 }
 
-/* line 28, ../sass/latto.base.scss */
+/* line 29, ../sass/latto.base.scss */
+.site-slogan {
+  clear: left;
+  color: #999999;
+}
+
+/* line 39, ../sass/latto.base.scss */
 hr {
   background: #555555;
   color: #555555;
@@ -677,7 +687,7 @@ hr {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 30, ../sass/latto.base.scss */
+/* line 41, ../sass/latto.base.scss */
 hr.primary {
   background: black;
   color: black;
@@ -689,7 +699,7 @@ hr.primary {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 33, ../sass/latto.base.scss */
+/* line 44, ../sass/latto.base.scss */
 hr.secondary {
   background: red;
   color: red;
@@ -701,7 +711,7 @@ hr.secondary {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 36, ../sass/latto.base.scss */
+/* line 47, ../sass/latto.base.scss */
 hr.tertiary {
   background: lime;
   color: lime;
@@ -712,6 +722,17 @@ hr.tertiary {
   border: none;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+/* line 56, ../sass/latto.base.scss */
+ul.inline-list {
+  float: left;
+  margin: 0;
+}
+/* line 59, ../sass/latto.base.scss */
+ul.inline-list li {
+  display: block;
+  float: left;
 }
 
 /* line 6, ../sass/latto.panels.scss */

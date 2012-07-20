@@ -1,4 +1,5 @@
 // Base styling
+// -------------------------
 
 body {
   background: $theme-background;
@@ -6,34 +7,63 @@ body {
   padding: 0;
 }
 
-.branding {
+header {
   background: url('../images/primary-pattern.png');
   overflow: hidden;
   padding-bottom: $default-spacing * 1.5;
   padding-top: $default-spacing * 1.5;
-  .pane-page-logo {
-    margin-right: $default-spacing;    
-  }
-  .pane-page-site-name {
-    color: $white;
-    font-size: 450%;
-    line-height: 100%;
-  }
 }
+
+.logo {
+  float: left;
+  margin-right: $default-spacing;    
+}
+
+.site-name {
+  color: $white;
+  float: left;
+  font-size: 450%;
+  line-height: 100%;
+}
+
+.site-slogan {
+  clear: left;
+  color: $gray-light;
+}
+
 
 // Basic elements
 // -------------------------
 
-// Default horizontal ruler styles
+// Default horizontal ruler styles.
 hr {
   @include colruler();
-  &.primary{
+  &.primary {
     @include colruler($theme-primary-color);
   }
-  &.secondary{
+  &.secondary {
     @include colruler($theme-secondary-color);
   }
-  &.tertiary{
+  &.tertiary {
     @include colruler($theme-tertiary-color);
   }
+}
+
+// List styling
+// -------------------------
+
+ul {  
+  &.inline-list {
+    float: left;
+    margin: 0;
+    li {
+      display: block;
+      float: left;
+    }
+  }
+  
+  &.stacked-list {
+  }
+  
+  
 }
