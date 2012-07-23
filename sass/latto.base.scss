@@ -74,35 +74,25 @@ ul {
       overflow: hidden;
       padding-bottom: 15px;
       margin: 15px 0;
-      >p {
-        &span {
-          margin-right: 10px;
-          &a {
-            text-decoration: none;
-          }
-          &.date {
-            color: $gray-light;
-          }
+      &div.block-list-subheading {
+        margin-bottom: 5px;
+        &a, &span {
+          margin-right: 5px;
+        }
+        &.date {
+          color: $gray-light;
         }
       }
-      >a {
+      &div.block-list-image {
         float: left;
-        margin-right: 10px;
+        margin-right: 10px;  
       }
-      >div {
-        float: left;
-        &p {
-          margin-bottom: 2px;
-        }
+      &div.block-list-content {
+        float: left;  
       }
     }
     li:first-child {
       margin-top: 0;
-    }
-  }
-  &.heading-top {
-    &h3 {
-      margin-bottom: 10px;  
     }
   }
 
