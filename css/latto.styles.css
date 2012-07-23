@@ -122,48 +122,82 @@ body {
   line-height: 18px;
 }
 
-/* line 14, ../sass/latto.typography.scss */
+/* line 39, ../sass/latto.mixins.scss */
+::-webkit-selection {
+  color: #eeeeee;
+  background: #555555;
+}
+
+/* line 39, ../sass/latto.mixins.scss */
+::-moz-selection {
+  color: #eeeeee;
+  background: #555555;
+}
+
+/* line 39, ../sass/latto.mixins.scss */
+::-o-selection {
+  color: #eeeeee;
+  background: #555555;
+}
+
+/* line 39, ../sass/latto.mixins.scss */
+::selection {
+  color: #eeeeee;
+  background: #555555;
+}
+
+/* line 25, ../sass/latto.typography.scss */
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  text-decoration: none;
+}
+
+/* line 35, ../sass/latto.typography.scss */
 a:link {
   color: #00b7e7;
 }
-/* line 17, ../sass/latto.typography.scss */
+/* line 38, ../sass/latto.typography.scss */
 a:visited {
   color: #007a9b;
 }
-/* line 20, ../sass/latto.typography.scss */
+/* line 41, ../sass/latto.typography.scss */
 a:hover {
-  color: #007a9b;
+  color: #006681;
 }
-/* line 23, ../sass/latto.typography.scss */
+/* line 44, ../sass/latto.typography.scss */
 a:focus {
-  color: #007a9b;
+  color: #006681;
 }
-/* line 26, ../sass/latto.typography.scss */
+/* line 47, ../sass/latto.typography.scss */
 a:active {
   color: black;
 }
 
-/* line 44, ../sass/latto.typography.scss */
+/* line 65, ../sass/latto.typography.scss */
 .small {
   font-size: 6.5px;
 }
 
-/* line 48, ../sass/latto.typography.scss */
+/* line 69, ../sass/latto.typography.scss */
 .medium {
   font-size: 9.75px;
 }
 
-/* line 52, ../sass/latto.typography.scss */
+/* line 73, ../sass/latto.typography.scss */
 .big {
   font-size: 16.25px;
 }
 
-/* line 56, ../sass/latto.typography.scss */
+/* line 77, ../sass/latto.typography.scss */
 .bigger {
   font-size: 17.875px;
 }
 
-/* line 60, ../sass/latto.typography.scss */
+/* line 81, ../sass/latto.typography.scss */
 .biggest {
   font-size: 19.5px;
 }

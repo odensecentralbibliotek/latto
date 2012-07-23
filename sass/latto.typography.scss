@@ -9,7 +9,28 @@ body {
   line-height: $theme-line-height;
 }
 
-// Normal link.
+// Colors for ::selection
+// -------------------------
+@include selection($theme-selection-color, $theme-selection-background);
+
+// Headers
+// -------------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  a {
+    text-decoration: none;
+  }
+}
+
+
+// Links
+// -------------------------
+
 a {
   &:link {
     color: $link-color;

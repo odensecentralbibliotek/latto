@@ -1,9 +1,11 @@
 // This file holds all the variables for the theme.
 
 // Imports
+// -------------------------
 @import "compass/css3";
 
 // Default font
+// -------------------------
 @include font-face("Amble Light Condensed", font-files("amble/Amble-LightCondensed-webfont.woff", "amble/Amble-LightCondensed-webfont.ttf", "amble/Amble-LightCondensed-webfont.svg"), "amble/Amble-LightCondensed-webfont.eot", 'normal', 'normal');
 
 // Theme variables.
@@ -18,23 +20,27 @@ $gray-light:            #999 !default;
 $gray-lighter:          #eee !default;
 $white:                 #fff !default;
 
+
 // Font variables.
 // -------------------------
 $theme-font-size:         13px;
 $theme-line-height:       18px;
 $theme-font-family:       "Amble Light Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-// Text colors.
+
+// Text colors
 // -------------------------
-$theme-primary-color:     #000;
-$theme-secondary-color:   #ff0000;
-$theme-tertiary-color:    #00ff00;
+$theme-primary-color:         #000;
+$theme-secondary-color:       #ff0000;
+$theme-tertiary-color:        #00ff00;
+$theme-selection-color:       $gray-lighter;
+$theme-selection-background:  $gray;
 
 
-// Links.
+// Links
 // -------------------------
 $link-color:              #00b7e7 !default;
-$link-color-hover:        darken($link-color, 15%) !default;
+$link-color-hover:        darken($link-color, 20%) !default;
 
 $theme-background:        url('../images/default-bg-pattern.png');
 
@@ -74,7 +80,6 @@ $default-spacing: 20px;
 //--------------------------
 
 $navbar-background-color:   $theme-primary-color;
-
 $navbar-text-color:         $gray-lighter;
 $navbar-item-spacing:       $default-spacing / 2 $default-spacing;
 

@@ -1,5 +1,7 @@
 // Various mixins to make our life easier
 
+$prefixes: ("-webkit-","-moz-", "-o-", "");
+
 // Adds trailing margin
 @mixin append-bottom($amount: $default-spacing) {
   margin-bottom: $amount;
@@ -30,4 +32,13 @@
   background-color: $rgba;
   zoom: 1;
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
+}
+
+@mixin selection($color, $background) {
+  @each $prefix in $prefixes {
+    ::#{$prefix}selection {
+      color: $color;
+      background: $background;
+    }
+  }
 }
