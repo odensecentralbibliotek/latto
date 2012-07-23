@@ -40,7 +40,7 @@ function latto_panels_default_style_render_region($vars) {
  * Implements theme_menu_tree() for the default main menu.
  */
 function latto_menu_tree__menu_block__1($vars) { 
-  return '<ul class="main-menu inline-list">' . $vars['tree'] . '</ul>';
+  return '<ul class="main-menu navbar inline">' . $vars['tree'] . '</ul>';
 }
 
 /**
@@ -92,7 +92,7 @@ function latto_menu_link($vars) {
   }
   
   $output = l($element['#title'], $element['#href'], $element['#localized_options']);
-  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
+  return '<li' . drupal_attributes($element['#attributes']) . '><span>' . $output . $sub_menu . "</span></li>\n";
 }
 
 

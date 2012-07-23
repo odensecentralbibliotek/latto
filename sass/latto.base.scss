@@ -54,8 +54,10 @@ hr {
 // Navigation
 // -------------------------
 .nav-wrapper {
-  @include rgba-background($theme-primary-color,.60);
+  margin-top: $default-spacing;
   overflow: hidden;
+  @include border-radius(4px);
+  @include rgba-background($navbar-background-color,.75);
 }
 
 
@@ -63,17 +65,44 @@ hr {
 // -------------------------
 
 ul {  
-  &.inline-list {
-    float: left;
-    margin: 0;
-    li {
-      display: block;
+  &.navbar {
+    &.inline {
+      border-left: 1px solid rgba($navbar-background-color, .5);
+      border-right: 1px solid rgba($white, .2);
       float: left;
+      margin: 0;
+      li {
+        @include rgba-background($navbar-background-color, .25);
+        border-left: 1px solid rgba($white, .2);
+        border-right: 1px solid rgba($navbar-background-color, .75);
+        display: block;
+        float: left;
+        a {
+          color: $navbar-text-color;
+          display: block;
+          padding: $navbar-item-spacing;
+          text-decoration: none;
+          &:hover {
+            color: lighten($navbar-text-color, 75%);
+          }          
+        }
+        &.first {
+          border-left: 0;
+        }        
+        &.last {
+          border-right: 1px solid rgba($navbar-background-color, .5);
+        }
+        &.active {
+          border-left: 0;
+          border-right: 0;
+          @include rgba-background($navbar-background-color, .5);
+        }
+      }
+    }
+    .stacked {
     }
   }
   
-  &.stacked-list {
-  }
   
   
 }

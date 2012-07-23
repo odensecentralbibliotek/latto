@@ -40,13 +40,6 @@ $theme-background:        url('../images/default-bg-pattern.png');
 
 $theme-header-background: $theme-secondary-color;
 
-$theme-menu-background:   $theme-tertiary-color;
-$theme-menu-color:        red;
-$theme-menu-color-hover:  darken($theme-menu-color, 15%);
-
-$theme-submenu-color:     green;
-$theme-submenu-color-hover: darken($theme-submenu-color, 15%);
-
 $theme-breadcrumb-background: transparent;
 $theme-breadcrumb-border-bottom: 1px solid $gray-light;
 
@@ -56,14 +49,14 @@ $theme-block-color-hover: $gray-light;
 $theme-block-inverse-background: $gray-light;
 $theme-block-inverse-color: $gray-light;
 
-$theme-content-background: $gray-light;
-$theme-content-color:     $gray-light;
+$theme-content-background:  $gray-light;
+$theme-content-color:       $gray-light;
 
-$theme-image-border:      $gray-light;
+$theme-image-border:        $gray-light;
 
-$theme-footer-background: $gray-light;
-$theme-footer-color:      $gray-light;
-$theme-footer-color-hover: $gray-light;
+$theme-footer-background:   $gray-light;
+$theme-footer-color:        $gray-light;
+$theme-footer-color-hover:  $gray-light;
 
 $theme-header-color:      $gray-light;
 
@@ -71,9 +64,18 @@ $theme-subheader-color:   $gray-light;
 
 $theme-blockheader-color: $gray-light;
 
+
 // Grids and spacing
 // -------------------------
 $default-spacing: 20px;
+
+
+// Navigation
+//--------------------------
+
+$navbar-background-color:   $theme-primary-color;
+$navbar-text-color:         $gray-lighter;
+$navbar-item-spacing:       $default-spacing / 2 $default-spacing;
 
 
 /*
