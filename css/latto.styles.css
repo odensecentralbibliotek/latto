@@ -116,7 +116,7 @@ btn: text
 */
 /* line 5, ../sass/latto.typography.scss */
 body {
-  color: black;
+  color: #1b1b1b;
   font-family: "Amble Light Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -165,50 +165,61 @@ h6 a:hover {
   color: #006681;
 }
 
+/* line 35, ../sass/latto.typography.scss */
+h1 {
+  color: #1b1b1b;
+}
+
 /* line 40, ../sass/latto.typography.scss */
+h2,
+h3 {
+  color: rgba(27, 27, 27, 0.5);
+}
+
+/* line 49, ../sass/latto.typography.scss */
 a:link {
   color: #00b7e7;
   text-decoration: none;
 }
-/* line 44, ../sass/latto.typography.scss */
+/* line 53, ../sass/latto.typography.scss */
 a:visited {
   color: #007a9b;
 }
-/* line 47, ../sass/latto.typography.scss */
+/* line 56, ../sass/latto.typography.scss */
 a:hover {
   color: #006681;
   text-decoration: underline;
 }
-/* line 51, ../sass/latto.typography.scss */
+/* line 60, ../sass/latto.typography.scss */
 a:focus {
   color: #006681;
 }
-/* line 54, ../sass/latto.typography.scss */
+/* line 63, ../sass/latto.typography.scss */
 a:active {
   color: black;
 }
 
-/* line 72, ../sass/latto.typography.scss */
+/* line 81, ../sass/latto.typography.scss */
 .small {
   font-size: 6.5px;
 }
 
-/* line 76, ../sass/latto.typography.scss */
+/* line 85, ../sass/latto.typography.scss */
 .medium {
   font-size: 9.75px;
 }
 
-/* line 80, ../sass/latto.typography.scss */
+/* line 89, ../sass/latto.typography.scss */
 .big {
   font-size: 16.25px;
 }
 
-/* line 84, ../sass/latto.typography.scss */
+/* line 93, ../sass/latto.typography.scss */
 .bigger {
   font-size: 17.875px;
 }
 
-/* line 88, ../sass/latto.typography.scss */
+/* line 97, ../sass/latto.typography.scss */
 .biggest {
   font-size: 19.5px;
 }
@@ -687,7 +698,7 @@ and (max-width: 768px) {
 }
 /* line 6, ../sass/latto.base.scss */
 body {
-  background: url("../images/default-bg-pattern.png");
+  background: url("../images/default-bg-pattern.png") white;
   margin: 0;
   padding: 0;
 }
@@ -734,8 +745,8 @@ hr {
 }
 /* line 43, ../sass/latto.base.scss */
 hr.primary {
-  background: black;
-  color: black;
+  background: #1b1b1b;
+  color: #1b1b1b;
   clear: both;
   float: none;
   width: 100%;
@@ -778,25 +789,25 @@ hr.tertiary {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(27, 27, 27, 0.75);
   zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF000000,endColorstr=#BF000000);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF1B1B1B,endColorstr=#BF1B1B1B);
 }
 
 /* line 69, ../sass/latto.base.scss */
 ul.navbar.inline {
-  border-left: 1px solid rgba(0, 0, 0, 0.5);
+  border-left: 1px solid rgba(27, 27, 27, 0.5);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   float: left;
   margin: 0;
 }
 /* line 74, ../sass/latto.base.scss */
 ul.navbar.inline li {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(27, 27, 27, 0.25);
   zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#40000000,endColorstr=#40000000);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#401B1B1B,endColorstr=#401B1B1B);
   border-left: 1px solid rgba(255, 255, 255, 0.2);
-  border-right: 1px solid rgba(0, 0, 0, 0.75);
+  border-right: 1px solid rgba(27, 27, 27, 0.75);
   display: block;
   float: left;
 }
@@ -817,15 +828,15 @@ ul.navbar.inline li.first {
 }
 /* line 92, ../sass/latto.base.scss */
 ul.navbar.inline li.last {
-  border-right: 1px solid rgba(0, 0, 0, 0.5);
+  border-right: 1px solid rgba(27, 27, 27, 0.5);
 }
 /* line 95, ../sass/latto.base.scss */
 ul.navbar.inline li.active {
   border-left: 0;
   border-right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(27, 27, 27, 0.5);
   zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#801B1B1B,endColorstr=#801B1B1B);
 }
 
 /* line 6, ../sass/latto.panels.scss */

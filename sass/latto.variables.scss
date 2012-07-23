@@ -8,7 +8,6 @@
 // -------------------------
 @include font-face("Amble Light Condensed", font-files("amble/Amble-LightCondensed-webfont.woff", "amble/Amble-LightCondensed-webfont.ttf", "amble/Amble-LightCondensed-webfont.svg"), "amble/Amble-LightCondensed-webfont.eot", 'normal', 'normal');
 
-// Theme variables.
 
 // Grayscale colors.
 // -------------------------
@@ -20,17 +19,21 @@ $gray-light:            #999 !default;
 $gray-lighter:          #eee !default;
 $white:                 #fff !default;
 
+// Theme variables.
+$theme-background-color:  $white;
+$theme-background:        url('../images/default-bg-pattern.png') $theme-background-color;
+
 
 // Font variables.
 // -------------------------
-$theme-font-size:         13px;
+$default-font-size:       13px;
 $theme-line-height:       18px;
 $theme-font-family:       "Amble Light Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 
 // Text colors
 // -------------------------
-$theme-primary-color:         #000;
+$theme-primary-color:         #1b1b1b;
 $theme-secondary-color:       #ff0000;
 $theme-tertiary-color:        #00ff00;
 $theme-selection-color:       $gray-lighter;
@@ -42,7 +45,6 @@ $theme-selection-background:  $gray;
 $link-color:              #00b7e7 !default;
 $link-color-hover:        darken($link-color, 20%) !default;
 
-$theme-background:        url('../images/default-bg-pattern.png');
 
 $theme-header-background: $theme-secondary-color;
 
