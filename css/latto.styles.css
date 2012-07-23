@@ -124,19 +124,19 @@ body {
 
 /* line 14, ../sass/latto.typography.scss */
 a:link {
-  color: #0088cc;
+  color: #00b7e7;
 }
 /* line 17, ../sass/latto.typography.scss */
 a:visited {
-  color: #00334d;
+  color: #007a9b;
 }
 /* line 20, ../sass/latto.typography.scss */
 a:hover {
-  color: #005580;
+  color: #007a9b;
 }
 /* line 23, ../sass/latto.typography.scss */
 a:focus {
-  color: #005580;
+  color: #007a9b;
 }
 /* line 26, ../sass/latto.typography.scss */
 a:active {
