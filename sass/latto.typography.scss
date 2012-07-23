@@ -23,7 +23,9 @@ h4,
 h5,
 h6 {
   a {
-    text-decoration: none;
+    &:link {
+      text-decoration: none;
+    }
     &:hover {
       color: $link-color-hover;
     }
