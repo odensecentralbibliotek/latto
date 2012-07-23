@@ -738,14 +738,47 @@ hr.tertiary {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF000000,endColorstr=#BF000000);
 }
 
-/* line 69, ../sass/latto.base.scss */
+/* line 68, ../sass/latto.base.scss */
+ul.block-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 72, ../sass/latto.base.scss */
+ul.block-list li {
+  border-bottom: 1px solid #999999;
+  display: block;
+  clear: both;
+  margin: 10px 0;
+}
+/* line 79, ../sass/latto.base.scss */
+ul.block-list li > p span {
+  margin-right: 10px;
+}
+/* line 81, ../sass/latto.base.scss */
+ul.block-list li > p span a {
+  text-decoration: none;
+}
+/* line 84, ../sass/latto.base.scss */
+ul.block-list li > p span.date {
+  color: #999999;
+}
+/* line 89, ../sass/latto.base.scss */
+ul.block-list li > a {
+  float: left;
+}
+/* line 92, ../sass/latto.base.scss */
+ul.block-list li > div {
+  margin-left: 60px;
+}
+/* line 101, ../sass/latto.base.scss */
 ul.navbar.inline {
   border-left: 1px solid rgba(0, 0, 0, 0.5);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   float: left;
   margin: 0;
 }
-/* line 74, ../sass/latto.base.scss */
+/* line 106, ../sass/latto.base.scss */
 ul.navbar.inline li {
   background-color: rgba(0, 0, 0, 0.25);
   zoom: 1;
@@ -755,26 +788,26 @@ ul.navbar.inline li {
   display: block;
   float: left;
 }
-/* line 80, ../sass/latto.base.scss */
+/* line 112, ../sass/latto.base.scss */
 ul.navbar.inline li a {
   color: #eeeeee;
   display: block;
   padding: 10px 20px;
   text-decoration: none;
 }
-/* line 85, ../sass/latto.base.scss */
+/* line 117, ../sass/latto.base.scss */
 ul.navbar.inline li a:hover {
   color: white;
 }
-/* line 89, ../sass/latto.base.scss */
+/* line 121, ../sass/latto.base.scss */
 ul.navbar.inline li.first {
   border-left: 0;
 }
-/* line 92, ../sass/latto.base.scss */
+/* line 124, ../sass/latto.base.scss */
 ul.navbar.inline li.last {
   border-right: 1px solid rgba(0, 0, 0, 0.5);
 }
-/* line 95, ../sass/latto.base.scss */
+/* line 127, ../sass/latto.base.scss */
 ul.navbar.inline li.active {
   border-left: 0;
   border-right: 0;
