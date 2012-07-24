@@ -783,49 +783,40 @@ hr.tertiary {
 /* line 57, ../sass/latto.base.scss */
 .nav-wrapper {
   margin-top: 20px;
-  overflow: hidden;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-  background-color: rgba(27, 27, 27, 0.75);
-  zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF1B1B1B,endColorstr=#BF1B1B1B);
 }
 
-/* line 69, ../sass/latto.base.scss */
+/* line 66, ../sass/latto.base.scss */
 ul.list {
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 100%;
 }
-/* line 74, ../sass/latto.base.scss */
+/* line 71, ../sass/latto.base.scss */
 ul.list li {
   border-bottom: 1px solid #999999;
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
-/* line 78, ../sass/latto.base.scss */
+/* line 75, ../sass/latto.base.scss */
 ul.list li div.subheading {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 81, ../sass/latto.base.scss */
+/* line 78, ../sass/latto.base.scss */
 ul.list li div.subheading span, ul.list li div.subheading a {
   margin-right: 5px;
 }
-/* line 84, ../sass/latto.base.scss */
+/* line 81, ../sass/latto.base.scss */
 ul.list li div.subheading span.date {
   color: #999999;
 }
-/* line 88, ../sass/latto.base.scss */
+/* line 85, ../sass/latto.base.scss */
 ul.list li img {
   width: 100%;
   height: 100px;
 }
-/* line 97, ../sass/latto.base.scss */
+/* line 94, ../sass/latto.base.scss */
 ul.floated li img {
   display: inline-block;
   height: 100px;
@@ -835,7 +826,7 @@ ul.floated li img {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 104, ../sass/latto.base.scss */
+/* line 101, ../sass/latto.base.scss */
 ul.floated li div.content {
   display: inline-block;
   vertical-align: top;
@@ -844,48 +835,54 @@ ul.floated li div.content {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 115, ../sass/latto.base.scss */
+/* line 112, ../sass/latto.base.scss */
 ul.simple li img, ul.simple li div.subheading, ul.simple li div.content {
   display: none;
 }
-/* line 122, ../sass/latto.base.scss */
-ul.navbar.inline {
+/* line 119, ../sass/latto.base.scss */
+ul.nav.nav-inline {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  background-color: rgba(27, 27, 27, 0.75);
+  zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF1B1B1B,endColorstr=#BF1B1B1B);
   border-left: 1px solid rgba(27, 27, 27, 0.5);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
-  float: left;
   margin: 0;
 }
-/* line 127, ../sass/latto.base.scss */
-ul.navbar.inline li {
+/* line 126, ../sass/latto.base.scss */
+ul.nav.nav-inline li {
   background-color: rgba(27, 27, 27, 0.25);
   zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#401B1B1B,endColorstr=#401B1B1B);
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   border-right: 1px solid rgba(27, 27, 27, 0.75);
-  display: block;
-  float: left;
+  display: table-cell;
 }
-/* line 133, ../sass/latto.base.scss */
-ul.navbar.inline li a {
+/* line 131, ../sass/latto.base.scss */
+ul.nav.nav-inline li a {
   color: #eeeeee;
   display: block;
   padding: 10px 20px;
   text-decoration: none;
 }
-/* line 138, ../sass/latto.base.scss */
-ul.navbar.inline li a:hover {
+/* line 136, ../sass/latto.base.scss */
+ul.nav.nav-inline li a:hover {
   color: white;
 }
-/* line 142, ../sass/latto.base.scss */
-ul.navbar.inline li.first {
+/* line 140, ../sass/latto.base.scss */
+ul.nav.nav-inline li.first {
   border-left: 0;
 }
-/* line 145, ../sass/latto.base.scss */
-ul.navbar.inline li.last {
+/* line 143, ../sass/latto.base.scss */
+ul.nav.nav-inline li.last {
   border-right: 1px solid rgba(27, 27, 27, 0.5);
 }
-/* line 148, ../sass/latto.base.scss */
-ul.navbar.inline li.active {
+/* line 146, ../sass/latto.base.scss */
+ul.nav.nav-inline li.active {
   border-left: 0;
   border-right: 0;
   background-color: rgba(27, 27, 27, 0.5);

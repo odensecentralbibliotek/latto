@@ -56,9 +56,6 @@ hr {
 // -------------------------
 .nav-wrapper {
   margin-top: $default-spacing;
-  overflow: hidden;
-  @include border-radius(4px);
-  @include rgba-background($navbar-background-color,.75);
 }
 
 
@@ -118,18 +115,19 @@ ul {
     }
   }
 
-  &.navbar {
-    &.inline {
+  &.nav {
+    &.nav-inline {
+      @include border-radius(4px);
+      @include rgba-background($navbar-background-color,.75);
+
       border-left: 1px solid rgba($navbar-background-color, .5);
       border-right: 1px solid rgba($white, .2);
-      float: left;
       margin: 0;
       li {
         @include rgba-background($navbar-background-color, .25);
         border-left: 1px solid rgba($white, .2);
         border-right: 1px solid rgba($navbar-background-color, .75);
-        display: block;
-        float: left;
+        display: table-cell;
         a {
           color: $navbar-text-color;
           display: block;
@@ -151,8 +149,6 @@ ul {
           @include rgba-background($navbar-background-color, .5);
         }
       }
-    }
-    .stacked {
     }
   }
   
