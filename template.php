@@ -40,7 +40,7 @@ function latto_panels_default_style_render_region($vars) {
  * Implements theme_menu_tree() for the default main menu.
  */
 function latto_menu_tree__menu_block__1($vars) { 
-  return '<ul class="main-menu navbar inline">' . $vars['tree'] . '</ul>';
+  return '<ul class="main-menu nav nav-inline">' . $vars['tree'] . '</ul>';
 }
 
 /**
