@@ -75,16 +75,13 @@ ul {
       border-bottom: 1px solid $gray-light;
       padding-bottom: $list-item-spacing * 1.5;
       margin-bottom: $list-item-spacing * 1.5;
-      &h3.heading {
-        line-height: $list-item-spacing * 1.5;
-      }
       &div.subheading {
         margin-top: $list-item-spacing;
         margin-bottom: $list-item-spacing;
         span, a {
           margin-right: $list-item-spacing / 2;
         }
-        &.date {
+        &span.date {
           color: $gray-light;  
         }
       }
