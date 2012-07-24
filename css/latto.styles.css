@@ -696,14 +696,14 @@ and (max-width: 768px) {
     _overflow-y: visible;
   }
 }
-/* line 6, ../sass/latto.base.scss */
+/* line 7, ../sass/latto.base.scss */
 body {
   background: url("../images/default-bg-pattern.png") white;
   margin: 0;
   padding: 0;
 }
 
-/* line 12, ../sass/latto.base.scss */
+/* line 13, ../sass/latto.base.scss */
 header {
   background: url("../images/primary-pattern.png");
   overflow: hidden;
@@ -711,13 +711,13 @@ header {
   padding-top: 30px;
 }
 
-/* line 19, ../sass/latto.base.scss */
+/* line 20, ../sass/latto.base.scss */
 .logo {
   float: left;
   margin-right: 20px;
 }
 
-/* line 24, ../sass/latto.base.scss */
+/* line 25, ../sass/latto.base.scss */
 .site-name {
   color: white;
   float: left;
@@ -725,13 +725,13 @@ header {
   line-height: 100%;
 }
 
-/* line 31, ../sass/latto.base.scss */
+/* line 32, ../sass/latto.base.scss */
 .site-slogan {
   clear: left;
   color: #999999;
 }
 
-/* line 41, ../sass/latto.base.scss */
+/* line 42, ../sass/latto.base.scss */
 hr {
   background: #555555;
   color: #555555;
@@ -743,7 +743,7 @@ hr {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 43, ../sass/latto.base.scss */
+/* line 44, ../sass/latto.base.scss */
 hr.primary {
   background: #1b1b1b;
   color: #1b1b1b;
@@ -755,7 +755,7 @@ hr.primary {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 46, ../sass/latto.base.scss */
+/* line 47, ../sass/latto.base.scss */
 hr.secondary {
   background: red;
   color: red;
@@ -767,7 +767,7 @@ hr.secondary {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 49, ../sass/latto.base.scss */
+/* line 50, ../sass/latto.base.scss */
 hr.tertiary {
   background: lime;
   color: lime;
@@ -780,50 +780,70 @@ hr.tertiary {
   margin-bottom: 10px;
 }
 
-/* line 56, ../sass/latto.base.scss */
+/* line 57, ../sass/latto.base.scss */
 .nav-wrapper {
   margin-top: 20px;
 }
 
-/* line 65, ../sass/latto.base.scss */
-ul.block-list {
+/* line 66, ../sass/latto.base.scss */
+ul.list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
-/* line 69, ../sass/latto.base.scss */
-ul.block-list li {
+/* line 71, ../sass/latto.base.scss */
+ul.list li {
   border-bottom: 1px solid #999999;
-  overflow: hidden;
   padding-bottom: 15px;
-  margin: 15px 0;
+  margin-bottom: 15px;
 }
-/* line 74, ../sass/latto.base.scss */
-ul.block-list li div.block-list-subheading {
-  margin-bottom: 5px;
+/* line 75, ../sass/latto.base.scss */
+ul.list li h3.heading {
+  line-height: 15px;
 }
-/* line 76, ../sass/latto.base.scss */
-ul.block-list li div.block-list-subheading a, ul.block-list li div.block-list-subheading span {
+/* line 78, ../sass/latto.base.scss */
+ul.list li div.subheading {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 81, ../sass/latto.base.scss */
+ul.list li div.subheading span, ul.list li div.subheading a {
   margin-right: 5px;
 }
-/* line 79, ../sass/latto.base.scss */
-ul.block-list li div.block-list-subheading.date {
+/* line 84, ../sass/latto.base.scss */
+ul.list li div.subheading.date {
   color: #999999;
 }
-/* line 83, ../sass/latto.base.scss */
-ul.block-list li div.block-list-image {
-  float: left;
-  margin-right: 10px;
-}
-/* line 87, ../sass/latto.base.scss */
-ul.block-list li div.block-list-content {
-  float: left;
-}
-/* line 91, ../sass/latto.base.scss */
-ul.block-list li:first-child {
-  margin-top: 0;
+/* line 88, ../sass/latto.base.scss */
+ul.list li img {
+  width: 100%;
+  height: 100px;
 }
 /* line 97, ../sass/latto.base.scss */
+ul.floated li img {
+  display: inline-block;
+  height: 100px;
+  padding-right: 10px;
+  width: 25%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 104, ../sass/latto.base.scss */
+ul.floated li div.content {
+  display: inline-block;
+  vertical-align: top;
+  width: 75%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 115, ../sass/latto.base.scss */
+ul.simple li img, ul.simple li div.subheading, ul.simple li div.content {
+  display: none;
+}
+/* line 122, ../sass/latto.base.scss */
 ul.nav.nav-inline {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -837,7 +857,7 @@ ul.nav.nav-inline {
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   margin: 0;
 }
-/* line 104, ../sass/latto.base.scss */
+/* line 129, ../sass/latto.base.scss */
 ul.nav.nav-inline li {
   background-color: rgba(27, 27, 27, 0.25);
   zoom: 1;
@@ -846,26 +866,26 @@ ul.nav.nav-inline li {
   border-right: 1px solid rgba(27, 27, 27, 0.75);
   display: table-cell;
 }
-/* line 109, ../sass/latto.base.scss */
+/* line 134, ../sass/latto.base.scss */
 ul.nav.nav-inline li a {
   color: #eeeeee;
   display: block;
   padding: 10px 20px;
   text-decoration: none;
 }
-/* line 114, ../sass/latto.base.scss */
+/* line 139, ../sass/latto.base.scss */
 ul.nav.nav-inline li a:hover {
   color: white;
 }
-/* line 118, ../sass/latto.base.scss */
+/* line 143, ../sass/latto.base.scss */
 ul.nav.nav-inline li.first {
   border-left: 0;
 }
-/* line 121, ../sass/latto.base.scss */
+/* line 146, ../sass/latto.base.scss */
 ul.nav.nav-inline li.last {
   border-right: 1px solid rgba(27, 27, 27, 0.5);
 }
-/* line 124, ../sass/latto.base.scss */
+/* line 149, ../sass/latto.base.scss */
 ul.nav.nav-inline li.active {
   border-left: 0;
   border-right: 0;
