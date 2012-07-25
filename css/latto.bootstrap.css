@@ -1987,8 +1987,7 @@ cite {
 /* line 6, ../sass/latto.bootstrap.label.scss */
 .label,
 .badge {
-  font-size: 10.998px;
-  font-weight: bold;
+  font-size: 12.298px;
   line-height: 14px;
   color: white;
   vertical-align: baseline;
@@ -1997,7 +1996,7 @@ cite {
   background-color: #999999;
 }
 
-/* line 17, ../sass/latto.bootstrap.label.scss */
+/* line 16, ../sass/latto.bootstrap.label.scss */
 .label {
   padding: 1px 4px 2px;
   -webkit-border-radius: 3px;
@@ -2005,7 +2004,7 @@ cite {
   border-radius: 3px;
 }
 
-/* line 21, ../sass/latto.bootstrap.label.scss */
+/* line 20, ../sass/latto.bootstrap.label.scss */
 .badge {
   padding: 1px 9px 2px;
   -webkit-border-radius: 9px;
@@ -2013,59 +2012,59 @@ cite {
   border-radius: 9px;
 }
 
-/* line 29, ../sass/latto.bootstrap.label.scss */
+/* line 28, ../sass/latto.bootstrap.label.scss */
 a.label:hover, a.badge:hover {
   color: white;
   text-decoration: none;
   cursor: pointer;
 }
 
-/* line 39, ../sass/latto.bootstrap.label.scss */
+/* line 38, ../sass/latto.bootstrap.label.scss */
 .label-important, .badge-important {
   background-color: #b94a48;
 }
 
-/* line 40, ../sass/latto.bootstrap.label.scss */
+/* line 39, ../sass/latto.bootstrap.label.scss */
 .label-important[href], .badge-important[href] {
   background-color: #953b39;
 }
 
-/* line 42, ../sass/latto.bootstrap.label.scss */
+/* line 41, ../sass/latto.bootstrap.label.scss */
 .label-warning, .badge-warning {
   background-color: #f89406;
 }
 
-/* line 43, ../sass/latto.bootstrap.label.scss */
+/* line 42, ../sass/latto.bootstrap.label.scss */
 .label-warning[href], .badge-warning[href] {
   background-color: #c67605;
 }
 
-/* line 45, ../sass/latto.bootstrap.label.scss */
+/* line 44, ../sass/latto.bootstrap.label.scss */
 .label-success, .badge-success {
   background-color: #468847;
 }
 
-/* line 46, ../sass/latto.bootstrap.label.scss */
+/* line 45, ../sass/latto.bootstrap.label.scss */
 .label-success[href], .badge-success[href] {
   background-color: #356635;
 }
 
-/* line 48, ../sass/latto.bootstrap.label.scss */
+/* line 47, ../sass/latto.bootstrap.label.scss */
 .label-info, .badge-info {
   background-color: #3a87ad;
 }
 
-/* line 49, ../sass/latto.bootstrap.label.scss */
+/* line 48, ../sass/latto.bootstrap.label.scss */
 .label-info[href], .badge-info[href] {
   background-color: #2d6987;
 }
 
-/* line 51, ../sass/latto.bootstrap.label.scss */
+/* line 50, ../sass/latto.bootstrap.label.scss */
 .label-inverse, .badge-inverse {
   background-color: #333333;
 }
 
-/* line 52, ../sass/latto.bootstrap.label.scss */
+/* line 51, ../sass/latto.bootstrap.label.scss */
 .label-inverse[href], .badge-inverse[href] {
   background-color: #1a1a1a;
 }
