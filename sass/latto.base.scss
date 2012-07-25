@@ -84,7 +84,6 @@ ul {
       }
       &img {
         width: 100%;
-        height: 100px;
       }
     }
   }
@@ -93,7 +92,6 @@ ul {
     li {
       &img {
         display: inline-block;
-        height: 100px;
         padding-right: $list-item-spacing;
         width: $list-picture-width;
         @include box-sizing(border-box);
