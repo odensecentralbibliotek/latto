@@ -15,7 +15,7 @@
       <div class="grid-inner"><?php print $content['grid_16_top_full']; ?></div>
     </aside>
   </div>
-  <div class="grid-row grid-row-gutter last">
+  <div class="grid-row last">
     <div class="grid-13-left">
       <div class="grid-inner"><?php print $content['grid_13_left']; ?></div>
     </div>
