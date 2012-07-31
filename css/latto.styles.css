@@ -857,20 +857,20 @@ ul.nav.nav-inline {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
-  background-color: rgba(27, 27, 27, 0.75);
+  background-color: rgba(0, 109, 171, 0.75);
   zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF1B1B1B,endColorstr=#BF1B1B1B);
-  border-left: 1px solid rgba(27, 27, 27, 0.5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF006DAB,endColorstr=#BF006DAB);
+  border-left: 1px solid rgba(0, 109, 171, 0.5);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   margin: 0;
 }
 /* line 124, ../sass/latto.base.scss */
 ul.nav.nav-inline li {
-  background-color: rgba(27, 27, 27, 0.25);
+  background-color: rgba(0, 109, 171, 0.25);
   zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#401B1B1B,endColorstr=#401B1B1B);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#40006DAB,endColorstr=#40006DAB);
   border-left: 1px solid rgba(255, 255, 255, 0.2);
-  border-right: 1px solid rgba(27, 27, 27, 0.75);
+  border-right: 1px solid rgba(0, 109, 171, 0.75);
   display: table-cell;
 }
 /* line 129, ../sass/latto.base.scss */
@@ -890,15 +890,15 @@ ul.nav.nav-inline li.first {
 }
 /* line 141, ../sass/latto.base.scss */
 ul.nav.nav-inline li.last {
-  border-right: 1px solid rgba(27, 27, 27, 0.5);
+  border-right: 1px solid rgba(0, 109, 171, 0.5);
 }
 /* line 144, ../sass/latto.base.scss */
 ul.nav.nav-inline li.active {
   border-left: 0;
   border-right: 0;
-  background-color: rgba(27, 27, 27, 0.5);
+  background-color: rgba(0, 109, 171, 0.5);
   zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#801B1B1B,endColorstr=#801B1B1B);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80006DAB,endColorstr=#80006DAB);
 }
 
 /* line 6, ../sass/latto.panels.scss */
