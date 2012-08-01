@@ -20,6 +20,7 @@ header {
 .logo {
   float: left;
   margin-right: $default-spacing;    
+  margin-left: $default-spacing / 2;
 }
 
 .site-name {
@@ -27,11 +28,13 @@ header {
   float: left;
   font-size: 450%;
   line-height: 100%;
+  margin-left: $default-spacing / 2;
 }
 
 .site-slogan {
   clear: left;
   color: $gray-light;
+  margin-left: $default-spacing / 2;
 }
 
 
@@ -56,6 +59,8 @@ hr {
 // -------------------------
 .nav-wrapper {
   margin-top: $default-spacing;
+  padding-left: $default-spacing / 2;
+  padding-right: $default-spacing / 2;  
 }
 
 

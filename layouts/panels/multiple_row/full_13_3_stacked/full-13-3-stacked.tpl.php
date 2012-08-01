@@ -11,16 +11,16 @@
 ?>
 <div<?php if (!empty($css_id)) { print " id=\"$css_id\""; } ?>>
   <div class="grid-row">
-    <aside class="grid-full">
+    <div class="grid-full">
       <div class="grid-inner"><?php print $content['grid_16_top_full']; ?></div>
-    </aside>
+    </div>
   </div>
   <div class="grid-row last">
     <div class="grid-13-left">
       <div class="grid-inner"><?php print $content['grid_13_left']; ?></div>
     </div>
-    <div class="grid-3-right">
+    <aside class="grid-3-right">
       <div class="grid-inner"><?php print $content['grid_3_right']; ?></div>
-    </div>    
+    </aside>    
   </div>
 </div>
