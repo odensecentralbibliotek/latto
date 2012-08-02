@@ -1,6 +1,6 @@
 <?php
 $plugin['full_13_3_stacked'] = array(
-  'title' => t('Top row full, then two columns 13-3'),
+  'title' => t('Top row full, two columns 13-3'),
   'icon' => 'full_13_3_stacked.png',
   'theme' => 'full_13_3_stacked',
   'category'  => 'Latto - multiple rows, two columns',
