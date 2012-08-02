@@ -4,6 +4,7 @@
 
 @import 'latto.mixins.scss';
 @import 'compass/css3/box-sizing';
+@import 'compass/css3/box-shadow';
 
 body {
   background: $theme-background;
@@ -20,7 +21,7 @@ header {
 
 .logo {
   float: left;
-  margin-right: $default-spacing;    
+  margin-right: $default-spacing;
   margin-left: $default-spacing / 2;
 }
 
@@ -45,7 +46,7 @@ header {
 .grid-content {
   .grid-inner {
     @include rgba-background($theme-background-color,.75);
-        
+
     padding: $default-spacing;
   }
 }
@@ -55,6 +56,12 @@ header {
    Basic elements
    ========================================================================== */
 
+/* Paragraphs
+   ========================================================================== */
+
+p {
+  margin-bottom: $default-spacing / 3;
+}
 
 /* Default horizontal ruler styles
    ========================================================================== */
@@ -79,7 +86,7 @@ hr {
 .nav-wrapper {
   margin-top: $default-spacing;
   padding-left: $default-spacing / 2;
-  padding-right: $default-spacing / 2;  
+  padding-right: $default-spacing / 2;
 }
 
 
@@ -87,7 +94,47 @@ hr {
    List styling
    ========================================================================== */
 
-ul {  
+ul {
+  li {
+    h3 {
+      margin-bottom: $default-spacing / 4;      
+    }
+    p {
+      margin-bottom: $default-spacing / 4;
+    }
+  }
+  &.date-list {
+    .date-wrapper {
+      @include single-box-shadow;
+      @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+
+      display: inline-block;
+      margin-top : $default-spacing / 5;
+      margin-right: $default-spacing / 2;
+      min-width: 60px;
+
+      color: $gray;
+      font-size: $default-font-size * .9;
+      text-align: center;
+      vertical-align: top;
+      .day {
+        background-color: $theme-tertiary-color;
+        color: $white;
+        text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+      }
+      .date-wrapper-inner {
+        background: $theme-background;
+        border: 1px solid lighten($black, 85%);
+        .date {
+          font-size: $default-font-size * 1.5;
+          margin-top: $default-spacing / 4;
+        }
+      }
+    }
+    .content {
+      display: inline-block;
+    }
+  }
   &.list {
     list-style-type: none;
     margin: 0;
@@ -104,7 +151,7 @@ ul {
           margin-right: $list-item-spacing / 2;
         }
         &span.date {
-          color: $gray-light;  
+          color: $gray-light;
         }
       }
       &img {
@@ -112,11 +159,11 @@ ul {
       &.last {
         border-bottom: 0;
         margin-bottom: 0;
-/*        padding-bottom: 0;*/
+        padding-bottom: 0;
       }
     }
   }
-  
+
   &.floated {
     li {
       &img {
@@ -126,14 +173,14 @@ ul {
         @include box-sizing(border-box);
       }
       &div.content {
-        display: inline-block; 
+        display: inline-block;
         vertical-align: top;
         width: 100 - $list-picture-width;
         @include box-sizing(border-box);
       }
     }
   }
-  
+
   &.simple {
     li {
       &img, &div.subheading, &div.content {
@@ -162,11 +209,11 @@ ul {
           text-decoration: none;
           &:hover {
             color: lighten($navbar-text-color, 75%);
-          }          
+          }
         }
         &.first {
           border-left: 0;
-        }        
+        }
         &.last {
           border-right: 1px solid rgba($navbar-background-color, .5);
         }
@@ -178,7 +225,4 @@ ul {
       }
     }
   }
-  
-  
-  
 }
