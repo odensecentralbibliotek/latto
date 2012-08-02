@@ -1,5 +1,6 @@
-// Base styling
-// -------------------------
+/* ==========================================================================
+   Base styling
+   ========================================================================== */
 
 @import 'latto.mixins.scss';
 @import 'compass/css3/box-sizing';
@@ -37,11 +38,27 @@ header {
   margin-left: $default-spacing / 2;
 }
 
+/* ==========================================================================
+   Theme specific grid styling
+   ========================================================================== */
 
-// Basic elements
-// -------------------------
+.grid-content {
+  .grid-inner {
+    @include rgba-background($theme-background-color,.75);
+        
+    padding: $default-spacing;
+  }
+}
 
-// Default horizontal ruler styles.
+
+/* ==========================================================================
+   Basic elements
+   ========================================================================== */
+
+
+/* Default horizontal ruler styles
+   ========================================================================== */
+
 hr {
   @include colruler();
   &.primary {
@@ -55,8 +72,10 @@ hr {
   }
 }
 
-// Navigation
-// -------------------------
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
 .nav-wrapper {
   margin-top: $default-spacing;
   padding-left: $default-spacing / 2;
@@ -64,8 +83,9 @@ hr {
 }
 
 
-// List styling
-// -------------------------
+/* ==========================================================================
+   List styling
+   ========================================================================== */
 
 ul {  
   &.list {
@@ -74,7 +94,7 @@ ul {
     padding: 0;
     width: 100%;
     li {
-      border-bottom: 1px solid $gray-light;
+      border-bottom: 1px solid $gray-lighter;
       padding-bottom: $list-item-spacing * 1.5;
       margin-bottom: $list-item-spacing * 1.5;
       &div.subheading {
@@ -88,7 +108,11 @@ ul {
         }
       }
       &img {
-        width: 100%;
+      }
+      &.last {
+        border-bottom: 0;
+        margin-bottom: 0;
+/*        padding-bottom: 0;*/
       }
     }
   }

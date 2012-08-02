@@ -16,14 +16,14 @@
     </div>
   </div>
   <div class="grid-row grid-content last">
-    <div class="grid-10-left">
-      <div class="grid-inner"><?php print $content['grid_10_left']; ?></div>
+    <div class="grid-8-left">
+      <div class="grid-inner"><?php print $content['grid_8_left']; ?></div>
     </div>
-    <aside class="grid-3-center-right">
-      <div class="grid-inner"><?php print $content['grid_3_center_right']; ?></div>
+    <aside class="grid-4-center-right">
+      <div class="grid-inner"><?php print $content['grid_4_center_right']; ?></div>
     </aside>
-    <aside class="grid-3-right">
-      <div class="grid-inner"><?php print $content['grid_3_right']; ?></div>
+    <aside class="grid-4-right">
+      <div class="grid-inner"><?php print $content['grid_4_right']; ?></div>
     </aside>
   </div>
 </div>
