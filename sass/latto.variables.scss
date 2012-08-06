@@ -19,29 +19,31 @@ $gray-light:            #999 !default;
 $gray-lighter:          #eee !default;
 $white:                 #fff !default;
 
-// Theme variables.
+/* ==========================================================================
+   Theme variables
+   ========================================================================== */
 $theme-background-color:  $white;
 $theme-background:        url('../images/default-bg-pattern.png') $theme-background-color;
 
-
-// Font variables.
-// -------------------------
+/* ==========================================================================
+   Font variables
+   ========================================================================== */
 $default-font-size:       13px;
 $theme-line-height:       18px;
 $theme-font-family:       "Amble Light Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-
-// Text colors
-// -------------------------
+/* ==========================================================================
+   Text colors
+   ========================================================================== */
 $theme-primary-color:         #1b1b1b;
 $theme-secondary-color:       #ff0000;
 $theme-tertiary-color:        #00b7e7;
 $theme-selection-color:       $gray-lighter;
 $theme-selection-background:  $gray;
 
-
-// Links
-// -------------------------
+/* ==========================================================================
+   Links
+   ========================================================================== */
 $link-color:              #00b7e7 !default;
 $link-color-hover:        darken($link-color, 20%) !default;
 
@@ -73,20 +75,22 @@ $theme-subheader-color:   $gray-light;
 $theme-blockheader-color: $gray-light;
 
 
-// Grids and spacing
-// -------------------------
+/* ==========================================================================
+   Grids and spacing
+   ========================================================================== */
 $default-spacing: 20px;
 
 
-// Navigation
-//--------------------------
-
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
 $navbar-background-color:   #006dab;
 $navbar-text-color:         $gray-lighter;
 $navbar-item-spacing:       $default-spacing / 2 $default-spacing;
 
-// List
-//--------------------------
+/* ==========================================================================
+   List
+   ========================================================================== */
 $list-item-spacing:         10px;
 $list-picture-width:        10%;
 
