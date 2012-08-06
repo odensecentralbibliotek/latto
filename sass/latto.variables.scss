@@ -1,16 +1,20 @@
-// This file holds all the variables for the theme.
+/* ==========================================================================
+   This file holds all the variables for the theme
+   ========================================================================== */
 
-// Imports
-// -------------------------
+/* ==========================================================================
+   Imports
+   ========================================================================== */
 @import "compass/css3";
 
-// Default font
-// -------------------------
+/* ==========================================================================
+   Default font
+   ========================================================================== */
 @include font-face("Amble Light Condensed", font-files("amble/Amble-LightCondensed-webfont.woff", "amble/Amble-LightCondensed-webfont.ttf", "amble/Amble-LightCondensed-webfont.svg"), "amble/Amble-LightCondensed-webfont.eot", 'normal', 'normal');
 
-
-// Grayscale colors.
-// -------------------------
+/* ==========================================================================
+   Grayscale colors
+   ========================================================================== */
 $black:                 #000 !default;
 $gray-darker:           #222 !default;
 $gray-dark:             #333 !default;
