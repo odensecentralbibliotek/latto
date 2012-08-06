@@ -23,4 +23,15 @@
   Besides the various readme files you will find inside theme folders,
   latto provide a full overview of available markup and classes.
   This documentation can be found here: profiles/ding2/themes/latto/tools/tdcss/
+
+  # Dependencies
+  
+  Latto theme is depending on Panels Everywhere and Menu Blocks.
+  Both these modules will eventually be a part of make files in Ding 2 core.
+  But for now you have to install and enable these modules yourself.
+
+  # Use as base theme
+
+  When using latto as a submodule you can clone this as a start https://github.com/ding2tal/latto_startertheme
+  
   

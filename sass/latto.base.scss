@@ -147,14 +147,19 @@ ul {
       &div.subheading {
         margin-top: $list-item-spacing;
         margin-bottom: $list-item-spacing;
-        span, a {
+        span, a { 
           margin-right: $list-item-spacing / 2;
+          &.label {
+            color: $white;  
+          }
         }
         &span.date {
           color: $gray-light;
         }
       }
-      &img {
+      &img {       
+        height: auto;
+        width: 100%;
       }
       &.last {
         border-bottom: 0;
