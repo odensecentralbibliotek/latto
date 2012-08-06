@@ -926,7 +926,16 @@ ul.list li.last {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-/* line 174, ../sass/latto.base.scss */
+/* line 173, ../sass/latto.base.scss */
+ul.floated li {
+  letter-spacing: -4px;
+  /* Fix for the white letter next to li elements */
+}
+/* line 175, ../sass/latto.base.scss */
+ul.floated li div, ul.floated li p, ul.floated li a, ul.floated li span {
+  letter-spacing: normal;
+}
+/* line 178, ../sass/latto.base.scss */
 ul.floated li img {
   display: inline-block;
   padding-right: 10px;
@@ -935,7 +944,7 @@ ul.floated li img {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 180, ../sass/latto.base.scss */
+/* line 184, ../sass/latto.base.scss */
 ul.floated li div.content {
   display: inline-block;
   vertical-align: top;
@@ -944,11 +953,11 @@ ul.floated li div.content {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 191, ../sass/latto.base.scss */
+/* line 195, ../sass/latto.base.scss */
 ul.simple li img, ul.simple li div.subheading, ul.simple li div.content {
   display: none;
 }
-/* line 198, ../sass/latto.base.scss */
+/* line 202, ../sass/latto.base.scss */
 ul.nav.nav-inline {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -962,7 +971,7 @@ ul.nav.nav-inline {
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   margin: 0;
 }
-/* line 205, ../sass/latto.base.scss */
+/* line 209, ../sass/latto.base.scss */
 ul.nav.nav-inline li {
   background-color: rgba(0, 109, 171, 0.25);
   zoom: 1;
@@ -971,26 +980,26 @@ ul.nav.nav-inline li {
   border-right: 1px solid rgba(0, 109, 171, 0.75);
   display: table-cell;
 }
-/* line 210, ../sass/latto.base.scss */
+/* line 214, ../sass/latto.base.scss */
 ul.nav.nav-inline li a {
   color: #eeeeee;
   display: block;
   padding: 10px 20px;
   text-decoration: none;
 }
-/* line 215, ../sass/latto.base.scss */
+/* line 219, ../sass/latto.base.scss */
 ul.nav.nav-inline li a:hover {
   color: white;
 }
-/* line 219, ../sass/latto.base.scss */
+/* line 223, ../sass/latto.base.scss */
 ul.nav.nav-inline li.first {
   border-left: 0;
 }
-/* line 222, ../sass/latto.base.scss */
+/* line 226, ../sass/latto.base.scss */
 ul.nav.nav-inline li.last {
   border-right: 1px solid rgba(0, 109, 171, 0.5);
 }
-/* line 225, ../sass/latto.base.scss */
+/* line 229, ../sass/latto.base.scss */
 ul.nav.nav-inline li.active {
   border-left: 0;
   border-right: 0;

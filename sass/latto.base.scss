@@ -171,6 +171,10 @@ ul {
 
   &.floated {
     li {
+      letter-spacing: -4px; /* Fix for the white letter next to li elements */
+      div, p, a, span {
+        letter-spacing: normal;
+      }
       &img {
         display: inline-block;
         padding-right: $list-item-spacing;
