@@ -20,15 +20,7 @@ function latto_default_page_manager_handlers() {
     'contexts' => array(),
     'relationships' => array(),
     'access' => array(
-      'plugins' => array(
-        0 => array(
-          'name' => 'theme',
-          'settings' => array(
-            'theme' => 'latto',
-          ),
-          'not' => FALSE,
-        ),
-      ),
+      'plugins' => array(),
       'logic' => 'and',
     ),
     'panels_breadcrumbs_state' => 0,
