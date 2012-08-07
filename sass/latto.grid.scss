@@ -5,6 +5,9 @@
 $zen-column-count: 16;
 $zen-gutter-width: $default-spacing;
 
+/* See: http://zengrids.com/help/#vars-legacy */
+$box-sizing-polyfill-path: '../scripts/boxsizing.htc';
+
 #page {
   @include zen-grid-container; // Apply this mixin to the container.
 }

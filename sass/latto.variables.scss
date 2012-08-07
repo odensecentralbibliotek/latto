@@ -16,11 +16,9 @@
    Grayscale colors
    ========================================================================== */
 $black:                 #000 !default;
-$gray-darker:           #222 !default;
 $gray-dark:             #333 !default;
 $gray:                  #555 !default;
 $gray-light:            #999 !default;
-$gray-lighter:          #eee !default;
 $white:                 #fff !default;
 
 /* ==========================================================================
@@ -42,7 +40,7 @@ $theme-font-family:       "Amble Light Condensed", "Helvetica Neue", Helvetica, 
 $theme-primary-color:         #1b1b1b;
 $theme-secondary-color:       #ff0000;
 $theme-tertiary-color:        #00b7e7;
-$theme-selection-color:       $gray-lighter;
+$theme-selection-color:       lighten($gray-light, 25%);
 $theme-selection-background:  $gray;
 
 /* ==========================================================================
@@ -89,7 +87,7 @@ $default-spacing: 20px;
    Navigation
    ========================================================================== */
 $navbar-background-color:   #006dab;
-$navbar-text-color:         $gray-lighter;
+$navbar-text-color:         lighten($gray-light, 25%);
 $navbar-item-spacing:       $default-spacing / 2 $default-spacing;
 
 /* ==========================================================================
@@ -97,55 +95,3 @@ $navbar-item-spacing:       $default-spacing / 2 $default-spacing;
    ========================================================================== */
 $list-item-spacing:         10px;
 $list-picture-width:        10%;
-
-
-/*
-
-#Theme elements
-background
-header background
-logo
-menu background
-menu colors
-submenu background
-submenu colors
-breadcrumb background
-breadcrumb colors
-block background
-block colors
-block inverse background
-block inverse colors
-content background
-content colors
-image border
-footer background
-footer colors
-
-#Text elements
-
-h1: header
-h2: subheader
-
-h2 -> block: blockheader
-
-h3, h4, h5
-
-h6
-
-a: inline
-
-a: read-more
-
-p
-
-p: manchet
-
-#Other elements
-
-btn: background
-
-btn: text
-
-
-
-*/

@@ -39,56 +39,6 @@
 /* ==========================================================================
    List
    ========================================================================== */
-/*
-
-#Theme elements
-background
-header background
-logo
-menu background
-menu colors
-submenu background
-submenu colors
-breadcrumb background
-breadcrumb colors
-block background
-block colors
-block inverse background
-block inverse colors
-content background
-content colors
-image border
-footer background
-footer colors
-
-#Text elements
-
-h1: header
-h2: subheader
-
-h2 -> block: blockheader
-
-h3, h4, h5
-
-h6
-
-a: inline
-
-a: read-more
-
-p
-
-p: manchet
-
-#Other elements
-
-btn: background
-
-btn: text
-
-
-
-*/
 /* ==========================================================================
    This file holds all the variables for the theme
    ========================================================================== */
@@ -130,56 +80,6 @@ btn: text
 /* ==========================================================================
    List
    ========================================================================== */
-/*
-
-#Theme elements
-background
-header background
-logo
-menu background
-menu colors
-submenu background
-submenu colors
-breadcrumb background
-breadcrumb colors
-block background
-block colors
-block inverse background
-block inverse colors
-content background
-content colors
-image border
-footer background
-footer colors
-
-#Text elements
-
-h1: header
-h2: subheader
-
-h2 -> block: blockheader
-
-h3, h4, h5
-
-h6
-
-a: inline
-
-a: read-more
-
-p
-
-p: manchet
-
-#Other elements
-
-btn: background
-
-btn: text
-
-
-
-*/
 /* line 5, ../sass/latto.typography.scss */
 body {
   color: #1b1b1b;
@@ -190,25 +90,25 @@ body {
 
 /* line 39, ../sass/latto.mixins.scss */
 ::-webkit-selection {
-  color: #eeeeee;
+  color: #d9d9d9;
   background: #555555;
 }
 
 /* line 39, ../sass/latto.mixins.scss */
 ::-moz-selection {
-  color: #eeeeee;
+  color: #d9d9d9;
   background: #555555;
 }
 
 /* line 39, ../sass/latto.mixins.scss */
 ::-o-selection {
-  color: #eeeeee;
+  color: #d9d9d9;
   background: #555555;
 }
 
 /* line 39, ../sass/latto.mixins.scss */
 ::selection {
-  color: #eeeeee;
+  color: #d9d9d9;
   background: #555555;
 }
 
@@ -308,7 +208,8 @@ a:active {
   font-size: 19.5px;
 }
 
-/* line 8, ../sass/latto.grid.scss */
+/* See: http://zengrids.com/help/#vars-legacy */
+/* line 11, ../sass/latto.grid.scss */
 #page {
   *position: relative;
   *zoom: 1;
@@ -323,14 +224,14 @@ a:active {
   clear: both;
 }
 
-/* line 12, ../sass/latto.grid.scss */
+/* line 15, ../sass/latto.grid.scss */
 .grid-inner {
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
 }
 
-/* line 18, ../sass/latto.grid.scss */
+/* line 21, ../sass/latto.grid.scss */
 .grid-3-left {
   float: left;
   width: 18.75%;
@@ -343,12 +244,13 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  *behavior: url("../scripts/boxsizing.htc");
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
 }
 
-/* line 22, ../sass/latto.grid.scss */
+/* line 25, ../sass/latto.grid.scss */
 .grid-3-center-left {
   float: left;
   width: 18.75%;
@@ -361,12 +263,13 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  *behavior: url("../scripts/boxsizing.htc");
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
 }
 
-/* line 26, ../sass/latto.grid.scss */
+/* line 29, ../sass/latto.grid.scss */
 .grid-3-center-right {
   float: right;
   width: 18.75%;
@@ -379,12 +282,13 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  *behavior: url("../scripts/boxsizing.htc");
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
 }
 
-/* line 30, ../sass/latto.grid.scss */
+/* line 33, ../sass/latto.grid.scss */
 .grid-3-right {
   float: right;
   width: 18.75%;
@@ -397,12 +301,13 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  *behavior: url("../scripts/boxsizing.htc");
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
 }
 
-/* line 34, ../sass/latto.grid.scss */
+/* line 37, ../sass/latto.grid.scss */
 .grid-4-left {
   float: left;
   width: 25%;
@@ -415,12 +320,13 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  *behavior: url("../scripts/boxsizing.htc");
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
 }
 
-/* line 38, ../sass/latto.grid.scss */
+/* line 41, ../sass/latto.grid.scss */
 .grid-4-center-left {
   float: left;
   width: 25%;
@@ -433,12 +339,13 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  *behavior: url("../scripts/boxsizing.htc");
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
 }
 
-/* line 42, ../sass/latto.grid.scss */
+/* line 45, ../sass/latto.grid.scss */
 .grid-4-center-right {
   float: left;
   width: 25%;
@@ -451,12 +358,13 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  *behavior: url("../scripts/boxsizing.htc");
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
 }
 
-/* line 46, ../sass/latto.grid.scss */
+/* line 49, ../sass/latto.grid.scss */
 .grid-4-right {
   float: right;
   width: 25%;
@@ -469,12 +377,13 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  *behavior: url("../scripts/boxsizing.htc");
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
 }
 
-/* line 50, ../sass/latto.grid.scss */
+/* line 53, ../sass/latto.grid.scss */
 .grid-8-left {
   float: left;
   width: 50%;
@@ -487,12 +396,13 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  *behavior: url("../scripts/boxsizing.htc");
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
 }
 
-/* line 54, ../sass/latto.grid.scss */
+/* line 57, ../sass/latto.grid.scss */
 .grid-8-right {
   float: right;
   width: 50%;
@@ -505,12 +415,13 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  *behavior: url("../scripts/boxsizing.htc");
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
 }
 
-/* line 58, ../sass/latto.grid.scss */
+/* line 61, ../sass/latto.grid.scss */
 .grid-10-left {
   float: left;
   width: 62.5%;
@@ -523,12 +434,13 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  *behavior: url("../scripts/boxsizing.htc");
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
 }
 
-/* line 62, ../sass/latto.grid.scss */
+/* line 65, ../sass/latto.grid.scss */
 .grid-10-center {
   float: left;
   width: 62.5%;
@@ -541,12 +453,13 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  *behavior: url("../scripts/boxsizing.htc");
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
 }
 
-/* line 66, ../sass/latto.grid.scss */
+/* line 69, ../sass/latto.grid.scss */
 .grid-10-right {
   float: right;
   width: 62.5%;
@@ -559,12 +472,13 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  *behavior: url("../scripts/boxsizing.htc");
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
 }
 
-/* line 70, ../sass/latto.grid.scss */
+/* line 73, ../sass/latto.grid.scss */
 .grid-12-left {
   float: left;
   width: 75%;
@@ -577,12 +491,13 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  *behavior: url("../scripts/boxsizing.htc");
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
 }
 
-/* line 74, ../sass/latto.grid.scss */
+/* line 77, ../sass/latto.grid.scss */
 .grid-12-right {
   float: right;
   width: 75%;
@@ -595,12 +510,13 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  *behavior: url("../scripts/boxsizing.htc");
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
 }
 
-/* line 78, ../sass/latto.grid.scss */
+/* line 81, ../sass/latto.grid.scss */
 .grid-13-left {
   float: left;
   width: 81.25%;
@@ -613,12 +529,13 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  *behavior: url("../scripts/boxsizing.htc");
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
 }
 
-/* line 82, ../sass/latto.grid.scss */
+/* line 85, ../sass/latto.grid.scss */
 .grid-13-right {
   float: right;
   width: 81.25%;
@@ -631,12 +548,13 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  *behavior: url("../scripts/boxsizing.htc");
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
 }
 
-/* line 86, ../sass/latto.grid.scss */
+/* line 89, ../sass/latto.grid.scss */
 .grid-full {
   clear: both;
   float: left;
@@ -650,27 +568,28 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  *behavior: url("../scripts/boxsizing.htc");
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
 }
 
-/* line 91, ../sass/latto.grid.scss */
+/* line 94, ../sass/latto.grid.scss */
 .grid-clear-both {
   clear: both;
 }
 
-/* line 95, ../sass/latto.grid.scss */
+/* line 98, ../sass/latto.grid.scss */
 .grid-clear-left {
   clear: left;
 }
 
-/* line 99, ../sass/latto.grid.scss */
+/* line 102, ../sass/latto.grid.scss */
 .grid-clear-right {
   clear: right;
 }
 
-/* line 103, ../sass/latto.grid.scss */
+/* line 106, ../sass/latto.grid.scss */
 .grid-stack {
   clear: both;
   float: left;
@@ -684,33 +603,34 @@ a:active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+  *behavior: url("../scripts/boxsizing.htc");
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
 }
 
-/* line 108, ../sass/latto.grid.scss */
+/* line 111, ../sass/latto.grid.scss */
 .grid-row {
   clear: both;
   margin-bottom: 20px;
 }
-/* line 111, ../sass/latto.grid.scss */
+/* line 114, ../sass/latto.grid.scss */
 .grid-row.last {
   margin-bottom: 0;
 }
 
-/* line 123, ../sass/latto.grid.scss */
+/* line 126, ../sass/latto.grid.scss */
 .add-spacing-after {
   margin-bottom: 1em;
 }
 
-/* line 129, ../sass/latto.grid.scss */
+/* line 132, ../sass/latto.grid.scss */
 .tdcss-fragment .grid-row .grid-inner {
   background-color: #f1f1f1;
   border: 1px dashed #e1e1e1;
   padding: .5em;
 }
-/* line 134, ../sass/latto.grid.scss */
+/* line 137, ../sass/latto.grid.scss */
 .tdcss-fragment .grid-row:after {
   clear: both;
   content: "";
@@ -719,12 +639,12 @@ a:active {
 
 @media screen
 and (max-width: 768px) {
-  /* line 144, ../sass/latto.grid.scss */
+  /* line 147, ../sass/latto.grid.scss */
   body {
     background-color: red;
   }
 
-  /* line 148, ../sass/latto.grid.scss */
+  /* line 151, ../sass/latto.grid.scss */
   .content {
     clear: both;
     float: left;
@@ -738,12 +658,13 @@ and (max-width: 768px) {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    *behavior: url("../scripts/boxsizing.htc");
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
   }
 
-  /* line 153, ../sass/latto.grid.scss */
+  /* line 156, ../sass/latto.grid.scss */
   .sidebar-first {
     clear: both;
     float: left;
@@ -757,12 +678,13 @@ and (max-width: 768px) {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    *behavior: url("../scripts/boxsizing.htc");
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
   }
 
-  /* line 158, ../sass/latto.grid.scss */
+  /* line 161, ../sass/latto.grid.scss */
   .sidebar-second {
     float: right;
     width: 50%;
@@ -775,6 +697,7 @@ and (max-width: 768px) {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    *behavior: url("../scripts/boxsizing.htc");
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
@@ -960,7 +883,7 @@ ul.list {
 }
 /* line 143, ../sass/latto.base.scss */
 ul.list li {
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #d9d9d9;
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
@@ -1039,7 +962,7 @@ ul.nav.nav-inline li {
 }
 /* line 210, ../sass/latto.base.scss */
 ul.nav.nav-inline li a {
-  color: #eeeeee;
+  color: #d9d9d9;
   display: block;
   padding: 10px 20px;
   text-decoration: none;
