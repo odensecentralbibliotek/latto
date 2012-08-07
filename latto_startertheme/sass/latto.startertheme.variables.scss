@@ -1,0 +1,111 @@
+/* ==========================================================================
+   This file holds all the variables for the theme
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Imports
+   ========================================================================== */
+@import "compass/css3";
+
+
+/* ==========================================================================
+   Default font
+   ========================================================================== */
+@include font-face("Amble Light Condensed", font-files("amble/Amble-LightCondensed-webfont.woff", "amble/Amble-LightCondensed-webfont.ttf", "amble/Amble-LightCondensed-webfont.svg"), "amble/Amble-LightCondensed-webfont.eot", 'normal', 'normal');
+
+
+/* ==========================================================================
+   Grayscale colors
+   ========================================================================== */
+$black:                 #000 !default;
+$gray-dark:             #333 !default;
+$gray:                  #555 !default;
+$gray-light:            #999 !default;
+$white:                 #fff !default;
+
+
+/* ==========================================================================
+   Theme variables
+   ========================================================================== */
+$theme-background-color:  $white;
+$theme-background:        url('../images/default-bg-pattern.png') $theme-background-color;
+
+
+/* ==========================================================================
+   Font variables
+   ========================================================================== */
+$default-font-size:       13px;
+$theme-line-height:       18px;
+$theme-font-family:       "Amble Light Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+/* ==========================================================================
+   Headers
+   ========================================================================== */
+$header-font-size: 30px;
+
+
+/* ==========================================================================
+   Text colors
+   ========================================================================== */
+$theme-primary-color:         #1b1b1b;
+$theme-secondary-color:       #ff0000;
+$theme-tertiary-color:        #00b7e7;
+$theme-selection-color:       lighten($gray-light, 25%);
+$theme-selection-background:  $gray;
+
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+$link-color:              #00b7e7 !default;
+$link-color-hover:        darken($link-color, 20%) !default;
+
+
+$theme-header-background: $theme-secondary-color;
+
+$theme-breadcrumb-background: transparent;
+$theme-breadcrumb-border-bottom: 1px solid $gray-light;
+
+$theme-block-background:  $gray-light;
+$theme-block-color:       $gray-light;
+$theme-block-color-hover: $gray-light;
+$theme-block-inverse-background: $gray-light;
+$theme-block-inverse-color: $gray-light;
+
+$theme-content-background:  $gray-light;
+$theme-content-color:       $gray-light;
+
+$theme-image-border:        $gray-light;
+
+$theme-footer-background:   $gray-light;
+$theme-footer-color:        $gray-light;
+$theme-footer-color-hover:  $gray-light;
+
+$theme-header-color:      $gray-light;
+
+$theme-subheader-color:   $gray-light;
+
+$theme-blockheader-color: $gray-light;
+
+
+/* ==========================================================================
+   Grids and spacing
+   ========================================================================== */
+$default-spacing: 20px;
+
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+$navbar-background-color:   #006dab;
+$navbar-text-color:         lighten($gray-light, 25%);
+$navbar-item-spacing:       $default-spacing / 2 $default-spacing;
+
+
+/* ==========================================================================
+   List
+   ========================================================================== */
+$list-item-spacing:         10px;
+$list-picture-width:        10%;

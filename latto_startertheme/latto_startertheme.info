@@ -1,0 +1,9 @@
+;----------// Theme Information
+  name        = latto startertheme
+  description = Ding2tal them based on the latto theme.
+  core        = 7.x
+  release     = 7.x-1.x
+  screenshot  = screenshot.png
+  base theme  = latto
+
+  stylesheets[all][] = css/latto.startertheme.styles.css
