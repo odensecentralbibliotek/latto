@@ -7,13 +7,13 @@
 @import 'compass/css3/box-shadow';
 
 body {
-  background: $theme-background;
+  background: $theme-background-pattern $theme-background-color;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background: url('../images/primary-pattern.png');
+  background: $theme-header-pattern;
   overflow: hidden;
   padding-bottom: $default-spacing * 1.5;
   padding-top: $default-spacing * 1.5;
@@ -69,13 +69,13 @@ p {
 hr {
   @include colruler();
   &.primary {
-    @include colruler($theme-primary-color);
+    @include colruler($gray-light);
   }
   &.secondary {
-    @include colruler($theme-secondary-color);
+    @include colruler($gray-light);
   }
   &.tertiary {
-    @include colruler($theme-tertiary-color);
+    @include colruler($gray-light);
   }
 }
 
@@ -114,19 +114,19 @@ ul {
       min-width: 60px;
 
       color: $gray;
-      font-size: $default-font-size * .9;
+      font-size: $theme-font-size * .9;
       text-align: center;
       vertical-align: top;
       .day {
-        background-color: $theme-tertiary-color;
+        background-color: $theme-secondary-color;
         color: $white;
         text-shadow: 0 -1px 0 rgba(0,0,0,.25);
       }
       .date-wrapper-inner {
-        background: $theme-background;
+        background: $theme-primary-color;
         border: 1px solid lighten($black, 85%);
         .date {
-          font-size: $default-font-size * 1.5;
+          font-size: $theme-font-size * 1.5;
           margin-top: $default-spacing / 4;
         }
       }
@@ -144,7 +144,7 @@ ul {
       border-bottom: 1px solid lighten($gray-light, 25%);
       padding-bottom: $list-item-spacing * 1.5;
       margin-bottom: $list-item-spacing * 1.5;
-      &div.subheading {
+      .subheading {
         margin-top: $list-item-spacing;
         margin-bottom: $list-item-spacing;
         span, a { 
@@ -153,11 +153,11 @@ ul {
             color: $white;  
           }
         }
-        &span.date {
+        .date {
           color: $gray-light;
         }
       }
-      &img {       
+      img {       
         height: auto;
         width: 100%;
       }
@@ -175,13 +175,13 @@ ul {
       div, p, a, span {
         letter-spacing: normal;
       }
-      &img {
+      img {
         display: inline-block;
         padding-right: $list-item-spacing;
         width: $list-picture-width;
         @include box-sizing(border-box);
       }
-      &div.content {
+      .content {
         display: inline-block;
         vertical-align: top;
         width: 100 - $list-picture-width;
@@ -192,7 +192,9 @@ ul {
 
   &.simple {
     li {
-      &img, &div.subheading, &div.content {
+      img,
+      .subheading,
+      .content {
         display: none;
       }
     }

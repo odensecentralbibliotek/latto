@@ -25,10 +25,16 @@
    Font variables
    ========================================================================== */
 /* ==========================================================================
+   Headers
+   ========================================================================== */
+/* ==========================================================================
    Text colors
    ========================================================================== */
 /* ==========================================================================
    Links
+   ========================================================================== */
+/* ==========================================================================
+   Blocks
    ========================================================================== */
 /* ==========================================================================
    Grids and spacing
@@ -66,10 +72,16 @@
    Font variables
    ========================================================================== */
 /* ==========================================================================
+   Headers
+   ========================================================================== */
+/* ==========================================================================
    Text colors
    ========================================================================== */
 /* ==========================================================================
    Links
+   ========================================================================== */
+/* ==========================================================================
+   Blocks
    ========================================================================== */
 /* ==========================================================================
    Grids and spacing
@@ -88,6 +100,7 @@ body {
   line-height: 18px;
 }
 
+/* Colors for ::selection */
 /* line 39, ../sass/latto.mixins.scss */
 ::-webkit-selection {
   color: #d9d9d9;
@@ -112,7 +125,7 @@ body {
   background: #555555;
 }
 
-/* line 24, ../sass/latto.typography.scss */
+/* line 23, ../sass/latto.typography.scss */
 h1,
 h2,
 h3,
@@ -121,89 +134,89 @@ h5,
 h6 {
   font-weight: normal;
 }
-/* line 27, ../sass/latto.typography.scss */
+/* line 26, ../sass/latto.typography.scss */
 h1 a:link,
 h2 a:link,
 h3 a:link,
 h4 a:link,
 h5 a:link,
 h6 a:link {
-  color: rgba(27, 27, 27, 0.75);
+  color: rgba(255, 255, 255, 0.75);
   text-decoration: none;
 }
-/* line 31, ../sass/latto.typography.scss */
+/* line 30, ../sass/latto.typography.scss */
 h1 a:visited,
 h2 a:visited,
 h3 a:visited,
 h4 a:visited,
 h5 a:visited,
 h6 a:visited {
-  color: rgba(27, 27, 27, 0.85);
+  color: rgba(255, 255, 255, 0.85);
 }
-/* line 34, ../sass/latto.typography.scss */
+/* line 33, ../sass/latto.typography.scss */
 h1 a:hover,
 h2 a:hover,
 h3 a:hover,
 h4 a:hover,
 h5 a:hover,
 h6 a:hover {
-  color: #1b1b1b;
+  color: white;
 }
 
-/* line 40, ../sass/latto.typography.scss */
+/* line 39, ../sass/latto.typography.scss */
 h1 {
-  color: #1b1b1b;
+  color: white;
 }
 
-/* line 44, ../sass/latto.typography.scss */
+/* line 43, ../sass/latto.typography.scss */
 h3 {
   line-height: 22.5px;
 }
 
-/* line 52, ../sass/latto.typography.scss */
+/* line 51, ../sass/latto.typography.scss */
 a:link {
   color: #00b7e7;
   text-decoration: none;
 }
-/* line 56, ../sass/latto.typography.scss */
+/* line 55, ../sass/latto.typography.scss */
 a:visited {
   color: #007a9b;
 }
-/* line 59, ../sass/latto.typography.scss */
+/* line 58, ../sass/latto.typography.scss */
 a:hover {
   color: #006681;
   text-decoration: underline;
 }
-/* line 63, ../sass/latto.typography.scss */
+/* line 62, ../sass/latto.typography.scss */
 a:focus {
   color: #006681;
 }
-/* line 66, ../sass/latto.typography.scss */
+/* line 65, ../sass/latto.typography.scss */
 a:active {
   color: black;
 }
 
-/* line 84, ../sass/latto.typography.scss */
+/* line 83, ../sass/latto.typography.scss */
 .small {
   font-size: 6.5px;
 }
 
-/* line 88, ../sass/latto.typography.scss */
+/* line 87, ../sass/latto.typography.scss */
 .medium {
   font-size: 9.75px;
 }
 
-/* line 92, ../sass/latto.typography.scss */
+/* line 91, ../sass/latto.typography.scss */
 .big {
   font-size: 16.25px;
 }
 
-/* line 96, ../sass/latto.typography.scss */
+/* line 95, ../sass/latto.typography.scss */
 .bigger {
   font-size: 17.875px;
 }
 
-/* line 100, ../sass/latto.typography.scss */
+/* line 99, ../sass/latto.typography.scss */
 .biggest {
   font-size: 19.5px;
 }
@@ -781,8 +794,8 @@ hr {
 }
 /* line 71, ../sass/latto.base.scss */
 hr.primary {
-  background: #1b1b1b;
-  color: #1b1b1b;
+  background: #999999;
+  color: #999999;
   clear: both;
   float: none;
   width: 100%;
@@ -793,8 +806,8 @@ hr.primary {
 }
 /* line 74, ../sass/latto.base.scss */
 hr.secondary {
-  background: red;
-  color: red;
+  background: #999999;
+  color: #999999;
   clear: both;
   float: none;
   width: 100%;
@@ -805,8 +818,8 @@ hr.secondary {
 }
 /* line 77, ../sass/latto.base.scss */
 hr.tertiary {
-  background: #00b7e7;
-  color: #00b7e7;
+  background: #999999;
+  color: #999999;
   clear: both;
   float: none;
   width: 100%;
@@ -862,7 +875,7 @@ ul.date-list .date-wrapper .day {
 }
 /* line 125, ../sass/latto.base.scss */
 ul.date-list .date-wrapper .date-wrapper-inner {
-  background: url("../images/default-bg-pattern.png") white;
+  background: white;
   border: 1px solid #d9d9d9;
 }
 /* line 128, ../sass/latto.base.scss */
@@ -888,20 +901,20 @@ ul.list li {
   margin-bottom: 15px;
 }
 /* line 147, ../sass/latto.base.scss */
-ul.list li div.subheading {
+ul.list li .subheading {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 /* line 150, ../sass/latto.base.scss */
-ul.list li div.subheading span, ul.list li div.subheading a {
+ul.list li .subheading span, ul.list li .subheading a {
   margin-right: 5px;
 }
 /* line 152, ../sass/latto.base.scss */
-ul.list li div.subheading span.label, ul.list li div.subheading a.label {
+ul.list li .subheading span.label, ul.list li .subheading a.label {
   color: white;
 }
 /* line 156, ../sass/latto.base.scss */
-ul.list li div.subheading span.date {
+ul.list li .subheading .date {
   color: #999999;
 }
 /* line 160, ../sass/latto.base.scss */
@@ -934,7 +947,7 @@ ul.floated li img {
   box-sizing: border-box;
 }
 /* line 184, ../sass/latto.base.scss */
-ul.floated li div.content {
+ul.floated li .content {
   display: inline-block;
   vertical-align: top;
   width: 90%;
@@ -942,11 +955,13 @@ ul.floated li div.content {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 195, ../sass/latto.base.scss */
-ul.simple li img, ul.simple li div.subheading, ul.simple li div.content {
+/* line 197, ../sass/latto.base.scss */
+ul.simple li img,
+ul.simple li .subheading,
+ul.simple li .content {
   display: none;
 }
-/* line 202, ../sass/latto.base.scss */
+/* line 204, ../sass/latto.base.scss */
 ul.nav.nav-inline {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -960,7 +975,7 @@ ul.nav.nav-inline {
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   margin: 0;
 }
-/* line 209, ../sass/latto.base.scss */
+/* line 211, ../sass/latto.base.scss */
 ul.nav.nav-inline li {
   background-color: rgba(0, 109, 171, 0.25);
   zoom: 1;
@@ -969,26 +984,26 @@ ul.nav.nav-inline li {
   border-right: 1px solid rgba(0, 109, 171, 0.75);
   display: table-cell;
 }
-/* line 214, ../sass/latto.base.scss */
+/* line 216, ../sass/latto.base.scss */
 ul.nav.nav-inline li a {
   color: #d9d9d9;
   display: block;
   padding: 10px 20px;
   text-decoration: none;
 }
-/* line 219, ../sass/latto.base.scss */
+/* line 221, ../sass/latto.base.scss */
 ul.nav.nav-inline li a:hover {
   color: white;
 }
-/* line 223, ../sass/latto.base.scss */
+/* line 225, ../sass/latto.base.scss */
 ul.nav.nav-inline li.first {
   border-left: 0;
 }
-/* line 226, ../sass/latto.base.scss */
+/* line 228, ../sass/latto.base.scss */
 ul.nav.nav-inline li.last {
   border-right: 1px solid rgba(0, 109, 171, 0.5);
 }
-/* line 229, ../sass/latto.base.scss */
+/* line 231, ../sass/latto.base.scss */
 ul.nav.nav-inline li.active {
   border-left: 0;
   border-right: 0;
