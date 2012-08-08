@@ -28,35 +28,35 @@ $white:                 #fff !default;
 /* ==========================================================================
    Theme variables
    ========================================================================== */
-$theme-primary-color:       #fff;
-$theme-secondary-color:     #00b7e7;
-$theme-background-color:    #fff;
-$theme-background-pattern:  url('../images/default-bg-pattern.png');
-$theme-header-background:   #1b1b1b;
-$theme-header-pattern:      url('../images/primary-pattern.png');
+$theme-primary-color:       #fff !default;
+$theme-secondary-color:     #00b7e7 !default;
+$theme-background-color:    #fff !default;
+$theme-background-pattern:  url('../images/default-bg-pattern.png') !default;
+$theme-header-background:   #1b1b1b !default;
+$theme-header-pattern:      url('../images/primary-pattern.png') !default;
 
 
 /* ==========================================================================
    Font variables
    ========================================================================== */
-$theme-font-size:     13px;
-$theme-line-height:   18px;
-$theme-font-family:   "Amble Light Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$theme-font-size:     13px !default;
+$theme-line-height:   18px !default;
+$theme-font-family:   "Amble Light Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 
 /* ==========================================================================
    Headers
    ========================================================================== */
-$header-font-size:  30px;
-$header-text-color: #1b1b1b;
+$header-font-size:  30px !default;
+$header-text-color: #1b1b1b !default;
 
 
 /* ==========================================================================
    Text colors
    ========================================================================== */
-$text-primary-color:         #1b1b1b;
-$text-selection-color:       lighten($gray-light, 25%);
-$text-selection-background:  $gray;
+$text-primary-color:         #1b1b1b !default;
+$text-selection-color:       lighten($gray-light, 25%) !default;
+$text-selection-background:  $gray !default;
 
 
 /* ==========================================================================
@@ -69,28 +69,28 @@ $link-color-hover:        darken($link-color, 20%) !default;
 /* ==========================================================================
    Blocks
    ========================================================================== */
-$theme-block-color:         lighten($text-primary-color, 25%);
-$theme-block-background:    $theme-primary-color;
-$theme-block-inverse-color: $theme-primary-color;
-$theme-block-inverse-background: $theme-secondary-color;
+$theme-block-color:         lighten($text-primary-color, 25%) !default;
+$theme-block-background:    $theme-primary-color !default;
+$theme-block-inverse-color: $theme-primary-color !default;
+$theme-block-inverse-background: $theme-secondary-color !default;
 
 
 /* ==========================================================================
    Grids and spacing
    ========================================================================== */
-$default-spacing: 20px;
+$default-spacing: 20px !default;
 
 
 /* ==========================================================================
    Navigation
    ========================================================================== */
-$navbar-background-color:   #006dab;
-$navbar-text-color:         lighten($gray-light, 25%);
-$navbar-item-spacing:       $default-spacing / 2 $default-spacing;
+$navbar-background-color:   #006dab !default;
+$navbar-text-color:         lighten($gray-light, 25%) !default;
+$navbar-item-spacing:       $default-spacing / 2 $default-spacing !default;
 
 
 /* ==========================================================================
    List
    ========================================================================== */
-$list-item-spacing:         10px;
-$list-picture-width:        10%;
+$list-item-spacing:         10px !default;
+$list-picture-width:        10% !default;

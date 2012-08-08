@@ -89,6 +89,15 @@ hr {
   padding-right: $default-spacing / 2;
 }
 
+/* ==========================================================================
+   Bootstrap overwrites
+   ========================================================================== */
+
+.label-info,
+.badge-info {
+  color: $theme-primary-color;
+  background-color: $theme-secondary-color;
+}
 
 /* ==========================================================================
    List styling
