@@ -12,6 +12,61 @@
  *    stylesheets for Internet Explorer and a browser detection script to add body classes.
  */
 
+global $theme_key, $path_to_latto_core;
+$theme_key = $GLOBALS['theme_key'];
+$path_to_latto_core = drupal_get_path('theme', 'latto');
+
+/**
+ * Preprocess variables for html.tpl.php
+ */
+function latto_preprocess_html(&$vars) {
+  global $theme_key, $language;
+  $theme_name = $theme_key;
+
+  // Set variable for the base path
+  $vars['base_path'] = base_path();
+
+  // Get the info file data
+  //$info = latto_get_info($theme_name);
+
+  // Clean up the lang attributes.
+  $vars['html_attributes'] = 'lang="' . $language->language . '" dir="' . $language->dir . '"';
+
+  
+  // Build an array of polyfilling scripts
+  $vars['polyfills_array'] = '';
+  $vars['polyfills_array'] = load_polyfills($theme_name, $vars);
+  
+}
+
+/**
+ * Process variables for html.tpl.php
+ */
+function latto_process_html(&$vars) {
+  global $theme_key; $path_to_latto_core;
+  $theme_name = $theme_key;
+
+  if (!empty($vars['polyfills_array'])) {
+    $vars['polyfills'] = drupal_static('latto_process_html_polyfills');
+    if (empty($vars['polyfills'])) {
+      $ie_scripts = array();
+      if (!empty($vars['polyfills_array'])) {
+        foreach ($vars['polyfills_array'] as $ke => $va) {
+          foreach ($va as $k => $v) {
+            $ies[$k][] = implode("\n", $v);
+          }
+        }
+      }
+      foreach ($ies as $kv => $kvp) {
+        $aus[$kv] = implode("\n", $kvp);
+      }
+      $vars['polyfills'] = latto_theme_conditional_scripts($aus);
+    }
+  }
+  else {
+    $vars['polyfills'] = '';
+  }
+}
 
 /**
  * Implements hook_preprocess_panels_pane().
@@ -95,4 +150,193 @@ function latto_menu_link($vars) {
   return '<li' . drupal_attributes($element['#attributes']) . '><span>' . $output . $sub_menu . "</span></li>\n";
 }
 
+/**
+ * Return an array of file names.
+ *
+ * @param $theme_name
+ */
+function load_polyfills($theme_name) {
+  global $path_to_latto_core;
 
+  // Get the info file data
+  $info = latto_get_info($theme_name);
+
+  // Build an array of polyfilling scripts
+  $polyfills_array = drupal_static('latto_preprocess_html_polyfills_array');
+  if (empty($polyfills_array)) {
+    // Info file loaded conditional scripts
+    $theme_path = drupal_get_path('theme', $theme_name);
+    if (array_key_exists('ie_scripts', $info)) {
+      foreach ($info['ie_scripts'] as $condition => $ie_scripts_path) {
+        foreach ($ie_scripts_path as $key => $value) {
+          $filepath = $theme_path . '/' . $value;
+          $polyfills_array['info'][$condition][] = latto_theme_script($filepath);
+        }
+      }
+    }
+    // Latto Core Polyfills
+    $polly = '';
+    $polly_settings_array = array(
+      'load_respondjs',
+      'load_html5js',
+      'load_boxsizinghtc',
+      'load_pie',
+      'load_selectivizr',
+      'load_scalefixjs', // loaded directly by polly_wants_a_cracker(), its never returned
+    );
+    foreach ($polly_settings_array as $polly_setting) {
+      $polly[$polly_setting] = theme_get_setting($polly_setting, $theme_name);
+    }
+    $backed_crackers = polly_wants_a_cracker($polly, $theme_name);
+    foreach ($backed_crackers as $cupboard => $flavors) {
+      foreach ($flavors as $key => $value) {
+        $filepath = $path_to_latto_core . '/' . $value;
+        $polyfills_array['latto'][$cupboard][] = latto_theme_script($filepath);
+      }
+    }
+  }
+  
+  return $polyfills_array;
+}
+
+/**
+ * Return a themed script.
+ * Since Drupal 7 does not (yet) support the 'browser' option in drupal_add_js()
+ * Latto provides a way to load scripts inside conditional comments.
+ * This function wraps a file in script elements and returns a string.
+ *
+ * @param $filepath, path to the file.
+ */
+function latto_theme_script($filepath) {
+  $script = '';
+
+  // We need the default query string for cache control finger printing
+  $query_string = variable_get('css_js_query_string', '0');
+
+  if (file_exists($filepath)) {
+    $file = file_create_url($filepath);
+    $script = '<script src="' . $file . '?' . $query_string . '"></script>';
+  }
+
+  return $script;
+}
+
+/**
+ * Return themed scripts in Conditional Comments.
+ * Since Drupal 7 does not (yet) support the 'browser' option in drupal_add_js()
+ * Adaptivetheme provides a way to load scripts inside conditional comments.
+ * This function will return a string for printing into a template, its
+ * akin to a real theme_function but its not.
+ *
+ * @param $ie_scripts, an array of themed scripts.
+ */
+function latto_theme_conditional_scripts($ie_scripts) {
+  $themed_scripts = drupal_static(__FUNCTION__, array());
+  if (empty($themed_scripts)) {
+    $cc_scripts = array();
+
+    foreach ($ie_scripts as $conditional_comment => $conditional_scripts) {
+      $cc_scripts[] = '<!--[if ' . $conditional_comment . ']>' . "\n" . $conditional_scripts . "\n" . '<![endif]-->' . "\n";
+    }
+    $themed_scripts = implode("\n", $cc_scripts);
+  }
+
+  return $themed_scripts;
+}
+
+/**
+ * Polyfills.
+ * This function does two seperate operations. First it attaches a condition
+ * to each Polyfill which can be either an IE conditional comment or 'all'.
+ * Polyfills with 'all' are loaded immediatly via drupal_add_js(), those with
+ * an IE CC are returned for further processing. This function is hard coded
+ * to support only those scripts supplied by the core theme, if you need to load
+ * a script for IE use the info file feature.
+ *
+ * @param $polly
+ * @param $theme_name
+ */
+function polly_wants_a_cracker($polly, $theme_name) {
+  global $path_to_latto_core;
+
+  $baked_crackers = drupal_static(__FUNCTION__, array());
+  if (empty($baked_crackers)) {
+    if (in_array(1, $polly)) {
+
+      $crackers = array();
+
+      // Respond.js
+      if ($polly['load_respondjs'] === 1 && theme_get_setting('disable_responsive_styles', $theme_name) === 0) {
+        $crackers['ie']['lt IE 9'][] = 'scripts/respond.js';
+      }
+      // HTML5 Shiv
+      if ($polly['load_html5js'] === 1) {
+        $crackers['ie']['lt IE 9'][] = 'scripts/html5shiv.js';
+      }
+      // Boxsizing.htc
+      if ($polly['load_boxsizinghtc'] === 1) {
+        $crackers['ie']['lt IE 9'][] = 'scripts/boxsizing.htc';
+      }
+      // PIE
+      if ($polly['load_pie'] === 1) {
+        $pie = theme_get_setting('which_pie', $theme_name);
+        $pie_condition = theme_get_setting('disble_pie_for_ie9', $theme_name) ? 'lt IE 9' : 'lt IE 10';
+        $crackers['ie'][$pie_condition][] = 'scripts/' . $pie;
+      }
+      // Selectivizr
+      if ($polly['load_selectivizr'] === 1) {
+        $crackers['ie']['lt IE 9'][] = 'scripts/selectivizr.js';
+      }
+      // Scalefix.js
+      if ($polly['load_scalefixjs'] === 1) {
+        $crackers['all'][] = 'scripts/scalefix.js';
+      }
+
+      // Load Polyfills
+      if (!empty($crackers)) {
+
+        // We need the default query string for cache control finger printing
+        $query_string = variable_get('css_js_query_string', '0');
+
+        // "all" - no conditional comment needed, use drupal_add_js()
+        if (isset($crackers['all'])) {
+          foreach ($crackers['all'] as $script) {
+            drupal_add_js($path_to_latto_core . '/' . $script, array(
+              'type' => 'file',
+              'scope' => 'header',
+              'group' => JS_THEME,
+              'preprocess' => TRUE,
+              'cache' => TRUE,
+              )
+            );
+          }
+        }
+        if ($crackers['ie']) {
+          $baked_crackers = $crackers['ie'];
+        }
+      }
+    }
+  }
+
+  return $baked_crackers;
+}
+
+/**
+ * Return the info file array for a particular theme, usually the active theme.
+ * Simple wrapper function for list_themes().
+ *
+ * @param $theme_name
+ */
+function latto_get_info($theme_name) {
+  $info = drupal_static(__FUNCTION__, array());
+  if (empty($info)) {
+    $lt = list_themes();
+    foreach ($lt as $key => $value) {
+      if ($theme_name == $key) {
+        $info = $lt[$theme_name]->info;
+      }
+    }
+  }
+
+  return $info;
+}
