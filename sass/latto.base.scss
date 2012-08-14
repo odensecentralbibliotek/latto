@@ -45,7 +45,7 @@ header {
 
 .grid-content {
   .grid-inner {
-    @include rgba-background($theme-background-color, .75);
+    @include rgba-background($theme-content-background, .75);
 
     padding: $default-spacing;
   }

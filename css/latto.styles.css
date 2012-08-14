@@ -141,7 +141,7 @@ h3 a:link,
 h4 a:link,
 h5 a:link,
 h6 a:link {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(27, 27, 27, 0.75);
   text-decoration: none;
 }
 /* line 30, ../sass/latto.typography.scss */
@@ -151,7 +151,7 @@ h3 a:visited,
 h4 a:visited,
 h5 a:visited,
 h6 a:visited {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(27, 27, 27, 0.85);
 }
 /* line 33, ../sass/latto.typography.scss */
 h1 a:hover,
@@ -160,12 +160,12 @@ h3 a:hover,
 h4 a:hover,
 h5 a:hover,
 h6 a:hover {
-  color: white;
+  color: #1b1b1b;
 }
 
 /* line 39, ../sass/latto.typography.scss */
 h1 {
-  color: white;
+  color: #1b1b1b;
 }
 
 /* line 43, ../sass/latto.typography.scss */

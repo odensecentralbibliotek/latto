@@ -24,20 +24,20 @@ h6 {
   font-weight: normal;
   a {
     &:link {
-      color: rgba($theme-primary-color, .75);
+      color: rgba($text-primary-color, .75);
       text-decoration: none;
     }
     &:visited {
-      color: rgba($theme-primary-color, .85);
+      color: rgba($text-primary-color, .85);
     }    
     &:hover {
-      color: $theme-primary-color;
+      color: $text-primary-color;
     }
   }
 }
 
 h1 {
-  color: $theme-primary-color;
+  color: $text-primary-color;
 }
 
 h3 {
