@@ -71,10 +71,6 @@ a {
   &:focus {
     color: $link-color-hover;
   }
-  &:active {
-    background-color: $text-selection-background;
-    color: $text-selection-color;
-  }
 }
 
 b,

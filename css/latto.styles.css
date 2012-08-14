@@ -212,33 +212,28 @@ a:hover {
 a:focus {
   color: #006681;
 }
-/* line 74, ../sass/latto.typography.scss */
-a:active {
-  background-color: #e7e7e7;
-  color: #1b1b1b;
-}
 
-/* line 93, ../sass/latto.typography.scss */
+/* line 89, ../sass/latto.typography.scss */
 .small {
   font-size: 6.5px;
 }
 
-/* line 97, ../sass/latto.typography.scss */
+/* line 93, ../sass/latto.typography.scss */
 .medium {
   font-size: 9.75px;
 }
 
-/* line 101, ../sass/latto.typography.scss */
+/* line 97, ../sass/latto.typography.scss */
 .big {
   font-size: 16.25px;
 }
 
-/* line 105, ../sass/latto.typography.scss */
+/* line 101, ../sass/latto.typography.scss */
 .bigger {
   font-size: 17.875px;
 }
 
-/* line 109, ../sass/latto.typography.scss */
+/* line 105, ../sass/latto.typography.scss */
 .biggest {
   font-size: 19.5px;
 }
