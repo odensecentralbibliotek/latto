@@ -9,7 +9,9 @@ body {
   line-height: $theme-line-height;
 }
 
-/* Colors for ::selection */
+/* ==========================================================================
+   Colors for ::selection
+   ========================================================================== */
 @include selection($text-selection-color, $text-selection-background);
 
 // Headers
@@ -21,17 +23,24 @@ h3,
 h4,
 h5,
 h6 {
+  color: $text-primary-color;
   font-weight: normal;
   a {
     &:link {
-      color: rgba($text-primary-color, .75);
       text-decoration: none;
     }
     &:visited {
-      color: rgba($text-primary-color, .85);
-    }    
-    &:hover {
       color: $text-primary-color;
+    }
+    &:hover {
+      color: darken($text-primary-color, 25%);
+    }
+    &:focus {
+      color: $link-color-hover;
+    }
+    &:active {
+      background-color: $text-selection-background;
+      color: $text-selection-color;
     }
   }
 }
@@ -54,17 +63,18 @@ a {
   }
   &:visited {
     color: darken($link-color, 15%);
-  }  
+  }
   &:hover {
     color: $link-color-hover;
     text-decoration: underline;
   }
   &:focus {
     color: $link-color-hover;
-  }  
+  }
   &:active {
-    color: darken($link-color, 50%);
-  }  
+    background-color: $text-selection-background;
+    color: $text-selection-color;
+  }
 }
 
 b,

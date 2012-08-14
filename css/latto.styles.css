@@ -100,123 +100,145 @@ body {
   line-height: 18px;
 }
 
-/* Colors for ::selection */
+/* ==========================================================================
+   Colors for ::selection
+   ========================================================================== */
 /* line 39, ../sass/latto.mixins.scss */
 ::-webkit-selection {
-  color: #d9d9d9;
-  background: #555555;
+  color: #1b1b1b;
+  background: #e7e7e7;
 }
 
 /* line 39, ../sass/latto.mixins.scss */
 ::-moz-selection {
-  color: #d9d9d9;
-  background: #555555;
+  color: #1b1b1b;
+  background: #e7e7e7;
 }
 
 /* line 39, ../sass/latto.mixins.scss */
 ::-o-selection {
-  color: #d9d9d9;
-  background: #555555;
+  color: #1b1b1b;
+  background: #e7e7e7;
 }
 
 /* line 39, ../sass/latto.mixins.scss */
 ::selection {
-  color: #d9d9d9;
-  background: #555555;
+  color: #1b1b1b;
+  background: #e7e7e7;
 }
 
-/* line 23, ../sass/latto.typography.scss */
+/* line 25, ../sass/latto.typography.scss */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+  color: #1b1b1b;
   font-weight: normal;
 }
-/* line 26, ../sass/latto.typography.scss */
+/* line 29, ../sass/latto.typography.scss */
 h1 a:link,
 h2 a:link,
 h3 a:link,
 h4 a:link,
 h5 a:link,
 h6 a:link {
-  color: rgba(27, 27, 27, 0.75);
   text-decoration: none;
 }
-/* line 30, ../sass/latto.typography.scss */
+/* line 32, ../sass/latto.typography.scss */
 h1 a:visited,
 h2 a:visited,
 h3 a:visited,
 h4 a:visited,
 h5 a:visited,
 h6 a:visited {
-  color: rgba(27, 27, 27, 0.85);
+  color: #1b1b1b;
 }
-/* line 33, ../sass/latto.typography.scss */
+/* line 35, ../sass/latto.typography.scss */
 h1 a:hover,
 h2 a:hover,
 h3 a:hover,
 h4 a:hover,
 h5 a:hover,
 h6 a:hover {
+  color: black;
+}
+/* line 38, ../sass/latto.typography.scss */
+h1 a:focus,
+h2 a:focus,
+h3 a:focus,
+h4 a:focus,
+h5 a:focus,
+h6 a:focus {
+  color: #006681;
+}
+/* line 41, ../sass/latto.typography.scss */
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active {
+  background-color: #e7e7e7;
   color: #1b1b1b;
 }
 
-/* line 39, ../sass/latto.typography.scss */
+/* line 48, ../sass/latto.typography.scss */
 h1 {
   color: #1b1b1b;
 }
 
-/* line 43, ../sass/latto.typography.scss */
+/* line 52, ../sass/latto.typography.scss */
 h3 {
   line-height: 22.5px;
 }
 
-/* line 51, ../sass/latto.typography.scss */
+/* line 60, ../sass/latto.typography.scss */
 a:link {
   color: #00b7e7;
   text-decoration: none;
 }
-/* line 55, ../sass/latto.typography.scss */
+/* line 64, ../sass/latto.typography.scss */
 a:visited {
   color: #007a9b;
 }
-/* line 58, ../sass/latto.typography.scss */
+/* line 67, ../sass/latto.typography.scss */
 a:hover {
   color: #006681;
   text-decoration: underline;
 }
-/* line 62, ../sass/latto.typography.scss */
+/* line 71, ../sass/latto.typography.scss */
 a:focus {
   color: #006681;
 }
-/* line 65, ../sass/latto.typography.scss */
+/* line 74, ../sass/latto.typography.scss */
 a:active {
-  color: black;
+  background-color: #e7e7e7;
+  color: #1b1b1b;
 }
 
-/* line 83, ../sass/latto.typography.scss */
+/* line 93, ../sass/latto.typography.scss */
 .small {
   font-size: 6.5px;
 }
 
-/* line 87, ../sass/latto.typography.scss */
+/* line 97, ../sass/latto.typography.scss */
 .medium {
   font-size: 9.75px;
 }
 
-/* line 91, ../sass/latto.typography.scss */
+/* line 101, ../sass/latto.typography.scss */
 .big {
   font-size: 16.25px;
 }
 
-/* line 95, ../sass/latto.typography.scss */
+/* line 105, ../sass/latto.typography.scss */
 .bigger {
   font-size: 17.875px;
 }
 
-/* line 99, ../sass/latto.typography.scss */
+/* line 109, ../sass/latto.typography.scss */
 .biggest {
   font-size: 19.5px;
 }
@@ -753,7 +775,7 @@ header {
 /* line 36, ../sass/latto.base.scss */
 .site-slogan {
   clear: left;
-  color: #999999;
+  color: #e7e7e7;
   margin-left: 10px;
 }
 
@@ -782,8 +804,8 @@ p {
    ========================================================================== */
 /* line 69, ../sass/latto.base.scss */
 hr {
-  background: #555555;
-  color: #555555;
+  background: #d5d5d5;
+  color: #d5d5d5;
   clear: both;
   float: none;
   width: 100%;
@@ -794,8 +816,8 @@ hr {
 }
 /* line 71, ../sass/latto.base.scss */
 hr.primary {
-  background: #999999;
-  color: #999999;
+  background: #e7e7e7;
+  color: #e7e7e7;
   clear: both;
   float: none;
   width: 100%;
@@ -806,8 +828,8 @@ hr.primary {
 }
 /* line 74, ../sass/latto.base.scss */
 hr.secondary {
-  background: #999999;
-  color: #999999;
+  background: #e7e7e7;
+  color: #e7e7e7;
   clear: both;
   float: none;
   width: 100%;
@@ -818,8 +840,8 @@ hr.secondary {
 }
 /* line 77, ../sass/latto.base.scss */
 hr.tertiary {
-  background: #999999;
-  color: #999999;
+  background: #e7e7e7;
+  color: #e7e7e7;
   clear: both;
   float: none;
   width: 100%;
@@ -872,7 +894,7 @@ ul.date-list .date-wrapper {
   margin-top: 4px;
   margin-right: 10px;
   min-width: 60px;
-  color: #555555;
+  color: #d5d5d5;
   font-size: 11.7px;
   text-align: center;
   vertical-align: top;
@@ -906,7 +928,7 @@ ul.list {
 }
 /* line 152, ../sass/latto.base.scss */
 ul.list li {
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid white;
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
@@ -925,7 +947,7 @@ ul.list li .subheading span.label, ul.list li .subheading a.label {
 }
 /* line 165, ../sass/latto.base.scss */
 ul.list li .subheading .date {
-  color: #999999;
+  color: #e7e7e7;
 }
 /* line 169, ../sass/latto.base.scss */
 ul.list li img {
@@ -996,7 +1018,7 @@ ul.nav.nav-inline li {
 }
 /* line 225, ../sass/latto.base.scss */
 ul.nav.nav-inline li a {
-  color: #d9d9d9;
+  color: white;
   display: block;
   padding: 10px 20px;
   text-decoration: none;
