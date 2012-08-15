@@ -163,7 +163,7 @@ ul {
           }
         }
         .date {
-          color: $gray-light;
+          color: lighten($text-primary-color, 25%);
         }
       }
       img {       
