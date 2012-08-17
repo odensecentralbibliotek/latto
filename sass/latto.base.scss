@@ -93,8 +93,8 @@ hr {
    Bootstrap overwrites
    ========================================================================== */
 
-.label-info,
-.badge-info {
+.label-info[href],
+.badge-info[href] {
   color: $theme-primary-color;
   background-color: $theme-secondary-color;
 }

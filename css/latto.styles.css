@@ -861,8 +861,8 @@ hr.tertiary {
    Bootstrap overwrites
    ========================================================================== */
 /* line 97, ../sass/latto.base.scss */
-.label-info,
-.badge-info {
+.label-info[href],
+.badge-info[href] {
   color: white;
   background-color: #00b7e7;
 }
