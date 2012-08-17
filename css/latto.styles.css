@@ -144,9 +144,10 @@ h3 a:link,
 h4 a:link,
 h5 a:link,
 h6 a:link {
+  color: #1b1b1b;
   text-decoration: none;
 }
-/* line 32, ../sass/latto.typography.scss */
+/* line 33, ../sass/latto.typography.scss */
 h1 a:visited,
 h2 a:visited,
 h3 a:visited,
@@ -155,7 +156,7 @@ h5 a:visited,
 h6 a:visited {
   color: #1b1b1b;
 }
-/* line 35, ../sass/latto.typography.scss */
+/* line 36, ../sass/latto.typography.scss */
 h1 a:hover,
 h2 a:hover,
 h3 a:hover,
@@ -164,7 +165,7 @@ h5 a:hover,
 h6 a:hover {
   color: black;
 }
-/* line 38, ../sass/latto.typography.scss */
+/* line 39, ../sass/latto.typography.scss */
 h1 a:focus,
 h2 a:focus,
 h3 a:focus,
@@ -173,7 +174,7 @@ h5 a:focus,
 h6 a:focus {
   color: #006681;
 }
-/* line 41, ../sass/latto.typography.scss */
+/* line 42, ../sass/latto.typography.scss */
 h1 a:active,
 h2 a:active,
 h3 a:active,
@@ -184,56 +185,56 @@ h6 a:active {
   color: #1b1b1b;
 }
 
-/* line 48, ../sass/latto.typography.scss */
+/* line 49, ../sass/latto.typography.scss */
 h1 {
   color: #1b1b1b;
 }
 
-/* line 52, ../sass/latto.typography.scss */
+/* line 53, ../sass/latto.typography.scss */
 h3 {
   line-height: 22.5px;
 }
 
-/* line 60, ../sass/latto.typography.scss */
+/* line 61, ../sass/latto.typography.scss */
 a:link {
   color: #00b7e7;
   text-decoration: none;
 }
-/* line 64, ../sass/latto.typography.scss */
+/* line 65, ../sass/latto.typography.scss */
 a:visited {
   color: #007a9b;
 }
-/* line 67, ../sass/latto.typography.scss */
+/* line 68, ../sass/latto.typography.scss */
 a:hover {
   color: #006681;
   text-decoration: underline;
 }
-/* line 71, ../sass/latto.typography.scss */
+/* line 72, ../sass/latto.typography.scss */
 a:focus {
   color: #006681;
 }
 
-/* line 89, ../sass/latto.typography.scss */
+/* line 90, ../sass/latto.typography.scss */
 .small {
   font-size: 6.5px;
 }
 
-/* line 93, ../sass/latto.typography.scss */
+/* line 94, ../sass/latto.typography.scss */
 .medium {
   font-size: 9.75px;
 }
 
-/* line 97, ../sass/latto.typography.scss */
+/* line 98, ../sass/latto.typography.scss */
 .big {
   font-size: 16.25px;
 }
 
-/* line 101, ../sass/latto.typography.scss */
+/* line 102, ../sass/latto.typography.scss */
 .bigger {
   font-size: 17.875px;
 }
 
-/* line 105, ../sass/latto.typography.scss */
+/* line 106, ../sass/latto.typography.scss */
 .biggest {
   font-size: 19.5px;
 }

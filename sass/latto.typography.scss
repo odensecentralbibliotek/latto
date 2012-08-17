@@ -27,6 +27,7 @@ h6 {
   font-weight: normal;
   a {
     &:link {
+      color: $text-primary-color;
       text-decoration: none;
     }
     &:visited {
