@@ -340,3 +340,50 @@ function latto_get_info($theme_name) {
 
   return $info;
 }
+
+
+/**
+ * Overwrite views row classes
+ *
+ */
+function latto_preprocess_views_view_unformatted(&$vars) {
+  
+  // Class names for overwriting
+  $row_first = "first";
+  $row_last  = "last";
+
+  $view = $vars['view'];
+  $rows = $vars['rows'];
+  
+  // Set arrays
+  $vars['classes_array'] = array();
+  $vars['classes'] = array();
+
+  // Variables
+  $count = 0;
+  $max = count($rows);
+  
+  // Loop through the rows and overwrite the classes
+  foreach ($rows as $id => $row) {
+    $count++;     
+    
+    $vars['classes'][$id][] = $count % 2 ? 'odd' : 'even';
+        
+    if ($count == 1) {
+      $vars['classes'][$id][] = $row_first;
+    }
+    if ($count == $max) {
+      $vars['classes'][$id][] = $row_last;
+    }
+
+    if ($row_class = $view->style_plugin->get_row_class($id)) {
+      $vars['classes'][$id][] = $row_class;
+    }
+
+    if ( $vars['classes']  && $vars['classes'][$id] ){
+      $vars['classes_array'][$id] = implode(' ', $vars['classes'][$id]);
+    } else {
+      $vars['classes_array'][$id] = '';
+    }
+  }
+}
