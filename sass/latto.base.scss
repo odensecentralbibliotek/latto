@@ -187,10 +187,11 @@ ul {
         letter-spacing: normal;
       }
       img {
-        display: inline-block;
         padding-right: $list-item-spacing;
         width: $list-picture-width;
+        margin-top: 3px; /* Adding margin to make sure top of image align with top of text */
         @include box-sizing(border-box);
+        
       }
       .content {
         display: inline-block;
