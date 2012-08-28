@@ -179,10 +179,21 @@ ul {
 
   &.simple {
     li {
+      display: table;
       img,
       .subheading,
       .content {
         display: none;
+      }
+      .date {
+        color: lighten($text-primary-color, 25%);
+        
+        display: table-cell;
+        min-width: 60px;
+      }
+      .heading {
+        display: table-cell;
+        margin-left: $default-spacing;
       }
     }
   }
