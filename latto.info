@@ -17,13 +17,5 @@
   regions[footer]          = Footer
   regions[branding_bottom] = Branding bottom
 
-;----------// Panels
-  plugins[panels][layouts] = layouts/panels
-
-
-;----------// Page manager
-  api[page_manager][pages_default][version] = 1
-  api[page_manager][pages_default][path] = pages
-
 ;----------// Polyfills
   settings[load_html5js] = 1
