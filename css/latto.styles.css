@@ -245,12 +245,12 @@ a:focus {
   *position: relative;
   *zoom: 1;
 }
-/* line 52, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 52, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:before, #page:after {
   content: "";
   display: table;
 }
-/* line 56, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 56, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:after {
   clear: both;
 }
@@ -668,8 +668,7 @@ a:focus {
   display: table;
 }
 
-@media screen
-and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   /* line 147, ../sass/latto.grid.scss */
   body {
     background-color: red;
@@ -734,17 +733,14 @@ and (max-width: 768px) {
     _overflow-y: visible;
   }
 }
-/* ==========================================================================
-   Base styling
-   ========================================================================== */
-/* line 9, ../sass/latto.base.scss */
+/* line 14, ../sass/latto.base.scss */
 body {
   background: url("../images/default-bg-pattern.png") white;
   margin: 0;
   padding: 0;
 }
 
-/* line 15, ../sass/latto.base.scss */
+/* line 20, ../sass/latto.base.scss */
 header {
   background: url("../images/primary-pattern.png");
   overflow: hidden;
@@ -752,53 +748,12 @@ header {
   padding-top: 30px;
 }
 
-/* line 22, ../sass/latto.base.scss */
-.logo {
-  float: left;
-  margin-right: 20px;
-  margin-left: 10px;
-}
-
-/* line 28, ../sass/latto.base.scss */
-.site-name {
-  color: white;
-  float: left;
-  font-size: 450%;
-  line-height: 100%;
-  margin-left: 10px;
-}
-
-/* line 36, ../sass/latto.base.scss */
-.site-slogan {
-  clear: left;
-  color: #e7e7e7;
-  margin-left: 10px;
-}
-
-/* ==========================================================================
-   Theme specific grid styling
-   ========================================================================== */
-/* line 47, ../sass/latto.base.scss */
-.grid-content .grid-inner {
-  background-color: rgba(255, 255, 255, 0.75);
-  zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#BFFFFFFF,endColorstr=#BFFFFFFF);
-  padding: 20px;
-}
-
-/* ==========================================================================
-   Basic elements
-   ========================================================================== */
-/* Paragraphs
-   ========================================================================== */
-/* line 62, ../sass/latto.base.scss */
+/* line 27, ../sass/latto.base.scss */
 p {
-  margin-bottom: 6.667px;
+  margin-bottom: 6.66667px;
 }
 
-/* Default horizontal ruler styles
-   ========================================================================== */
-/* line 69, ../sass/latto.base.scss */
+/* line 40, ../sass/latto.base.scss */
 hr {
   background: #d5d5d5;
   color: #d5d5d5;
@@ -810,7 +765,7 @@ hr {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 71, ../sass/latto.base.scss */
+/* line 42, ../sass/latto.base.scss */
 hr.primary {
   background: #e7e7e7;
   color: #e7e7e7;
@@ -822,7 +777,7 @@ hr.primary {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 74, ../sass/latto.base.scss */
+/* line 45, ../sass/latto.base.scss */
 hr.secondary {
   background: #e7e7e7;
   color: #e7e7e7;
@@ -834,7 +789,7 @@ hr.secondary {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 77, ../sass/latto.base.scss */
+/* line 48, ../sass/latto.base.scss */
 hr.tertiary {
   background: #e7e7e7;
   color: #e7e7e7;
@@ -847,20 +802,45 @@ hr.tertiary {
   margin-bottom: 10px;
 }
 
-/* ==========================================================================
-   Navigation
-   ========================================================================== */
-/* line 86, ../sass/latto.base.scss */
+/* line 53, ../sass/latto.base.scss */
+.logo {
+  float: left;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+/* line 59, ../sass/latto.base.scss */
+.site-name {
+  color: white;
+  float: left;
+  font-size: 450%;
+  line-height: 100%;
+  margin-left: 10px;
+}
+
+/* line 67, ../sass/latto.base.scss */
+.site-slogan {
+  clear: left;
+  color: #e7e7e7;
+  margin-left: 10px;
+}
+
+/* line 80, ../sass/latto.base.scss */
+.grid-content .grid-inner {
+  background-color: rgba(255, 255, 255, 0.75);
+  zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#BFFFFFFF,endColorstr=#BFFFFFFF);
+  padding: 20px;
+}
+
+/* line 88, ../sass/latto.base.scss */
 .nav-wrapper {
   margin-top: 20px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-/* ==========================================================================
-   Bootstrap overwrites
-   ========================================================================== */
-/* line 99, ../sass/latto.base.scss */
+/* line 101, ../sass/latto.base.scss */
 .label-info,
 .label-info[href],
 .badge-info,
@@ -869,18 +849,90 @@ hr.tertiary {
   background-color: #00b7e7;
 }
 
-/* ==========================================================================
-   List styling
-   ========================================================================== */
-/* line 110, ../sass/latto.base.scss */
+/* line 117, ../sass/latto.base.scss */
 ul li h3 {
   margin-bottom: 5px;
 }
-/* line 113, ../sass/latto.base.scss */
+/* line 120, ../sass/latto.base.scss */
 ul li p {
   margin-bottom: 5px;
 }
-/* line 118, ../sass/latto.base.scss */
+/* line 124, ../sass/latto.base.scss */
+ul.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+/* line 129, ../sass/latto.base.scss */
+ul.list li {
+  border-bottom: 1px solid #e7e7e7;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+/* line 133, ../sass/latto.base.scss */
+ul.list li .subheading {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 136, ../sass/latto.base.scss */
+ul.list li .subheading span, ul.list li .subheading a {
+  margin-right: 5px;
+}
+/* line 138, ../sass/latto.base.scss */
+ul.list li .subheading span.label, ul.list li .subheading a.label {
+  color: white;
+}
+/* line 142, ../sass/latto.base.scss */
+ul.list li .subheading .date {
+  color: #5b5b5b;
+}
+/* line 146, ../sass/latto.base.scss */
+ul.list li img {
+  height: auto;
+  width: 100%;
+}
+/* line 150, ../sass/latto.base.scss */
+ul.list li.last {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+/* line 159, ../sass/latto.base.scss */
+ul.floated li {
+  letter-spacing: -4px;
+}
+/* line 161, ../sass/latto.base.scss */
+ul.floated li div, ul.floated li p, ul.floated li a, ul.floated li span {
+  letter-spacing: normal;
+}
+/* line 164, ../sass/latto.base.scss */
+ul.floated li img {
+  padding-right: 10px;
+  width: 25%;
+  margin-top: 3px;
+  /* Adding margin to make sure top of image align with top of text */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 171, ../sass/latto.base.scss */
+ul.floated li .content {
+  display: inline-block;
+  vertical-align: top;
+  width: 75%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 184, ../sass/latto.base.scss */
+ul.simple li img,
+ul.simple li .subheading,
+ul.simple li .content {
+  display: none;
+}
+
+/* line 200, ../sass/latto.base.scss */
 ul.date-list .date-wrapper {
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
@@ -897,102 +949,28 @@ ul.date-list .date-wrapper {
   text-align: center;
   vertical-align: top;
 }
-/* line 131, ../sass/latto.base.scss */
+/* line 213, ../sass/latto.base.scss */
 ul.date-list .date-wrapper .day {
   background-color: #00b7e7;
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
-/* line 136, ../sass/latto.base.scss */
+/* line 218, ../sass/latto.base.scss */
 ul.date-list .date-wrapper .date-wrapper-inner {
   background: white;
   border: 1px solid #d9d9d9;
 }
-/* line 139, ../sass/latto.base.scss */
+/* line 221, ../sass/latto.base.scss */
 ul.date-list .date-wrapper .date-wrapper-inner .date {
   font-size: 19.5px;
   margin-top: 5px;
 }
-/* line 145, ../sass/latto.base.scss */
+/* line 227, ../sass/latto.base.scss */
 ul.date-list .content {
   display: inline-block;
 }
-/* line 149, ../sass/latto.base.scss */
-ul.list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-/* line 154, ../sass/latto.base.scss */
-ul.list li {
-  border-bottom: 1px solid #e7e7e7;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
-}
-/* line 158, ../sass/latto.base.scss */
-ul.list li .subheading {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-/* line 161, ../sass/latto.base.scss */
-ul.list li .subheading span, ul.list li .subheading a {
-  margin-right: 5px;
-}
-/* line 163, ../sass/latto.base.scss */
-ul.list li .subheading span.label, ul.list li .subheading a.label {
-  color: white;
-}
-/* line 167, ../sass/latto.base.scss */
-ul.list li .subheading .date {
-  color: #5b5b5b;
-}
-/* line 171, ../sass/latto.base.scss */
-ul.list li img {
-  height: auto;
-  width: 100%;
-}
-/* line 175, ../sass/latto.base.scss */
-ul.list li.last {
-  border-bottom: 0;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-/* line 184, ../sass/latto.base.scss */
-ul.floated li {
-  letter-spacing: -4px;
-  /* Fix for the white letter next to li elements */
-}
-/* line 186, ../sass/latto.base.scss */
-ul.floated li div, ul.floated li p, ul.floated li a, ul.floated li span {
-  letter-spacing: normal;
-}
-/* line 189, ../sass/latto.base.scss */
-ul.floated li img {
-  padding-right: 10px;
-  width: 25%;
-  margin-top: 3px;
-  /* Adding margin to make sure top of image align with top of text */
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-/* line 196, ../sass/latto.base.scss */
-ul.floated li .content {
-  display: inline-block;
-  vertical-align: top;
-  width: 75%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-/* line 209, ../sass/latto.base.scss */
-ul.simple li img,
-ul.simple li .subheading,
-ul.simple li .content {
-  display: none;
-}
-/* line 216, ../sass/latto.base.scss */
+
+/* line 238, ../sass/latto.base.scss */
 ul.nav.nav-inline {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1006,7 +984,7 @@ ul.nav.nav-inline {
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   margin: 0;
 }
-/* line 223, ../sass/latto.base.scss */
+/* line 245, ../sass/latto.base.scss */
 ul.nav.nav-inline li {
   background-color: rgba(0, 109, 171, 0.25);
   zoom: 1;
@@ -1015,26 +993,26 @@ ul.nav.nav-inline li {
   border-right: 1px solid rgba(0, 109, 171, 0.75);
   display: table-cell;
 }
-/* line 228, ../sass/latto.base.scss */
+/* line 250, ../sass/latto.base.scss */
 ul.nav.nav-inline li a {
   color: white;
   display: block;
   padding: 10px 20px;
   text-decoration: none;
 }
-/* line 233, ../sass/latto.base.scss */
+/* line 255, ../sass/latto.base.scss */
 ul.nav.nav-inline li a:hover {
   color: white;
 }
-/* line 237, ../sass/latto.base.scss */
+/* line 259, ../sass/latto.base.scss */
 ul.nav.nav-inline li.first {
   border-left: 0;
 }
-/* line 240, ../sass/latto.base.scss */
+/* line 262, ../sass/latto.base.scss */
 ul.nav.nav-inline li.last {
   border-right: 1px solid rgba(0, 109, 171, 0.5);
 }
-/* line 243, ../sass/latto.base.scss */
+/* line 265, ../sass/latto.base.scss */
 ul.nav.nav-inline li.active {
   border-left: 0;
   border-right: 0;
@@ -1107,7 +1085,8 @@ a [class*=" icon-"] {
 
 /* line 63, ../sass/latto.font-awesome.scss */
 .btn [class^="icon-"],
-.btn [class*=" icon-"], .nav-tabs [class^="icon-"], .nav-tabs [class*=" icon-"] {
+.btn [class*=" icon-"], .nav-tabs [class^="icon-"],
+.nav-tabs [class*=" icon-"] {
   /* keeps button heights with and without icons the same */
   line-height: .9em;
 }
