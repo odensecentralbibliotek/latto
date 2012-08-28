@@ -1,33 +1,20 @@
-/* ==========================================================================
-   This file holds all the variables for the theme
-   ========================================================================== */
+// This file holds all the variables for the theme.
+//
+// Compass version 0.12.2 (Alnilam)
 
-
-/* ==========================================================================
-   Imports
-   ========================================================================== */
 @import "compass/css3";
 
-
-/* ==========================================================================
-   Default font
-   ========================================================================== */
+// The default font
 @include font-face("Amble Light Condensed", font-files("amble/Amble-LightCondensed-webfont.woff", "amble/Amble-LightCondensed-webfont.ttf", "amble/Amble-LightCondensed-webfont.svg"), "amble/Amble-LightCondensed-webfont.eot", 'normal', 'normal');
 
-
-/* ==========================================================================
-   Grayscale colors
-   ========================================================================== */
+// Standard color definitions.
 $black:                 #000    !default;
 $gray-dark:             #bdbdbd !default;
 $gray:                  #d5d5d5 !default;
 $gray-light:            #e7e7e7 !default;
 $white:                 #fff    !default;
 
-
-/* ==========================================================================
-   Theme variables
-   ========================================================================== */
+// Theme color definitions
 $theme-primary-color:       #fff !default;
 $theme-secondary-color:     #00b7e7 !default;
 $theme-background-color:    #fff !default;
@@ -37,61 +24,44 @@ $theme-header-pattern:      url('../images/primary-pattern.png') !default;
 $theme-content-background:  #fff !default;
 
 
-/* ==========================================================================
-   Font variables
-   ========================================================================== */
+// Font variables
 $theme-font-size:     13px !default;
 $theme-line-height:   18px !default;
 $theme-font-family:   "Amble Light Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
-
-/* ==========================================================================
-   Headers
-   ========================================================================== */
+// Headers
 $header-font-size:  30px !default;
 $header-text-color: #1b1b1b !default;
 
 
-/* ==========================================================================
-   Text colors
-   ========================================================================== */
+// Text colors
 $text-primary-color:         #1b1b1b !default;
 $text-selection-color:       $text-primary-color !default;
 $text-selection-background:  $gray-light !default;
 
 
-/* ==========================================================================
-   Links
-   ========================================================================== */
+// Links
 $link-color:              #00b7e7 !default;
 $link-color-hover:        darken($link-color, 20%) !default;
 
 
-/* ==========================================================================
-   Blocks
-   ========================================================================== */
+// Blocks
 $theme-block-color:               lighten($text-primary-color, 25%) !default;
 $theme-block-background:          $theme-primary-color !default;
 $theme-block-inverse-color:       $theme-primary-color !default;
 $theme-block-inverse-background:  $theme-secondary-color !default;
 
 
-/* ==========================================================================
-   Grids and spacing
-   ========================================================================== */
+// Grids and spacing
 $default-spacing: 20px !default;
 
 
-/* ==========================================================================
-   Navigation
-   ========================================================================== */
+// Navigation
 $navbar-background-color:   #006dab !default;
 $navbar-text-color:         lighten($gray-light, 25%) !default;
 $navbar-item-spacing:       $default-spacing / 2 $default-spacing !default;
 
 
-/* ==========================================================================
-   List
-   ========================================================================== */
+// Lists
 $list-item-spacing:         10px !default;
 $list-picture-width:        25% !default;

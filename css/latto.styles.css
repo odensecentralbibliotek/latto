@@ -1,12 +1,3 @@
-/* ==========================================================================
-   This file holds all the variables for the theme
-   ========================================================================== */
-/* ==========================================================================
-   Imports
-   ========================================================================== */
-/* ==========================================================================
-   Default font
-   ========================================================================== */
 @font-face {
   font-family: "Amble Light Condensed";
   src: url('fonts/amble/Amble-LightCondensed-webfont.eot');
@@ -15,45 +6,6 @@
   font-style: "normal";
 }
 
-/* ==========================================================================
-   Grayscale colors
-   ========================================================================== */
-/* ==========================================================================
-   Theme variables
-   ========================================================================== */
-/* ==========================================================================
-   Font variables
-   ========================================================================== */
-/* ==========================================================================
-   Headers
-   ========================================================================== */
-/* ==========================================================================
-   Text colors
-   ========================================================================== */
-/* ==========================================================================
-   Links
-   ========================================================================== */
-/* ==========================================================================
-   Blocks
-   ========================================================================== */
-/* ==========================================================================
-   Grids and spacing
-   ========================================================================== */
-/* ==========================================================================
-   Navigation
-   ========================================================================== */
-/* ==========================================================================
-   List
-   ========================================================================== */
-/* ==========================================================================
-   This file holds all the variables for the theme
-   ========================================================================== */
-/* ==========================================================================
-   Imports
-   ========================================================================== */
-/* ==========================================================================
-   Default font
-   ========================================================================== */
 @font-face {
   font-family: "Amble Light Condensed";
   src: url('fonts/amble/Amble-LightCondensed-webfont.eot');
@@ -62,36 +14,6 @@
   font-style: "normal";
 }
 
-/* ==========================================================================
-   Grayscale colors
-   ========================================================================== */
-/* ==========================================================================
-   Theme variables
-   ========================================================================== */
-/* ==========================================================================
-   Font variables
-   ========================================================================== */
-/* ==========================================================================
-   Headers
-   ========================================================================== */
-/* ==========================================================================
-   Text colors
-   ========================================================================== */
-/* ==========================================================================
-   Links
-   ========================================================================== */
-/* ==========================================================================
-   Blocks
-   ========================================================================== */
-/* ==========================================================================
-   Grids and spacing
-   ========================================================================== */
-/* ==========================================================================
-   Navigation
-   ========================================================================== */
-/* ==========================================================================
-   List
-   ========================================================================== */
 /* line 5, ../sass/latto.typography.scss */
 body {
   color: #1b1b1b;
@@ -100,34 +22,31 @@ body {
   line-height: 18px;
 }
 
-/* ==========================================================================
-   Colors for ::selection
-   ========================================================================== */
-/* line 39, ../sass/latto.mixins.scss */
+/* line 66, ../sass/latto.mixins.scss */
 ::-webkit-selection {
   color: #1b1b1b;
   background: #e7e7e7;
 }
 
-/* line 39, ../sass/latto.mixins.scss */
+/* line 66, ../sass/latto.mixins.scss */
 ::-moz-selection {
   color: #1b1b1b;
   background: #e7e7e7;
 }
 
-/* line 39, ../sass/latto.mixins.scss */
+/* line 66, ../sass/latto.mixins.scss */
 ::-o-selection {
   color: #1b1b1b;
   background: #e7e7e7;
 }
 
-/* line 39, ../sass/latto.mixins.scss */
+/* line 66, ../sass/latto.mixins.scss */
 ::selection {
   color: #1b1b1b;
   background: #e7e7e7;
 }
 
-/* line 25, ../sass/latto.typography.scss */
+/* line 32, ../sass/latto.typography.scss */
 h1,
 h2,
 h3,
@@ -137,7 +56,7 @@ h6 {
   color: #1b1b1b;
   font-weight: normal;
 }
-/* line 29, ../sass/latto.typography.scss */
+/* line 36, ../sass/latto.typography.scss */
 h1 a:link,
 h2 a:link,
 h3 a:link,
@@ -147,7 +66,7 @@ h6 a:link {
   color: #1b1b1b;
   text-decoration: none;
 }
-/* line 33, ../sass/latto.typography.scss */
+/* line 40, ../sass/latto.typography.scss */
 h1 a:visited,
 h2 a:visited,
 h3 a:visited,
@@ -156,7 +75,7 @@ h5 a:visited,
 h6 a:visited {
   color: #1b1b1b;
 }
-/* line 36, ../sass/latto.typography.scss */
+/* line 43, ../sass/latto.typography.scss */
 h1 a:hover,
 h2 a:hover,
 h3 a:hover,
@@ -165,7 +84,7 @@ h5 a:hover,
 h6 a:hover {
   color: black;
 }
-/* line 39, ../sass/latto.typography.scss */
+/* line 46, ../sass/latto.typography.scss */
 h1 a:focus,
 h2 a:focus,
 h3 a:focus,
@@ -174,7 +93,7 @@ h5 a:focus,
 h6 a:focus {
   color: #006681;
 }
-/* line 42, ../sass/latto.typography.scss */
+/* line 49, ../sass/latto.typography.scss */
 h1 a:active,
 h2 a:active,
 h3 a:active,
@@ -185,84 +104,84 @@ h6 a:active {
   color: #1b1b1b;
 }
 
-/* line 49, ../sass/latto.typography.scss */
+/* line 56, ../sass/latto.typography.scss */
 h1 {
   color: #1b1b1b;
 }
 
-/* line 53, ../sass/latto.typography.scss */
+/* line 60, ../sass/latto.typography.scss */
 h3 {
   line-height: 22.5px;
 }
 
-/* line 61, ../sass/latto.typography.scss */
+/* line 65, ../sass/latto.typography.scss */
 a:link {
   color: #00b7e7;
   text-decoration: none;
 }
-/* line 65, ../sass/latto.typography.scss */
+/* line 69, ../sass/latto.typography.scss */
 a:visited {
   color: #007a9b;
 }
-/* line 68, ../sass/latto.typography.scss */
+/* line 72, ../sass/latto.typography.scss */
 a:hover {
   color: #006681;
   text-decoration: underline;
 }
-/* line 72, ../sass/latto.typography.scss */
+/* line 76, ../sass/latto.typography.scss */
 a:focus {
   color: #006681;
 }
 
-/* line 90, ../sass/latto.typography.scss */
+/* line 99, ../sass/latto.typography.scss */
 .small {
   font-size: 6.5px;
 }
 
-/* line 94, ../sass/latto.typography.scss */
+/* line 103, ../sass/latto.typography.scss */
 .medium {
   font-size: 9.75px;
 }
 
-/* line 98, ../sass/latto.typography.scss */
+/* line 107, ../sass/latto.typography.scss */
 .big {
   font-size: 16.25px;
 }
 
-/* line 102, ../sass/latto.typography.scss */
+/* line 111, ../sass/latto.typography.scss */
 .bigger {
   font-size: 17.875px;
 }
 
-/* line 106, ../sass/latto.typography.scss */
+/* line 115, ../sass/latto.typography.scss */
 .biggest {
   font-size: 19.5px;
 }
 
 /* See: http://zengrids.com/help/#vars-legacy */
-/* line 11, ../sass/latto.grid.scss */
+/* line 13, ../sass/latto.grid.scss */
 #page {
   *position: relative;
   *zoom: 1;
 }
-/* line 52, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 52, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:before, #page:after {
   content: "";
   display: table;
 }
-/* line 56, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 56, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:after {
   clear: both;
 }
 
-/* line 15, ../sass/latto.grid.scss */
+/* line 17, ../sass/latto.grid.scss */
 .grid-inner {
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
 }
 
-/* line 21, ../sass/latto.grid.scss */
+/* line 23, ../sass/latto.grid.scss */
 .grid-3-left {
   float: left;
   width: 18.75%;
@@ -281,7 +200,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 25, ../sass/latto.grid.scss */
+/* line 27, ../sass/latto.grid.scss */
 .grid-3-center-left {
   float: left;
   width: 18.75%;
@@ -300,7 +219,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 29, ../sass/latto.grid.scss */
+/* line 31, ../sass/latto.grid.scss */
 .grid-3-center-right {
   float: right;
   width: 18.75%;
@@ -319,7 +238,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 33, ../sass/latto.grid.scss */
+/* line 35, ../sass/latto.grid.scss */
 .grid-3-right {
   float: right;
   width: 18.75%;
@@ -338,7 +257,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 37, ../sass/latto.grid.scss */
+/* line 39, ../sass/latto.grid.scss */
 .grid-4-left {
   float: left;
   width: 25%;
@@ -357,7 +276,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 41, ../sass/latto.grid.scss */
+/* line 43, ../sass/latto.grid.scss */
 .grid-4-center-left {
   float: left;
   width: 25%;
@@ -376,7 +295,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 45, ../sass/latto.grid.scss */
+/* line 47, ../sass/latto.grid.scss */
 .grid-4-center-right {
   float: left;
   width: 25%;
@@ -395,7 +314,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 49, ../sass/latto.grid.scss */
+/* line 51, ../sass/latto.grid.scss */
 .grid-4-right {
   float: right;
   width: 25%;
@@ -414,7 +333,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 53, ../sass/latto.grid.scss */
+/* line 55, ../sass/latto.grid.scss */
 .grid-8-left {
   float: left;
   width: 50%;
@@ -433,7 +352,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 57, ../sass/latto.grid.scss */
+/* line 59, ../sass/latto.grid.scss */
 .grid-8-right {
   float: right;
   width: 50%;
@@ -452,7 +371,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 61, ../sass/latto.grid.scss */
+/* line 63, ../sass/latto.grid.scss */
 .grid-10-left {
   float: left;
   width: 62.5%;
@@ -471,7 +390,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 65, ../sass/latto.grid.scss */
+/* line 67, ../sass/latto.grid.scss */
 .grid-10-center {
   float: left;
   width: 62.5%;
@@ -490,7 +409,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 69, ../sass/latto.grid.scss */
+/* line 71, ../sass/latto.grid.scss */
 .grid-10-right {
   float: right;
   width: 62.5%;
@@ -509,7 +428,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 73, ../sass/latto.grid.scss */
+/* line 75, ../sass/latto.grid.scss */
 .grid-12-left {
   float: left;
   width: 75%;
@@ -528,7 +447,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 77, ../sass/latto.grid.scss */
+/* line 79, ../sass/latto.grid.scss */
 .grid-12-right {
   float: right;
   width: 75%;
@@ -547,7 +466,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 81, ../sass/latto.grid.scss */
+/* line 83, ../sass/latto.grid.scss */
 .grid-13-left {
   float: left;
   width: 81.25%;
@@ -566,7 +485,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 85, ../sass/latto.grid.scss */
+/* line 87, ../sass/latto.grid.scss */
 .grid-13-right {
   float: right;
   width: 81.25%;
@@ -585,7 +504,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 89, ../sass/latto.grid.scss */
+/* line 91, ../sass/latto.grid.scss */
 .grid-full {
   clear: both;
   float: left;
@@ -605,22 +524,22 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 94, ../sass/latto.grid.scss */
+/* line 96, ../sass/latto.grid.scss */
 .grid-clear-both {
   clear: both;
 }
 
-/* line 98, ../sass/latto.grid.scss */
+/* line 100, ../sass/latto.grid.scss */
 .grid-clear-left {
   clear: left;
 }
 
-/* line 102, ../sass/latto.grid.scss */
+/* line 104, ../sass/latto.grid.scss */
 .grid-clear-right {
   clear: right;
 }
 
-/* line 106, ../sass/latto.grid.scss */
+/* line 108, ../sass/latto.grid.scss */
 .grid-stack {
   clear: both;
   float: left;
@@ -640,111 +559,24 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 111, ../sass/latto.grid.scss */
+/* line 113, ../sass/latto.grid.scss */
 .grid-row {
   clear: both;
   margin-bottom: 20px;
 }
-/* line 114, ../sass/latto.grid.scss */
+/* line 116, ../sass/latto.grid.scss */
 .grid-row.last {
   margin-bottom: 0;
 }
 
-/* line 126, ../sass/latto.grid.scss */
-.add-spacing-after {
-  margin-bottom: 1em;
-}
-
-/* line 132, ../sass/latto.grid.scss */
-.tdcss-fragment .grid-row .grid-inner {
-  background-color: #f1f1f1;
-  border: 1px dashed #e1e1e1;
-  padding: .5em;
-}
-/* line 137, ../sass/latto.grid.scss */
-.tdcss-fragment .grid-row:after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-@media screen
-and (max-width: 768px) {
-  /* line 147, ../sass/latto.grid.scss */
-  body {
-    background-color: red;
-  }
-
-  /* line 151, ../sass/latto.grid.scss */
-  .content {
-    clear: both;
-    float: left;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    *behavior: url("../scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
-  }
-
-  /* line 156, ../sass/latto.grid.scss */
-  .sidebar-first {
-    clear: both;
-    float: left;
-    width: 50%;
-    margin-left: 0%;
-    margin-right: -50%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    *behavior: url("../scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
-  }
-
-  /* line 161, ../sass/latto.grid.scss */
-  .sidebar-second {
-    float: right;
-    width: 50%;
-    margin-right: 0%;
-    margin-left: -50%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    *behavior: url("../scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
-  }
-}
-/* ==========================================================================
-   Base styling
-   ========================================================================== */
-/* line 9, ../sass/latto.base.scss */
+/* line 14, ../sass/latto.base.scss */
 body {
   background: url("../images/default-bg-pattern.png") white;
   margin: 0;
   padding: 0;
 }
 
-/* line 15, ../sass/latto.base.scss */
+/* line 20, ../sass/latto.base.scss */
 header {
   background: url("../images/primary-pattern.png");
   overflow: hidden;
@@ -752,53 +584,12 @@ header {
   padding-top: 30px;
 }
 
-/* line 22, ../sass/latto.base.scss */
-.logo {
-  float: left;
-  margin-right: 20px;
-  margin-left: 10px;
-}
-
-/* line 28, ../sass/latto.base.scss */
-.site-name {
-  color: white;
-  float: left;
-  font-size: 450%;
-  line-height: 100%;
-  margin-left: 10px;
-}
-
-/* line 36, ../sass/latto.base.scss */
-.site-slogan {
-  clear: left;
-  color: #e7e7e7;
-  margin-left: 10px;
-}
-
-/* ==========================================================================
-   Theme specific grid styling
-   ========================================================================== */
-/* line 47, ../sass/latto.base.scss */
-.grid-content .grid-inner {
-  background-color: rgba(255, 255, 255, 0.75);
-  zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#BFFFFFFF,endColorstr=#BFFFFFFF);
-  padding: 20px;
-}
-
-/* ==========================================================================
-   Basic elements
-   ========================================================================== */
-/* Paragraphs
-   ========================================================================== */
-/* line 62, ../sass/latto.base.scss */
+/* line 27, ../sass/latto.base.scss */
 p {
-  margin-bottom: 6.667px;
+  margin-bottom: 6.66667px;
 }
 
-/* Default horizontal ruler styles
-   ========================================================================== */
-/* line 69, ../sass/latto.base.scss */
+/* line 40, ../sass/latto.base.scss */
 hr {
   background: #d5d5d5;
   color: #d5d5d5;
@@ -810,7 +601,7 @@ hr {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 71, ../sass/latto.base.scss */
+/* line 42, ../sass/latto.base.scss */
 hr.primary {
   background: #e7e7e7;
   color: #e7e7e7;
@@ -822,7 +613,7 @@ hr.primary {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 74, ../sass/latto.base.scss */
+/* line 45, ../sass/latto.base.scss */
 hr.secondary {
   background: #e7e7e7;
   color: #e7e7e7;
@@ -834,7 +625,7 @@ hr.secondary {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 77, ../sass/latto.base.scss */
+/* line 48, ../sass/latto.base.scss */
 hr.tertiary {
   background: #e7e7e7;
   color: #e7e7e7;
@@ -847,20 +638,45 @@ hr.tertiary {
   margin-bottom: 10px;
 }
 
-/* ==========================================================================
-   Navigation
-   ========================================================================== */
-/* line 86, ../sass/latto.base.scss */
+/* line 53, ../sass/latto.base.scss */
+.logo {
+  float: left;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+/* line 59, ../sass/latto.base.scss */
+.site-name {
+  color: white;
+  float: left;
+  font-size: 450%;
+  line-height: 100%;
+  margin-left: 10px;
+}
+
+/* line 67, ../sass/latto.base.scss */
+.site-slogan {
+  clear: left;
+  color: #e7e7e7;
+  margin-left: 10px;
+}
+
+/* line 80, ../sass/latto.base.scss */
+.grid-content .grid-inner {
+  background-color: rgba(255, 255, 255, 0.75);
+  zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#BFFFFFFF,endColorstr=#BFFFFFFF);
+  padding: 20px;
+}
+
+/* line 88, ../sass/latto.base.scss */
 .nav-wrapper {
   margin-top: 20px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-/* ==========================================================================
-   Bootstrap overwrites
-   ========================================================================== */
-/* line 99, ../sass/latto.base.scss */
+/* line 101, ../sass/latto.base.scss */
 .label-info,
 .label-info[href],
 .badge-info,
@@ -869,18 +685,105 @@ hr.tertiary {
   background-color: #00b7e7;
 }
 
-/* ==========================================================================
-   List styling
-   ========================================================================== */
-/* line 110, ../sass/latto.base.scss */
+/* line 117, ../sass/latto.base.scss */
 ul li h3 {
   margin-bottom: 5px;
 }
-/* line 113, ../sass/latto.base.scss */
+/* line 120, ../sass/latto.base.scss */
 ul li p {
   margin-bottom: 5px;
 }
-/* line 118, ../sass/latto.base.scss */
+/* line 124, ../sass/latto.base.scss */
+ul.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+/* line 129, ../sass/latto.base.scss */
+ul.list li {
+  border-bottom: 1px solid #e7e7e7;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+/* line 133, ../sass/latto.base.scss */
+ul.list li .subheading {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 136, ../sass/latto.base.scss */
+ul.list li .subheading span, ul.list li .subheading a {
+  margin-right: 5px;
+}
+/* line 138, ../sass/latto.base.scss */
+ul.list li .subheading span.label, ul.list li .subheading a.label {
+  color: white;
+}
+/* line 142, ../sass/latto.base.scss */
+ul.list li .subheading .date {
+  color: #5b5b5b;
+}
+/* line 146, ../sass/latto.base.scss */
+ul.list li img {
+  height: auto;
+  width: 100%;
+}
+/* line 150, ../sass/latto.base.scss */
+ul.list li.last {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+/* line 159, ../sass/latto.base.scss */
+ul.floated li {
+  letter-spacing: -4px;
+}
+/* line 161, ../sass/latto.base.scss */
+ul.floated li div, ul.floated li p, ul.floated li a, ul.floated li span {
+  letter-spacing: normal;
+}
+/* line 164, ../sass/latto.base.scss */
+ul.floated li img {
+  padding-right: 10px;
+  width: 25%;
+  margin-top: 3px;
+  /* Adding margin to make sure top of image align with top of text */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 171, ../sass/latto.base.scss */
+ul.floated li .content {
+  display: inline-block;
+  vertical-align: top;
+  width: 75%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 181, ../sass/latto.base.scss */
+ul.simple li {
+  display: table;
+}
+/* line 185, ../sass/latto.base.scss */
+ul.simple li img,
+ul.simple li .subheading,
+ul.simple li .content {
+  display: none;
+}
+/* line 188, ../sass/latto.base.scss */
+ul.simple li .date {
+  color: #5b5b5b;
+  display: table-cell;
+  min-width: 60px;
+}
+/* line 194, ../sass/latto.base.scss */
+ul.simple li .heading {
+  display: table-cell;
+  margin-left: 20px;
+}
+
+/* line 211, ../sass/latto.base.scss */
 ul.date-list .date-wrapper {
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
@@ -897,102 +800,28 @@ ul.date-list .date-wrapper {
   text-align: center;
   vertical-align: top;
 }
-/* line 131, ../sass/latto.base.scss */
+/* line 224, ../sass/latto.base.scss */
 ul.date-list .date-wrapper .day {
   background-color: #00b7e7;
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
-/* line 136, ../sass/latto.base.scss */
+/* line 229, ../sass/latto.base.scss */
 ul.date-list .date-wrapper .date-wrapper-inner {
   background: white;
   border: 1px solid #d9d9d9;
 }
-/* line 139, ../sass/latto.base.scss */
+/* line 232, ../sass/latto.base.scss */
 ul.date-list .date-wrapper .date-wrapper-inner .date {
   font-size: 19.5px;
   margin-top: 5px;
 }
-/* line 145, ../sass/latto.base.scss */
+/* line 238, ../sass/latto.base.scss */
 ul.date-list .content {
   display: inline-block;
 }
-/* line 149, ../sass/latto.base.scss */
-ul.list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-/* line 154, ../sass/latto.base.scss */
-ul.list li {
-  border-bottom: 1px solid #e7e7e7;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
-}
-/* line 158, ../sass/latto.base.scss */
-ul.list li .subheading {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-/* line 161, ../sass/latto.base.scss */
-ul.list li .subheading span, ul.list li .subheading a {
-  margin-right: 5px;
-}
-/* line 163, ../sass/latto.base.scss */
-ul.list li .subheading span.label, ul.list li .subheading a.label {
-  color: white;
-}
-/* line 167, ../sass/latto.base.scss */
-ul.list li .subheading .date {
-  color: #5b5b5b;
-}
-/* line 171, ../sass/latto.base.scss */
-ul.list li img {
-  height: auto;
-  width: 100%;
-}
-/* line 175, ../sass/latto.base.scss */
-ul.list li.last {
-  border-bottom: 0;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-/* line 184, ../sass/latto.base.scss */
-ul.floated li {
-  letter-spacing: -4px;
-  /* Fix for the white letter next to li elements */
-}
-/* line 186, ../sass/latto.base.scss */
-ul.floated li div, ul.floated li p, ul.floated li a, ul.floated li span {
-  letter-spacing: normal;
-}
-/* line 189, ../sass/latto.base.scss */
-ul.floated li img {
-  padding-right: 10px;
-  width: 25%;
-  margin-top: 3px;
-  /* Adding margin to make sure top of image align with top of text */
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-/* line 196, ../sass/latto.base.scss */
-ul.floated li .content {
-  display: inline-block;
-  vertical-align: top;
-  width: 75%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-/* line 209, ../sass/latto.base.scss */
-ul.simple li img,
-ul.simple li .subheading,
-ul.simple li .content {
-  display: none;
-}
-/* line 216, ../sass/latto.base.scss */
+
+/* line 249, ../sass/latto.base.scss */
 ul.nav.nav-inline {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1006,7 +835,7 @@ ul.nav.nav-inline {
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   margin: 0;
 }
-/* line 223, ../sass/latto.base.scss */
+/* line 256, ../sass/latto.base.scss */
 ul.nav.nav-inline li {
   background-color: rgba(0, 109, 171, 0.25);
   zoom: 1;
@@ -1015,26 +844,26 @@ ul.nav.nav-inline li {
   border-right: 1px solid rgba(0, 109, 171, 0.75);
   display: table-cell;
 }
-/* line 228, ../sass/latto.base.scss */
+/* line 261, ../sass/latto.base.scss */
 ul.nav.nav-inline li a {
   color: white;
   display: block;
   padding: 10px 20px;
   text-decoration: none;
 }
-/* line 233, ../sass/latto.base.scss */
+/* line 266, ../sass/latto.base.scss */
 ul.nav.nav-inline li a:hover {
   color: white;
 }
-/* line 237, ../sass/latto.base.scss */
+/* line 270, ../sass/latto.base.scss */
 ul.nav.nav-inline li.first {
   border-left: 0;
 }
-/* line 240, ../sass/latto.base.scss */
+/* line 273, ../sass/latto.base.scss */
 ul.nav.nav-inline li.last {
   border-right: 1px solid rgba(0, 109, 171, 0.5);
 }
-/* line 243, ../sass/latto.base.scss */
+/* line 276, ../sass/latto.base.scss */
 ul.nav.nav-inline li.active {
   border-left: 0;
   border-right: 0;
@@ -1043,7 +872,7 @@ ul.nav.nav-inline li.active {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80006DAB,endColorstr=#80006DAB);
 }
 
-/* line 6, ../sass/latto.panels.scss */
+/* line 5, ../sass/latto.panels.scss */
 .branding .pane-page-logo {
   float: left;
 }
@@ -1107,7 +936,8 @@ a [class*=" icon-"] {
 
 /* line 63, ../sass/latto.font-awesome.scss */
 .btn [class^="icon-"],
-.btn [class*=" icon-"], .nav-tabs [class^="icon-"], .nav-tabs [class*=" icon-"] {
+.btn [class*=" icon-"], .nav-tabs [class^="icon-"],
+.nav-tabs [class*=" icon-"] {
   /* keeps button heights with and without icons the same */
   line-height: .9em;
 }

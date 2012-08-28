@@ -1,6 +1,11 @@
-/* ==========================================================================
-   Base styling
-   ========================================================================== */
+// The default stylesheet for the Latto theme.
+//
+// Documentation written in KSS (https://github.com/kneath/kss/blob/master/SPEC.md)
+// Find a styleguide at ding2tal.ting.dk/profiles/ding2/themes/latto/tools/tdcss/index.html
+// 
+//
+// Compass version 0.12.2 (Alnilam)
+// Zen Grids version 1.2
 
 @import 'latto.mixins.scss';
 @import 'compass/css3/box-sizing';
@@ -17,6 +22,32 @@ header {
   overflow: hidden;
   padding-bottom: $default-spacing * 1.5;
   padding-top: $default-spacing * 1.5;
+}
+
+p {
+  margin-bottom: $default-spacing / 3;
+}
+
+// The default ruler with three class options. Each class includes mixin 
+// colruler(), which enables an easy way to change color of the ruler. 
+// (latto.mixins.scss)
+//
+// .primary           - A light gray ruler
+// .secondary         - A light gray ruler
+// .tertiary          - A light gray ruler
+//
+// No styleguide reference
+hr {
+  @include colruler();
+  &.primary {
+    @include colruler($gray-light);
+  }
+  &.secondary {
+    @include colruler($gray-light);
+  }
+  &.tertiary {
+    @include colruler($gray-light);
+  }
 }
 
 .logo {
@@ -39,10 +70,12 @@ header {
   margin-left: $default-spacing / 2;
 }
 
-/* ==========================================================================
-   Theme specific grid styling
-   ========================================================================== */
-
+// The wrapper for the grid layout.
+//
+// .grid-inner        - Styling for each element in .grid-content wrapper.
+//                      Includes mixin rgba-background() (latto.mixins.scss)
+//
+// No styleguide reference
 .grid-content {
   .grid-inner {
     @include rgba-background($theme-content-background, .75);
@@ -52,47 +85,16 @@ header {
 }
 
 
-/* ==========================================================================
-   Basic elements
-   ========================================================================== */
-
-/* Paragraphs
-   ========================================================================== */
-
-p {
-  margin-bottom: $default-spacing / 3;
-}
-
-/* Default horizontal ruler styles
-   ========================================================================== */
-
-hr {
-  @include colruler();
-  &.primary {
-    @include colruler($gray-light);
-  }
-  &.secondary {
-    @include colruler($gray-light);
-  }
-  &.tertiary {
-    @include colruler($gray-light);
-  }
-}
-
-/* ==========================================================================
-   Navigation
-   ========================================================================== */
-
 .nav-wrapper {
   margin-top: $default-spacing;
   padding-left: $default-spacing / 2;
   padding-right: $default-spacing / 2;
 }
 
-/* ==========================================================================
-   Bootstrap overwrites
-   ========================================================================== */
-
+// Overwrites the default bootstrap label-info styling.
+// A label suitable for attraction user attention.
+//
+// No styleguide reference
 .label-info,
 .label-info[href],
 .badge-info,
@@ -101,10 +103,15 @@ hr {
   background-color: $theme-secondary-color;
 }
 
-/* ==========================================================================
-   List styling
-   ========================================================================== */
-
+// Styling for the default list layouts.
+// Suitable for displaying news, events, headlines etc.
+//
+// .list              - The default styling for an unordered list in Latto theme.
+// .floated           - Implementation of the default list only with the picure 
+//                      floated to the left of the summary.
+// .simple            - A list displaying only headlines.
+//
+// No styleguide reference
 ul {
   li {
     h3 {
@@ -112,38 +119,6 @@ ul {
     }
     p {
       margin-bottom: $default-spacing / 4;
-    }
-  }
-  &.date-list {
-    .date-wrapper {
-      @include single-box-shadow;
-      @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-
-      display: inline-block;
-      margin-top : $default-spacing / 5;
-      margin-right: $default-spacing / 2;
-      min-width: 60px;
-
-      color: lighten($text-primary-color, 25%);
-      font-size: $theme-font-size * .9;
-      text-align: center;
-      vertical-align: top;
-      .day {
-        background-color: $theme-secondary-color;
-        color: $white;
-        text-shadow: 0 -1px 0 rgba(0,0,0,.25);
-      }
-      .date-wrapper-inner {
-        background: $theme-primary-color;
-        border: 1px solid lighten($black, 85%);
-        .date {
-          font-size: $theme-font-size * 1.5;
-          margin-top: $default-spacing / 4;
-        }
-      }
-    }
-    .content {
-      display: inline-block;
     }
   }
   &.list {
@@ -182,7 +157,7 @@ ul {
 
   &.floated {
     li {
-      letter-spacing: -4px; /* Fix for the white letter next to li elements */
+      letter-spacing: -4px; // Fix for the white letter next to li elements
       div, p, a, span {
         letter-spacing: normal;
       }
@@ -204,14 +179,72 @@ ul {
 
   &.simple {
     li {
+      display: table;
       img,
       .subheading,
       .content {
         display: none;
       }
+      .date {
+        color: lighten($text-primary-color, 25%);
+        
+        display: table-cell;
+        min-width: 60px;
+      }
+      .heading {
+        display: table-cell;
+        margin-left: $default-spacing;
+      }
     }
   }
+}
 
+// Styling of a default date-list in Latto theme. Suitable for displaying 
+// upcomming events.
+//
+// .date-list         - A list containing events with information about date,
+//                      location, time and entrence fee.
+//
+// No styleguide reference
+ul {
+  &.date-list {
+    .date-wrapper {
+      @include single-box-shadow;
+      @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+
+      display: inline-block;
+      margin-top : $default-spacing / 5;
+      margin-right: $default-spacing / 2;
+      min-width: 60px;
+
+      color: lighten($text-primary-color, 25%);
+      font-size: $theme-font-size * .9;
+      text-align: center;
+      vertical-align: top;
+      .day {
+        background-color: $theme-secondary-color;
+        color: $white;
+        text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+      }
+      .date-wrapper-inner {
+        background: $theme-primary-color;
+        border: 1px solid lighten($black, 85%);
+        .date {
+          font-size: $theme-font-size * 1.5;
+          margin-top: $default-spacing / 4;
+        }
+      }
+    }
+    .content {
+      display: inline-block;
+    }
+  }  
+}
+
+// The navigation bar used for the main-menu.
+//
+// No styleguide reference
+ul {
   &.nav {
     &.nav-inline {
       @include border-radius(4px);
@@ -247,5 +280,5 @@ ul {
         }
       }
     }
-  }
+  }  
 }
