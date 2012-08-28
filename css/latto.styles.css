@@ -103,25 +103,25 @@ body {
 /* ==========================================================================
    Colors for ::selection
    ========================================================================== */
-/* line 39, ../sass/latto.mixins.scss */
+/* line 66, ../sass/latto.mixins.scss */
 ::-webkit-selection {
   color: #1b1b1b;
   background: #e7e7e7;
 }
 
-/* line 39, ../sass/latto.mixins.scss */
+/* line 66, ../sass/latto.mixins.scss */
 ::-moz-selection {
   color: #1b1b1b;
   background: #e7e7e7;
 }
 
-/* line 39, ../sass/latto.mixins.scss */
+/* line 66, ../sass/latto.mixins.scss */
 ::-o-selection {
   color: #1b1b1b;
   background: #e7e7e7;
 }
 
-/* line 39, ../sass/latto.mixins.scss */
+/* line 66, ../sass/latto.mixins.scss */
 ::selection {
   color: #1b1b1b;
   background: #e7e7e7;
@@ -240,7 +240,7 @@ a:focus {
 }
 
 /* See: http://zengrids.com/help/#vars-legacy */
-/* line 11, ../sass/latto.grid.scss */
+/* line 13, ../sass/latto.grid.scss */
 #page {
   *position: relative;
   *zoom: 1;
@@ -255,14 +255,14 @@ a:focus {
   clear: both;
 }
 
-/* line 15, ../sass/latto.grid.scss */
+/* line 17, ../sass/latto.grid.scss */
 .grid-inner {
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
 }
 
-/* line 21, ../sass/latto.grid.scss */
+/* line 23, ../sass/latto.grid.scss */
 .grid-3-left {
   float: left;
   width: 18.75%;
@@ -281,7 +281,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 25, ../sass/latto.grid.scss */
+/* line 27, ../sass/latto.grid.scss */
 .grid-3-center-left {
   float: left;
   width: 18.75%;
@@ -300,7 +300,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 29, ../sass/latto.grid.scss */
+/* line 31, ../sass/latto.grid.scss */
 .grid-3-center-right {
   float: right;
   width: 18.75%;
@@ -319,7 +319,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 33, ../sass/latto.grid.scss */
+/* line 35, ../sass/latto.grid.scss */
 .grid-3-right {
   float: right;
   width: 18.75%;
@@ -338,7 +338,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 37, ../sass/latto.grid.scss */
+/* line 39, ../sass/latto.grid.scss */
 .grid-4-left {
   float: left;
   width: 25%;
@@ -357,7 +357,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 41, ../sass/latto.grid.scss */
+/* line 43, ../sass/latto.grid.scss */
 .grid-4-center-left {
   float: left;
   width: 25%;
@@ -376,7 +376,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 45, ../sass/latto.grid.scss */
+/* line 47, ../sass/latto.grid.scss */
 .grid-4-center-right {
   float: left;
   width: 25%;
@@ -395,7 +395,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 49, ../sass/latto.grid.scss */
+/* line 51, ../sass/latto.grid.scss */
 .grid-4-right {
   float: right;
   width: 25%;
@@ -414,7 +414,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 53, ../sass/latto.grid.scss */
+/* line 55, ../sass/latto.grid.scss */
 .grid-8-left {
   float: left;
   width: 50%;
@@ -433,7 +433,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 57, ../sass/latto.grid.scss */
+/* line 59, ../sass/latto.grid.scss */
 .grid-8-right {
   float: right;
   width: 50%;
@@ -452,7 +452,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 61, ../sass/latto.grid.scss */
+/* line 63, ../sass/latto.grid.scss */
 .grid-10-left {
   float: left;
   width: 62.5%;
@@ -471,7 +471,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 65, ../sass/latto.grid.scss */
+/* line 67, ../sass/latto.grid.scss */
 .grid-10-center {
   float: left;
   width: 62.5%;
@@ -490,7 +490,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 69, ../sass/latto.grid.scss */
+/* line 71, ../sass/latto.grid.scss */
 .grid-10-right {
   float: right;
   width: 62.5%;
@@ -509,7 +509,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 73, ../sass/latto.grid.scss */
+/* line 75, ../sass/latto.grid.scss */
 .grid-12-left {
   float: left;
   width: 75%;
@@ -528,7 +528,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 77, ../sass/latto.grid.scss */
+/* line 79, ../sass/latto.grid.scss */
 .grid-12-right {
   float: right;
   width: 75%;
@@ -547,7 +547,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 81, ../sass/latto.grid.scss */
+/* line 83, ../sass/latto.grid.scss */
 .grid-13-left {
   float: left;
   width: 81.25%;
@@ -566,7 +566,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 85, ../sass/latto.grid.scss */
+/* line 87, ../sass/latto.grid.scss */
 .grid-13-right {
   float: right;
   width: 81.25%;
@@ -585,7 +585,7 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 89, ../sass/latto.grid.scss */
+/* line 91, ../sass/latto.grid.scss */
 .grid-full {
   clear: both;
   float: left;
@@ -605,22 +605,22 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 94, ../sass/latto.grid.scss */
+/* line 96, ../sass/latto.grid.scss */
 .grid-clear-both {
   clear: both;
 }
 
-/* line 98, ../sass/latto.grid.scss */
+/* line 100, ../sass/latto.grid.scss */
 .grid-clear-left {
   clear: left;
 }
 
-/* line 102, ../sass/latto.grid.scss */
+/* line 104, ../sass/latto.grid.scss */
 .grid-clear-right {
   clear: right;
 }
 
-/* line 106, ../sass/latto.grid.scss */
+/* line 108, ../sass/latto.grid.scss */
 .grid-stack {
   clear: both;
   float: left;
@@ -640,99 +640,16 @@ a:focus {
   _overflow-y: visible;
 }
 
-/* line 111, ../sass/latto.grid.scss */
+/* line 113, ../sass/latto.grid.scss */
 .grid-row {
   clear: both;
   margin-bottom: 20px;
 }
-/* line 114, ../sass/latto.grid.scss */
+/* line 116, ../sass/latto.grid.scss */
 .grid-row.last {
   margin-bottom: 0;
 }
 
-/* line 126, ../sass/latto.grid.scss */
-.add-spacing-after {
-  margin-bottom: 1em;
-}
-
-/* line 132, ../sass/latto.grid.scss */
-.tdcss-fragment .grid-row .grid-inner {
-  background-color: #f1f1f1;
-  border: 1px dashed #e1e1e1;
-  padding: .5em;
-}
-/* line 137, ../sass/latto.grid.scss */
-.tdcss-fragment .grid-row:after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-@media screen and (max-width: 768px) {
-  /* line 147, ../sass/latto.grid.scss */
-  body {
-    background-color: red;
-  }
-
-  /* line 151, ../sass/latto.grid.scss */
-  .content {
-    clear: both;
-    float: left;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    *behavior: url("../scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
-  }
-
-  /* line 156, ../sass/latto.grid.scss */
-  .sidebar-first {
-    clear: both;
-    float: left;
-    width: 50%;
-    margin-left: 0%;
-    margin-right: -50%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    *behavior: url("../scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
-  }
-
-  /* line 161, ../sass/latto.grid.scss */
-  .sidebar-second {
-    float: right;
-    width: 50%;
-    margin-right: 0%;
-    margin-left: -50%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    *behavior: url("../scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
-  }
-}
 /* line 14, ../sass/latto.base.scss */
 body {
   background: url("../images/default-bg-pattern.png") white;

@@ -1,4 +1,6 @@
 // Grid system based on http://zengrids.com.
+//
+// Zen Grids version 1.2
 
 @import "zen";
 
@@ -114,52 +116,4 @@ $box-sizing-polyfill-path: '../scripts/boxsizing.htc';
   &.last {
     @include append-bottom(0);
   }
-}
-
-
-
-
-
-
-// Debugging.
-
-.add-spacing-after {
-  margin-bottom: 1em;
-}
-
-.tdcss-fragment {
-  .grid-row {
-    .grid-inner {
-      background-color: #f1f1f1;
-      border: 1px dashed #e1e1e1;
-      padding: .5em;
-    }
-    &:after {
-      clear: both;
-      content: "";
-      display: table;    
-    }
-  }
-}
-  
-@media screen
-and (max-width: 768px) {
-  body {
-    background-color: red;
-  }
-
-  .content {
-    @include zen-clear(both);
-    @include zen-grid-item(16,1); // Apply this mixin for each grid item in the container.
-  }
-  
-  .sidebar-first {
-    @include zen-clear(both);
-    @include zen-grid-item(8,1); // Apply this mixin for each grid item in the container.
-  }
-
-  .sidebar-second {
-    @include zen-grid-item(8,1, right); // Apply this mixin for each grid item in the container.  
-  }
-
 }
