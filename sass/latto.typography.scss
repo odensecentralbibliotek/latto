@@ -9,14 +9,21 @@ body {
   line-height: $theme-line-height;
 }
 
-/* ==========================================================================
-   Colors for ::selection
-   ========================================================================== */
+// The default colors for ::selection.
+// (latto.mixins.scss)
+//
+// No styleguide reference
 @include selection($text-selection-color, $text-selection-background);
 
-// Headers
-// -------------------------
-
+// The default Latto styling for headers and links inside headers.
+//
+// :link              - Style for a link nested in a header.
+// :visited           - Style for a visited link nested in a header.
+// :hover             - Effect when scrolling over a link nested inside a header.
+// :focus             - Style for a link in focus nested inside a header.
+// :active            - Style for an active link inside a header.
+//
+// No styleguide reference
 h1,
 h2,
 h3,
@@ -54,9 +61,6 @@ h3 {
   line-height: $theme-line-height * 1.25;
 }
 
-// Links
-// -------------------------
-
 a {
   &:link {
     color: $link-color;
@@ -83,10 +87,15 @@ em {
   // Custom styling for emphasized text goes here.
 }
 
-
-// Size classes.
-// -------------------------
-
+// Classes to apply elements for different font sizes.
+//
+// .small             - Half the predefined font size.
+// .medium            - 3/4 the predefined font size.
+// .big               - 25% bigger than the predefined font size.
+// .bigger               - 37,5% bigger than the predefined font size.
+// .biggest               - 50% bigger than the predefined font size.
+//
+// No styleguide reference
 .small {
   font-size: $theme-font-size * .5;
 }
