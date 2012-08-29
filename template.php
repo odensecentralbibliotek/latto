@@ -177,10 +177,7 @@ function load_polyfills($theme_name) {
     // Latto Core Polyfills
     $polly = '';
     $polly_settings_array = array(
-      'load_respondjs',
       'load_html5js',
-      'load_boxsizinghtc',
-      'load_pie',
       'load_selectivizr',
       'load_scalefixjs', // loaded directly by polly_wants_a_cracker(), its never returned
     );
@@ -265,27 +262,13 @@ function polly_wants_a_cracker($polly, $theme_name) {
 
       $crackers = array();
 
-      // Respond.js
-      if ($polly['load_respondjs'] === 1 && theme_get_setting('disable_responsive_styles', $theme_name) === 0) {
-        $crackers['ie']['lt IE 9'][] = 'scripts/respond.js';
-      }
       // HTML5 Shiv
       if ($polly['load_html5js'] === 1) {
-        $crackers['ie']['lt IE 9'][] = 'scripts/html5shiv.js';
-      }
-      // Boxsizing.htc
-      if ($polly['load_boxsizinghtc'] === 1) {
-        $crackers['ie']['lt IE 9'][] = 'scripts/boxsizing.htc';
-      }
-      // PIE
-      if ($polly['load_pie'] === 1) {
-        $pie = theme_get_setting('which_pie', $theme_name);
-        $pie_condition = theme_get_setting('disble_pie_for_ie9', $theme_name) ? 'lt IE 9' : 'lt IE 10';
-        $crackers['ie'][$pie_condition][] = 'scripts/' . $pie;
+        $crackers['all'][] = 'scripts/html5shiv.js';
       }
       // Selectivizr
       if ($polly['load_selectivizr'] === 1) {
-        $crackers['ie']['lt IE 9'][] = 'scripts/selectivizr.js';
+        $crackers['all'][] = 'scripts/selectivizr-min.js';
       }
       // Scalefix.js
       if ($polly['load_scalefixjs'] === 1) {
@@ -310,9 +293,6 @@ function polly_wants_a_cracker($polly, $theme_name) {
               )
             );
           }
-        }
-        if ($crackers['ie']) {
-          $baked_crackers = $crackers['ie'];
         }
       }
     }
