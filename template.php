@@ -16,6 +16,9 @@ global $theme_key, $path_to_latto_core;
 $theme_key = $GLOBALS['theme_key'];
 $path_to_latto_core = drupal_get_path('theme', 'latto');
 
+// We need some functions
+include_once($path_to_latto_core . '/inc/functions.inc');
+
 /**
  * Preprocess variables for html.tpl.php
  */
@@ -65,6 +68,58 @@ function latto_process_html(&$vars) {
   }
   else {
     $vars['polyfills'] = '';
+  }
+}
+
+/**
+ * hook_css_alter()
+ */
+function latto_css_alter(&$css) {
+  global $theme_key;
+
+  // Never allow this to run in our admin theme and only if the extension is enabled.
+  if (theme_get_setting('enable_exclude_css') === 1) {
+
+    // Get $css_data from the cache
+    if ($cache = cache_get('latto_get_css_files')) {
+      $css_data = $cache->data;
+    }
+    else {
+      $css_data = latto_get_css_files($theme_key);
+    }
+
+    // We need the right theme name to get the theme settings
+    $_get_active_theme_data = array_pop($css_data);
+    if ($_get_active_theme_data['type'] == 'theme') {
+      $theme_name = $_get_active_theme_data['source'];
+    }
+    else {
+      $theme_name = $theme_key;
+    }
+
+    // Get the theme setting and unset files
+    foreach ($css_data as $key => $value) {
+      $setting = 'unset_css_' . drupal_html_class($key);
+      if (theme_get_setting($setting, $theme_name) === 1) {
+        if (isset($css[$key])) {
+          unset($css[$key]);
+        }
+      }
+    }
+
+    // Unset -rtl.css files if language dir is RTL, in some contexts dir is
+    // unset, but I don't know if this is a core bug or not.
+    if (isset($language->dir) && $language->dir === 'rtl') {
+      foreach ($css_data as $key => $value) {
+        $setting = 'unset_css_' . drupal_html_class($key);
+        if (theme_get_setting($setting, $theme_name) === 1) {
+          $key = str_replace('.css', '-rtl.css', $key);
+          if (isset($css[$key])) {
+            unset($css[$key]);
+          }
+        }
+      }
+    }
   }
 }
 
