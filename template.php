@@ -78,6 +78,10 @@ function latto_preprocess_panels_pane(&$vars) {
  
   // Suggestions on panel pane
   $vars['theme_hook_suggestions'][] = 'panels_pane__' . $vars['pane']->panel;
+  
+  if(isset($vars['content']['#delta']) && $vars['content']['#delta'] == 2) {
+    $vars['classes_array'][] = 'sidebar-menu';
+  }
 }
 
 /**

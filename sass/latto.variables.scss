@@ -62,6 +62,11 @@ $navbar-text-color:         lighten($gray-light, 25%) !default;
 $navbar-item-spacing:       $default-spacing / 2 $default-spacing !default;
 
 
+// Sidebar
+$sidebar-background-color:  White !default;
+$sidebar-text-color:        Black !default;
+$sidebar-item-spacing:      $default-spacing / 2;
+
 // Lists
 $list-item-spacing:         10px !default;
 $list-picture-width:        25% !default;

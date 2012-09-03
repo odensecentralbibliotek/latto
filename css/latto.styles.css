@@ -164,12 +164,12 @@ a:focus {
   *position: relative;
   *zoom: 1;
 }
-/* line 52, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 52, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:before, #page:after {
   content: "";
   display: table;
 }
-/* line 56, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 56, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:after {
   clear: both;
 }
@@ -870,6 +870,61 @@ ul.nav.nav-inline li.active {
   background-color: rgba(0, 109, 171, 0.5);
   zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80006DAB,endColorstr=#80006DAB);
+}
+
+/* line 289, ../sass/latto.base.scss */
+.sidebar-menu {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.75);
+  zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#BFFFFFFF,endColorstr=#BFFFFFFF);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0;
+}
+/* line 297, ../sass/latto.base.scss */
+.sidebar-menu .pane-title {
+  display: none;
+}
+/* line 301, ../sass/latto.base.scss */
+.sidebar-menu li {
+  background-color: rgba(255, 255, 255, 0.25);
+  zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#40FFFFFF,endColorstr=#40FFFFFF);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+}
+/* line 306, ../sass/latto.base.scss */
+.sidebar-menu li a {
+  color: black;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+/* line 313, ../sass/latto.base.scss */
+.sidebar-menu li:hover {
+  color: #bfbfbf;
+}
+/* line 317, ../sass/latto.base.scss */
+.sidebar-menu.first {
+  border-top: 0;
+}
+/* line 320, ../sass/latto.base.scss */
+.sidebar-menu.last {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+/* line 323, ../sass/latto.base.scss */
+.sidebar-menu.active {
+  border-top: 0;
+  border-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80FFFFFF,endColorstr=#80FFFFFF);
 }
 
 /* line 5, ../sass/latto.panels.scss */
