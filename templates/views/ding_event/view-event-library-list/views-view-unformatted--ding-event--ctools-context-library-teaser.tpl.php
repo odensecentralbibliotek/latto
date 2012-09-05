@@ -6,7 +6,7 @@
  * @ingroup views_templates
  */
 ?>
-<ul class="list floated">
+<ul class="list date-list">
 <?php foreach ($rows as $id => $row): ?>
   <li class="<?php print $classes_array[$id]; ?>">
     <?php print $row; ?>

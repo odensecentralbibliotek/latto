@@ -25,16 +25,8 @@
 ?>
 <?php foreach ($fields as $id => $field): ?>
   
-  <?php if($id == 'title'): ?>
-    <?php print '<div class="info">'; ?>
-  <?php endif; ?>
-  
   <?php if($id == 'group_audience'): ?>
-    <?php print '<div class="location">'; ?>
-  <?php endif; ?>
-  
-  <?php if($id == 'field_event_date_1'): ?>
-    <?php print '<div>'; ?>
+    <?php print '<div class="content">'; ?>
   <?php endif; ?>
   
   <?php if (!empty($field->separator)): ?>
@@ -48,12 +40,7 @@
     <?php print $field->wrapper_suffix; ?>
   <?php endif; ?>
   
-  <?php if($id == 'field_address'): ?>
-    <?php print "</div>"; ?>
-  <?php endif; ?>
-  
   <?php if($id == 'field_event_ticket_price'): ?>
-    <?php print "</div>"; ?>
     <?php print "</div>"; ?>
   <?php endif; ?>
   

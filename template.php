@@ -427,3 +427,99 @@ function latto_preprocess_views_view_unformatted(&$vars) {
     }
   }
 }
+
+/**
+ * Override or insert variables into template user_picture.tpl.php
+ * 
+ * @param $variables
+ *   An array of variables to pass to the theme template.
+ */
+function latto_preprocess_user_picture(&$variables) {
+  // inject the class we need into the A tag of user_picture
+  $variables['user_picture'] = str_replace('<a ', '<a class="span2 thumbnail" ', $variables['user_picture']);
+  // inject the class we need into the IMG tag of user_picture
+  $variables['user_picture'] = str_replace('<img ', '<img class="pull-left" ', $variables['user_picture']);
+}
+
+/**
+ * Override or insert variables into the node templates.
+ *
+ * @param $variables
+ *   An array of variables to pass to the theme template.
+ * @param $hook
+ *   The name of the template being rendered ("node" in this case.)
+ */
+function latto_preprocess_node(&$variables, $hook) {
+  // Add latto_byline to variables
+  $variables['latto_byline'] = t('By: ');  
+  
+  // Add latto_event_location and latto_place2book_tickets to variables (only for ding_event node template)
+  if ($variables['content']['#bundle'] == 'ding_event') { 
+    $event_location = 'location';
+    if (!empty($variables['content']['field_address'][0]['#address']['name_line'])) {
+      $event_location = $variables['content']['field_address'][0]['#address']['name_line'] . '<br/>' . $variables['content']['field_address'][0]['#address']['thoroughfare'] . ', ' . $variables['content']['field_address'][0]['#address']['locality']; 
+    }
+    else {
+      // TODO: the full address wil have to be retrieved from the database
+      $event_location = render($variables['content']['group_audience'][0]); 
+    }
+    $variables['latto_event_location'] = $event_location;
+    
+    // Set a flag for existence of field_place2book_tickets
+    $variables['latto_place2book_tickets'] = (isset($variables['content']['field_place2book_tickets'])) ? 1: 0;
+  }
+  
+  // Add latto_ding_content_tags  to variables.
+  $variables['latto_ding_content_tags'] = '';
+  if (isset($variables['content']['ding_content_tags'])) {
+    $latto_ding_content_tags = '';
+    $items = $variables['content']['ding_content_tags']['#items'];
+    if (count($items) > 0) {
+      foreach ($items as $delta => $item) {
+        $latto_ding_content_tags .= render($variables['content']['ding_content_tags'][$delta]);
+        if ($delta != count($items)-1) {
+          $latto_ding_content_tags .=  ',&nbsp;'; 
+        }
+      }
+      $variables['latto_ding_content_tags'] = t('Tags: ') . $latto_ding_content_tags;
+    }
+  }
+  
+  // Add updated to variables.
+  $variables['latto_updated'] = t('Updated: !datetime', array('!datetime' => format_date($variables['node']->changed, 'custom', 'l j. F Y')));
+  
+  // Modified submitted variable
+  if ($variables['display_submitted']) {
+    $variables['submitted'] = t('Submitted: !datetime', array('!datetime' => format_date($variables['created'], 'custom', 'l j. F Y')));
+  }
+}
+
+/*
+ * Implementing the ticketsinfo theme function (support for ding_place2book module)
+ */
+function latto_place2book_ticketsinfo($variables) {
+  $output = '';
+  $place2book_id = $variables['place2book_id'];
+  $url = $variables['url'];
+  $type = $variables['type'];
+  
+  switch ($type) {
+    case 'event-over':
+      $output = '<button class="btn btn-warning btn-large">' . t('The event has already taken place') . '</button>';
+      break;
+    case 'closed-admission':
+      $output = '<button class="btn btn-warning btn-large">' . t('Not open for ticket sale') . '</button>';
+      break;
+    case 'no-tickets-left':
+      $output = '<button class="btn btn-warning btn-large">' . t('Sold out') . '</button>';
+      break;
+    case 'order-link':
+      $output = l(t('Book a ticket'), $url, array('attributes' => array('class' => array('btn', 'btn-primary', 'btn-large'))));
+      break;
+    default:
+      $output = '';
+      break;
+  }
+  
+  return $output;
+}
