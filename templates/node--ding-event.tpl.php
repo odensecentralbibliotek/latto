@@ -152,6 +152,8 @@
     ?>
   </article>
 
+  <hr/>
+
   <?php
     // Remove the "Add new comment" link on the teaser page or if the comment
     // form is being displayed on the same page.

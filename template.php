@@ -431,7 +431,7 @@ function latto_preprocess_node(&$variables, $hook) {
   
   // Add latto_ding_content_tags  to variables.
   $variables['latto_ding_content_tags'] = '';
-  if (isset($variables['content']['ding_content_tags'])) 
+  if (isset($variables['content']['ding_content_tags'])) {
     $latto_ding_content_tags = '';
     $items = $variables['content']['ding_content_tags']['#items'];
     if (count($items) > 0) {
