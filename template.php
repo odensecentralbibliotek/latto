@@ -430,16 +430,19 @@ function latto_preprocess_node(&$variables, $hook) {
   }
   
   // Add latto_ding_content_tags  to variables.
-  $latto_ding_content_tags = '';
-  $items = $variables['content']['ding_content_tags']['#items'];
-  if (count($items) > 0) {
-    foreach ($items as $delta => $item) {
-      $latto_ding_content_tags .= render($variables['content']['ding_content_tags'][$delta]);
-      if ($delta != count($items)-1) {
-        $latto_ding_content_tags .=  ',&nbsp;'; 
+  $variables['latto_ding_content_tags'] = '';
+  if (isset($variables['content']['ding_content_tags'])) 
+    $latto_ding_content_tags = '';
+    $items = $variables['content']['ding_content_tags']['#items'];
+    if (count($items) > 0) {
+      foreach ($items as $delta => $item) {
+        $latto_ding_content_tags .= render($variables['content']['ding_content_tags'][$delta]);
+        if ($delta != count($items)-1) {
+          $latto_ding_content_tags .=  ',&nbsp;'; 
+        }
       }
+      $variables['latto_ding_content_tags'] = t('Tags: ') . $latto_ding_content_tags;
     }
-    $variables['latto_ding_content_tags'] = t('Tags: ') . $latto_ding_content_tags;
   }
   
   // Add updated to variables.
