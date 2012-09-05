@@ -142,8 +142,10 @@
       hide($content['field_ding_event_target']);
       hide($content['field_event_ticket_price']);
       
-      // Hide fields now so that we can render them later.
+      // Hide fields that will be displayed as panel panes instead
       hide($content['comments']);
+      
+      // Hide fields now so that we can render them later.
       hide($content['links']);
       hide($content['ding_content_tags']);
       print render($content);
@@ -186,5 +188,3 @@
   <?php endif; ?>
   
 </section>
-
-<?php print render($content['comments']); ?>
