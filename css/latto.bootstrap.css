@@ -57,7 +57,7 @@ button {
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
   vertical-align: middle;
   cursor: pointer;
-  background-color: #f5f5f5;
+  background-color: whitesmoke;
   background-image: -moz-linear-gradient(top, white, #e6e6e6);
   background-image: -ms-linear-gradient(top, white, #e6e6e6);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#e6e6e6));
@@ -739,7 +739,7 @@ table {
 /* line 137, ../sass/latto.bootstrap.tables.scss */
 .table tbody tr:hover td,
 .table tbody tr:hover th {
-  background-color: #f5f5f5;
+  background-color: whitesmoke;
 }
 
 /* line 10, ../sass/latto.bootstrap.forms.scss */
@@ -1183,46 +1183,68 @@ input[type="checkbox"][readonly] {
 }
 
 /* line 171, ../sass/latto.bootstrap.mixins.scss */
-.control-group.error > label, .control-group.error .help-block, .control-group.error .help-inline {
+.control-group.error > label,
+.control-group.error .help-block,
+.control-group.error .help-inline {
   color: #b94a48;
 }
 /* line 179, ../sass/latto.bootstrap.mixins.scss */
-.control-group.error .checkbox, .control-group.error .radio, .control-group.error input, .control-group.error select, .control-group.error textarea {
+.control-group.error .checkbox,
+.control-group.error .radio,
+.control-group.error input,
+.control-group.error select,
+.control-group.error textarea {
   color: #b94a48;
   border-color: #b94a48;
 }
 /* line 182, ../sass/latto.bootstrap.mixins.scss */
-.control-group.error .checkbox:focus, .control-group.error .radio:focus, .control-group.error input:focus, .control-group.error select:focus, .control-group.error textarea:focus {
+.control-group.error .checkbox:focus,
+.control-group.error .radio:focus,
+.control-group.error input:focus,
+.control-group.error select:focus,
+.control-group.error textarea:focus {
   border-color: #953b39;
   -webkit-box-shadow: 0 0 6px #d59392;
   -moz-box-shadow: 0 0 6px #d59392;
   box-shadow: 0 0 6px #d59392;
 }
 /* line 189, ../sass/latto.bootstrap.mixins.scss */
-.control-group.error .input-prepend .add-on, .control-group.error .input-append .add-on {
+.control-group.error .input-prepend .add-on,
+.control-group.error .input-append .add-on {
   color: #b94a48;
   background-color: #f2dede;
   border-color: #b94a48;
 }
 
 /* line 171, ../sass/latto.bootstrap.mixins.scss */
-.control-group.success > label, .control-group.success .help-block, .control-group.success .help-inline {
+.control-group.success > label,
+.control-group.success .help-block,
+.control-group.success .help-inline {
   color: #468847;
 }
 /* line 179, ../sass/latto.bootstrap.mixins.scss */
-.control-group.success .checkbox, .control-group.success .radio, .control-group.success input, .control-group.success select, .control-group.success textarea {
+.control-group.success .checkbox,
+.control-group.success .radio,
+.control-group.success input,
+.control-group.success select,
+.control-group.success textarea {
   color: #468847;
   border-color: #468847;
 }
 /* line 182, ../sass/latto.bootstrap.mixins.scss */
-.control-group.success .checkbox:focus, .control-group.success .radio:focus, .control-group.success input:focus, .control-group.success select:focus, .control-group.success textarea:focus {
+.control-group.success .checkbox:focus,
+.control-group.success .radio:focus,
+.control-group.success input:focus,
+.control-group.success select:focus,
+.control-group.success textarea:focus {
   border-color: #356635;
   -webkit-box-shadow: 0 0 6px #7aba7b;
   -moz-box-shadow: 0 0 6px #7aba7b;
   box-shadow: 0 0 6px #7aba7b;
 }
 /* line 189, ../sass/latto.bootstrap.mixins.scss */
-.control-group.success .input-prepend .add-on, .control-group.success .input-append .add-on {
+.control-group.success .input-prepend .add-on,
+.control-group.success .input-append .add-on {
   color: #468847;
   background-color: #dff0d8;
   border-color: #468847;
@@ -1250,7 +1272,7 @@ select:focus:required:invalid:focus {
   padding: 17px 20px 18px;
   margin-top: 18px;
   margin-bottom: 18px;
-  background-color: #f5f5f5;
+  background-color: whitesmoke;
   border-top: 1px solid #e5e5e5;
   *zoom: 1;
 }
