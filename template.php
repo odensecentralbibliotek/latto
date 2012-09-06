@@ -35,11 +35,11 @@ function latto_preprocess_html(&$vars) {
   // Clean up the lang attributes.
   $vars['html_attributes'] = 'lang="' . $language->language . '" dir="' . $language->dir . '"';
 
-  
+
   // Build an array of polyfilling scripts
   $vars['polyfills_array'] = '';
   $vars['polyfills_array'] = load_polyfills($theme_name, $vars);
-  
+
 }
 
 /**
@@ -130,11 +130,11 @@ function latto_css_alter(&$css) {
 function latto_preprocess_panels_pane(&$vars) {
   // Suggestions base on sub-type.
   $vars['theme_hook_suggestions'][] = 'panels_pane__' . str_replace('-', '__', $vars['pane']->subtype);
- 
+
   // Suggestions on panel pane
   $vars['theme_hook_suggestions'][] = 'panels_pane__' . $vars['pane']->panel;
-  
-  
+
+
   if(isset($vars['content']['#delta']) && $vars['content']['#delta'] == "ding-menu-sidebar") {
     $vars['classes_array'][] = 'sidebar-menu';
   }
@@ -154,7 +154,7 @@ function latto_panels_default_style_render_region($vars) {
 /**
  * Implements theme_menu_tree() for the default main menu.
  */
-function latto_menu_tree__menu_block__1($vars) { 
+function latto_menu_tree__menu_block__1($vars) {
   return '<ul class="main-menu nav nav-inline">' . $vars['tree'] . '</ul>';
 }
 
@@ -174,9 +174,9 @@ function latto_menu_link($vars) {
   // Remove .has-children.
   if(theme_get_setting('latto_classes_menu_has_children')){
     $remove[] .= "has-children";
-  }  
+  }
 
-  // Remove .collapsed, .expanded and expandable.  
+  // Remove .collapsed, .expanded and expandable.
   if(theme_get_setting('latto_classes_menu_collapsed')){
     $remove[] .= "collapsed";
     $remove[] .= "expanded";
@@ -189,15 +189,15 @@ function latto_menu_link($vars) {
   }
 
   // Remove menu-mlid-[NUMBER].
-  if(theme_get_setting('latto_classes_menu_items_mlid')){  
+  if(theme_get_setting('latto_classes_menu_items_mlid')){
     $vars['element']['#attributes']['class'] = preg_grep('/^menu-mlid-/', $vars['element']['#attributes']['class'], PREG_GREP_INVERT);
   }
-  
+
   // Check if the class array is empty.
   if(empty($vars['element']['#attributes']['class'])){
     unset($vars['element']['#attributes']['class']);
   }
-  
+
   $element = $vars['element'];
 
   $sub_menu = '';
@@ -205,7 +205,7 @@ function latto_menu_link($vars) {
   if ($element['#below']) {
     $sub_menu = drupal_render($element['#below']);
   }
-  
+
   $output = l($element['#title'], $element['#href'], $element['#localized_options']);
   return '<li' . drupal_attributes($element['#attributes']) . '><span>' . $output . $sub_menu . "</span></li>\n";
 }
@@ -252,7 +252,7 @@ function load_polyfills($theme_name) {
       }
     }
   }
-  
+
   return $polyfills_array;
 }
 
@@ -387,14 +387,14 @@ function latto_get_info($theme_name) {
  *
  */
 function latto_preprocess_views_view_unformatted(&$vars) {
-  
+
   // Class names for overwriting
   $row_first = "first";
   $row_last  = "last";
 
   $view = $vars['view'];
   $rows = $vars['rows'];
-  
+
   // Set arrays
   $vars['classes_array'] = array();
   $vars['classes'] = array();
@@ -402,13 +402,13 @@ function latto_preprocess_views_view_unformatted(&$vars) {
   // Variables
   $count = 0;
   $max = count($rows);
-  
+
   // Loop through the rows and overwrite the classes
   foreach ($rows as $id => $row) {
-    $count++;     
-    
+    $count++;
+
     $vars['classes'][$id][] = $count % 2 ? 'odd' : 'even';
-        
+
     if ($count == 1) {
       $vars['classes'][$id][] = $row_first;
     }
@@ -430,7 +430,7 @@ function latto_preprocess_views_view_unformatted(&$vars) {
 
 /**
  * Override or insert variables into template user_picture.tpl.php
- * 
+ *
  * @param $variables
  *   An array of variables to pass to the theme template.
  */
@@ -451,24 +451,24 @@ function latto_preprocess_user_picture(&$variables) {
  */
 function latto_preprocess_node(&$variables, $hook) {
   // Add latto_byline to variables
-  $variables['latto_byline'] = t('By: ');  
-  
+  $variables['latto_byline'] = t('By: ');
+
   // Add latto_event_location and latto_place2book_tickets to variables (only for ding_event node template)
-  if ($variables['content']['#bundle'] == 'ding_event') { 
+  if ($variables['content']['#bundle'] == 'ding_event') {
     $event_location = 'location';
     if (!empty($variables['content']['field_address'][0]['#address']['name_line'])) {
-      $event_location = $variables['content']['field_address'][0]['#address']['name_line'] . '<br/>' . $variables['content']['field_address'][0]['#address']['thoroughfare'] . ', ' . $variables['content']['field_address'][0]['#address']['locality']; 
+      $event_location = $variables['content']['field_address'][0]['#address']['name_line'] . '<br/>' . $variables['content']['field_address'][0]['#address']['thoroughfare'] . ', ' . $variables['content']['field_address'][0]['#address']['locality'];
     }
     else {
       // TODO: the full address wil have to be retrieved from the database
-      $event_location = render($variables['content']['group_audience'][0]); 
+      $event_location = render($variables['content']['group_audience'][0]);
     }
     $variables['latto_event_location'] = $event_location;
-    
+
     // Set a flag for existence of field_place2book_tickets
     $variables['latto_place2book_tickets'] = (isset($variables['content']['field_place2book_tickets'])) ? 1: 0;
   }
-  
+
   // Add latto_ding_content_tags  to variables.
   $variables['latto_ding_content_tags'] = '';
   if (isset($variables['content']['ding_content_tags'])) {
@@ -478,16 +478,16 @@ function latto_preprocess_node(&$variables, $hook) {
       foreach ($items as $delta => $item) {
         $latto_ding_content_tags .= render($variables['content']['ding_content_tags'][$delta]);
         if ($delta != count($items)-1) {
-          $latto_ding_content_tags .=  ',&nbsp;'; 
+          $latto_ding_content_tags .=  ',&nbsp;';
         }
       }
       $variables['latto_ding_content_tags'] = t('Tags: ') . $latto_ding_content_tags;
     }
   }
-  
+
   // Add updated to variables.
   $variables['latto_updated'] = t('Updated: !datetime', array('!datetime' => format_date($variables['node']->changed, 'custom', 'l j. F Y')));
-  
+
   // Modified submitted variable
   if ($variables['display_submitted']) {
     $variables['submitted'] = t('Submitted: !datetime', array('!datetime' => format_date($variables['created'], 'custom', 'l j. F Y')));
@@ -502,7 +502,7 @@ function latto_place2book_ticketsinfo($variables) {
   $place2book_id = $variables['place2book_id'];
   $url = $variables['url'];
   $type = $variables['type'];
-  
+
   switch ($type) {
     case 'event-over':
       $output = '<button class="btn btn-warning btn-large">' . t('The event has already taken place') . '</button>';
@@ -520,6 +520,101 @@ function latto_place2book_ticketsinfo($variables) {
       $output = '';
       break;
   }
-  
+
+  return $output;
+}
+
+/**
+ * Implements template_preprocess_field().
+ */
+function latto_preprocess_field(&$vars, $hook) {
+  // Get current view mode (teaser)
+  $view_mode =  $vars['element']['#view_mode'];
+
+  // Clean up fields in search result view mode aka. search result page.
+  if ($view_mode == 'search_result') {
+    // Add suggestion that only hits the search result page.
+    $vars['theme_hook_suggestions'][] = 'field__' . $vars['element']['#field_type'] . '__' . $view_mode;
+
+
+    switch ($vars['element']['#field_name']) {
+      case 'ting_author':
+      case 'ting_abstract':
+      case 'ting_subjects':
+        $vars['classes_array'] = array('content');
+        break;
+
+      case 'ting_title':
+        $vars['classes_array'] = array('heading');
+        break;
+    }
+  }
+
+  // Make suggestion for the availability on the search result page.
+  if ($vars['element']['#field_type'] == 'ting_collection_types' &&
+      $vars['element']['#formatter'] == 'ding_availability_types') {
+    $vars['theme_hook_suggestions'][] = 'field__' . $vars['element']['#field_type'] . '__' . 'search_result';
+
+    // Add class to availability list.
+
+  }
+}
+
+/**
+ * Implements theme_item_list().
+ *
+ * Removed wrapper div.
+ */
+function latto_item_list($variables) {
+  $items = $variables['items'];
+  $title = $variables['title'];
+  $type = $variables['type'];
+  $attributes = $variables['attributes'];
+  $output = '';
+
+  // Only output the list container and title, if there are any list items.
+  // Check to see whether the block title exists before adding a header.
+  // Empty headers are not semantic and present accessibility challenges.
+  if (isset($title) && $title !== '') {
+    $output .= '<h3>' . $title . '</h3>';
+  }
+
+  if (!empty($items)) {
+    $output .= "<$type" . drupal_attributes($attributes) . '>';
+    $num_items = count($items);
+    foreach ($items as $i => $item) {
+      $attributes = array();
+      $children = array();
+      $data = '';
+      if (is_array($item)) {
+        foreach ($item as $key => $value) {
+          if ($key == 'data') {
+            $data = $value;
+          }
+          elseif ($key == 'children') {
+            $children = $value;
+          }
+          else {
+            $attributes[$key] = $value;
+          }
+        }
+      }
+      else {
+        $data = $item;
+      }
+      if (count($children) > 0) {
+        // Render nested list.
+        $data .= theme_item_list(array('items' => $children, 'title' => NULL, 'type' => $type, 'attributes' => $attributes));
+      }
+      if ($i == 0) {
+        $attributes['class'][] = 'first';
+      }
+      if ($i == $num_items - 1) {
+        $attributes['class'][] = 'last';
+      }
+      $output .= '<li' . drupal_attributes($attributes) . '>' . $data . "</li>\n";
+    }
+    $output .= "</$type>";
+  }
   return $output;
 }

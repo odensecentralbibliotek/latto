@@ -164,12 +164,12 @@ a:focus {
   *position: relative;
   *zoom: 1;
 }
-/* line 52, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 52, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:before, #page:after {
   content: "";
   display: table;
 }
-/* line 56, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 56, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:after {
   clear: both;
 }
@@ -686,7 +686,7 @@ hr.tertiary {
 }
 
 /* line 117, ../sass/latto.base.scss */
-ul li h3 {
+ul li .heading {
   margin-bottom: 5px;
 }
 /* line 120, ../sass/latto.base.scss */
@@ -2080,4 +2080,22 @@ ul.icons li .icon-large:before {
 /* line 329, ../sass/latto.font-awesome.scss */
 .icon-user-md:before {
   content: "\f200";
+}
+
+/* line 5, ../sass/latto.ting.scss */
+.availability-status:before {
+  content: " ";
+}
+
+/* line 9, ../sass/latto.ting.scss */
+.availability ul {
+  float: left;
+}
+/* line 11, ../sass/latto.ting.scss */
+.availability ul li {
+  display: inline;
+  list-style-type: none;
+  padding: 0 20px 0 0;
+  border: none;
+  margin: 0;
 }
