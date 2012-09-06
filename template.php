@@ -453,17 +453,10 @@ function latto_preprocess_field(&$vars, $hook) {
   if ($vars['element']['#field_type'] == 'ting_collection_types' &&
       $vars['element']['#formatter'] == 'ding_availability_types') {
     $vars['theme_hook_suggestions'][] = 'field__' . $vars['element']['#field_type'] . '__' . 'search_result';
-  }
-}
 
-/**
- * Implements theme_ting_object_cover().
- *
- * Removes wrapper from the output.
- *
- */
-function latto_ting_object_cover($variables) {
-  return $variables['image'];
+    // Add class to availability list.
+
+  }
 }
 
 /**
