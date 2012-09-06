@@ -2,7 +2,7 @@
 //
 // Documentation written in KSS (https://github.com/kneath/kss/blob/master/SPEC.md)
 // Find a styleguide at ding2tal.ting.dk/profiles/ding2/themes/latto/tools/tdcss/index.html
-// 
+//
 //
 // Compass version 0.12.2 (Alnilam)
 // Zen Grids version 1.2
@@ -28,8 +28,8 @@ p {
   margin-bottom: $default-spacing / 3;
 }
 
-// The default ruler with three class options. Each class includes mixin 
-// colruler(), which enables an easy way to change color of the ruler. 
+// The default ruler with three class options. Each class includes mixin
+// colruler(), which enables an easy way to change color of the ruler.
 // (latto.mixins.scss)
 //
 // .primary           - A light gray ruler
@@ -107,15 +107,15 @@ hr {
 // Suitable for displaying news, events, headlines etc.
 //
 // .list              - The default styling for an unordered list in Latto theme.
-// .floated           - Implementation of the default list only with the picure 
+// .floated           - Implementation of the default list only with the picure
 //                      floated to the left of the summary.
 // .simple            - A list displaying only headlines.
 //
 // No styleguide reference
 ul {
   li {
-    h3 {
-      margin-bottom: $default-spacing / 4;      
+    .heading {
+      margin-bottom: $default-spacing / 4;
     }
     p {
       margin-bottom: $default-spacing / 4;
@@ -133,17 +133,17 @@ ul {
       .subheading {
         margin-top: $list-item-spacing;
         margin-bottom: $list-item-spacing;
-        span, a { 
+        span, a {
           margin-right: $list-item-spacing / 2;
           &.label {
-            color: $white;  
+            color: $white;
           }
         }
         .date {
           color: lighten($text-primary-color, 25%);
         }
       }
-      img {       
+      img {
         height: auto;
         width: 100%;
       }
@@ -166,7 +166,7 @@ ul {
         width: $list-picture-width;
         margin-top: 3px; /* Adding margin to make sure top of image align with top of text */
         @include box-sizing(border-box);
-        
+
       }
       .content {
         display: inline-block;
@@ -187,7 +187,7 @@ ul {
       }
       .date {
         color: lighten($text-primary-color, 25%);
-        
+
         display: table-cell;
         min-width: 60px;
       }
@@ -199,7 +199,7 @@ ul {
   }
 }
 
-// Styling of a default date-list in Latto theme. Suitable for displaying 
+// Styling of a default date-list in Latto theme. Suitable for displaying
 // upcomming events.
 //
 // .date-list         - A list containing events with information about date,
@@ -238,7 +238,7 @@ ul {
     .content {
       display: inline-block;
     }
-  }  
+  }
 }
 
 // The navigation bar used for the main-menu.
@@ -280,5 +280,5 @@ ul {
         }
       }
     }
-  }  
+  }
 }
