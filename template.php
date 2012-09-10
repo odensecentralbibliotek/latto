@@ -17,6 +17,9 @@ $theme_key = $GLOBALS['theme_key'];
 $path_to_latto_core = drupal_get_path('theme', 'latto');
 
 // We need some functions
+/**
+ * @TODO: What functions ?
+ */
 include_once($path_to_latto_core . '/inc/functions.inc');
 
 /**
@@ -29,30 +32,29 @@ function latto_preprocess_html(&$vars) {
   // Set variable for the base path
   $vars['base_path'] = base_path();
 
-  // Get the info file data
-  //$info = latto_get_info($theme_name);
-
   // Clean up the lang attributes.
   $vars['html_attributes'] = 'lang="' . $language->language . '" dir="' . $language->dir . '"';
 
-
   // Build an array of polyfilling scripts
   $vars['polyfills_array'] = '';
-  $vars['polyfills_array'] = load_polyfills($theme_name, $vars);
+  $vars['polyfills_array'] = latto_load_polyfills($theme_name, $vars);
 
 }
 
 /**
+ * Implements hook_process_html().
+ *
  * Process variables for html.tpl.php
  */
 function latto_process_html(&$vars) {
-  global $theme_key; $path_to_latto_core;
-  $theme_name = $theme_key;
-
+  /**
+   * @TODO: What does this code do and why is it here.
+   * @TODO: Use better variable names, what is $kv, $kvp, $ke or $va ?
+   */
   if (!empty($vars['polyfills_array'])) {
     $vars['polyfills'] = drupal_static('latto_process_html_polyfills');
     if (empty($vars['polyfills'])) {
-      $ie_scripts = array();
+      $ies = array();
       if (!empty($vars['polyfills_array'])) {
         foreach ($vars['polyfills_array'] as $ke => $va) {
           foreach ($va as $k => $v) {
@@ -72,7 +74,7 @@ function latto_process_html(&$vars) {
 }
 
 /**
- * hook_css_alter()
+ * Implements hook_css_alter().
  */
 function latto_css_alter(&$css) {
   global $theme_key;
@@ -107,6 +109,10 @@ function latto_css_alter(&$css) {
       }
     }
 
+
+    /**
+     * @TODO: Language is not defined, so what is the effect of the code below ?
+     */
     // Unset -rtl.css files if language dir is RTL, in some contexts dir is
     // unset, but I don't know if this is a core bug or not.
     if (isset($language->dir) && $language->dir === 'rtl') {
@@ -152,7 +158,9 @@ function latto_panels_default_style_render_region($vars) {
 }
 
 /**
- * Implements theme_menu_tree() for the default main menu.
+ * Implements theme_menu_tree().
+ *
+ * Addes wrapper clases for the default menu.
  */
 function latto_menu_tree__menu_block__1($vars) {
   return '<ul class="main-menu nav nav-inline">' . $vars['tree'] . '</ul>';
@@ -160,19 +168,18 @@ function latto_menu_tree__menu_block__1($vars) {
 
 /**
  * Implements theme_form_alter().
- * 
+ *
  * Adds two bootstrap classes to the default Drupal search form submit button.
  * Adds the default-value to the search field.
- * 
+ *
  * @param type $vars
  */
-
 function latto_form_alter(&$variables) {
   if ($variables['#form_id'] == "search_block_form") {
     $search_string = t('Søg efter materialer fra biblioteket..');
     $variables['search_block_form']['#default_value'] = $search_string;
     $variables['search_block_form']['#attributes']['title'] = $search_string;
-    
+
     $variables['actions']['submit']['#attributes']['class'][] = 'btn';
     $variables['actions']['submit']['#attributes']['class'][] = 'btn-info';
     $variables['actions']['submit']['#attributes']['class'][] = 'btn-big';
@@ -234,9 +241,11 @@ function latto_menu_link($vars) {
 /**
  * Return an array of file names.
  *
+ * @TODO: What is polyfilles and what do it do ?
+ *
  * @param $theme_name
  */
-function load_polyfills($theme_name) {
+function latto_load_polyfills($theme_name) {
   global $path_to_latto_core;
 
   // Get the info file data
@@ -265,7 +274,7 @@ function load_polyfills($theme_name) {
     foreach ($polly_settings_array as $polly_setting) {
       $polly[$polly_setting] = theme_get_setting($polly_setting, $theme_name);
     }
-    $backed_crackers = polly_wants_a_cracker($polly, $theme_name);
+    $backed_crackers = latto_polly_wants_a_cracker($polly, $theme_name);
     foreach ($backed_crackers as $cupboard => $flavors) {
       foreach ($flavors as $key => $value) {
         $filepath = $path_to_latto_core . '/' . $value;
@@ -278,7 +287,8 @@ function load_polyfills($theme_name) {
 }
 
 /**
- * Return a themed script.
+ * Implements hook_theme_script().
+ *
  * Since Drupal 7 does not (yet) support the 'browser' option in drupal_add_js()
  * Latto provides a way to load scripts inside conditional comments.
  * This function wraps a file in script elements and returns a string.
@@ -301,6 +311,7 @@ function latto_theme_script($filepath) {
 
 /**
  * Return themed scripts in Conditional Comments.
+ *
  * Since Drupal 7 does not (yet) support the 'browser' option in drupal_add_js()
  * Adaptivetheme provides a way to load scripts inside conditional comments.
  * This function will return a string for printing into a template, its
@@ -324,6 +335,9 @@ function latto_theme_conditional_scripts($ie_scripts) {
 
 /**
  * Polyfills.
+ *
+ * @TODO: Prefix function with theme_name.
+ *
  * This function does two seperate operations. First it attaches a condition
  * to each Polyfill which can be either an IE conditional comment or 'all'.
  * Polyfills with 'all' are loaded immediatly via drupal_add_js(), those with
@@ -334,7 +348,7 @@ function latto_theme_conditional_scripts($ie_scripts) {
  * @param $polly
  * @param $theme_name
  */
-function polly_wants_a_cracker($polly, $theme_name) {
+function latto_polly_wants_a_cracker($polly, $theme_name) {
   global $path_to_latto_core;
 
   $baked_crackers = drupal_static(__FUNCTION__, array());
@@ -391,10 +405,10 @@ function polly_wants_a_cracker($polly, $theme_name) {
 function latto_get_info($theme_name) {
   $info = drupal_static(__FUNCTION__, array());
   if (empty($info)) {
-    $lt = list_themes();
-    foreach ($lt as $key => $value) {
+    $themes = list_themes();
+    foreach ($themes as $key => $value) {
       if ($theme_name == $key) {
-        $info = $lt[$theme_name]->info;
+        $info = $themes[$theme_name]->info;
       }
     }
   }
@@ -404,8 +418,9 @@ function latto_get_info($theme_name) {
 
 
 /**
- * Overwrite views row classes
+ * Implements hook_preprocess_views_view_unformatted().
  *
+ * Overwrite views row classes
  */
 function latto_preprocess_views_view_unformatted(&$vars) {
 
@@ -424,7 +439,8 @@ function latto_preprocess_views_view_unformatted(&$vars) {
   $count = 0;
   $max = count($rows);
 
-  // Loop through the rows and overwrite the classes
+  // Loop through the rows and overwrite the classes, its importent that the
+  // $row variable is here, as it's the $id that we need.
   foreach ($rows as $id => $row) {
     $count++;
 
@@ -450,7 +466,11 @@ function latto_preprocess_views_view_unformatted(&$vars) {
 }
 
 /**
+ * Implements hook_preprocess_user_picture().
+ *
  * Override or insert variables into template user_picture.tpl.php
+ *
+ * @TODO: Is there an render array for this, str replacement is not cheap.
  *
  * @param $variables
  *   An array of variables to pass to the theme template.
@@ -463,6 +483,8 @@ function latto_preprocess_user_picture(&$variables) {
 }
 
 /**
+ * Implements hook_preprocess_node().
+ *
  * Override or insert variables into the node templates.
  *
  * @param $variables
@@ -475,13 +497,15 @@ function latto_preprocess_node(&$variables, $hook) {
   $variables['latto_byline'] = t('By: ');
 
   // Add latto_event_location and latto_place2book_tickets to variables (only for ding_event node template)
-  if ($variables['content']['#bundle'] == 'ding_event') {
+  if (isset($variables['content']['#bundle']) && $variables['content']['#bundle'] == 'ding_event') {
     $event_location = 'location';
     if (!empty($variables['content']['field_address'][0]['#address']['name_line'])) {
       $event_location = $variables['content']['field_address'][0]['#address']['name_line'] . '<br/>' . $variables['content']['field_address'][0]['#address']['thoroughfare'] . ', ' . $variables['content']['field_address'][0]['#address']['locality'];
     }
     else {
-      // TODO: the full address wil have to be retrieved from the database
+      /**
+       *  @TODO: the full address wil have to be retrieved from the database
+       */
       $event_location = render($variables['content']['group_audience'][0]);
     }
     $variables['latto_event_location'] = $event_location;
@@ -506,6 +530,10 @@ function latto_preprocess_node(&$variables, $hook) {
     }
   }
 
+  /**
+   * @TODO Use date-formats defined in the backend, do not hardcode formats...
+   *       ever
+   */
   // Add updated to variables.
   $variables['latto_updated'] = t('Updated: !datetime', array('!datetime' => format_date($variables['node']->changed, 'custom', 'l j. F Y')));
 
@@ -515,12 +543,15 @@ function latto_preprocess_node(&$variables, $hook) {
   }
 }
 
-/*
+/**
  * Implementing the ticketsinfo theme function (support for ding_place2book module)
+ *
+ * @TODO: Markup should not be hardcode into theme function as it makes it very
+ *        hard to override.
+ *
  */
 function latto_place2book_ticketsinfo($variables) {
   $output = '';
-  $place2book_id = $variables['place2book_id'];
   $url = $variables['url'];
   $type = $variables['type'];
 
@@ -584,7 +615,8 @@ function latto_preprocess_field(&$vars, $hook) {
 /**
  * Implements theme_item_list().
  *
- * Removed wrapper div.
+ * This is the default theme function. With the wrapper div removed.
+ *
  */
 function latto_item_list($variables) {
   $items = $variables['items'];
