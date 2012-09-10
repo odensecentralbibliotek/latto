@@ -112,40 +112,38 @@ hr {
 // .simple            - A list displaying only headlines.
 //
 // No styleguide reference
-ul {
-  li {
-    .heading {
-      margin-bottom: $default-spacing / 4;
-    }
-    p {
-      margin-bottom: $default-spacing / 4;
-    }
+.list {
+  .heading {
+    margin-bottom: $default-spacing / 4;
+  }
+  p {
+    margin-bottom: $default-spacing / 4;
   }
   &.list {
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 100%;
-    li {
+    .list-item {
       border-bottom: 1px solid $gray-light;
       padding-bottom: $list-item-spacing * 1.5;
       margin-bottom: $list-item-spacing * 1.5;
       .subheading {
         margin-top: $list-item-spacing;
         margin-bottom: $list-item-spacing;
-        span, a {
-          margin-right: $list-item-spacing / 2;
-          &.label {
-            color: $white;
-          }
+        .label {
+          color: $white;
         }
         .date {
           color: lighten($text-primary-color, 25%);
         }
       }
-      img {
-        height: auto;
-        width: 100%;
+      .image-container {
+        margin-bottom: $list-item-spacing;
+        img {
+          height: auto;
+          max-width: 100%;
+        }
       }
       &.last {
         border-bottom: 0;
@@ -156,38 +154,34 @@ ul {
   }
 
   &.floated {
-    li {
+    .list-item {
       letter-spacing: -4px; // Fix for the white letter next to li elements
       div, p, a, span {
         letter-spacing: normal;
       }
-      img {
-        padding-right: $list-item-spacing;
-        width: $list-picture-width;
-        margin-top: 3px; /* Adding margin to make sure top of image align with top of text */
-        @include box-sizing(border-box);
+      .image-container {
+        display: table-cell;
+        max-width: $list-picture-width;
+        img {
 
+          padding-right: $list-item-spacing;
+          margin-top: 3px; /* Adding margin to make sure top of image align with top of text */
+          @include box-sizing(border-box);
+        }
       }
       .content {
-        display: inline-block;
+        display: table-cell;
         vertical-align: top;
-        width: 100 - $list-picture-width;
         @include box-sizing(border-box);
       }
     }
   }
 
   &.simple {
-    li {
+    .list-item {
       display: table;
-      img,
-      .subheading,
-      .content {
-        display: none;
-      }
       .date {
         color: lighten($text-primary-color, 25%);
-
         display: table-cell;
         min-width: 60px;
       }
