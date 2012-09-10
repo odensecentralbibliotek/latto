@@ -159,6 +159,27 @@ function latto_menu_tree__menu_block__1($vars) {
 }
 
 /**
+ * Implements theme_form_alter().
+ * 
+ * Adds two bootstrap classes to the default Drupal search form submit button.
+ * Adds the default-value to the search field.
+ * 
+ * @param type $vars
+ */
+
+function latto_form_alter(&$variables) {
+  if ($variables['#form_id'] == "search_block_form") {
+    $search_string = t('Søg efter materialer fra biblioteket..');
+    $variables['search_block_form']['#default_value'] = $search_string;
+    $variables['search_block_form']['#attributes']['title'] = $search_string;
+    
+    $variables['actions']['submit']['#attributes']['class'][] = 'btn';
+    $variables['actions']['submit']['#attributes']['class'][] = 'btn-info';
+    $variables['actions']['submit']['#attributes']['class'][] = 'btn-big';
+  }
+}
+
+/**
  * Implements theme_menu_link().
  */
 function latto_menu_link($vars) {
