@@ -20,8 +20,6 @@ body {
 header {
   background: $theme-header-pattern;
   overflow: hidden;
-  padding-bottom: $default-spacing * 1.5;
-  padding-top: $default-spacing * 1.5;
 }
 
 p {
@@ -50,24 +48,32 @@ hr {
   }
 }
 
+.header-inner {
+  margin-left: $default-spacing / 2;
+  margin-right: $default-spacing / 2;
+  padding-bottom: $default-spacing * 1.5;
+  padding-top: $default-spacing * 1.5;
+  background-color: lighten($gray-light, 5%);
+ }
+
 .logo {
   float: left;
-  margin-right: $default-spacing;
-  margin-left: $default-spacing / 2;
+  margin-left: $default-spacing;
 }
 
 .site-name {
-  color: $white;
+  color: $black;
   float: left;
-  font-size: 450%;
+  font-size: 400%;
   line-height: 100%;
-  margin-left: $default-spacing / 2;
+  margin-left: $default-spacing;
 }
 
 .site-slogan {
   clear: left;
-  color: $gray-light;
-  margin-left: $default-spacing / 2;
+  font-size: 115%;
+  color: darken($gray-dark, 50%);
+  margin-left: $default-spacing;
 }
 
 // The wrapper for the grid layout.
@@ -84,7 +90,6 @@ hr {
   }
 }
 
-
 .nav-wrapper {
   margin-top: $default-spacing;
   padding-left: $default-spacing / 2;
@@ -96,12 +101,21 @@ hr {
 //
 // No styleguide reference
 .search-wrapper {
-  margin: $default-spacing * 3 auto;
-  width: 800px;
+  @include rgba-background($black, .15);
   
+  margin-top: $default-spacing;
+  margin-right: $default-spacing / 2;
+  margin-left: $default-spacing / 2;
+  overflow: hidden;
   
-  div {
-    padding: 0;
+  .search-wrapper-inner {
+    margin: $default-spacing * 2 auto;
+    width: 800px;
+    position: relative;
+    
+    div {
+      padding: 0;  
+    }
   }
   .form-text {
     @include box-sizing(border-box);
