@@ -20,6 +20,43 @@ body {
 header {
   background: $theme-header-pattern;
   overflow: hidden;
+  
+  .header-inner {
+    margin-left: $default-spacing / 2;
+    margin-right: $default-spacing / 2;
+    overflow: hidden;
+    padding-bottom: $default-spacing * 1.5;
+    padding-top: $default-spacing * 1.5;
+    
+    background-color: lighten($gray-light, 5%);
+   }
+
+  .logo {
+    float: left;
+    margin-left: $default-spacing;
+  }
+
+  .site-name {
+    color: $black;
+    float: left;
+    font-size: 400%;
+    line-height: 100%;
+    margin-left: $default-spacing;
+   
+    a,
+    a:link,
+    a:visited {
+      color: inherit;
+      text-decoration: inherit;
+    }
+  }
+
+  .site-slogan {
+    clear: left;
+    font-size: 115%;
+    color: darken($gray-dark, 50%);
+    margin-left: $default-spacing * 1.25;
+  }
 }
 
 p {
@@ -46,34 +83,6 @@ hr {
   &.tertiary {
     @include colruler($gray-light);
   }
-}
-
-.header-inner {
-  margin-left: $default-spacing / 2;
-  margin-right: $default-spacing / 2;
-  padding-bottom: $default-spacing * 1.5;
-  padding-top: $default-spacing * 1.5;
-  background-color: lighten($gray-light, 5%);
- }
-
-.logo {
-  float: left;
-  margin-left: $default-spacing;
-}
-
-.site-name {
-  color: $black;
-  float: left;
-  font-size: 400%;
-  line-height: 100%;
-  margin-left: $default-spacing;
-}
-
-.site-slogan {
-  clear: left;
-  font-size: 115%;
-  color: darken($gray-dark, 50%);
-  margin-left: $default-spacing;
 }
 
 // The wrapper for the grid layout.
@@ -108,13 +117,13 @@ hr {
   margin-left: $default-spacing / 2;
   overflow: hidden;
   
-  .search-wrapper-inner {
+  form {
     margin: $default-spacing * 2 auto;
     width: 800px;
     position: relative;
-    
     div {
-      padding: 0;  
+      padding: 0;
+      border: 0;
     }
   }
   .form-text {
@@ -134,15 +143,6 @@ hr {
     
     font-family: $theme-font-family;
   }
-}
-
-
-// A big button.
-// Suitable for search buttons or login buttons, works well on mobile devices.
-//
-// No styleguide reference
-.btn-big {  
-  padding: 8px 20px;
 }
 
 // Overwrites the default bootstrap label-info styling.

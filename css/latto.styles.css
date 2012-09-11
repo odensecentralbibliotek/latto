@@ -164,12 +164,12 @@ a:focus {
   *position: relative;
   *zoom: 1;
 }
-/* line 52, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 52, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:before, #page:after {
   content: "";
   display: table;
 }
-/* line 56, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 56, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:after {
   clear: both;
 }
@@ -600,13 +600,49 @@ header {
   background: none;
   overflow: hidden;
 }
+/* line 24, ../sass/latto.base.scss */
+header .header-inner {
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow: hidden;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  background-color: #f4f4f4;
+}
+/* line 34, ../sass/latto.base.scss */
+header .logo {
+  float: left;
+  margin-left: 20px;
+}
+/* line 39, ../sass/latto.base.scss */
+header .site-name {
+  color: black;
+  float: left;
+  font-size: 400%;
+  line-height: 100%;
+  margin-left: 20px;
+}
+/* line 48, ../sass/latto.base.scss */
+header .site-name a,
+header .site-name a:link,
+header .site-name a:visited {
+  color: inherit;
+  text-decoration: inherit;
+}
+/* line 54, ../sass/latto.base.scss */
+header .site-slogan {
+  clear: left;
+  font-size: 115%;
+  color: #3e3e3e;
+  margin-left: 25px;
+}
 
-/* line 25, ../sass/latto.base.scss */
+/* line 62, ../sass/latto.base.scss */
 p {
   margin-bottom: 6.66667px;
 }
 
-/* line 38, ../sass/latto.base.scss */
+/* line 75, ../sass/latto.base.scss */
 hr {
   background: #d5d5d5;
   color: #d5d5d5;
@@ -618,7 +654,7 @@ hr {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 40, ../sass/latto.base.scss */
+/* line 77, ../sass/latto.base.scss */
 hr.primary {
   background: #e7e7e7;
   color: #e7e7e7;
@@ -630,7 +666,7 @@ hr.primary {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 43, ../sass/latto.base.scss */
+/* line 80, ../sass/latto.base.scss */
 hr.secondary {
   background: #e7e7e7;
   color: #e7e7e7;
@@ -642,7 +678,7 @@ hr.secondary {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 46, ../sass/latto.base.scss */
+/* line 83, ../sass/latto.base.scss */
 hr.tertiary {
   background: #e7e7e7;
   color: #e7e7e7;
@@ -655,39 +691,7 @@ hr.tertiary {
   margin-bottom: 10px;
 }
 
-/* line 51, ../sass/latto.base.scss */
-.header-inner {
-  margin-left: 10px;
-  margin-right: 10px;
-  padding-bottom: 30px;
-  padding-top: 30px;
-  background-color: #f4f4f4;
-}
-
-/* line 59, ../sass/latto.base.scss */
-.logo {
-  float: left;
-  margin-left: 20px;
-}
-
-/* line 64, ../sass/latto.base.scss */
-.site-name {
-  color: black;
-  float: left;
-  font-size: 400%;
-  line-height: 100%;
-  margin-left: 20px;
-}
-
-/* line 72, ../sass/latto.base.scss */
-.site-slogan {
-  clear: left;
-  font-size: 115%;
-  color: #3e3e3e;
-  margin-left: 20px;
-}
-
-/* line 86, ../sass/latto.base.scss */
+/* line 95, ../sass/latto.base.scss */
 .grid-content .grid-inner {
   background-color: rgba(255, 255, 255, 0.75);
   zoom: 1;
@@ -695,14 +699,14 @@ hr.tertiary {
   padding: 20px;
 }
 
-/* line 93, ../sass/latto.base.scss */
+/* line 102, ../sass/latto.base.scss */
 .nav-wrapper {
   margin-top: 20px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-/* line 103, ../sass/latto.base.scss */
+/* line 112, ../sass/latto.base.scss */
 .search-wrapper {
   background-color: rgba(0, 0, 0, 0.15);
   zoom: 1;
@@ -712,17 +716,18 @@ hr.tertiary {
   margin-left: 10px;
   overflow: hidden;
 }
-/* line 111, ../sass/latto.base.scss */
-.search-wrapper .search-wrapper-inner {
+/* line 120, ../sass/latto.base.scss */
+.search-wrapper form {
   margin: 40px auto;
   width: 800px;
   position: relative;
 }
-/* line 116, ../sass/latto.base.scss */
-.search-wrapper .search-wrapper-inner div {
+/* line 124, ../sass/latto.base.scss */
+.search-wrapper form div {
   padding: 0;
+  border: 0;
 }
-/* line 120, ../sass/latto.base.scss */
+/* line 129, ../sass/latto.base.scss */
 .search-wrapper .form-text {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -733,17 +738,12 @@ hr.tertiary {
   font-size: 20px;
   font-family: "Amble Light Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/* line 130, ../sass/latto.base.scss */
+/* line 139, ../sass/latto.base.scss */
 .search-wrapper .btn {
   position: absolute;
   top: 5px;
   right: 5px;
   font-family: "Amble Light Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-/* line 144, ../sass/latto.base.scss */
-.btn-big {
-  padding: 8px 20px;
 }
 
 /* line 155, ../sass/latto.base.scss */

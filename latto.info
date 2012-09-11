@@ -10,6 +10,10 @@
   stylesheets[all][] = css/latto.bootstrap.css
   stylesheets[all][] = css/latto.styles.css
 
+  ; Import javascripts.
+  scripts[] = scripts/jquery.example.js
+  scripts[] = scripts/latto.js
+
 ;----------// Regions
   regions[branding_top]    = Branding top
   regions[header]          = Header
