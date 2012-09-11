@@ -55,7 +55,7 @@ header {
     clear: left;
     font-size: 115%;
     color: darken($gray-dark, 50%);
-    margin-left: $default-spacing;
+    margin-left: $default-spacing * 1.25;
   }
 }
 
