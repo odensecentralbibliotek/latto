@@ -579,10 +579,14 @@ function latto_place2book_ticketsinfo($variables) {
  */
 function latto_preprocess_field(&$vars, $hook) {
   // Get current view mode (teaser)
-  $view_mode =  $vars['element']['#view_mode'];
+  $view_mode  =  $vars['element']['#view_mode'];
+  $field_name =  $vars['element']['#field_name'];
 
   // Add suggestion for latto specific field.
   $vars['theme_hook_suggestions'][] = 'field__' . 'latto';
+  
+  // Add suggestion for latto field with specific name.
+  $vars['theme_hook_suggestions'][] = 'field__' . 'latto_' . $field_name;  
   
   // Add suggestion for latto field in specific view mode.
   $vars['theme_hook_suggestions'][] = 'field__' . 'latto_' . $view_mode;

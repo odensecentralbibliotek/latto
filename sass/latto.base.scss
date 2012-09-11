@@ -154,8 +154,22 @@ hr {
 .badge-info,
 .badge-info[href] {
   color: $theme-primary-color;
-  background-color: $theme-secondary-color;
+  background-color: $theme-secondary-color; 
 }
+
+
+// Make sure links inside labels get the correct color.
+.label {
+  a {
+    color: $white;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
 
 // Styling for the default list layouts.
 // Suitable for displaying news, events, headlines etc.
@@ -185,9 +199,6 @@ hr {
       .subheading {
         margin-top: $list-item-spacing;
         margin-bottom: $list-item-spacing;
-        .label {
-          color: $white;
-        }
         .date {
           color: lighten($text-primary-color, 25%);
         }
