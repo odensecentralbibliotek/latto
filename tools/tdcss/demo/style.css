@@ -2,3 +2,7 @@ body {
   background: none;
   background-color: #fff;
 }
+.docs-sidenav.affix {
+  position: fixed;
+  top: 40px;
+}

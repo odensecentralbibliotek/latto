@@ -139,7 +139,8 @@
         }
 
         function addNewSection(section_name) {
-            $(module.container).next(".tdcss-elements").append('<div class="tdcss-section" id="' + encodeURIComponent(section_name) + '"><h2 class="tdcss-h2">' + section_name + '</h2></div>');
+            var sectionName = section_name.toLowerCase().replace(/ /g,'-');
+            $(module.container).next(".tdcss-elements").append('<section id="' + sectionName + '"><div class="tdcss-section" id="' + encodeURIComponent(section_name) + '"><h2 class="tdcss-h2">' + section_name + '</h2></div></section>');
         }
 
         function addNewFragment(fragment) {
