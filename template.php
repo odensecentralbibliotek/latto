@@ -583,6 +583,12 @@ function latto_preprocess_field(&$vars, $hook) {
   // Get current view mode (teaser)
   $view_mode =  $vars['element']['#view_mode'];
 
+  // Add suggestion for latto specific field.
+  $vars['theme_hook_suggestions'][] = 'field__' . 'latto';
+  
+  // Add suggestion for latto field in specific view mode.
+  $vars['theme_hook_suggestions'][] = 'field__' . 'latto_' . $view_mode;
+  
   // Clean up fields in search result view mode aka. search result page.
   if ($view_mode == 'search_result') {
     // Add suggestion that only hits the search result page.
@@ -671,3 +677,5 @@ function latto_item_list($variables) {
   }
   return $output;
 }
+
+
