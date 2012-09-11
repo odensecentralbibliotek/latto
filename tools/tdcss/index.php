@@ -23,7 +23,7 @@
     </script>
 
 </head>
-<body data-spy="scroll" data-target=".docs-sidebar">
+<body data-spy="scroll" data-target=".docs-sidebar" onload="prettyPrint()">
 
   <div class="grid-row">
     <div class="grid-3-left">
@@ -47,7 +47,7 @@
           <li><a href="#labels"><i class="icon-chevron-right"></i> Labels</a></li>
           <li><a href="#lists"><i class="icon-chevron-right"></i> Lists</a></li>
           <li><a href="#tabs"><i class="icon-chevron-right"></i> Tabs</a></li>
-          <li><a href="#grid"><i class="icon-chevron-right"></i> Grid</a></li>
+          <li><a href="#grid-system"><i class="icon-chevron-right"></i> Grid system</a></li>
         </ul>
       </div>
     </div>
@@ -72,6 +72,7 @@
 
   <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
   <script src="src/vendors/bootstrap-scrollspy.js"></script>
+  <script src="src/vendors/google-code-prettify/prettify.js"></script>
 
 </body>
 </html>

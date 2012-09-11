@@ -140,16 +140,17 @@
 
         function addNewSection(section_name) {
             var sectionName = section_name.toLowerCase().replace(/ /g,'-');
-            $(module.container).next(".tdcss-elements").append('<section id="' + sectionName + '"><div class="tdcss-section" id="' + encodeURIComponent(section_name) + '"><h2 class="tdcss-h2">' + section_name + '</h2></div></section>');
+            $(module.container).next(".tdcss-elements").append('<div class="tdcss-section" id="' + encodeURIComponent(section_name) + '"><h2 class="tdcss-h2" id="' + sectionName + '">' + section_name + '</h2></div>');
         }
 
         function addNewFragment(fragment) {
             var title = fragment.title || '',
                 html = fragment.html,
+                htmlcode = htmlEscape(html),
                 height = getFragmentHeightCSSProperty(fragment),
                 $row = $("<div style='height:" + height + "' class='tdcss-fragment'></div>"),
-                $dom_example = $("<div class='tdcss-dom-example'>" + html + "</div>"),
-                $code_example = $("<div class='tdcss-code-example'><h3 class='tdcss-h3'>" + title + "</h3><textarea class='tdcss-textarea' readonly>" + html + "</textarea></div>");
+                $dom_example = $("<h3 class='tdcss-h3'>" + title + "</h3><div class='tdcss-dom-example'>" + html + "</div>"),
+                $code_example = $("<div class='tdcss-code-example'><pre class='prettyprint linenums'>" + htmlcode + "</pre></div>");
 
             $row.append($dom_example);
             $row.append($code_example);
@@ -239,6 +240,15 @@
             });
 
             return that;
+        }
+
+        function htmlEscape(str) {
+            return String(str)
+                    //.replace(/&/g, '&amp;')
+                    .replace(/"/g, '&quot;')
+                    .replace(/'/g, '&#39;')
+                    .replace(/</g, '&lt;')
+                    .replace(/>/g, '&gt;');
         }
     }
 })($);
