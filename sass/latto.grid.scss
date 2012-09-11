@@ -56,6 +56,10 @@ $box-sizing-polyfill-path: '../scripts/boxsizing.htc';
   @include zen-grid-item(8, 1);
 }
 
+.grid-8-center {
+  @include zen-grid-item(8, 5);
+}
+
 .grid-8-right {
   @include zen-grid-item(8, 1, right);
 }
