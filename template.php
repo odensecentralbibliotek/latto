@@ -176,9 +176,7 @@ function latto_menu_tree__menu_block__1($vars) {
  */
 function latto_form_alter(&$variables) {
   if ($variables['#form_id'] == "search_block_form") {
-    $search_string = t('Søg efter materialer fra biblioteket..');
-    $variables['search_block_form']['#default_value'] = $search_string;
-    $variables['search_block_form']['#attributes']['title'] = $search_string;
+    $variables['search_block_form']['#attributes']['title'] = t('Søg efter materialer fra biblioteket..');
 
     $variables['actions']['submit']['#attributes']['class'][] = 'btn';
     $variables['actions']['submit']['#attributes']['class'][] = 'btn-large';
