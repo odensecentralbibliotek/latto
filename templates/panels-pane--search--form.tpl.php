@@ -18,15 +18,13 @@
  */
 ?>
 <div class="search-wrapper <?php print $classes; ?>" <?php print $id; ?>>
-  <div class="search-wrapper-inner"> 
-  <?php if ($admin_links): ?>
-    <?php print $admin_links; ?>
-  <?php endif; ?>
+<?php if ($admin_links): ?>
+  <?php print $admin_links; ?>
+<?php endif; ?>
 
-  <?php if ($title): ?>
-    <h2><?php print $title; ?></h2>
-  <?php endif; ?>
+<?php if ($title): ?>
+  <h2><?php print $title; ?></h2>
+<?php endif; ?>
 
-  <?php print render($content); ?>
-  </div>
+<?php print render($content); ?>
 </div>

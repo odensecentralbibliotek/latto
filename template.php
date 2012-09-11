@@ -181,8 +181,8 @@ function latto_form_alter(&$variables) {
     $variables['search_block_form']['#attributes']['title'] = $search_string;
 
     $variables['actions']['submit']['#attributes']['class'][] = 'btn';
+    $variables['actions']['submit']['#attributes']['class'][] = 'btn-large';
     $variables['actions']['submit']['#attributes']['class'][] = 'btn-info';
-    $variables['actions']['submit']['#attributes']['class'][] = 'btn-big';
   }
 }
 

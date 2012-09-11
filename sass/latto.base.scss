@@ -110,13 +110,13 @@ hr {
   margin-left: $default-spacing / 2;
   overflow: hidden;
   
-  .search-wrapper-inner {
+  form {
     margin: $default-spacing * 2 auto;
     width: 800px;
     position: relative;
-    
     div {
-      padding: 0;  
+      padding: 0;
+      border: 0;
     }
   }
   .form-text {
@@ -136,15 +136,6 @@ hr {
     
     font-family: $theme-font-family;
   }
-}
-
-
-// A big button.
-// Suitable for search buttons or login buttons, works well on mobile devices.
-//
-// No styleguide reference
-.btn-big {  
-  padding: 8px 20px;
 }
 
 // Overwrites the default bootstrap label-info styling.
