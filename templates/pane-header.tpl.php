@@ -10,7 +10,9 @@
     <?php if ($site_name || $site_slogan): ?>
       <?php if ($site_name): ?>
         <div class="site-name">
-          <?php print $site_name; ?>
+          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
+            <?php print $site_name; ?>
+          </a>
         </div>
       <?php endif; ?>
       <?php if ($site_slogan): ?>
