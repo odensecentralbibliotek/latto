@@ -1,6 +1,7 @@
 /* 
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * @file
+ * A JavaScript file to hold the common functions of the Latto theme.
+ * 
  */
 (function($) {
   $(document).ready(function () {
