@@ -21,6 +21,7 @@ $num_footer_blocks = count($footer_blocks);
     $csss = array('grid-4-left',
 		  'grid-8-center',
 		  'grid-4-right');
+    break;
   case 4:
     $csss = array('grid-4-left',
 		  'grid-4-center-left',
@@ -36,7 +37,7 @@ foreach($footer_blocks as $key => $foot) {
   
 ?>
   <div class="<?php echo $csss[$key]; ?>">
-<?php $foot['content']; ?>
+<?php echo $foot['content']['value']; ?>
   </div>
 <?php
 
