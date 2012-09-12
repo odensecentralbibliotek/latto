@@ -1,10 +1,12 @@
 body {
   background: none;
   background-color: #fff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
+  font-family: "Amble Light Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
+}
+
+input, button, select, textarea {
+  font-family: "Amble Light Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .affix {

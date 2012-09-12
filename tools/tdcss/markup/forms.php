@@ -1,9 +1,9 @@
 <!-- # Forms -->
 
 <!-- : Basic form elements -->
-<form class="well">
+<form>
   <label>Label name</label>
-  <input type="text" class="span3" placeholder="Type something...">
+  <input type="text" placeholder="Type something...">
   <span class="help-block">Example block-level help text here.</span>
   <select id="select01">
     <option>something</option>
@@ -19,7 +19,7 @@
 </form>
 
 <!-- : Inline form -->
-<form class="well form-inline">
+<form class="form-inline">
   <input type="text" class="input-small" placeholder="Email">
   <input type="password" class="input-small" placeholder="Password">
   <label class="checkbox">
@@ -89,3 +89,8 @@
 <div class="input-prepend">
   <span class="add-on">@</span><input class="span2" id="prependedInput" size="16" type="text">
 </div>
+
+<!-- : Textarea -->
+<form class="form-inline">
+  <textarea rows="3">Textarea...</textarea>
+</form>
