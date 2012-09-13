@@ -1001,8 +1001,7 @@ ul.nav.nav-inline li.active {
 .breadcrumb {
   background-color: rgba(0, 0, 0, 0.07);
   margin: 20px 10px;
-  padding-top: 5px;
-  padding-left: 10px;
+  padding: 5px 10px;
 }
 
 /* line 5, ../sass/latto.panels.scss */
