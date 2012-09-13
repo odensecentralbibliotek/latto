@@ -94,6 +94,27 @@ function latto_form_system_theme_settings_alter(&$form, $form_state) {
     ),
   );
   
+  
+  /*
+   * Plugins
+   */
+  $form['latto-settings']['plugins'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Plugins'),
+    '#description' => t('<h3>Plugins</h3><p>Here you can enable plugins supplied with the core theme.'),
+    '#collapsible' => TRUE,
+    '#collapsed' => FALSE,
+    '#weight'=> -10
+  );  
+  
+  // Equalize
+  $form['latto-settings']['plugins']['load_equalize'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Equalize'),
+    '#description' => t('<a href="!link" target="_blank">Equalize</a> is a jQuery plugin for equalizing the height or width of elements.', array('!link' => 'https://github.com/tsvensen/equalize.js/')),
+    '#default_value' => theme_get_setting('load_equalize'),
+  );    
+  
   // Unset CSS
   $form['latto-settings']['cssexcludes'] = array(
   '#type' => 'fieldset',

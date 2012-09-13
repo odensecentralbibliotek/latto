@@ -24,6 +24,9 @@
 ;----------// Polyfills
   settings[load_html5js] = 1
 
+;----------// Plugins
+  settings[load_equalize] = 1
+
 ;----------// Stylesheets
 
   settings[enable_exclude_css] = 0

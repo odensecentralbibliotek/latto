@@ -280,6 +280,20 @@ function latto_load_polyfills($theme_name) {
 }
 
 /**
+ * Include plugins.
+ *
+ * @param $theme_name
+ */
+function latto_load_plugins($theme_name) {
+  
+  print_r(theme_get_setting);
+
+  if (theme_get_setting('load_equalize')) {
+    drupal_add_js('../scripts/equalize/equalize.min.js');
+  }
+}
+
+/**
  * Implements hook_theme_script().
  *
  * Since Drupal 7 does not (yet) support the 'browser' option in drupal_add_js()
