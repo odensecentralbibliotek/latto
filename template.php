@@ -139,11 +139,6 @@ function latto_preprocess_panels_pane(&$vars) {
 
   // Suggestions on panel pane
   $vars['theme_hook_suggestions'][] = 'panels_pane__' . $vars['pane']->panel;
-
-
-  if(isset($vars['content']['#delta']) && $vars['content']['#delta'] == "ding-menu-sidebar") {
-    $vars['classes_array'][] = 'sidebar-menu';
-  }
 }
 
 /**
@@ -680,4 +675,15 @@ function latto_item_list($variables) {
   return $output;
 }
 
-
+/**
+ * Implement theme_breadcrumb().
+ * 
+ * Implemented for the purpose of changing >> to > in the default breadcrumb.
+ */
+function latto_breadcrumb ($variables) {
+  $breadcrumb = $variables['breadcrumb'];
+  
+  if(!empty($breadcrumb)) {
+    return '<div class="breadcrumb">' . implode(' > ', $breadcrumb) . '</div>';
+  }
+}
