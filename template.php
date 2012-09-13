@@ -664,3 +664,16 @@ function latto_item_list($variables) {
   }
   return $output;
 }
+
+/**
+ * Implement theme_breadcrumb().
+ * 
+ * Implemented for the purpose of changing >> to > in the default breadcrumb.
+ */
+function latto_breadcrumb ($variables) {
+  $breadcrumb = $variables['breadcrumb'];
+  
+  if(!empty($breadcrumb)) {
+    return '<div class="breadcrumb">' . implode(' > ', $breadcrumb) . '</div>';
+  }
+}
