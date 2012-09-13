@@ -164,12 +164,12 @@ a:focus {
   *position: relative;
   *zoom: 1;
 }
-/* line 52, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 52, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:before, #page:after {
   content: "";
   display: table;
 }
-/* line 56, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 56, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:after {
   clear: both;
 }
@@ -960,12 +960,7 @@ ul.nav.nav-inline li.active {
   margin: 0;
   margin-left: 10px;
 }
-
-/* line 356, ../sass/latto.base.scss */
-.sidebar-menu .pane-title {
-  display: none;
-}
-
+/* line 357, ../sass/latto.base.scss */
 .sidebar-menu li {
   background-color: rgba(255, 255, 255, 0.25);
   zoom: 1;
@@ -973,7 +968,7 @@ ul.nav.nav-inline li.active {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.75);
 }
-
+/* line 362, ../sass/latto.base.scss */
 .sidebar-menu li a {
   color: black;
   display: block;
@@ -981,34 +976,19 @@ ul.nav.nav-inline li.active {
   padding-bottom: 10px;
   text-decoration: none;
 }
-
-/* line 372, ../sass/latto.base.scss */
+/* line 369, ../sass/latto.base.scss */
 .sidebar-menu li:hover {
   color: #bfbfbf;
+}
+/* line 373, ../sass/latto.base.scss */
+.sidebar-menu.first {
+  border-top: 0;
 }
 /* line 376, ../sass/latto.base.scss */
-.sidebar-menu.first {
-  border-top: 0;
+.sidebar-menu.last {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 /* line 379, ../sass/latto.base.scss */
-.sidebar-menu.last {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-/* line 358, ../sass/latto.base.scss */
-.sidebar-menu li:hover {
-  color: #bfbfbf;
-}
-/* line 362, ../sass/latto.base.scss */
-.sidebar-menu.first {
-  border-top: 0;
-}
-/* line 365, ../sass/latto.base.scss */
-.sidebar-menu.last {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-/* line 368, ../sass/latto.base.scss */
->>>>>>> style_breadcrumb
 .sidebar-menu.active {
   border-top: 0;
   border-bottom: 0;
@@ -1017,7 +997,7 @@ ul.nav.nav-inline li.active {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80FFFFFF,endColorstr=#80FFFFFF);
 }
 
-/* line 378, ../sass/latto.base.scss */
+/* line 389, ../sass/latto.base.scss */
 .breadcrumb {
   background-color: rgba(0, 0, 0, 0.07);
   margin: 20px 10px;
