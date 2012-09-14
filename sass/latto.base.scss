@@ -28,7 +28,7 @@ header {
     padding-bottom: $default-spacing * 1.5;
     padding-top: $default-spacing * 1.5;
 
-    background-color: lighten($gray-light, 5%);
+    background-color: $theme-header-background;
    }
 
   .logo {

@@ -597,7 +597,7 @@ body {
 
 /* line 20, ../sass/latto.base.scss */
 header {
-  background: none;
+  background: #f4f4f4;
   overflow: hidden;
 }
 /* line 24, ../sass/latto.base.scss */
@@ -607,7 +607,7 @@ header .header-inner {
   overflow: hidden;
   padding-bottom: 30px;
   padding-top: 30px;
-  background-color: #f4f4f4;
+  background-color: transparent;
 }
 /* line 34, ../sass/latto.base.scss */
 header .logo {

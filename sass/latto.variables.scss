@@ -15,13 +15,13 @@ $gray-light:            #e7e7e7 !default;
 $white:                 #fff    !default;
 
 // Theme color definitions
-$theme-primary-color:       #fff !default;
-$theme-secondary-color:     #00b7e7 !default;
-$theme-background-color:    #fff !default;
-$theme-background-pattern:  url('../images/default-bg-pattern.png') !default;
-$theme-header-background:   #1b1b1b !default;
-$theme-header-pattern:      none !default; //url('../images/primary-pattern.png') !default;
-$theme-content-background:  #fff !default;
+$theme-primary-color:           #fff !default;
+$theme-secondary-color:         #00b7e7 !default;
+$theme-background-color:        #fff !default;
+$theme-background-pattern:      url('../images/default-bg-pattern.png') !default;
+$theme-header-background:       transparent !default;
+$theme-header-pattern:          #f4f4f4 !default; //url('../images/primary-pattern.png') !default;
+$theme-content-background:      #fff !default;
 
 
 // Font variables
