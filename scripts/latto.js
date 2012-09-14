@@ -17,7 +17,7 @@
 
 
     // Check if load equalize is set.
-    if (Drupal.settings.latto_settings.load_equalize == 1) {
+    if (Drupal.settings.latto_settings.load_equalize !== undefined) {
 
       // Add equalize to the main menu.
       // https://github.com/tsvensen/equalize.js
@@ -27,7 +27,7 @@
     
     
     // Check if load equalize is set.
-    if (Drupal.settings.latto_settings.main_menu_sticky == 1) {
+    if (Drupal.settings.latto_settings.main_menu_sticky !== undefined) {
 
       // Calculate the height of <header>.
       // Use outerHeight() instead of height() if it have padding.
