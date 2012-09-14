@@ -310,7 +310,7 @@ function latto_load_plugins() {
   if (theme_get_setting('load_equalize')) {
     
     // Add the script
-    drupal_add_js($path_to_latto_core . '/scripts/equalize/js/equalize.min.js');
+    drupal_add_js($path_to_latto_core . '/scripts/equalize.min.js');
     
     // Add variable to js so we can check if it is set
     drupal_add_js(array('latto_settings' => array('load_equalize' => theme_get_setting('load_equalize'),)), 'setting');
