@@ -304,6 +304,8 @@ ul {
 //
 // No styleguide reference
 .nav {
+  font-size: $navbar-font-size;  
+  
   &.nav-inline {
     @include border-radius(4px);
     @include background-image(linear-gradient($navbar-background-color, darken($navbar-background-color, 2%)));
