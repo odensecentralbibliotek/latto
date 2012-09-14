@@ -11,8 +11,7 @@
   stylesheets[all][] = css/latto.styles.css
 
   ; Import javascripts.
-  scripts[] = scripts/jquery.example.js
-  scripts[] = scripts/latto.js
+  ; scripts[] = scripts/script.js
 
 ;----------// Regions
   regions[branding_top]    = Branding top

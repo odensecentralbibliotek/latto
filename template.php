@@ -291,10 +291,31 @@ function latto_load_polyfills($theme_name) {
 function latto_load_plugins() { 
   global $path_to_latto_core;
   
-  // If equalize is enabled in the theme load it.  
-  if (theme_get_setting('load_equalize')) {    
-    drupal_add_js($path_to_latto_core . '/scripts/equalize/js/equalize.min.js');
+  // Add latto.js so we can use settings in js files.
+  drupal_add_js($path_to_latto_core . '/scripts/latto.js');
+  
+  // Add example script (adds "Type text here.." functionality to input fields.
+  //http://mudge.name/jquery_example/
+  drupal_add_js($path_to_latto_core . '/scripts/jquery.example.js');
+  
+  // If sticky menus is enabled in the theme load it.  
+  if (theme_get_setting('main_menu_sticky')) {    
+        
+    // Add variable to js so we can check if it is set
+    drupal_add_js(array('latto_settings' => array('main_menu_sticky' => theme_get_setting('main_menu_sticky'),)), 'setting');
+    
   }
+  
+  // If equalize is enabled in the theme load it.  
+  if (theme_get_setting('load_equalize')) {
+    
+    // Add the script
+    drupal_add_js($path_to_latto_core . '/scripts/equalize/js/equalize.min.js');
+    
+    // Add variable to js so we can check if it is set
+    drupal_add_js(array('latto_settings' => array('load_equalize' => theme_get_setting('load_equalize'),)), 'setting');
+    
+  }  
   
 }
 

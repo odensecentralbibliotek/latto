@@ -8,10 +8,10 @@ require_once(drupal_get_path('theme', 'latto') . '/inc/functions.inc');
  */
 function latto_form_system_theme_settings_alter(&$form, $form_state) {
   $path_to_at_core = drupal_get_path('theme', 'latto');
-  
+
   // Get the latto name, we need it at some stage.
   $theme_name = $form_state['build_info']['args'][0];
-  
+
   /*
    * CSS class and markup
    */
@@ -23,7 +23,7 @@ function latto_form_system_theme_settings_alter(&$form, $form_state) {
     '#collapsed' => FALSE,
     '#weight'=> -11
   );
-  
+
   $form['latto-settings']['classes']['menu'] = array(
     '#type'          => 'fieldset',
     '#title'         => t('Menus'),
@@ -31,25 +31,46 @@ function latto_form_system_theme_settings_alter(&$form, $form_state) {
     '#collapsible' => TRUE,
     '#collapsed' => TRUE,
   );
-   
+
   $form['latto-settings']['classes']['menu']['latto_classes_menu_leaf'] = array(
     '#type'          => 'checkbox',
     '#title'         => t('Remove .leaf from the li '),
     '#default_value' => theme_get_setting('latto_classes_menu_leaf')
   );
-  
+
   $form['latto-settings']['classes']['menu']['latto_classes_menu_has_children'] = array(
     '#type'          => 'checkbox',
     '#title'         => t('Remove .has-children from the li '),
     '#default_value' => theme_get_setting('latto_classes_menu_has_children')
-  );  
-  
+  );
+
   $form['latto-settings']['classes']['menu']['latto_classes_menu_items_mlid'] = array(
     '#type'          => 'checkbox',
     '#title'         => t('Remove the menu-mlid-[mid] class'),
     '#default_value' => theme_get_setting('latto_classes_menu_items_mlid')
   );
+
+  /*
+   * Sticky menus
+   */
+
+  $form['latto-settings']['sticky_menus'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Sticky menus'),
+    '#description' => t('<h3>Sticky menus</h3><p>Here you can choose which menus you want to be sticky.'),
+    '#collapsible' => TRUE,
+    '#collapsed' => FALSE,
+    '#weight'=> -10,
+  );
   
+  // Main menu sticky
+  $form['latto-settings']['sticky_menus']['main_menu_sticky'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Main menu sticky'),
+    '#description' => t('By checking this setting the main menu will be sticky (stick to the top of the page when scrolling).'),
+    '#default_value' => theme_get_setting('main_menu_sticky'),
+  );  
+
   /*
    * Polyfill settings
    */
@@ -59,7 +80,7 @@ function latto_form_system_theme_settings_alter(&$form, $form_state) {
     '#description' => t('<h3>Polyfills</h3><p>Here you can enable commonly used Polyfills supplied with the core theme.'),
     '#collapsible' => TRUE,
     '#collapsed' => FALSE,
-    '#weight'=> -10
+    '#weight'=> -10,
   );
 
   $form['latto-settings']['polyfills']['fills'] = array(
@@ -93,8 +114,8 @@ function latto_form_system_theme_settings_alter(&$form, $form_state) {
       'invisible' => array('input[name="disable_responsive_styles"]' => array('checked' => TRUE)),
     ),
   );
-  
-  
+
+
   /*
    * Plugins
    */
@@ -104,17 +125,17 @@ function latto_form_system_theme_settings_alter(&$form, $form_state) {
     '#description' => t('<h3>Plugins</h3><p>Here you can enable plugins supplied with the core theme.'),
     '#collapsible' => TRUE,
     '#collapsed' => FALSE,
-    '#weight'=> -10
-  );  
-  
+    '#weight'=> -10,
+  );
+
   // Equalize
   $form['latto-settings']['plugins']['load_equalize'] = array(
     '#type' => 'checkbox',
     '#title' => t('Equalize'),
     '#description' => t('<a href="!link" target="_blank">Equalize</a> is a jQuery plugin for equalizing the height or width of elements.', array('!link' => 'https://github.com/tsvensen/equalize.js/')),
     '#default_value' => theme_get_setting('load_equalize'),
-  );    
-  
+  );
+
   // Unset CSS
   $form['latto-settings']['cssexcludes'] = array(
   '#type' => 'fieldset',
@@ -134,7 +155,7 @@ function latto_form_system_theme_settings_alter(&$form, $form_state) {
   if (($enable_exclude_css && $form_state['values']['enable_exclude_css'] == 1) || (!$enable_exclude_css && $form['latto-settings']['cssexcludes']['enable_exclude_css']['#default_value'] == 1)) {
     require_once($path_to_at_core . '/inc/settings.cssexclude.inc');
   }
-  
+
   // Collapse annoying forms
   $form['theme_settings']['#collapsible'] = TRUE;
   $form['theme_settings']['#collapsed'] = TRUE;
@@ -144,5 +165,5 @@ function latto_form_system_theme_settings_alter(&$form, $form_state) {
   $form['logo']['#weight'] = 50;
   $form['favicon']['#collapsible'] = TRUE;
   $form['favicon']['#collapsed'] = TRUE;
-  $form['favicon']['#weight'] = 50; 
+  $form['favicon']['#weight'] = 50;
 }

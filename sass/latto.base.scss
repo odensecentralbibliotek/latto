@@ -307,6 +307,13 @@ ul {
   display: table;
   font-size: $navbar-font-size;
   width: 100%;
+  
+  &.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: auto;
+  }
 
   &.nav-inline {
     @include ie-gradient-fix($navbar-background-color);
