@@ -907,38 +907,38 @@ ul.date-list .content {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #009dc6), color-stop(100%, #0095bc));
-  background-image: -webkit-linear-gradient(#009dc6, #0095bc);
-  background-image: -moz-linear-gradient(#009dc6, #0095bc);
-  background-image: -o-linear-gradient(#009dc6, #0095bc);
-  background-image: linear-gradient(#009dc6, #0095bc);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00a8e1), color-stop(100%, #00a0d7));
+  background-image: -webkit-linear-gradient(#00a8e1, #00a0d7);
+  background-image: -moz-linear-gradient(#00a8e1, #00a0d7);
+  background-image: -o-linear-gradient(#00a8e1, #00a0d7);
+  background-image: linear-gradient(#00a8e1, #00a0d7);
   margin: 0;
 }
 /* line 316, ../sass/latto.base.scss */
 .nav.nav-inline li {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0095bc), color-stop(100%, #0089ad));
-  background-image: -webkit-linear-gradient(#0095bc, #0089ad);
-  background-image: -moz-linear-gradient(#0095bc, #0089ad);
-  background-image: -o-linear-gradient(#0095bc, #0089ad);
-  background-image: linear-gradient(#0095bc, #0089ad);
-  border-left: 1px solid #00607a;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0082ae), color-stop(100%, #00a8e1));
+  background-image: -webkit-linear-gradient(#0082ae, #00a8e1);
+  background-image: -moz-linear-gradient(#0082ae, #00a8e1);
+  background-image: -o-linear-gradient(#0082ae, #00a8e1);
+  background-image: linear-gradient(#0082ae, #00a8e1);
+  border-left: 1px solid #006f95;
   display: table-cell;
   text-align: center;
 }
 /* line 323, ../sass/latto.base.scss */
 .nav.nav-inline li:hover {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0089ad), color-stop(100%, #007593));
-  background-image: -webkit-linear-gradient(#0089ad, #007593);
-  background-image: -moz-linear-gradient(#0089ad, #007593);
-  background-image: -o-linear-gradient(#0089ad, #007593);
-  background-image: linear-gradient(#0089ad, #007593);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #006f95), color-stop(100%, #0095c8));
+  background-image: -webkit-linear-gradient(#006f95, #0095c8);
+  background-image: -moz-linear-gradient(#006f95, #0095c8);
+  background-image: -o-linear-gradient(#006f95, #0095c8);
+  background-image: linear-gradient(#006f95, #0095c8);
 }
 /* line 327, ../sass/latto.base.scss */
 .nav.nav-inline li a {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  border-left: 1px solid #00a9d5;
+  border-left: 1px solid #00b3f0;
   color: white;
   display: block;
   height: 100%;
@@ -973,24 +973,24 @@ ul.date-list .content {
 }
 /* line 362, ../sass/latto.base.scss */
 .nav.nav-inline li.active {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00607a), color-stop(100%, #003847));
-  background-image: -webkit-linear-gradient(#00607a, #003847);
-  background-image: -moz-linear-gradient(#00607a, #003847);
-  background-image: -o-linear-gradient(#00607a, #003847);
-  background-image: linear-gradient(#00607a, #003847);
-  border-left: 1px solid #00a9d5;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #006f95), color-stop(100%, #004962));
+  background-image: -webkit-linear-gradient(#006f95, #004962);
+  background-image: -moz-linear-gradient(#006f95, #004962);
+  background-image: -o-linear-gradient(#006f95, #004962);
+  background-image: linear-gradient(#006f95, #004962);
+  border-left: 1px solid #00b3f0;
 }
 /* line 367, ../sass/latto.base.scss */
 .nav.nav-inline li.active:hover {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #004c60), color-stop(100%, #00242d));
-  background-image: -webkit-linear-gradient(#004c60, #00242d);
-  background-image: -moz-linear-gradient(#004c60, #00242d);
-  background-image: -o-linear-gradient(#004c60, #00242d);
-  background-image: linear-gradient(#004c60, #00242d);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #005c7b), color-stop(100%, #003648));
+  background-image: -webkit-linear-gradient(#005c7b, #003648);
+  background-image: -moz-linear-gradient(#005c7b, #003648);
+  background-image: -o-linear-gradient(#005c7b, #003648);
+  background-image: linear-gradient(#005c7b, #003648);
 }
 /* line 371, ../sass/latto.base.scss */
 .nav.nav-inline li.active a {
-  border-left: 1px solid #00607a;
+  border-left: 1px solid #006f95;
   border-right: 0;
 }
 

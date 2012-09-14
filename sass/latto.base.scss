@@ -314,14 +314,14 @@ ul {
 
     margin: 0;
     li {
-      @include background-image(linear-gradient(darken($navbar-background-color, 2%), darken($navbar-background-color, 5%)));
+      @include background-image(linear-gradient(darken($navbar-background-color, 10%), $navbar-background-color));
 
       border-left: 1px solid darken($navbar-background-color, 15%);
       display: table-cell;      
       text-align: center;
      
       &:hover {
-        @include background-image(linear-gradient(darken($navbar-background-color, 5%), darken($navbar-background-color, 10%)));
+        @include background-image(linear-gradient(darken($navbar-background-color, 15%), darken($navbar-background-color, 5%)));
       }
       
       a {
