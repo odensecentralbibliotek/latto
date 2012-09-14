@@ -38,6 +38,9 @@ function latto_preprocess_html(&$vars) {
   // Build an array of polyfilling scripts
   $vars['polyfills_array'] = '';
   $vars['polyfills_array'] = latto_load_polyfills($theme_name, $vars);
+  
+  // Load latto plugins
+  latto_load_plugins();
 
 }
 
@@ -280,17 +283,19 @@ function latto_load_polyfills($theme_name) {
 }
 
 /**
- * Include plugins.
- *
+ * Allows us to add script plugins to the theme via theme settings.
+ * Ex. add a javascript depending on the settings in the theme.
+ * 
  * @param $theme_name
  */
-function latto_load_plugins($theme_name) {
+function latto_load_plugins() { 
+  global $path_to_latto_core;
   
-  print_r(theme_get_setting);
-
-  if (theme_get_setting('load_equalize')) {
-    drupal_add_js('../scripts/equalize/equalize.min.js');
+  // If equalize is enabled in the theme load it.  
+  if (theme_get_setting('load_equalize')) {    
+    drupal_add_js($path_to_latto_core . '/scripts/equalize/js/equalize.min.js');
   }
+  
 }
 
 /**
