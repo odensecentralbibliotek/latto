@@ -15,7 +15,7 @@
     
     // Add equalize to the main menu.
     // https://github.com/tsvensen/equalize.js
-    $('.main-menu').equalize('width');    
+    $('.main-menu').equalize('width');
     
   });
 })(jQuery);

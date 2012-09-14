@@ -307,26 +307,28 @@ ul {
   display: table;
   font-size: $navbar-font-size;
   width: 100%;
-    
+
   &.nav-inline {
+    @include ie-gradient-fix($navbar-background-color);
+
     @include border-radius(4px);
     @include background-image(linear-gradient($navbar-background-color, darken($navbar-background-color, 2%)));
 
     margin: 0;
     li {
+      @include ie-gradient-fix($navbar-background-color);
       @include background-image(linear-gradient(darken($navbar-background-color, 10%), $navbar-background-color));
 
       border-left: 1px solid darken($navbar-background-color, 15%);
-      display: table-cell;      
+      display: table-cell;
       text-align: center;
-     
+
       &:hover {
+        @include ie-gradient-fix(darken($navbar-background-color, 10%));
         @include background-image(linear-gradient(darken($navbar-background-color, 15%), darken($navbar-background-color, 5%)));
       }
-      
+
       a {
-        @include box-sizing(border-box);
-        
         border-left: 1px solid lighten($navbar-background-color, 3%);
         color: $navbar-text-color;
         display: block;
@@ -338,33 +340,35 @@ ul {
           color: lighten($navbar-text-color, 75%);
         }
       }
-      
+
       &.first,
       &.first.active {
         @include border-radius(4px 0 0 4px);
-        
+
         border-left: 0;
-        
+
         a {
           border-left: 0;
         }
       }
-      
+
       &.last {
         @include border-radius(0 4px 4px 0);
-        
-                
+
+
         a,
         &.active a {
         }
       }
-      
+
       &.active {
+        @include ie-gradient-fix(darken($navbar-background-color, 10%));
         @include background-image(linear-gradient(darken($navbar-background-color, 15%), darken($navbar-background-color, 25%)));
-                
+
         border-left: 1px solid lighten($navbar-background-color, 3%);
-        
+
         &:hover {
+          @include ie-gradient-fix(darken($navbar-background-color, 15%));
           @include background-image(linear-gradient(darken($navbar-background-color, 20%), darken($navbar-background-color, 30%)));
         }
 

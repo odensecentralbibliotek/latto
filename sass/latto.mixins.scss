@@ -69,3 +69,13 @@ $prefixes: ("-webkit-","-moz-", "-o-", "");
     }
   }
 }
+
+// Add a backup background color for IE
+// Placed at top so it comes before background-image
+@mixin ie-gradient-fix($background, $svg: true) {
+  background: $background;
+  
+  @if $svg == true {
+    $experimental-support-for-svg: $svg;
+  }
+}
