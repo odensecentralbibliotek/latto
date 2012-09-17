@@ -175,7 +175,10 @@ function latto_menu_tree__menu_block__1($vars) {
 function latto_form_alter(&$variables) {
   if ($variables['#form_id'] == "search_block_form") {
     $variables['search_block_form']['#attributes']['title'] = t('Søg efter materialer fra biblioteket..');
-
+    // Add a specify class to the search form to tell JavaScript this should
+    // have the example functionallyty functionality.
+    $variables['search_block_form']['#attributes']['class'][] = 'has-example';
+    
     $variables['actions']['submit']['#attributes']['class'][] = 'btn';
     $variables['actions']['submit']['#attributes']['class'][] = 'btn-large';
     $variables['actions']['submit']['#attributes']['class'][] = 'btn-info';
