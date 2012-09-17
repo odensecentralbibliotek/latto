@@ -75,13 +75,10 @@ p {
 hr {
   @include colruler();
   &.primary {
-    @include colruler($gray-light);
+    @include colruler($text-primary-color);
   }
   &.secondary {
-    @include colruler($gray-light);
-  }
-  &.tertiary {
-    @include colruler($gray-light);
+    @include colruler($theme-secondary-color);
   }
 }
 
