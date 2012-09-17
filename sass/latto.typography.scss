@@ -24,6 +24,7 @@ body {
 // :active            - Style for an active link inside a header.
 //
 // No styleguide reference
+
 h1,
 h2,
 h3,
@@ -55,10 +56,33 @@ h6 {
 
 h1 {
   color: $text-primary-color;
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
 }
 
 h3 {
   line-height: $theme-line-height * 1.25;
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+
+h6 {
+  font-size: 12px;
+}
+
+.page-title {
+  margin-bottom: $default-spacing / 2;
 }
 
 a {
@@ -79,8 +103,9 @@ a {
 }
 
 b,
-strong {
-  // Custom styling for bold and strong text goes here.
+strong,
+.strong {
+  font-weight: bold;
 }
 
 em {

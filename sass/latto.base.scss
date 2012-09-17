@@ -170,6 +170,20 @@ hr {
   }
 }
 
+// Styling for layout elements.
+// .image             - Adds spacing below
+// .lead              - Overwrite styling from bootstrap
+
+.image {
+  margin-bottom: $default-spacing / 2;
+}
+
+.lead {
+  font-size: $theme-font-size * 1.1;
+  line-height: $theme-line-height * 1.1;
+  margin-bottom: 0;
+}
+
 
 // Styling for the default list layouts.
 // Suitable for displaying news, events, headlines etc.
