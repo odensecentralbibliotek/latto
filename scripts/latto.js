@@ -5,14 +5,15 @@
  */
 (function($) {
   $(document).ready(function () {
-    
-    // Add example to search form input.
-    // 
-    // TODO: Should we optimize the selector so we don't rely on an id?
-    $('#edit-search-block-form--2').example(function() {
-      
-      return $(this).attr('title');
-      
+        
+    // Add Example (jquery.example.js) to input fields with .has-example class.
+    // Example is a third party JavaScript which removes standard text in a 
+    // input field on click.
+    $('.has-example').example(function() {
+      // Returns the value in the title attribute from the input field. This way
+      // it is possible to add the title from backend, using Drupal's t() 
+      // function or other function.
+      return $(this).attr('title');      
     });
 
 
