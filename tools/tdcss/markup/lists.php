@@ -7,7 +7,7 @@
       <a href="#">Lorum Ipsum</a>
     </h3>
     <div class="subheading">
-      <a href="#" class="label label-info">Lorem</a>
+      <span class="label label-info"><a href="#">Lorem</a></span>
       <span class="date">10. august 2012</span>
       <span class="author">af <a href="#" title="View user profile." class="username">Author name</a></span>
     </div>
@@ -24,7 +24,7 @@
       <a href="#">Lorum Ipsum</a>
     </h3>
     <div class="subheading">
-      <a href="#" class="label label-info">Lorem</a>
+      <span class="label label-info"><a href="#">Lorem</a></span>
       <span class="date">10. august 2012</span>
       <span class="author">af <a href="#" title="View user profile." class="username">Author name</a></span>
     </div>
@@ -38,7 +38,7 @@
       <a href="#">Lorum Ipsum</a>
     </h3>
     <div class="subheading">
-      <a href="#" class="label label-info">Lorem</a>
+      <span class="label label-info"><a href="#">Lorem</a></span>
       <span class="date">10. august 2012</span>
       <span class="author">af <a href="#" title="View user profile." class="username">Author name</a></span>
     </div>
@@ -59,7 +59,7 @@
       <a href="#">Lorum Ipsum</a>
     </h3>
     <div class="subheading">
-      <a href="#" class="label label-info">Lorem</a>
+      <span class="label label-info"><a href="#">Lorem</a></span>
       <span class="date">10. august 2012</span>
       <span class="author">af <a href="#" title="View user profile." class="username">Author name</a></span>
     </div>
@@ -78,7 +78,7 @@
       <a href="#">Lorum Ipsum</a>
     </h3>
     <div class="subheading">
-      <a href="#" class="label label-info">Lorem</a>
+      <span class="label label-info"><a href="#">Lorem</a></span>
       <span class="date">10. august 2012</span>
       <span class="author">af <a href="#" title="View user profile." class="username">Author name</a></span>
     </div>
@@ -92,7 +92,7 @@
       <a href="#">Lorum Ipsum</a>
     </h3>
     <div class="subheading">
-      <a href="#" class="label label-info">Lorem</a>
+      <span class="label label-info"><a href="#">Lorem</a></span>
       <span class="date">10. august 2012</span>
       <span class="author">af <a href="#" title="View user profile." class="username">Author name</a></span>
     </div>
@@ -243,7 +243,7 @@
       <a href="#">Lorum Ipsum</a>
     </h3>
     <div class="subheading">
-      <a href="#" class="label label-info">Lorem</a>
+      <span class="label label-info"><a href="#">Lorem</a></span>
       <span class="date">10. august 2012</span>
       <span class="author">af <a href="#" title="View user profile." class="username">Author name</a></span>
     </div>
@@ -262,7 +262,7 @@
       <a href="#">Lorum Ipsum</a>
     </h3>
     <div class="subheading">
-      <a href="#" class="label label-info">Lorem</a>
+      <span class="label label-info"><a href="#">Lorem</a></span>
       <span class="date">10. august 2012</span>
       <span class="author">af <a href="#" title="View user profile." class="username">Author name</a></span>
     </div>
@@ -276,7 +276,7 @@
       <a href="#">Lorum Ipsum</a>
     </h3>
     <div class="subheading">
-      <a href="#" class="label label-info">Lorem</a>
+      <span class="label label-info"><a href="#">Lorem</a></span>
       <span class="date">10. august 2012</span>
       <span class="author">af <a href="#" title="View user profile." class="username">Author name</a></span>
     </div>

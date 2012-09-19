@@ -6,5 +6,3 @@
 <hr class="primary" />
 <!-- : HR ruler secondary color -->
 <hr class="secondary" />
-<!-- : HR ruler tertiary color -->
-<hr class="tertiary" />

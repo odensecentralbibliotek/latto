@@ -86,13 +86,10 @@ p {
 hr {
   @include colruler();
   &.primary {
-    @include colruler($gray-light);
+    @include colruler($text-primary-color);
   }
   &.secondary {
-    @include colruler($gray-light);
-  }
-  &.tertiary {
-    @include colruler($gray-light);
+    @include colruler($theme-secondary-color);
   }
 }
 
@@ -203,40 +200,41 @@ hr {
 //
 // No styleguide reference
 .list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
   .heading {
     margin-bottom: $default-spacing / 4;
   }
+  
   p {
     margin-bottom: $default-spacing / 4;
   }
-  &.list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    .list-item {
-      border-bottom: 1px solid $gray-light;
-      padding-bottom: $list-item-spacing * 1.5;
-      margin-bottom: $list-item-spacing * 1.5;
-      .subheading {
-        margin-top: $list-item-spacing;
-        margin-bottom: $list-item-spacing;
-        .date {
-          color: lighten($text-primary-color, 25%);
-        }
+  
+  .list-item {
+    border-bottom: 1px solid $gray-light;
+    padding-bottom: $list-item-spacing * 1.5;
+    margin-bottom: $list-item-spacing * 1.5;
+    .subheading {
+      margin-top: $list-item-spacing;
+      margin-bottom: $list-item-spacing;
+      .date {
+        color: lighten($text-primary-color, 25%);
       }
-      .image-container {
-        margin-bottom: $list-item-spacing;
-        img {
-          height: auto;
-          max-width: 100%;
-        }
+    }
+    .image-container {
+      margin-bottom: $list-item-spacing;
+      img {
+        height: auto;
+        max-width: 100%;
       }
-      &.last {
-        border-bottom: 0;
-        margin-bottom: 0;
-        padding-bottom: 0;
-      }
+    }
+    &.last {
+      border-bottom: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
     }
   }
 
