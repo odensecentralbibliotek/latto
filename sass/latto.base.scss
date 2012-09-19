@@ -71,7 +71,8 @@ p {
 // No styleguide reference
 .form-actions {
   margin: 0;
-  padding: 0;
+  padding: 0;  
+  border: 0;
 }
 
 // The default ruler with three class options. Each class includes mixin
@@ -125,14 +126,10 @@ hr {
   margin-left: $default-spacing / 2;
   overflow: hidden;
 
-  form {
+  .search-inner-wrapper {
     margin: $default-spacing * 2 auto;
-    width: 800px;
+    width: 70%;
     position: relative;
-    div {
-      padding: 0;
-      border: 0;
-    }
     
   }
   .form-text {
