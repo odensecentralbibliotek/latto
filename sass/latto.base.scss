@@ -136,15 +136,15 @@ hr {
     @include box-sizing(border-box);
 
     width: 100%;
-    height: 50px;
-    padding-left: 15px;
+    height: $search-field-height;
+    padding-left: $default-spacing * 0.75;
 
-    font-size: 20px;
+    font-size: $search-font-size;
   }
   .btn {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: $search-field-height /10;
+    right: $search-field-height / 10;
   }
 }
 
