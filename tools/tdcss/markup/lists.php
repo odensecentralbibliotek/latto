@@ -14,10 +14,10 @@
     <div class="image-container">
       <a href="#"><img alt="Et auto-skaleret billede" src="http://placehold.it/800x200&text=800x200" /></a>
     </div>
-    <div class="content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-      <a href="#">Read more</a>
-    </div>
+    <p class="content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+    </p>
+    <a href="#">Read more</a>
   </li>
   <li class="list-item">
     <h3 class="heading">
@@ -28,10 +28,10 @@
       <span class="date">10. august 2012</span>
       <span class="author">af <a href="#" title="View user profile." class="username">Author name</a></span>
     </div>
-    <div class="content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-      <a href="#">Read more</a>
-    </div>
+    <p class="content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+    </p>
+    <a href="#">Read more</a>
   </li>
   <li class="list-item">
     <h3 class="heading">
@@ -45,10 +45,10 @@
     <div class="image-container">
       <a href="#"><img alt="Et auto-skaleret billede" src="http://placehold.it/800x200&text=800x200" /></a>
     </div>
-    <div class="content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-      <a href="#">Read more</a>
-    </div>
+    <p class="content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+    </p>
+    <a href="#">Read more</a>
   </li>
 </ul>
 
@@ -68,10 +68,10 @@
         <img alt="Et auto-skaleret billede" src="http://placehold.it/100x100&text=Thumb" />
       </a>
     </div>
-    <div class="content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-      <a href="#">Read more</a>
-    </div>
+    <p class="content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+    </p>
+    <a href="#">Read more</a>
   </li>
   <li class="list-item">
     <h3 class="heading">
@@ -82,10 +82,10 @@
       <span class="date">10. august 2012</span>
       <span class="author">af <a href="#" title="View user profile." class="username">Author name</a></span>
     </div>
-    <div class="content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-      <a href="#">Read more</a>
-    </div>
+    <p class="content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+    </p>
+    <a href="#">Read more</a>
   </li>
   <li class="list-item">
     <h3 class="heading">
@@ -101,10 +101,10 @@
         <img alt="Et auto-skaleret billede" src="http://placehold.it/100x100&text=Thumb" />
       </a>
     </div>
-    <div class="content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-      <a href="#">Read more</a>
-    </div>
+    <p class="content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+    </p>
+    <a href="#">Read more</a>
   </li>
 </ul>
 
@@ -252,10 +252,10 @@
         <img alt="Et auto-skaleret billede" src="http://placehold.it/100x100&text=Thumb" />
       </a>
     </div>
-    <div class="content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-      <a href="#">Read more</a>
-    </div>
+    <p class="content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+    </p>
+    <a href="#">Read more</a>
   </div>
   <div class="list-item">
     <h3 class="heading">
@@ -266,10 +266,10 @@
       <span class="date">10. august 2012</span>
       <span class="author">af <a href="#" title="View user profile." class="username">Author name</a></span>
     </div>
-    <div class="content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-      <a href="#">Read more</a>
-    </div>
+    <p class="content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+    </p>
+    <a href="#">Read more</a>
   </div>
   <div class="list-item">
     <h3 class="heading">
@@ -285,10 +285,10 @@
         <img alt="Et auto-skaleret billede" src="http://placehold.it/100x100&text=Thumb" />
       </a>
     </div>
-    <div class="content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-      <a href="#">Read more</a>
-    </div>
+    <p class="content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+    </p>
+    <a href="#">Read more</a>
   </div>
 </div>
 
