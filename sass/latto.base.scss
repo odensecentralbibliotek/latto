@@ -63,6 +63,17 @@ p {
   margin-bottom: $default-spacing / 3;
 }
 
+// The next section reset some standard Drupal CSS classes.
+// This makes twitter bootstrap look as intended.
+// 
+// Form action is a standard class for all button wrappers in Drupal.
+//
+// No styleguide reference
+.form-actions {
+  margin: 0;
+  padding: 0;
+}
+
 // The default ruler with three class options. Each class includes mixin
 // colruler(), which enables an easy way to change color of the ruler.
 // (latto.mixins.scss)
