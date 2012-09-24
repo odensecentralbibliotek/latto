@@ -986,94 +986,27 @@ hr.secondary {
 }
 
 /* line 372, ../sass/latto.base.scss */
+.node-type-1 > * {
+  margin-bottom: 10px;
+}
+/* line 375, ../sass/latto.base.scss */
 .node-type-1 .image-container {
   height: auto;
-  margin-bottom: 20px;
   max-width: 100%;
 }
-/* line 377, ../sass/latto.base.scss */
-.node-type-1 .super-heading {
-  margin-bottom: 20px;
-}
-/* line 379, ../sass/latto.base.scss */
+/* line 380, ../sass/latto.base.scss */
 .node-type-1 .super-heading .category {
   margin-right: 10px;
 }
 /* line 383, ../sass/latto.base.scss */
-.node-type-1 .heading {
-  margin-bottom: 20px;
-}
-/* line 386, ../sass/latto.base.scss */
-.node-type-1 .lead {
-  font-size: 150%;
-  margin-bottom: 15px;
+.node-type-1 .super-heading .comment i {
+  font-size: 175%;
+  vertical-align: middle;
 }
 /* line 390, ../sass/latto.base.scss */
-.node-type-1 .content {
-  margin-bottom: 20px;
-}
-/* line 393, ../sass/latto.base.scss */
-.node-type-1 .related {
-  margin-bottom: 20px;
-}
-/* line 395, ../sass/latto.base.scss */
-.node-type-1 .related .heading {
-  margin-bottom: 10px;
-}
-/* line 397, ../sass/latto.base.scss */
 .node-type-1 .related .heading span {
-  color: #d5d5d5;
+  color: #bdbdbd;
   font-size: 65%;
-}
-/* line 402, ../sass/latto.base.scss */
-.node-type-1 .related .item {
-  display: block;
-}
-/* line 403, ../sass/latto.base.scss */
-.node-type-1 .related .item:before {
-  content: "- ";
-}
-/* line 409, ../sass/latto.base.scss */
-.node-type-1 .social {
-  margin-bottom: 20px;
-}
-/* line 412, ../sass/latto.base.scss */
-.node-type-1 .post-script {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  display: table;
-  min-width: 100%;
-}
-/* line 421, ../sass/latto.base.scss */
-.node-type-1 .post-script .image-container {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  display: table-cell;
-  margin-right: 10px;
-  width: 20%;
-}
-/* line 427, ../sass/latto.base.scss */
-.node-type-1 .post-script .content {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  display: table-cell;
-  vertical-align: top;
-}
-/* line 431, ../sass/latto.base.scss */
-.node-type-1 .post-script .content .author {
-  display: block;
-}
-/* line 434, ../sass/latto.base.scss */
-.node-type-1 .post-script .content .updated:before {
-  content: "- ";
-}
-/* line 438, ../sass/latto.base.scss */
-.node-type-1 .post-script .content .tags {
-  display: block;
 }
 
 /* line 5, ../sass/latto.panels.scss */
