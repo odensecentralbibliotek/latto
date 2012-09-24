@@ -369,74 +369,27 @@ hr {
 //
 // Styleguide: http://ding2tal.ting.dk/profiles/ding2/themes/latto/tools/tdcss/index.php#node-examples
 .node-type-1 {
+  &>* {
+    margin-bottom: $default-spacing / 2; 
+  }
   .image-container {
     height: auto;
-    margin-bottom: $default-spacing;
     max-width: 100%;      
   }
   .super-heading {
-    margin-bottom: $default-spacing;
     .category {
       margin-right: $default-spacing / 2;
-    }        
-  }
-  .heading {
-    margin-bottom: $default-spacing;
-  }
-  .lead {
-    font-size: 150%;
-    margin-bottom: $default-spacing * 0.75;
-  }
-  .content {
-    margin-bottom: $default-spacing;
+    }
+    .comment i {
+      font-size: 175%;
+      vertical-align: middle;
+    }
   }
   .related {
-    margin-bottom: $default-spacing;
     .heading {
-      margin-bottom: $default-spacing / 2;
       span {
-        color: $gray;
+        color: $gray-dark;
         font-size: 65%;
-      }
-    }
-    .item {
-      &:before {
-        content: "- ";  
-      }
-      display: block; 
-    }
-  }
-  .social {
-    margin-bottom: $default-spacing;  
-  }
-  .post-script {
-    border-top: 2px solid $black;
-    border-bottom: 2px solid $black;
-    padding-top: $default-spacing / 2;
-    padding-bottom: $default-spacing / 2;
-    
-    display: table;
-    min-width: 100%;
-    
-    .image-container {
-      @include box-sizing(border-box);
-      display: table-cell;
-      margin-right: $default-spacing / 2;
-      width: 20%;
-    }
-    .content {
-      @include box-sizing(border-box);
-      display: table-cell;
-      vertical-align: top;
-      .author {
-        display: block;  
-      }
-      .updated:before {
-        content: "- ";
-      }
-      
-      .tags {
-        display: block;  
       }
     }
   }
