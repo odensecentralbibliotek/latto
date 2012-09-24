@@ -65,13 +65,13 @@ p {
 
 // The next section reset some standard Drupal CSS classes.
 // This makes twitter bootstrap look as intended.
-// 
+//
 // Form action is a standard class for all button wrappers in Drupal.
 //
 // No styleguide reference
 .form-actions {
   margin: 0;
-  padding: 0;  
+  padding: 0;
   border: 0;
 }
 
@@ -122,23 +122,25 @@ hr {
 
   .search-inner-wrapper {
     margin: $default-spacing * 2 auto;
-    min-width: 70%;
+    max-width: 70%;
     position: relative;
-    
+
   }
   .form-text {
     @include box-sizing(border-box);
 
-    min-width: 100%;
-    max-height: $search-field-height;
+    width: 88%;
+    height: $search-field-height;
     padding-left: $default-spacing * 0.75;
 
     font-size: $search-font-size;
   }
   .btn {
     position: absolute;
-    top: $search-field-height /10;
-    right: $search-field-height / 10;
+    height: $search-field-height;
+    min-width: 10%;
+    top: 0;
+    right: 0;
   }
 }
 
@@ -182,7 +184,7 @@ hr {
 }
 
 .pull-right {
-  float: right;  
+  float: right;
 }
 
 // Styling for the default list layouts.
@@ -203,11 +205,11 @@ hr {
   .heading {
     margin-bottom: $default-spacing / 4;
   }
-  
+
   p {
     margin-bottom: $default-spacing / 4;
   }
-  
+
   .list-item {
     border-bottom: 1px solid $gray-light;
     padding-bottom: $list-item-spacing * 1.5;
@@ -370,11 +372,11 @@ hr {
 // Styleguide: http://ding2tal.ting.dk/profiles/ding2/themes/latto/tools/tdcss/index.php#node-examples
 .node-type-1 {
   &>* {
-    margin-bottom: $default-spacing / 2; 
+    margin-bottom: $default-spacing / 2;
   }
   .image-container {
     height: auto;
-    max-width: 100%;      
+    max-width: 100%;
   }
   .super-heading {
     .category {
