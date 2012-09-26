@@ -63,6 +63,18 @@ p {
   margin-bottom: $default-spacing / 3;
 }
 
+// The next section reset some standard Drupal CSS classes.
+// This makes twitter bootstrap look as intended.
+//
+// Form action is a standard class for all button wrappers in Drupal.
+//
+// No styleguide reference
+.form-actions {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 // The default ruler with three class options. Each class includes mixin
 // colruler(), which enables an easy way to change color of the ruler.
 // (latto.mixins.scss)
@@ -96,12 +108,6 @@ hr {
   }
 }
 
-.nav-wrapper {
-  margin-top: $default-spacing;
-  padding-left: $default-spacing / 2;
-  padding-right: $default-spacing / 2;
-}
-
 
 // The wrapper for the search field.
 //
@@ -114,31 +120,27 @@ hr {
   margin-left: $default-spacing / 2;
   overflow: hidden;
 
-  form {
+  .search-inner-wrapper {
     margin: $default-spacing * 2 auto;
-    width: 800px;
+    max-width: 70%;
     position: relative;
-    div {
-      padding: 0;
-      border: 0;
-    }
+
   }
   .form-text {
     @include box-sizing(border-box);
 
-    width: 100%;
-    height: 50px;
-    padding-left: 15px;
+    width: 88%;
+    height: $search-field-height;
+    padding-left: $default-spacing * 0.75;
 
-    font-size: 20px;
-    font-family: $theme-font-family;
+    font-size: $search-font-size;
   }
   .btn {
     position: absolute;
-    top: 5px;
-    right: 5px;
-
-    font-family: $theme-font-family;
+    height: $search-field-height;
+    min-width: 10%;
+    top: 0;
+    right: 0;
   }
 }
 
@@ -181,6 +183,9 @@ hr {
   margin-bottom: 0;
 }
 
+.pull-right {
+  float: right;
+}
 
 // Styling for the default list layouts.
 // Suitable for displaying news, events, headlines etc.
@@ -200,11 +205,11 @@ hr {
   .heading {
     margin-bottom: $default-spacing / 4;
   }
-  
+
   p {
     margin-bottom: $default-spacing / 4;
   }
-  
+
   .list-item {
     border-bottom: 1px solid $gray-light;
     padding-bottom: $list-item-spacing * 1.5;
@@ -310,93 +315,7 @@ hr {
   }
 }
 
-// The navigation bar used for the main-menu.
-//
-// No styleguide reference
-.nav {
-  display: table;
-  font-size: $navbar-font-size;
-  width: 100%;
-  
-  &.fixed {
-    position: fixed;
-    top: 0;
-    z-index: 99;
-    width: auto;
-  }
 
-  &.nav-inline {
-    @include ie-gradient-fix($navbar-background-color);
-
-    @include border-radius(4px);
-    @include background-image(linear-gradient($navbar-background-color, darken($navbar-background-color, 2%)));
-
-    margin: 0;
-    li {
-      @include ie-gradient-fix($navbar-background-color);
-      @include background-image(linear-gradient(darken($navbar-background-color, 10%), $navbar-background-color));
-
-      border-left: 1px solid darken($navbar-background-color, 15%);
-      display: table-cell;
-      text-align: center;
-
-      &:hover {
-        @include ie-gradient-fix(darken($navbar-background-color, 10%));
-        @include background-image(linear-gradient(darken($navbar-background-color, 15%), darken($navbar-background-color, 5%)));
-      }
-
-      a {
-        border-left: 1px solid lighten($navbar-background-color, 3%);
-        color: $navbar-text-color;
-        display: block;
-        height: 100%;
-        min-width: 100px;
-        padding: $navbar-item-spacing;
-        text-decoration: none;
-        &:hover {
-          color: lighten($navbar-text-color, 75%);
-        }
-      }
-
-      &.first,
-      &.first.active {
-        @include border-radius(4px 0 0 4px);
-
-        border-left: 0;
-
-        a {
-          border-left: 0;
-        }
-      }
-
-      &.last {
-        @include border-radius(0 4px 4px 0);
-
-
-        a,
-        &.active a {
-        }
-      }
-
-      &.active {
-        @include ie-gradient-fix(darken($navbar-background-color, 10%));
-        @include background-image(linear-gradient(darken($navbar-background-color, 15%), darken($navbar-background-color, 25%)));
-
-        border-left: 1px solid lighten($navbar-background-color, 3%);
-
-        &:hover {
-          @include ie-gradient-fix(darken($navbar-background-color, 15%));
-          @include background-image(linear-gradient(darken($navbar-background-color, 20%), darken($navbar-background-color, 30%)));
-        }
-
-        a {
-          border-left: 1px solid darken($navbar-background-color, 15%);
-          border-right: 0;
-        }
-      }
-    }
-  }
-}
 
 // The sidebar menu display on some pages.
 //
@@ -446,4 +365,34 @@ hr {
   background-color: rgba(0, 0, 0, 0.07);
   margin: $default-spacing $default-spacing / 2;
   padding: $default-spacing / 4 $default-spacing / 2;
+}
+
+// Styling of a node of type news
+//
+// Styleguide: http://ding2tal.ting.dk/profiles/ding2/themes/latto/tools/tdcss/index.php#node-examples
+.node-type-1 {
+  &>* {
+    margin-bottom: $default-spacing / 2;
+  }
+  .image-container {
+    height: auto;
+    max-width: 100%;
+  }
+  .super-heading {
+    .category {
+      margin-right: $default-spacing / 2;
+    }
+    .comment i {
+      font-size: 175%;
+      vertical-align: middle;
+    }
+  }
+  .related {
+    .heading {
+      span {
+        color: $gray-dark;
+        font-size: 65%;
+      }
+    }
+  }
 }

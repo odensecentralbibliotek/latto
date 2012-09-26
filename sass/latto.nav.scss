@@ -1,2 +1,93 @@
-// This file holds all theme styling for the theme.
+.nav-wrapper {
+  margin-top: $default-spacing;
+  padding-left: $default-spacing / 2;
+  padding-right: $default-spacing / 2;
+}
 
+// The navigation bar used for the main-menu.
+//
+// No styleguide reference
+.nav {
+  display: table;
+  font-size: $navbar-font-size;
+  width: 100%;
+  
+  &.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: auto;
+  }
+
+  &.nav-inline {
+    @include ie-gradient-fix($navbar-background-color);
+
+    @include border-radius(4px);
+    @include background-image(linear-gradient($navbar-background-color, darken($navbar-background-color, 2%)));
+
+    margin: 0;
+    li {
+      @include ie-gradient-fix($navbar-background-color);
+      @include background-image(linear-gradient(darken($navbar-background-color, 10%), $navbar-background-color));
+
+      border-left: 1px solid darken($navbar-background-color, 15%);
+      display: table-cell;
+      text-align: center;
+
+      &:hover {
+        @include ie-gradient-fix(darken($navbar-background-color, 10%));
+        @include background-image(linear-gradient(darken($navbar-background-color, 15%), darken($navbar-background-color, 5%)));
+      }
+
+      a {
+        border-left: 1px solid lighten($navbar-background-color, 3%);
+        color: $navbar-text-color;
+        display: block;
+        height: 100%;
+        min-width: 100px;
+        padding: $navbar-item-spacing;
+        text-decoration: none;
+        &:hover {
+          color: lighten($navbar-text-color, 75%);
+        }
+      }
+
+      &.first,
+      &.first.active {
+        @include border-radius(4px 0 0 4px);
+
+        border-left: 0;
+
+        a {
+          border-left: 0;
+        }
+      }
+
+      &.last {
+        @include border-radius(0 4px 4px 0);
+
+
+        a,
+        &.active a {
+        }
+      }
+
+      &.active {
+        @include ie-gradient-fix(darken($navbar-background-color, 10%));
+        @include background-image(linear-gradient(darken($navbar-background-color, 15%), darken($navbar-background-color, 25%)));
+
+        border-left: 1px solid lighten($navbar-background-color, 3%);
+
+        &:hover {
+          @include ie-gradient-fix(darken($navbar-background-color, 15%));
+          @include background-image(linear-gradient(darken($navbar-background-color, 20%), darken($navbar-background-color, 30%)));
+        }
+
+        a {
+          border-left: 1px solid darken($navbar-background-color, 15%);
+          border-right: 0;
+        }
+      }
+    }
+  }
+}
