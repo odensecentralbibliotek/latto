@@ -234,6 +234,12 @@ hr {
       padding-bottom: 0;
     }
   }
+  
+  &.highlighted {
+    .list-item {  
+      border-bottom: 0;
+    } 
+  }
 
   &.floated {
     .list-item {
@@ -257,8 +263,25 @@ hr {
         @include box-sizing(border-box);
       }
     }
+    
+    &.highlighted {
+      margin-top: $default-spacing;
+      letter-spacing: -4px;
+
+      div, p, a, span {
+        letter-spacing: normal;
+      }
+
+      .list-item {  
+        display: inline-block;
+        max-width: 50%;
+        border-bottom: 0;
+      }
+    }
   }
 
+  
+  
   &.simple {
     .list-item {
       display: table;
