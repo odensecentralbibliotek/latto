@@ -198,12 +198,12 @@ strong,
   *position: relative;
   *zoom: 1;
 }
-/* line 52, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 52, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:before, #page:after {
   content: "";
   display: table;
 }
-/* line 56, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 56, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:after {
   clear: both;
 }
@@ -845,19 +845,23 @@ hr.secondary {
   padding-bottom: 0;
 }
 /* line 239, ../sass/latto.base.scss */
+.list.highlighted .list-item {
+  border-bottom: 0;
+}
+/* line 245, ../sass/latto.base.scss */
 .list.floated .list-item {
   letter-spacing: -4px;
 }
-/* line 241, ../sass/latto.base.scss */
+/* line 247, ../sass/latto.base.scss */
 .list.floated .list-item div, .list.floated .list-item p, .list.floated .list-item a, .list.floated .list-item span {
   letter-spacing: normal;
 }
-/* line 244, ../sass/latto.base.scss */
+/* line 250, ../sass/latto.base.scss */
 .list.floated .list-item .image-container {
   display: table-cell;
   max-width: 25%;
 }
-/* line 247, ../sass/latto.base.scss */
+/* line 253, ../sass/latto.base.scss */
 .list.floated .list-item .image-container img {
   padding-right: 10px;
   margin-top: 3px;
@@ -866,7 +870,7 @@ hr.secondary {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 254, ../sass/latto.base.scss */
+/* line 260, ../sass/latto.base.scss */
 .list.floated .list-item .content {
   display: table-cell;
   vertical-align: top;
@@ -874,23 +878,38 @@ hr.secondary {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 263, ../sass/latto.base.scss */
+/* line 267, ../sass/latto.base.scss */
+.list.floated.highlighted {
+  margin-top: 20px;
+  letter-spacing: -4px;
+}
+/* line 271, ../sass/latto.base.scss */
+.list.floated.highlighted div, .list.floated.highlighted p, .list.floated.highlighted a, .list.floated.highlighted span {
+  letter-spacing: normal;
+}
+/* line 275, ../sass/latto.base.scss */
+.list.floated.highlighted .list-item {
+  display: inline-block;
+  max-width: 50%;
+  border-bottom: 0;
+}
+/* line 286, ../sass/latto.base.scss */
 .list.simple .list-item {
   display: table;
 }
-/* line 265, ../sass/latto.base.scss */
+/* line 288, ../sass/latto.base.scss */
 .list.simple .list-item .date {
   color: #5b5b5b;
   display: table-cell;
   min-width: 60px;
 }
-/* line 270, ../sass/latto.base.scss */
+/* line 293, ../sass/latto.base.scss */
 .list.simple .list-item .heading {
   display: table-cell;
   margin-left: 20px;
 }
 
-/* line 286, ../sass/latto.base.scss */
+/* line 309, ../sass/latto.base.scss */
 .date-list .date-wrapper {
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
@@ -907,28 +926,28 @@ hr.secondary {
   text-align: center;
   vertical-align: top;
 }
-/* line 299, ../sass/latto.base.scss */
+/* line 322, ../sass/latto.base.scss */
 .date-list .date-wrapper .day {
   background-color: #00b7e7;
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
-/* line 304, ../sass/latto.base.scss */
+/* line 327, ../sass/latto.base.scss */
 .date-list .date-wrapper .date-wrapper-inner {
   background: white;
   border: 1px solid #d9d9d9;
 }
-/* line 307, ../sass/latto.base.scss */
+/* line 330, ../sass/latto.base.scss */
 .date-list .date-wrapper .date-wrapper-inner .date {
   font-size: 19.5px;
   margin-top: 5px;
 }
-/* line 313, ../sass/latto.base.scss */
+/* line 336, ../sass/latto.base.scss */
 .date-list .content {
   display: inline-block;
 }
 
-/* line 323, ../sass/latto.base.scss */
+/* line 346, ../sass/latto.base.scss */
 .sidebar-menu {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -943,7 +962,7 @@ hr.secondary {
   margin: 0;
   margin-left: 10px;
 }
-/* line 332, ../sass/latto.base.scss */
+/* line 355, ../sass/latto.base.scss */
 .sidebar-menu li {
   background-color: rgba(255, 255, 255, 0.25);
   zoom: 1;
@@ -951,7 +970,7 @@ hr.secondary {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.75);
 }
-/* line 337, ../sass/latto.base.scss */
+/* line 360, ../sass/latto.base.scss */
 .sidebar-menu li a {
   color: black;
   display: block;
@@ -959,19 +978,19 @@ hr.secondary {
   padding-bottom: 10px;
   text-decoration: none;
 }
-/* line 344, ../sass/latto.base.scss */
+/* line 367, ../sass/latto.base.scss */
 .sidebar-menu li:hover {
   color: #bfbfbf;
 }
-/* line 348, ../sass/latto.base.scss */
+/* line 371, ../sass/latto.base.scss */
 .sidebar-menu.first {
   border-top: 0;
 }
-/* line 351, ../sass/latto.base.scss */
+/* line 374, ../sass/latto.base.scss */
 .sidebar-menu.last {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-/* line 354, ../sass/latto.base.scss */
+/* line 377, ../sass/latto.base.scss */
 .sidebar-menu.active {
   border-top: 0;
   border-bottom: 0;
@@ -980,32 +999,32 @@ hr.secondary {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80FFFFFF,endColorstr=#80FFFFFF);
 }
 
-/* line 364, ../sass/latto.base.scss */
+/* line 387, ../sass/latto.base.scss */
 .breadcrumb {
   background-color: rgba(0, 0, 0, 0.07);
   margin: 20px 10px;
   padding: 5px 10px;
 }
 
-/* line 374, ../sass/latto.base.scss */
+/* line 397, ../sass/latto.base.scss */
 .node-type-1 > * {
   margin-bottom: 10px;
 }
-/* line 377, ../sass/latto.base.scss */
+/* line 400, ../sass/latto.base.scss */
 .node-type-1 .image-container {
   height: auto;
   max-width: 100%;
 }
-/* line 382, ../sass/latto.base.scss */
+/* line 405, ../sass/latto.base.scss */
 .node-type-1 .super-heading .category {
   margin-right: 10px;
 }
-/* line 385, ../sass/latto.base.scss */
+/* line 408, ../sass/latto.base.scss */
 .node-type-1 .super-heading .comment i {
   font-size: 175%;
   vertical-align: middle;
 }
-/* line 392, ../sass/latto.base.scss */
+/* line 415, ../sass/latto.base.scss */
 .node-type-1 .related .heading span {
   color: #bdbdbd;
   font-size: 65%;
