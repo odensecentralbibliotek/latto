@@ -3,6 +3,7 @@ body {
   background-color: #fff;
   font-family: "Amble Light Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
+  margin-top: 80px;
 }
 
 input, button, select, textarea {
@@ -51,7 +52,7 @@ ol.linenums li {
 -------------------------------------------------- */
 .docs-sidenav {
   width: 228px;
-  margin: 30px 0 0;
+  margin: 80px 0 0;
   padding: 0;
   background-color: #fff;
   -webkit-border-radius: 6px;
@@ -112,4 +113,46 @@ ol.linenums li {
   position: absolute;
   top: auto;
   bottom: 270px;
+}
+
+.menu {
+  margin: 0;
+  padding: 20px 40px;
+  
+  background-color: Black;
+  color: White;
+  
+  list-style-type: none;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000001;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.menu li.title {
+  font-size: 22px;
+  color: #999;
+}
+
+.menu li.active {
+  text-decoration: underline;
+}
+
+.menu li a {
+  color: White;
+}
+
+.menu li a:hover {
+  color: White;
+}
+
+#content {
+  margin: 0 20px;
 }
