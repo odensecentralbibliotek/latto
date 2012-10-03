@@ -187,46 +187,49 @@ hr {
   float: right;
 }
 
-// Styling for the default list layouts.
+// Styling of lists.
 // Suitable for displaying news, events, headlines etc.
 //
-// .list              - The default styling for an unordered list in Latto theme.
-// .floated           - Implementation of the default list only with the picure
-//                      floated to the left of the summary.
-// .simple            - A list displaying only headlines.
+// .list          - The default styling for an unordered list in Latto theme.
+// .list-image    - Implementation of the default list only with the picure
+//                  floated to the left of the summary.
+// .list-compact  - A list displaying only headlines.
+
 //
-// No styleguide reference
+// Styleguide reference: http://ding2tal.ting.dk/profiles/ding2/themes/latto/tools/tdcss/#lists
+
+
+// @START .list
+// Default .list which is used to @extend on other list types
 .list {
-  list-style-type: none;
   margin: 0;
   padding: 0;
   width: 100%;
 
-  .heading {
-    margin-bottom: $default-spacing / 4;
-  }
-
-  p {
-    margin-bottom: $default-spacing / 4;
-  }
-
+  list-style-type: none;
+  
   .list-item {
     border-bottom: 1px solid $gray-light;
     padding-bottom: $list-item-spacing * 1.5;
     margin-bottom: $list-item-spacing * 1.5;
+    
     .subheading {
       margin-top: $list-item-spacing;
       margin-bottom: $list-item-spacing;
+      
       .date {
         color: lighten($text-primary-color, 25%);
       }
     }
+    
     .image-container {
       margin-bottom: $list-item-spacing;
+      
       img {
         height: auto;
         max-width: 100%;
       }
+      
     }
     &.last {
       border-bottom: 0;
@@ -239,64 +242,90 @@ hr {
     .list-item {  
       border-bottom: 0;
     } 
-  }
+  }  
+}
 
-  &.floated {
-    .list-item {
-      letter-spacing: -4px; // Fix for the white letter next to li elements
-      div, p, a, span {
-        letter-spacing: normal;
-      }
-      .image-container {
-        display: table-cell;
-        max-width: $list-picture-width;
-        img {
+// @END .list
 
-          padding-right: $list-item-spacing;
-          margin-top: 3px; /* Adding margin to make sure top of image align with top of text */
-          @include box-sizing(border-box);
-        }
-      }
-      .content {
-        display: table-cell;
-        vertical-align: top;
+
+// @START .list-image
+// List with image (either left or right, depends on markup order)
+
+.list-image {
+  @extend .list;
+  
+  .list-item {
+    .image-container {
+      display: table-cell;
+      max-width: $list-picture-width;
+      
+      img {
+        padding-right: $list-item-spacing;
+        margin-top: 3px; /* Adding margin to make sure top of image align with top of text */
         @include box-sizing(border-box);
       }
     }
-    
-    &.highlighted {
-      margin-top: $default-spacing;
-      letter-spacing: -4px;
-
-      div, p, a, span {
-        letter-spacing: normal;
-      }
-
-      .list-item {  
-        display: inline-block;
-        max-width: 50%;
-        border-bottom: 0;
-      }
+    .content {
+      display: table-cell;
+      vertical-align: top;
+      @include box-sizing(border-box);
     }
   }
 
-  
-  
-  &.simple {
-    .list-item {
-      display: table;
-      .date {
-        color: lighten($text-primary-color, 25%);
-        display: table-cell;
-        min-width: 60px;
-      }
-      .heading {
-        display: table-cell;
-        margin-left: $default-spacing;
-      }
+  &.highlighted {
+    margin-top: $default-spacing;
+    letter-spacing: -4px;
+
+    div, p, a, span {
+      letter-spacing: normal;
+    }
+
+    .list-item {  
+      display: inline-block;
+      max-width: 50%;
+      border-bottom: 0;
     }
   }
 }
+
+// We temporary @extend .list-image to make sure we don't break the styling
+// already used.
+
+// @TODO: Remove all uses of class="list floated".
+.list.floated {
+  @extend .list-image;
+}
+
+// @END .list-image
+
+
+// @START .list-compact
+// A compact list in one line, can include a date 
+
+.list-compact {
+  @extend .list;
+  .list-item {
+    display: table;
+    .date {
+      color: lighten($text-primary-color, 25%);
+      display: table-cell;
+      min-width: 60px;
+    }
+    .heading {
+      display: table-cell;
+      margin-left: $default-spacing;
+    }
+  }
+}
+
+// We temporary @extend .list-compact to make sure we don't break the styling
+
+// @TODO: Remove all uses of class="list simple".
+.list.simple {
+  @extend .list-compact;
+}
+
+// @END .list-compact
 
 // Styling of a default date-list in Latto theme. Suitable for displaying
 // upcomming events.

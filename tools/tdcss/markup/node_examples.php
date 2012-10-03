@@ -1,4 +1,4 @@
-<!-- # Node examples -->
+<!-- # NodeExamples -->
 
 <!-- : Node example 1 (heading, image, manchet and body) -->
 <div class="node">

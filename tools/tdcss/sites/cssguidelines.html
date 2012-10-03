@@ -1,0 +1,56 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Guidelines</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    <h2># CSS guide</h2>
+
+    <p>Based on the Ding2 code guidelines (http://ting.dk/wiki/ding-code-guidelines)
+    and https://github.com/necolas/idiomatic-css.</p>
+
+    <h2>## Example of CSS declaration order:</h2>
+    <br />
+    <p>.selector {</p>
+    <p style="padding-left: 10px;">/* Positioning */</p>
+    <p style="padding-left: 10px;">position: absolute;</p>
+    <p style="padding-left: 10px;">z-index: 10;</p>
+    <p style="padding-left: 10px;">top: 0;</p>
+    <p style="padding-left: 10px;">right: 0;</p>
+    <p style="padding-left: 10px;">bottom: 0;</p>
+    <p style="padding-left: 10px;">left: 0;</p>
+    <br />
+    <p style="padding-left: 10px;">/* Display & Box Model */</p>
+    <p style="padding-left: 10px;">display: inline-block;</p>
+    <p style="padding-left: 10px;">overflow: hidden;</p>
+    <p style="padding-left: 10px;">box-sizing: border-box;</p>
+    <p style="padding-left: 10px;">width: 100px;</p>
+    <p style="padding-left: 10px;">height: 100px;</p>
+    <p style="padding-left: 10px;">padding: 10px;</p>
+    <p style="padding-left: 10px;">border: 10px solid #333;</p>
+    <p style="padding-left: 10px;">margin: 10px;</p>
+    <br />
+    <p style="padding-left: 10px;">/* Other */</p>
+    <p style="padding-left: 10px;">background: #000;</p>
+    <p style="padding-left: 10px;">color: #fff</p>
+    <p style="padding-left: 10px;">font-family: sans-serif;</p>
+    <p style="padding-left: 10px;">font-size: 16px;</p>
+    <p style="padding-left: 10px;">text-align: right;</p>
+    <p>}</p>
+
+    <h2>## Preprocessors: @extend, include etc.</h2>
+    <br />
+    <p>.selector {</p>
+    <p style="padding-left: 10px;">@extend .other-rule;</p>
+    <p style="padding-left: 10px;">@include clearfix();</p>
+    <p style="padding-left: 10px;">@include box-sizing(border-box);</p>
+    <br />
+    <p style="padding-left: 10px;">// other declarations</p>
+    <p>}</p>
+  </body>
+</html>
