@@ -1,8 +1,10 @@
 <!-- # BaseElements -->
 
-<!-- : HR ruler -->
-<hr />
-<!-- : HR ruler primary color -->
-<hr class="primary" />
-<!-- : HR ruler secondary color -->
-<hr class="secondary" />
+<?php 
+foreach (scandir('markup/base_elements') as $file) {
+  if(strpos($file, '.') > 0) {
+    include('base_elements/' . $file);
+  } 
+}
+
+?>
