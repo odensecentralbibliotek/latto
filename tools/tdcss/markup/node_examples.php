@@ -1,4 +1,4 @@
-<!-- # NodeExamples -->
+<!-- # Node Examples -->
 
 <?php 
 foreach (scandir('markup/node_examples') as $file) {
