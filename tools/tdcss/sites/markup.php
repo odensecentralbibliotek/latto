@@ -31,6 +31,7 @@
           <li><a href="#lists"><i class="icon-chevron-right"></i> Lists</a></li>
           <li><a href="#tabs"><i class="icon-chevron-right"></i> Tabs</a></li>
           <li><a href="#grid-system"><i class="icon-chevron-right"></i> Grid system</a></li>
+          <li><a href="#miscellaneous"><i class="icon-chevron-right"></i> Miscellaneous</a></li>
         </ul>
       </div>
     </div>
@@ -49,6 +50,7 @@
           <?php include_once('markup/lists.php'); ?>
           <?php include_once('markup/tabs.php'); ?>
           <?php include_once('markup/grid.php'); ?>
+          <?php include_once('markup/miscellaneous.php'); ?>
         </div>
       </div>
     </div>
