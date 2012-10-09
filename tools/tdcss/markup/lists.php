@@ -12,7 +12,7 @@
       <span class="author">af <a href="#" title="View user profile." class="username">Author name</a></span>
     </div>
     <div class="image-container">
-      <a href="#"><img alt="Et auto-skaleret billede" src="http://placehold.it/800x200&text=800x200" /></a>
+      <a href="#"><img alt="Et auto-skaleret billede" src="http://lorempixel.com/800/200/city/" /></a>
     </div>
     <p class="content">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit...
@@ -43,7 +43,7 @@
       <span class="author">af <a href="#" title="View user profile." class="username">Author name</a></span>
     </div>
     <div class="image-container">
-      <a href="#"><img alt="Et auto-skaleret billede" src="http://placehold.it/800x200&text=800x200" /></a>
+      <a href="#"><img alt="Et auto-skaleret billede" src="http://lorempixel.com/800/200/city/" /></a>
     </div>
     <p class="content">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit...
@@ -65,7 +65,7 @@
     </div>
     <div class="image-container">
       <a href="#">
-        <img alt="Et auto-skaleret billede" src="http://placehold.it/100x100&text=Thumb" />
+        <img alt="Et auto-skaleret billede" src="http://lorempixel.com/100/100/city/" />
       </a>
     </div>
     <p class="content">
@@ -98,7 +98,7 @@
     </div>
     <div class="image-container">
       <a href="#">
-        <img alt="Et auto-skaleret billede" src="http://placehold.it/100x100&text=Thumb" />
+        <img alt="Et auto-skaleret billede" src="http://lorempixel.com/100/100/city/" />
       </a>
     </div>
     <p class="content">
@@ -116,7 +116,7 @@
         <a href="#">Lorum Ipsum</a>
       </h3>
       <div class="image-container">
-        <a href="#"><img alt="Et auto-skaleret billede" src="http://placehold.it/800x200&text=800x200" /></a>
+        <a href="#"><img alt="Et auto-skaleret billede" src="http://lorempixel.com/800/200/city/" /></a>
       </div>
       <p class="content">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit...
@@ -131,7 +131,7 @@
       </h3>
       <div class="image-container">
         <a href="#">
-          <img alt="Et auto-skaleret billede" src="http://placehold.it/100x100&text=Thumb" />
+          <img alt="Et auto-skaleret billede" src="http://lorempixel.com/100/100/city/" />
         </a>
       </div>
       <div class="content">
@@ -145,7 +145,7 @@
       </h3>
       <div class="image-container">
         <a href="#">
-          <img alt="Et auto-skaleret billede" src="http://placehold.it/100x100&text=Thumb" />
+          <img alt="Et auto-skaleret billede" src="http://lorempixel.com/100/100/city/" />
         </a>
       </div>
       <div class="content">
@@ -168,7 +168,7 @@
       </h3>
       <div class="image-container">
         <a href="#">
-          <img alt="Et auto-skaleret billede" src="http://placehold.it/100x100&text=Thumb" />
+          <img alt="Et auto-skaleret billede" src="http://lorempixel.com/100/100/city/" />
         </a>
       </div>
       <div class="content">
@@ -320,7 +320,7 @@
     </div>
     <div class="image-container">
       <a href="#">
-        <img alt="Et auto-skaleret billede" src="http://placehold.it/100x100&text=Thumb" />
+        <img alt="Et auto-skaleret billede" src="http://lorempixel.com/100/100/city/" />
       </a>
     </div>
     <p class="content">
@@ -353,7 +353,7 @@
     </div>
     <div class="image-container">
       <a href="#">
-        <img alt="Et auto-skaleret billede" src="http://placehold.it/100x100&text=Thumb" />
+        <img alt="Et auto-skaleret billede" src="http://lorempixel.com/100/100/city/" />
       </a>
     </div>
     <p class="content">

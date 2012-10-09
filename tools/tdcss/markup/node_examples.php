@@ -3,7 +3,7 @@
 <!-- : Node example 1 (heading, image, manchet and body) -->
 <div class="node">
   <h1 class="page-title">Heading h1 tag</h1>
-  <div class="title-image image"><img src="http://www.placehold.it/550x150&text=Image" /></div>
+  <div class="title-image image"><img src="http://lorempixel.com/550/150/city/" /></div>
   <div class="lead strong">
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -44,7 +44,7 @@
 <!-- : Node Type 1 -->
 <div class="node-type-1">
   <div class="image-container">
-    <img alt="Et auto-skaleret billede" src="http://placehold.it/561x200&text=561x200" />
+    <img alt="Et auto-skaleret billede" src="http://lorempixel.com/561/200/city/" />
   </div>
   <div class="super-heading">
     <a class="category label label-info" href="#">Category</a>
@@ -79,7 +79,7 @@
   <ul class="list floated">
     <li class="list-item">
         <div class="image-container">
-          <img alt="Et auto-skaleret billede" src="http://placehold.it/100x100&text=100x100" />
+          <img alt="Et auto-skaleret billede" src="http://lorempixel.com/100/100/city/" />
         </div>
         <div class="content">
           <p>Af: <a href="#">Bent Betjentsen</a></p>
