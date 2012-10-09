@@ -1,31 +1,11 @@
 <!-- # Pagers -->
 
-<!-- : PAGER (default) -->
-<ul class="pager">
-  <li>
-    <a href="#">Previous</a>
-  </li>
-  <li>
-    <a href="#">Next</a>
-  </li>
-</ul>
+<?php 
+foreach (scandir('markup/pagers') as $file) {
+  if(strpos($file, '.') > 0) {
+    include('pagers/' . $file);
+  } 
+}
 
-<!-- : PAGER (aligned-links) -->
-<ul class="pager">
-  <li class="previous">
-    <a href="#">&larr; Older</a>
-  </li>
-  <li class="next">
-    <a href="#">Newer &rarr;</a>
-  </li>
-</ul>
+?>
 
-<!-- : PAGER (disabled) -->
-<ul class="pager">
-  <li class="disabled">
-    <a href="#">Previous</a>
-  </li>
-  <li>
-    <a href="#">Next</a>
-  </li>
-</ul>
