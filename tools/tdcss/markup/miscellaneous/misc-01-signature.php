@@ -3,7 +3,7 @@
 <ul class="list floated">
   <li class="list-item">
     <div class="image-container">
-      <img alt="Et auto-skaleret billede" src="http://lorempixel.com/100/100/city/">
+      <a href="#" title=""><img src="http://lorempixel.com/100/100/city/" alt=""></a>
     </div>
     <div class="content">
     <p>Af: <a href="#">Bent Betjentsen</a></p>
