@@ -8,4 +8,3 @@ foreach (scandir('markup/node_examples') as $file) {
 }
 
 ?>
-

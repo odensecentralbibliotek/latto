@@ -17,6 +17,11 @@ and open the template in the editor.
     <h2>## Example of CSS declaration order:</h2>
     <br />
     <p>.selector {</p>
+    <p style="padding-left: 10px;">/* Preprocessors: @extend, include etc. */</p>
+    <p style="padding-left: 10px;">@extend .other-rule;</p>
+    <p style="padding-left: 10px;">@include clearfix();</p>
+    <p style="padding-left: 10px;">@include box-sizing(border-box);</p>
+    <br />
     <p style="padding-left: 10px;">/* Positioning */</p>
     <p style="padding-left: 10px;">position: absolute;</p>
     <p style="padding-left: 10px;">z-index: 10;</p>
@@ -41,16 +46,9 @@ and open the template in the editor.
     <p style="padding-left: 10px;">font-family: sans-serif;</p>
     <p style="padding-left: 10px;">font-size: 16px;</p>
     <p style="padding-left: 10px;">text-align: right;</p>
-    <p>}</p>
-
-    <h2>## Preprocessors: @extend, include etc.</h2>
-    <br />
-    <p>.selector {</p>
-    <p style="padding-left: 10px;">@extend .other-rule;</p>
-    <p style="padding-left: 10px;">@include clearfix();</p>
-    <p style="padding-left: 10px;">@include box-sizing(border-box);</p>
     <br />
     <p style="padding-left: 10px;">// other declarations</p>
     <p>}</p>
+    
   </body>
 </html>

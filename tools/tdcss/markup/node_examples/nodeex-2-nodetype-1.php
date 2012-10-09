@@ -1,7 +1,7 @@
 <!-- : Node Type 1 -->
 <div class="node-type-1">
   <div class="image-container">
-    <img alt="Et auto-skaleret billede" src="http://placehold.it/561x200&text=561x200" />
+    <img alt="Et auto-skaleret billede" src="http://lorempixel.com/561/200/city/" />
   </div>
   <div class="super-heading">
     <a class="category label label-info" href="#">Category</a>
@@ -36,7 +36,7 @@
   <ul class="list floated">
     <li class="list-item">
         <div class="image-container">
-          <img alt="Et auto-skaleret billede" src="http://placehold.it/100x100&text=100x100" />
+          <img alt="Et auto-skaleret billede" src="http://lorempixel.com/100/100/city/" />
         </div>
         <div class="content">
           <p>Af: <a href="#">Bent Betjentsen</a></p>

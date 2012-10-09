@@ -8,4 +8,3 @@ foreach (scandir('markup/lists') as $file) {
 }
 
 ?>
-

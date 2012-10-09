@@ -1,7 +1,7 @@
 <!-- : Node example 1 (heading, image, manchet and body) -->
 <div class="node">
   <h1 class="page-title">Heading h1 tag</h1>
-  <div class="title-image image"><img src="http://www.placehold.it/550x150&text=Image" /></div>
+  <div class="title-image image"><img src="http://lorempixel.com/550/150/city/" /></div>
   <div class="lead strong">
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,

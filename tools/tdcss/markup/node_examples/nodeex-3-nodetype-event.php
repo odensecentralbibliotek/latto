@@ -1,7 +1,7 @@
 <!-- : Nodetype Event -->
 <div class="node-type-1">
   <div class="image-container">
-    <img alt="Et auto-skaleret billede" src="http://placehold.it/561x200&text=561x200">
+    <img alt="Et auto-skaleret billede" src="http://lorempixel.com/561/200/city/">
   </div>
   <div class="super-heading">
     <p>
@@ -51,7 +51,7 @@
       typesetting, remaining essentially unchanged.
     </p>
     <a href="#">
-      <img alt="Et auto-skaleret billede" src="http://placehold.it/100x100&text=Thumb">
+      <img alt="Et auto-skaleret billede" src="http://lorempixel.com/100/100/city/">
     </a>
     <p>
       It was popularised in the 1960s
