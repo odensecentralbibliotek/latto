@@ -21,7 +21,6 @@
           ?>
           <li class="active"><a href="#base-elements"><i class="icon-chevron-right"></i> Base elements</a></li>
           <li><a href="#typography"><i class="icon-chevron-right"></i> Typography</a></li>
-          <li><a href="#node-examples"><i class="icon-chevron-right"></i> Node examples</a></li>
           <li><a href="#forms"><i class="icon-chevron-right"></i> Forms</a></li>
           <li><a href="#buttons"><i class="icon-chevron-right"></i> Buttons</a></li>
           <li><a href="#tables"><i class="icon-chevron-right"></i> Tables</a></li>
@@ -40,7 +39,6 @@
         <div id="tdcss">
           <?php include_once('markup/base_elements.php'); ?>
           <?php include_once('markup/typography.php'); ?>
-          <?php include_once('markup/node_examples.php'); ?>
           <?php include_once('markup/forms.php'); ?>
           <?php include_once('markup/buttons.php'); ?>
           <?php include_once('markup/tables.php'); ?>

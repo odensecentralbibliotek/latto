@@ -1,4 +1,4 @@
-<!-- # Grid system -->
+<!-- # GridSystem -->
 
 <?php 
 foreach (scandir('markup/grid') as $file) {
