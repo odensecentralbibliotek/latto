@@ -22,7 +22,7 @@
   
   <div class="grid-row">
     <ul class="menu">
-      <li class="title">Latto Documentation</li>
+      <li class="title"><a href='/profiles/ding2/themes/latto/tools/tdcss/index.php'>Latto Documentation</a></li>
       <?php
       if (!empty($_SERVER['QUERY_STRING'])) {
         $query_string = explode('=', $_SERVER['QUERY_STRING']);

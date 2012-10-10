@@ -37,18 +37,13 @@
     <div class="grid-13-right">
       <div class="grid-inner">
         <div id="tdcss">
-          <?php include_once('markup/base_elements.php'); ?>
-          <?php include_once('markup/typography.php'); ?>
-          <?php include_once('markup/forms.php'); ?>
-          <?php include_once('markup/buttons.php'); ?>
-          <?php include_once('markup/tables.php'); ?>
-          <?php include_once('markup/pagers.php'); ?>
-          <?php include_once('markup/pagination.php'); ?>
-          <?php include_once('markup/labels.php'); ?>
-          <?php include_once('markup/lists.php'); ?>
-          <?php include_once('markup/tabs.php'); ?>
-          <?php include_once('markup/grid.php'); ?>
-          <?php include_once('markup/miscellaneous.php'); ?>
+          <?php
+            foreach(scandir('markup') as $file) {
+              if (strpos($file, '.inc') > 0) {
+                include_once('markup/' . $file);
+              }
+            }
+          ?>
         </div>
       </div>
     </div>
