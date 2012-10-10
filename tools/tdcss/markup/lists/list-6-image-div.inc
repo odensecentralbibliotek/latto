@@ -11,7 +11,7 @@
     </div>
     <div class="image-container">
       <a href="#">
-        <img alt="Et auto-skaleret billede" src="http://lorempixel.com/100/100/city/" />
+        <img src="http://lorempixel.com/100/100/city/" />
       </a>
     </div>
     <p class="content">
@@ -44,7 +44,7 @@
     </div>
     <div class="image-container">
       <a href="#">
-        <img alt="Et auto-skaleret billede" src="http://lorempixel.com/100/100/city/" />
+        <img src="http://lorempixel.com/100/100/city/" />
       </a>
     </div>
     <p class="content">

@@ -6,7 +6,7 @@
         <a href="#">Lorum Ipsum</a>
       </h3>
       <div class="image-container">
-        <a href="#"><img alt="Et auto-skaleret billede" src="http://lorempixel.com/800/200/city/" /></a>
+        <a href="#"><img src="http://lorempixel.com/800/200/city/" /></a>
       </div>
       <p class="content">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit...
@@ -21,7 +21,7 @@
       </h3>
       <div class="image-container">
         <a href="#">
-          <img alt="Et auto-skaleret billede" src="http://lorempixel.com/100/100/city/" />
+          <img src="http://lorempixel.com/100/100/city/" />
         </a>
       </div>
       <div class="content">
@@ -35,7 +35,7 @@
       </h3>
       <div class="image-container">
         <a href="#">
-          <img alt="Et auto-skaleret billede" src="http://lorempixel.com/100/100/city/" />
+          <img src="http://lorempixel.com/100/100/city/" />
         </a>
       </div>
       <div class="content">
@@ -47,6 +47,11 @@
       <h3 class="heading">
         <a href="#">Lorum Ipsum</a>
       </h3>
+      <div class="image-container">
+        <a href="#">
+          <img src="http://lorempixel.com/100/100/city/" />
+        </a>
+      </div>
       <div class="content">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
         <a href="#">Read more</a>
@@ -58,7 +63,7 @@
       </h3>
       <div class="image-container">
         <a href="#">
-          <img alt="Et auto-skaleret billede" src="http://lorempixel.com/100/100/city/" />
+          <img src="http://lorempixel.com/100/100/city/" />
         </a>
       </div>
       <div class="content">
