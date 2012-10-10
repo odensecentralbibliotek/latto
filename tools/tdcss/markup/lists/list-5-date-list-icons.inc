@@ -1,5 +1,5 @@
 <!-- : LIST DIV WITH ICONS (date-list) -->
-<div class="list date-list">
+<div class="date-list">
   <div class="list-item">
     <h3 class="heading"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</a></h3>
     <div class="date-wrapper">

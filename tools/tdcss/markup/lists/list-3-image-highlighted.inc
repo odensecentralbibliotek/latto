@@ -14,7 +14,7 @@
       <a href="#">Read more</a>
     </li>
   </ul>
-  <ul class="list floated highlighted">
+  <ul class="list-image highlighted">
     <li class="list-item">
       <h3 class="heading">
         <a href="#">Lorum Ipsum</a>

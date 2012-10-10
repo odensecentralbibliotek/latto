@@ -1,5 +1,5 @@
 <!-- : LIST UL NO ICONS (date-list) -->
-<ul class="list date-list">
+<ul class="date-list">
   <li class="list-item">
     <h3 class="heading"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</a></h3>
     <div class="date-wrapper">

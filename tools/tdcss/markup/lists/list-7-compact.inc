@@ -1,5 +1,5 @@
 <!-- : LIST (simple) -->
-<ul class="list simple">
+<ul class="list-compact">
   <li class="list-item">
     <span class="date">10. aug</span>
     <h3 class="heading">

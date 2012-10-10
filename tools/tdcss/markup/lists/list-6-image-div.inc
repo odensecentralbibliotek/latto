@@ -1,5 +1,5 @@
 <!-- : LIST DIV TAG (floated) -->
-<div class="list floated">
+<div class="list-image">
   <div class="list-item">
     <h3 class="heading">
       <a href="#">Lorum Ipsum</a>

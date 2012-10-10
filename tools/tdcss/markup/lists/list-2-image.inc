@@ -1,5 +1,5 @@
 <!-- : LIST UL LI TAG (floated) -->
-<ul class="list floated">
+<ul class="list-image">
   <li class="list-item">
     <h3 class="heading">
       <a href="#">Lorum Ipsum</a>
