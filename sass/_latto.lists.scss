@@ -24,7 +24,15 @@
     border-bottom: 1px solid $gray-light;
     padding-bottom: $list-item-spacing * 1.5;
     margin-bottom: $list-item-spacing * 1.5;
-    
+
+    .image-container {
+      
+      img {
+        height: auto;
+        max-width: 100%;
+      }
+    }    
+        
     .subheading {
       margin-top: $list-item-spacing;
       margin-bottom: $list-item-spacing;
@@ -151,6 +159,8 @@
 //
 // No styleguide reference
 .date-list {
+  @extend .list;
+  
   .date-wrapper {
     @include single-box-shadow;
     @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
