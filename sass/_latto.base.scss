@@ -256,3 +256,56 @@ hr {
     }
   }
 }
+
+// Styling for fat footer.
+//
+// No styleguide reference.
+.ding-footer-wrapper {
+  display: table;
+  margin-top: $default-spacing;
+  padding: 0 $default-spacing / 2;
+  width: 100%;  
+  .ding-footer-column {
+    @include rgba-background($theme-content-background, .75);
+    display: table-cell;  
+    padding: $default-spacing;
+    
+    h1, 
+    h2, 
+    h3, 
+    h4 {
+      background-color: #EDEDED;
+      margin-bottom: $default-spacing * 0.75;
+      padding: $default-spacing / 2 $default-spacing;
+    }
+  }  
+  // One footer block
+  >:first-child:nth-last-child(1) {
+      width: 100%;
+  }
+  // Two footer blocks
+  >:first-child:nth-last-child(2),
+  >:first-child:nth-last-child(2) ~ .ding-footer-column {
+      width: 50%;
+  }
+  // Three footer blocks
+  >:first-child:nth-last-child(3),
+  >:first-child:nth-last-child(3) ~ .ding-footer-column {
+      width: 33.3333%;
+  }
+  // Four footer blocks
+  >:first-child:nth-last-child(4),
+  >:first-child:nth-last-child(4) ~ .ding-footer-column {
+      width: 25%;
+  }  
+  // Five footer blocks
+  >:first-child:nth-last-child(5),
+  >:first-child:nth-last-child(5) ~ .ding-footer-column {
+      width: 20%;
+  }  
+  // Six footer blocks
+  >:first-child:nth-last-child(6),
+  >:first-child:nth-last-child(6) ~ .ding-footer-column {
+      width: 16.6%;
+  }
+}
