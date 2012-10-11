@@ -25,6 +25,7 @@
           <li><a href="#menus"><i class="icon-chevron-right"></i> Menus</a></li>
           <li><a href="#tables"><i class="icon-chevron-right"></i> Tables</a></li>
           <li><a href="#forms"><i class="icon-chevron-right"></i> Forms</a></li>
+          <li><a href="#article"><i class="icon-chevron-right"></i> Article</a></li>
         </ul>
       </div>
     </div>
@@ -37,6 +38,7 @@
           <?php include_once('drupal-markup/menus.php'); ?>
           <?php include_once('drupal-markup/tables.php'); ?>
           <?php include_once('drupal-markup/forms.php'); ?>
+          <?php include_once('drupal-markup/article.php'); ?>
         </div>
       </div>
     </div>
