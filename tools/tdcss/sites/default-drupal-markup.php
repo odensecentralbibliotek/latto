@@ -20,9 +20,11 @@
              */
           ?>
           <li><a href="#typography"><i class="icon-chevron-right"></i> Typography</a></li>
-          <li><a href="#forms"><i class="icon-chevron-right"></i> Forms</a></li>
           <li><a href="#alerts"><i class="icon-chevron-right"></i> Alerts</a></li>
+          <li><a href="#images"><i class="icon-chevron-right"></i> Images</a></li>
+          <li><a href="#menus"><i class="icon-chevron-right"></i> Menus</a></li>
           <li><a href="#tables"><i class="icon-chevron-right"></i> Tables</a></li>
+          <li><a href="#forms"><i class="icon-chevron-right"></i> Forms</a></li>
         </ul>
       </div>
     </div>
@@ -30,9 +32,11 @@
       <div class="grid-inner">
         <div id="tdcss">
           <?php include_once('drupal-markup/typography.php'); ?>
-          <?php include_once('drupal-markup/forms.php'); ?>
           <?php include_once('drupal-markup/alerts.php'); ?>
+          <?php include_once('drupal-markup/images.php'); ?>
+          <?php include_once('drupal-markup/menus.php'); ?>
           <?php include_once('drupal-markup/tables.php'); ?>
+          <?php include_once('drupal-markup/forms.php'); ?>
         </div>
       </div>
     </div>

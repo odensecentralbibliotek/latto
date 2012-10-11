@@ -1,5 +1,4 @@
 <!-- # Forms -->
-
 <!-- : Basic form elements -->
 <form enctype="multipart/form-data" action="" method="post" id="styleguide-form" accept-charset="UTF-8" class="overlay-processed">
   <div>
@@ -66,7 +65,7 @@
     <div class="form-item form-type-textfield form-item-autocomplete" role="application">
       <label for="edit-autocomplete">Autocomplete textfield </label>
       <input type="text" id="edit-autocomplete" name="autocomplete" value="consectetur" size="60" maxlength="128" class="form-text form-autocomplete" autocomplete="OFF" aria-autocomplete="list">
-      <input type="hidden" id="edit-autocomplete-autocomplete" value="http://drupal.test/user/autocomplete" disabled="disabled" class="autocomplete autocomplete-processed">
+      <input type="hidden" id="edit-autocomplete-autocomplete" value="http://ding2tal.ting.dk/user/autocomplete" disabled="disabled" class="autocomplete autocomplete-processed">
       <div class="description">Curabitur quis nunc nibh.</div>
       <span class="element-invisible" aria-live="assertive" id="edit-autocomplete-autocomplete-aria-live"></span>
     </div>
@@ -228,33 +227,33 @@
     </select>
     <div class="description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
   </div>
-  <input type="hidden" name="form_build_id" value="form-BhPB97dM--ANLFLrXace2foQs_m--NFXc7ulg3Z_BRc">
-  <input type="hidden" name="form_token" value="7Dpzun2VUikPDG_seIjTdkVhIKqe_brVXR2OwWHys8U">
-  <input type="hidden" name="form_id" value="styleguide_form">
+  <input type="hidden" name="form_build_id" value="">
+  <input type="hidden" name="form_token" value="">
+  <input type="hidden" name="form_id" value="">
   </div>
 </form>
 
-<!-- : Forms, submit -->
+<!-- : Forms submit -->
 <form action="" method="post" id="styleguide-form--2" accept-charset="UTF-8" class="overlay-processed">
   <div>
     <input type="submit" id="edit-submit" name="op" value="Submit" class="form-submit">
-    <input type="hidden" name="form_build_id" value="form-3L1XSJYMcBCdxU2jaIBp2L_srvmkIJ70CJSGt8iiLEQ">
-    <input type="hidden" name="form_token" value="7Dpzun2VUikPDG_seIjTdkVhIKqe_brVXR2OwWHys8U">
-    <input type="hidden" name="form_id" value="styleguide_form">
+    <input type="hidden" name="form_build_id" value="">
+    <input type="hidden" name="form_token" value="">
+    <input type="hidden" name="form_id" value="">
   </div>
 </form>
 
-<!-- : Forms, button -->
+<!-- : Forms button -->
 <form action="" method="post" id="styleguide-form--3" accept-charset="UTF-8">
   <div>
     <input type="submit" id="edit-button" name="op" value="Button" class="form-submit">
-    <input type="hidden" name="form_build_id" value="form-y5TWQGu-xPKa6Qc9R0JIbR35aFmPqNIYj78OoEQ8TnY">
-    <input type="hidden" name="form_token" value="7Dpzun2VUikPDG_seIjTdkVhIKqe_brVXR2OwWHys8U">
-    <input type="hidden" name="form_id" value="styleguide_form">
+    <input type="hidden" name="form_build_id" value="">
+    <input type="hidden" name="form_token" value="">
+    <input type="hidden" name="form_id" value="">
   </div>
 </form>
 
-<!-- : Forms, image button -->
+<!-- : Forms image button -->
 <form action="" method="post" id="styleguide-form--4" accept-charset="UTF-8">
   <div>
     <input height="20" type="image" id="edit-image-button" name="Image button" src="http://ding2tal.ting.dk/misc/druplicon.png" class="form-submit">
@@ -264,7 +263,7 @@
   </div>
 </form>
 
-<!-- : Forms, Markup -->
+<!-- : Forms Markup -->
 <form action="" method="post" id="styleguide-form--5" accept-charset="UTF-8">
   <div>
     <p><em>Markup</em>: Note that markup does not allow titles or descriptions. Use "item" for those options.</p>
@@ -281,7 +280,7 @@
 </form>
 
 
-<!-- : Forms, fieldsets -->
+<!-- : Forms fieldsets -->
 <form action="" method="post" id="styleguide-form--6" accept-charset="UTF-8">
   <div>
     <fieldset class="collapsible collapsed form-wrapper collapse-processed" id="edit-fieldset-collapsed">
@@ -419,7 +418,7 @@
 </form>
 
 
-<!-- : Forms, vertical tabs -->
+<!-- : Forms vertical tabs -->
 <form action="" method="post" id="styleguide-form--7" accept-charset="UTF-8">
   <div>
     <h2 class="element-invisible">Vertical Tabs</h2>
@@ -548,8 +547,8 @@
         <input class="vertical-tabs-active-tab" type="hidden" name="vertical_tabs__active_tab" value="">
       </div>
     </div>
-    <input type="hidden" name="form_build_id" value="form-aKwVRek5DDMh9scnetEC25DxGt_uPSc1lp3MRLaCtdU">
-    <input type="hidden" name="form_token" value="7Dpzun2VUikPDG_seIjTdkVhIKqe_brVXR2OwWHys8U">
-    <input type="hidden" name="form_id" value="styleguide_form">
+    <input type="hidden" name="form_build_id" value="">
+    <input type="hidden" name="form_token" value="">
+    <input type="hidden" name="form_id" value="">
   </div>
 </form>

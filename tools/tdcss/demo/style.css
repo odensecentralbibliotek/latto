@@ -115,7 +115,7 @@ ol.linenums li {
   bottom: 270px;
 }
 
-.menu {
+.docs-menu {
   margin: 0;
   padding: 20px 40px;
   
@@ -131,25 +131,25 @@ ol.linenums li {
   z-index: 10000001;
 }
 
-.menu li {
+.docs-menu li {
   display: inline-block;
   margin-left: 40px;
 }
 
-.menu li.title {
+.docs-menu li.title {
   font-size: 22px;
   color: #999;
 }
 
-.menu li.active {
+.docs-menu li.active {
   text-decoration: underline;
 }
 
-.menu li a {
+.docs-menu li a {
   color: White;
 }
 
-.menu li a:hover {
+.docs-menu li a:hover {
   color: White;
 }
 

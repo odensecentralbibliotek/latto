@@ -21,7 +21,7 @@
 <body data-spy="scroll" data-target=".docs-sidebar" onload="prettyPrint()">
   
   <div class="grid-row">
-    <ul class="menu">
+    <ul class="docs-menu">
       <li class="title"><a href='/profiles/ding2/themes/latto/tools/tdcss/index.php'>Latto Documentation</a></li>
       <?php
       if (!empty($_SERVER['QUERY_STRING'])) {
