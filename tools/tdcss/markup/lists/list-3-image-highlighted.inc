@@ -57,7 +57,7 @@
         <a href="#">Read more</a>
       </div>
     </li>
-    <li class="list-item">
+    <li class="list-item last">
       <h3 class="heading">
         <a href="#">Lorum Ipsum</a>
       </h3>

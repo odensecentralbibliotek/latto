@@ -22,7 +22,7 @@
       <a href="#">Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper.</a>
     </h3>
   </li>
-  <li class="list-item">
+  <li class="list-item last">
     <span class="date">22. sep</span>
     <h3 class="heading">
       <a href="#">Bibendum Sit Tellus Amet Fringilla</a>

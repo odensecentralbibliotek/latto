@@ -33,7 +33,7 @@
     </p>
     <a href="#">Read more</a>
   </div>
-  <div class="list-item">
+  <div class="list-item last">
     <h3 class="heading">
       <a href="#">Lorum Ipsum</a>
     </h3>
