@@ -81,8 +81,20 @@ h6 {
   font-size: 12px;
 }
 
+// Classes for use on headlines.
+//
+// .page-title        - used on large headlines e.g. page title.
+// .block-title       - used on block headlines.
+
 .page-title {
   margin-bottom: $default-spacing / 2;
+}
+
+.block-title {  
+  margin-bottom: $default-spacing / 1.5;
+  padding: $default-spacing / 3 $default-spacing / 1.5;
+  
+  background-color: $gray-light;  
 }
 
 a {
