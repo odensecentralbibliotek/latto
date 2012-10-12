@@ -25,7 +25,9 @@
           <li><a href="#menus"><i class="icon-chevron-right"></i> Menus</a></li>
           <li><a href="#tables"><i class="icon-chevron-right"></i> Tables</a></li>
           <li><a href="#forms"><i class="icon-chevron-right"></i> Forms</a></li>
-          <li><a href="#article"><i class="icon-chevron-right"></i> Article</a></li>
+          <li><a href="#articles"><i class="icon-chevron-right"></i> Articles</a></li>
+          <li><a href="#pages"><i class="icon-chevron-right"></i> Pages</a></li>
+          <li><a href="#comments"><i class="icon-chevron-right"></i> Comments</a></li>
         </ul>
       </div>
     </div>
@@ -38,7 +40,9 @@
           <?php include_once('drupal-markup/menus.php'); ?>
           <?php include_once('drupal-markup/tables.php'); ?>
           <?php include_once('drupal-markup/forms.php'); ?>
-          <?php include_once('drupal-markup/article.php'); ?>
+          <?php include_once('drupal-markup/articles.php'); ?>
+          <?php include_once('drupal-markup/pages.php'); ?>
+          <?php include_once('drupal-markup/comments.php'); ?>
         </div>
       </div>
     </div>
