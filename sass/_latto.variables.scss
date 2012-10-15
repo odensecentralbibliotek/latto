@@ -25,14 +25,16 @@ $theme-content-background:      #fff !default;
 
 
 // Font variables
+$base-font-size:      16px !default; /* equivalent to font-size: 100% */
 $theme-font-size:     13px !default;
 $theme-line-height:   18px !default;
 $theme-font-family:   "Amble Light Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
-// Headers
-$header-font-size:  30px !default;
-$header-text-color: #1b1b1b !default;
-
+// Baseline for rem() mixin, measured in pixels
+// The value should be the same as the base-font-size value for the html element
+// If the html element's font-size is set to 62.5% (of the browser's default font-size of 16px),
+// then the variable below would be 10px.
+$baseline-px: $base-font-size;
 
 // Text colors
 $text-primary-color:         #1b1b1b !default;

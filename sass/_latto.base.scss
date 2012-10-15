@@ -37,9 +37,10 @@ header {
   }
 
   .site-name {
+    @include rem('font-size', $base-font-size * 4);
+
     color: $black;
     float: left;
-    font-size: 400%;
     line-height: 100%;
     margin-left: $default-spacing;
 
@@ -52,8 +53,9 @@ header {
   }
 
   .site-slogan {
+    @include rem('font-size', $base-font-size * 1.15);
+
     clear: left;
-    font-size: 115%;
     color: darken($gray-dark, 50%);
     margin-left: $default-spacing * 1.2;
   }
@@ -168,8 +170,9 @@ hr {
 }
 
 .lead {
-  font-size: $theme-font-size * 1.1;
-  line-height: $theme-line-height * 1.1;
+  @include rem('font-size', $theme-font-size * 1.1);
+  @include rem('line-height', $theme-line-height * 1.1);
+
   margin-bottom: 0;
 }
 

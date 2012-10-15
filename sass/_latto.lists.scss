@@ -13,48 +13,48 @@
 
 // @START .list
 // Default .list which is used to @extend on other list types
-.list {  
+.list {
   margin: 0;
   padding: 0;
   width: 100%;
 
   list-style-type: none;
-  
-  > .list-item {    
+
+  > .list-item {
     border-bottom: 1px solid $gray-light;
     padding-bottom: $list-item-spacing * 1.5;
     margin-bottom: $list-item-spacing * 1.5;
 
     .image-container {
-      
+
       img {
         height: auto;
         max-width: 100%;
       }
-    }    
-        
+    }
+
     .subheading {
       margin-top: $list-item-spacing;
       margin-bottom: $list-item-spacing;
-      
+
       .date {
         color: lighten($text-primary-color, 25%);
       }
     }
-    
+
     &.last {
       border-bottom: 0;
       margin-bottom: 0;
       padding-bottom: 0;
-      
+
     }
   }
-  
+
   &.highlighted {
-    > .list-item {  
+    > .list-item {
       border-bottom: 0;
-    } 
-  } 
+    }
+  }
 }
 
 // @END .list
@@ -65,43 +65,43 @@
 
 .list-image {
   @extend .list;
-  
+
   > .list-item {
-    
+
     .image-container {
       display: table-cell;
       margin-bottom: $list-item-spacing;
       max-width: $list-picture-width;
-      
+
       img {
         @include box-sizing(border-box);
-        
+
         padding-right: $list-item-spacing;
-        margin-top: 3px; /* Adding margin to make sure top of image align with top of text */        
+        margin-top: 3px; /* Adding margin to make sure top of image align with top of text */
         height: auto;
         max-width: 100%;
       }
     }
-    
+
     .content {
       @include box-sizing(border-box);
-      
+
       display: table-cell;
-      
+
       vertical-align: top;
     }
   }
 
   &.highlighted {
     margin-top: $default-spacing;
-    
+
     letter-spacing: -4px;
 
     div, p, a, span {
       letter-spacing: normal;
     }
 
-    .list-item {  
+    .list-item {
       border-bottom: 0;
       display: inline-block;
       max-width: 50%;
@@ -121,18 +121,18 @@
 
 
 // @START .list-compact
-// A compact list in one line, can include a date 
+// A compact list in one line, can include a date
 
 .list-compact {
   @extend .list;
-  
+
   > .list-item {
     display: table;
-    
+
     .date {
       display: table-cell;
       min-width: 60px;
-      
+
       color: lighten($text-primary-color, 25%);
     }
     .heading {
@@ -160,10 +160,11 @@
 // No styleguide reference
 .date-list {
   @extend .list;
-  
+
   .date-wrapper {
     @include single-box-shadow;
     @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+    @include rem('font-size', $theme-font-size * .9);
 
     display: inline-block;
     margin-top : $default-spacing / 5;
@@ -171,10 +172,9 @@
     min-width: 60px;
 
     color: lighten($text-primary-color, 25%);
-    font-size: $theme-font-size * .9;
     text-align: center;
     vertical-align: top;
-    
+
     .day {
       background-color: $theme-secondary-color;
       color: $white;
@@ -184,11 +184,11 @@
       border: 1px solid lighten($black, 85%);
 
       background: $theme-primary-color;
-      
+
       .date {
+        @include rem('font-size', $theme-font-size * 1.5);
+
         margin-top: $default-spacing / 4;
-        
-        font-size: $theme-font-size * 1.5;
       }
     }
   }

@@ -23,7 +23,7 @@ $prefixes: ("-webkit-","-moz-", "-o-", "");
 }
 
 // Add default Latto styling to an HTML <HR> ruler across any column.
-// 
+//
 // $border-color - The color of the HTML ruler.
 //
 // Compatible in IE9+, Firefox 3,5+, Opera 9,5+, Chrome 4+, Safari 3,1+.
@@ -38,8 +38,8 @@ $prefixes: ("-webkit-","-moz-", "-o-", "");
   @include prepend-top($default-spacing/2);
   @include append-bottom($default-spacing/2);
  }
- 
-// Mixin for transparent backgrounds, maing it cross browser compatible 
+
+// Mixin for transparent backgrounds, maing it cross browser compatible
 // including IE8+. (https://gist.github.com/1949202)
 //
 // $color - The color of the background.
@@ -74,8 +74,40 @@ $prefixes: ("-webkit-","-moz-", "-o-", "");
 // Placed at top so it comes before background-image
 @mixin ie-gradient-fix($background, $svg: true) {
   background: $background;
-  
+
   @if $svg == true {
     $experimental-support-for-svg: $svg;
+  }
+}
+
+// Mixin that converts pixel values to rem values for whatever property is passed to it.
+// Returns two lines of code — one of the regular pixel values (for older browsers),
+// and another with the converted rem values (for everyone else).
+//
+// Basic usage: @include rem('padding',10px 0 2px 5px);
+//              @include rem('font-size',10px);
+@mixin rem($property, $px-values) {
+  // Convert the baseline into rems
+  $baseline-rem: $baseline-px / 1rem;
+  // Print the first line in pixel values
+  #{$property}: $px-values;
+  // If there is only one (numeric) value, return the property/value line for it.
+  @if type-of($px-values) == "number" {
+    #{$property}: $px-values / $baseline-rem;
+  }
+  @else {
+    // Create an empty list that we can dump values into
+    $rem-values: unquote("");
+    @each $value in $px-values {
+      // If the value is zero, return 0
+      @if $value == 0 {
+        $rem-values: append($rem-values, $value);
+      }
+      @else {
+        $rem-values: append($rem-values, $value / $baseline-rem);
+      }
+    }
+    // Return the property and its list of converted values
+    #{$property}: $rem-values;
   }
 }

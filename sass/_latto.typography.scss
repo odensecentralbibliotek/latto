@@ -2,11 +2,16 @@
 
 @import 'latto.variables.scss';
 
+html{
+  @include rem('font-size',$base-font-size);
+}
+
 body {
+  @include rem('font-size', $theme-font-size);
+  @include rem('line-height', $theme-line-height);
+
   color: $text-primary-color;
   font-family: $theme-font-family;
-  font-size: $theme-font-size;
-  line-height: $theme-line-height;
 }
 
 // The default colors for ::selection.
@@ -55,30 +60,30 @@ h6 {
 }
 
 h1 {
+  @include rem('font-size', $theme-font-size * 2.5);
+
   color: $text-primary-color;
-  font-size: 30px;
 }
 
 h2 {
-  font-size: 24px;
+  @include rem('font-size', $theme-font-size * 2.2);
 }
 
 h3 {
-  line-height: $theme-line-height * 1.25;
-  font-size: 18px;
+  @include rem('font-size', $theme-font-size * 1.9);
+  @include rem('line-height', $theme-line-height * 1.25);
 }
 
 h4 {
-  font-size: 16px;
+  @include rem('font-size', $theme-font-size * 1.6);
 }
 
 h5 {
-  font-size: 14px;
+  @include rem('font-size', $theme-font-size * 1.3);
 }
 
-
 h6 {
-  font-size: 12px;
+  @include rem('font-size', $theme-font-size * 1.1);
 }
 
 // Classes for use on headlines.
@@ -87,14 +92,15 @@ h6 {
 // .block-title       - used on block headlines.
 
 .page-title {
-  margin-bottom: $default-spacing / 2;
+  @include rem('margin-bottom', $default-spacing / 2);
+
 }
 
-.block-title {  
-  margin-bottom: $default-spacing / 1.5;
-  padding: $default-spacing / 3 $default-spacing / 1.5;
-  
-  background-color: $gray-light;  
+.block-title {
+  @include rem('margin-bottom', $default-spacing / 1.5);
+  @include rem('padding', $default-spacing / 3 $default-spacing / 1.5);
+
+  background-color: $gray-light;
 }
 
 a {
@@ -134,21 +140,21 @@ em {
 //
 // No styleguide reference
 .small {
-  font-size: $theme-font-size * .5;
+  @include rem('font-size', $theme-font-size * .5);
 }
 
 .medium {
-  font-size: $theme-font-size * .75;
+  @include rem('font-size', $theme-font-size * .75);
 }
 
 .big {
-  font-size: $theme-font-size * 1.25;
+  @include rem('font-size', $theme-font-size * 1.25);
 }
 
 .bigger {
-  font-size: $theme-font-size * 1.375;
+  @include rem('font-size', $theme-font-size * 1.375);
 }
 
 .biggest {
-  font-size: $theme-font-size * 1.5;
+  @include rem('font-size', $theme-font-size * 1.5);
 }
