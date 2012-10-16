@@ -8,10 +8,11 @@
 //
 // No styleguide reference
 .nav {
+  @include rem('font-size', $navbar-font-size);
+
   display: table;
-  font-size: $navbar-font-size;
   width: 100%;
-  
+
   &.fixed {
     position: fixed;
     top: 0;
