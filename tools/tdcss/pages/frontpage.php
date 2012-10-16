@@ -187,7 +187,6 @@
                               </li>
                             </ul>
                           </div>
-                          <a href="#" class="rs-carousel-action-prev rs-carousel-action-disabled">Prev</a><a href="#" class="rs-carousel-action-next">Next</a>
                         </div>
                       </div>
                     </div>
