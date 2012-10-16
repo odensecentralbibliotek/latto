@@ -1,0 +1,22 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Latto SASS Mixins</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    <h1>Mixins available</h1>
+    <p>Latto basetheme use various mixins for making life easy when writing CSS. find them all in the file sass/_latto.mixins.scss</p>
+
+    <h3>rem()</h3>
+    <p>Mixin that converts pixel values to rem values for whatever property is passed to it.
+      Returns two lines of code - one of the regular pixel values (for older browsers) and another with the converted rem values (for everyone else).</p>
+    <p>Basic usage:<br />
+      @include rem('padding',10px 0 2px 5px);<br />
+      @include rem('font-size',10px);</p>
+  </body>
+</html>
