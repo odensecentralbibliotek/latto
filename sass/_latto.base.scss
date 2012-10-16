@@ -25,7 +25,6 @@ header {
     margin-left: $default-spacing / 2;
     margin-right: $default-spacing / 2;
     overflow: hidden;
-    padding-bottom: $default-spacing * 1.5;
     padding-top: $default-spacing * 1.5;
 
     background-color: $theme-header-background;
@@ -39,7 +38,7 @@ header {
   .site-name {
     color: $black;
     float: left;
-    font-size: 400%;
+    font-size: 50px;
     line-height: 100%;
     margin-left: $default-spacing;
 
@@ -53,7 +52,7 @@ header {
 
   .site-slogan {
     clear: left;
-    font-size: 115%;
+    font-size: 16px;
     color: darken($gray-dark, 50%);
     margin-left: $default-spacing * 1.2;
   }
@@ -73,6 +72,8 @@ p {
   margin: 0;
   padding: 0;
   border: 0;
+  background: inherit;
+  display: inline-block;
 }
 
 // Stylinf horizontal ruler. Used a mixin colruler(), which enables an easy way
@@ -98,6 +99,7 @@ hr {
 }
 
 
+
 // The wrapper for the search field.
 //
 // No styleguide reference
@@ -114,23 +116,10 @@ hr {
     margin: $default-spacing * 2 auto;
     max-width: 70%;
     position: relative;
-
-  }
-  .form-text {
-    @include box-sizing(border-box);
-
-    width: 88%;
-    height: $search-field-height;
-    padding-left: $default-spacing * 0.75;
-
-    font-size: $search-font-size;
-  }
-  .btn {
-    position: absolute;
-    height: $search-field-height;
-    min-width: 10%;
-    top: 0;
-    right: 0;
+    
+    .form-item-search-block-form {
+      @include input-icons-inside(50px); 
+    }
   }
 }
 
