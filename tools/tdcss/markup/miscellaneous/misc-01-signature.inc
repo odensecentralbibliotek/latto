@@ -3,7 +3,7 @@
 <ul class="list floated">
   <li class="list-item">
     <div class="image-container">
-      <a href="#" title=""><img src="http://lorempixel.com/100/100/city/" alt=""></a>
+      <a href="#" title=""><img src="http://lorempixel.com/100/100/city/"></a>
     </div>
     <div class="content">
     <p>Af: <a href="#">Bent Betjentsen</a></p>
