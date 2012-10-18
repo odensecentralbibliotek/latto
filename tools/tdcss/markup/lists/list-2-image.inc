@@ -1,4 +1,4 @@
-<!-- : LIST UL LI TAG (floated) -->
+<!-- : LIST UL LI TAG (image) -->
 <ul class="list-image">
   <li class="list-item">
     <h3 class="heading">
