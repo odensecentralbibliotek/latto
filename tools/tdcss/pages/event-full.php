@@ -29,7 +29,7 @@
                 <?php include('../markup/miscellaneous/misc-06-site-name.inc');?>
               </div>  
               <div class="grid-10-right">
-                <div class="login-block" style="float: right;">
+                <div class="login-block">
                   <?php include('../markup/miscellaneous/misc-03-login.inc');?>
                 </div>
               </div>
