@@ -67,7 +67,7 @@
               <div class="grid-10-center">
                 
                 <div class="image-container">
-                  <img alt="Et auto-skaleret billede" src="http://lorempixel.com/561/200/city/">
+                  <img src="http://lorempixel.com/561/200/city/">
                 </div>
                 <div class="super-heading">
                   <p>
@@ -117,7 +117,7 @@
                     typesetting, remaining essentially unchanged.
                   </p>
                   <a href="#">
-                    <img alt="Et auto-skaleret billede" src="http://lorempixel.com/100/100/city/">
+                    <img src="http://lorempixel.com/100/100/city/">
                   </a>
                   <p>
                     It was popularised in the 1960s
