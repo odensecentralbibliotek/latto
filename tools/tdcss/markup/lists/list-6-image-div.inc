@@ -1,4 +1,4 @@
-<!-- : LIST DIV TAG (floated) -->
+<!-- : LIST DIV TAG (image) -->
 <div class="list-image">
   <div class="list-item">
     <h3 class="heading">
