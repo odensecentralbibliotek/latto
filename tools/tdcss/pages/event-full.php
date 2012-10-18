@@ -3,20 +3,15 @@
    * Assembled mockup page for Event, full page
    */
 ?>
-<html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr">
 <head>
-    <title>Ding2tal mockup page: Event, full </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  <title>Ding2tal mockup page: Event, full </title>
 
-    <link rel="stylesheet" href="src/tdcss.css" type="text/css" media="screen">
-
-    <!-- Project CSS -->
-    <link rel="stylesheet" href="../../../css/latto.bootstrap.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="../../../css/latto.styles.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="../demo/style.css" type="text/css" media="screen">
-
-    <script type="text/javascript" src="../src/vendors/jquery.js"></script>
-    <script type="text/javascript" src="../src/tdcss.js"></script>
-
+  <?php include 'mockup_head.inc'; ?>
+  <?php include 'scripts.inc'; ?>
 </head>
 <body>
 
@@ -27,16 +22,19 @@
       <div class="panel-pane pane-pane-header" >
         <div class="pane-content">
           <div class="header-inner">
-            <div class="logo">
-                <a href="/da" title="Hjem" rel="home">
-                  <img src="http://ding2.dev/sites/all/themes/ddbasic/logo.png" alt="Hjem" />
-               </a>
+          
+          
+            <div class="grid-row grid-content">
+              <div class="grid-6-left">
+                <?php include('../markup/miscellaneous/misc-06-site-name.inc');?>
+              </div>  
+              <div class="grid-10-right">
+                <div class="login-block">
+                  <?php include('../markup/miscellaneous/misc-03-login.inc');?>
+                </div>
+              </div>
             </div>
-            <div class="site-name">
-              <a href="/da" title="Hjem" rel="home">
-                ding2.dev
-              </a>
-            </div>
+          
           </div>
         </div>
       </div>
@@ -46,30 +44,19 @@
   <article class="grid-full">
     <div class="grid-inner">
       
+      <div class="nav-wrapper panel-pane pane-block pane-menu-block-1">
+        <?php include('../markup/miscellaneous/misc-04-main-menu.inc');?>
+      </div>
+      
       <div class="panel-pane pane-page-breadcrumb" >
         <div class="pane-content">
-          <div class="breadcrumb">
-            <a href="/da">Hjem</a> &gt; 
-            <a href="/da/events">Events</a> &gt; 
-            <span >Daisy day</span>
-          </div>
+          <?php include('../markup/miscellaneous/misc-05-breadcrumb.inc');?>
         </div>
       </div>
-
-      <div class="search-wrapper contextual-links-region panel-pane pane-block pane-search-form" >
+      
+      <div class="search-wrapper panel-pane pane-block pane-search-form">
         <div class="search-inner-wrapper">
-          <form action="/da/events/daisy-day" method="post" id="search-block-form" accept-charset="UTF-8"><div>  <h2 class="element-invisible">Søgefelt</h2>
-            <div class="form-item form-type-textfield form-item-search-block-form">
-              <label class="element-invisible" for="edit-search-block-form--2">Søg </label>
-             <input title="Søg efter materialer fra biblioteket.." class="has-example form-text" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" />
-            </div>
-            <div class="form-actions form-wrapper" id="edit-actions"><input class="btn btn-large btn-info form-submit" type="submit" id="edit-submit" name="op" value="Søg" /></div><input type="hidden" name="form_build_id" value="form-9O-FKcL3OernxUXdNeUKILa1BPrPTyDoUBX_QkehtU8" />
-            <input type="hidden" name="form_token" value="g0KHxzSfQZNav_NkHRoonpQWriMvPjSRu_bIHWxsUrY" />
-            <input type="hidden" name="form_id" value="search_block_form" />
-            <input id="controls_search_sort" type="hidden" name="sort" value="" />
-            <input id="controls_search_size" type="hidden" name="size" value="" />
-            </div>
-          </form>  
+          <?php include('../markup/miscellaneous/misc-07-search-form.inc');?>
         </div>
       </div>
 
@@ -78,29 +65,109 @@
           <div class="contextual-links-region">
             <div  class="grid-row grid-content">
               <div class="grid-10-center">
-                <?php include('../markup/node_examples/nodeex-3-nodetype-event.php');?>
-                <?php include('../markup/base_elements/hr-ruler-1.php');?>
-                <?php include('../markup/typography/typography-02-h2.php');?>
-                <?php include('../markup/lists/list-7-simple.php');?>
-                <?php include('../markup/base_elements/hr-ruler-1.php');?>
-                <?php include('../markup/miscellaneous/misc-01-signature.php');?>
-              </div>
-            </div>
-            
-            <aside class="grid-3-left">
-              <div class="grid-inner">
-                <div class="panel-pane pane-event-category-menu" >
-                  <div class="pane-content">
-                    <?php include('../markup/miscellaneous/misc-02-subject-list.php');?>
+                
+                <div class="image-container">
+                  <img alt="Et auto-skaleret billede" src="http://lorempixel.com/561/200/city/">
+                </div>
+                <div class="super-heading">
+                  <p>
+                    <a class="category label label-info" href="#">Category</a>
+                    <a class="library" href="#">Library</a>
+                  </p>
+                </div>
+                <h2 class="heading">This is an event</h2>
+                <hr/>
+                <div class="grid-row">
+                  <div class="lead grid-8-left">
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                      when an unknown printer took a galley of type and scrambled it to make a type
+                      specimen book.
+                    </p>
+                    <p>
+                      <a class="btn btn-primary" href="#">Order ticket</a>
+                    </p>
                   </div>
-               </div>
-             </div>
-           </aside>
-           <aside class="grid-3-right">
-             <div class="grid-inner">
-               <?php include('../markup/lists/list-2-floated.php');?>
-             </div>
-           </aside>
+                  <div class="grid-8-right">
+                      <p>
+                          <i class="icon-calendar"></i>
+                          11. juni kl. 16.00 - 23.00
+                      </p>
+                      <p>
+                          <i class="icon-home"></i>
+                          Brabrand S&oslash;
+                          <br/>
+                          S&oslash;vej 43, Brabrand
+                      </p>
+                      <p>
+                          <i class="icon-user"></i>
+                          For alle
+                      </p>
+                      <p>
+                          <i class="icon-shopping-cart"></i>
+                          25 kr.
+                      </p>
+                  </div>
+                </div>
+                <hr class="grid-clear-both"/>
+                <div class="content">
+                  <p>
+                    It has survived not only five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged.
+                  </p>
+                  <a href="#">
+                    <img alt="Et auto-skaleret billede" src="http://lorempixel.com/100/100/city/">
+                  </a>
+                  <p>
+                    It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                    recently with desktop publishing software like Aldus PageMaker including
+                    versions of Lorem Ipsum.
+                  </p>
+                  <h3>Header (h3)</h3>
+                  <p>It was popularised in the 1960s
+                  with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                  recently with desktop publishing software like Aldus PageMaker including
+                  versions of Lorem Ipsum.</p>
+                  <h4>Header (h4)</h4>
+                  <p>It was popularised in the 1960s
+                  with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                  recently with desktop publishing software like Aldus PageMaker including
+                  versions of Lorem Ipsum.</p>
+                  <h5>Header (h5)</h5>
+                  <p>It was popularised in the 1960s
+                  with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                  recently with desktop publishing software like Aldus PageMaker including
+                  versions of Lorem Ipsum.</p>
+                  <h6>Header (h6)</h6>
+                  <p>It was popularised in the 1960s
+                  with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                  recently with desktop publishing software like Aldus PageMaker including
+                  versions of Lorem Ipsum.</p>
+                </div>
+                
+                <?php include('../markup/typography/typography-02-h2.inc');?>
+                <?php include('../markup/lists/list-7-compact.inc');?>
+                <?php include('../markup/miscellaneous/misc-01-signature.inc');?>
+              </div>
+       
+              <aside class="grid-3-left">
+                <div class="grid-inner">
+                  <div class="panel-pane pane-event-category-menu" >
+                    <div class="pane-content">
+                      <?php include('../markup/miscellaneous/misc-02-subject-list.inc');?>
+                    </div>
+                  </div>
+                </div>
+              </aside>
+
+              <aside class="grid-3-right">
+                <div class="grid-inner">
+                  <?php include('../markup/lists/list-2-image.inc');?>
+                </div>
+              </aside>     
+            </div>
           </div>
         </div>  
       </div>
@@ -108,16 +175,32 @@
     </div>
   </article>
     
-
-  <div class="grid-full bottom">
+  <footer class="grid-full">
     <div class="grid-inner">
-      <div class="contextual-links-region panel-pane pane-block pane-system-powered-by" >
+      <div class="panel-pane pane-footer">
         <div class="pane-content">
-          <span>Kører på <a href="http://drupal.org">Drupal</a></span>  
+          <div class="ding-footer-wrapper grid-full">
+            <div class="grid-row grid-content">
+              <div class="grid-inner">
+                <div class="grid-4-left grid-content">
+                  <?php include('../markup/miscellaneous/misc-09-footer-menu.inc');?>
+                </div>
+                <div class="grid-4-center-left">
+                  <?php include('../markup/miscellaneous/misc-09-footer-menu.inc');?>
+                </div>
+                <div class="grid-4-center-right">
+                  <?php include('../markup/miscellaneous/misc-09-footer-menu.inc');?>
+                </div>
+                <div class="grid-4-right">
+                  <?php include('../markup/miscellaneous/misc-09-footer-menu.inc');?>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </footer>
     
 </body>
 </html>
