@@ -67,7 +67,7 @@
               <div class="grid-10-center">
                 
                 <div class="image-container">
-                  <img alt="Et auto-skaleret billede" src="http://lorempixel.com/561/200/city/">
+                  <img src="http://lorempixel.com/561/200/city/">
                 </div>
                 <div class="super-heading">
                   <p>
@@ -117,7 +117,7 @@
                     typesetting, remaining essentially unchanged.
                   </p>
                   <a href="#">
-                    <img alt="Et auto-skaleret billede" src="http://lorempixel.com/100/100/city/">
+                    <img src="http://lorempixel.com/100/100/city/">
                   </a>
                   <p>
                     It was popularised in the 1960s
@@ -148,7 +148,7 @@
                 </div>
                 
                 <?php include('../markup/typography/typography-02-h2.inc');?>
-                <?php include('../markup/lists/list-7-compact.inc');?>
+                <?php include('../markup/lists/list-8-date-list-compact.inc');?>
                 <?php include('../markup/miscellaneous/misc-01-signature.inc');?>
               </div>
        
@@ -156,7 +156,7 @@
                 <div class="grid-inner">
                   <div class="panel-pane pane-event-category-menu" >
                     <div class="pane-content">
-                      <?php include('../markup/miscellaneous/misc-02-subject-list.inc');?>
+                      <?php include('../markup/lists/list-7-link-list.inc');?>
                     </div>
                   </div>
                 </div>
@@ -183,16 +183,20 @@
             <div class="grid-row grid-content">
               <div class="grid-inner">
                 <div class="grid-4-left grid-content">
-                  <?php include('../markup/miscellaneous/misc-09-footer-menu.inc');?>
+                  <h3 class="block-title">Footer 1</h3>
+                  <?php include('../markup/lists/list-7-link-list.inc');?>
                 </div>
                 <div class="grid-4-center-left">
-                  <?php include('../markup/miscellaneous/misc-09-footer-menu.inc');?>
+                  <h3 class="block-title">Footer 2</h3>
+                  <?php include('../markup/lists/list-7-link-list.inc');?>
                 </div>
                 <div class="grid-4-center-right">
-                  <?php include('../markup/miscellaneous/misc-09-footer-menu.inc');?>
+                  <h3 class="block-title">Footer 3</h3>
+                  <?php include('../markup/lists/list-7-link-list.inc');?>
                 </div>
                 <div class="grid-4-right">
-                  <?php include('../markup/miscellaneous/misc-09-footer-menu.inc');?>
+                  <h3 class="block-title">Footer 4</h3>
+                  <?php include('../markup/lists/list-7-link-list.inc');?>
                 </div>
               </div>
             </div>

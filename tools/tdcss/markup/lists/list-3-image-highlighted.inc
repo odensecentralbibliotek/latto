@@ -1,4 +1,4 @@
-<!-- : LIST HIGHLIGHTED UL LI TAG (floated highlighted) -->
+<!-- : LIST HIGHLIGHTED UL LI TAG (image highlighted) -->
 <div> <!-- NOTE: This wrapper DIV is not required - This is only here to show the entire mark up. -->
   <ul class="list highlighted">
     <li class="list-item">
