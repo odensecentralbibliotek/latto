@@ -760,12 +760,13 @@ hr {
 }
 /* line 92, ../sass/_latto.mixins.scss */
 .search-wrapper .search-inner-wrapper .form-text {
+  font-size: 25px;
+  font-size: 1.5625rem;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   height: 50px;
   width: 100%;
-  font-size: 25px;
 }
 /* line 100, ../sass/_latto.mixins.scss */
 .search-wrapper .search-inner-wrapper .form-actions {
@@ -783,15 +784,16 @@ hr {
 }
 /* line 115, ../sass/_latto.mixins.scss */
 .search-wrapper .search-inner-wrapper i {
+  font-size: 25px;
+  font-size: 1.5625rem;
   left: 12.5px;
   position: absolute;
   top: 17.5px;
   color: #bdbdbd;
-  font-size: 25px;
 }
-/* line 123, ../sass/_latto.mixins.scss */
+/* line 124, ../sass/_latto.mixins.scss */
 .search-wrapper .search-inner-wrapper .form-text {
-  padding-left: 50px;
+  padding-left: 40px;
 }
 
 /* line 133, ../sass/_latto.base.scss */
