@@ -834,13 +834,6 @@ hr {
   float: right;
 }
 
-/* line 173, ../sass/_latto.base.scss */
-.breadcrumb {
-  background-color: rgba(0, 0, 0, 0.07);
-  margin: 20px 10px;
-  padding: 5px 10px;
-}
-
 /*  Font Awesome
     the iconic font designed for use with Twitter Bootstrap
     -------------------------------------------------------
@@ -2186,6 +2179,13 @@ ul.icons li .icon-large:before {
   background-color: rgba(255, 255, 255, 0.5);
   zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80FFFFFF,endColorstr=#80FFFFFF);
+}
+
+/* line 140, ../sass/_latto.nav.scss */
+.breadcrumb {
+  background-color: rgba(0, 0, 0, 0.07);
+  margin: 20px 10px;
+  padding: 5px 10px;
 }
 
 /* line 16, ../sass/_latto.lists.scss */
