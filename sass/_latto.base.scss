@@ -113,16 +113,14 @@ hr {
   margin-bottom: $default-spacing;
   margin-left: $default-spacing / 2;
   overflow: hidden;
-
+  
   .search-inner-wrapper {
     margin: $default-spacing * 2 auto;
     max-width: 70%;
     position: relative;
-    
-    .form-item-search-block-form {
-      @include input-icons-inside(50px); 
-    }
   }
+  
+  @include input-inline(".search-inner-wrapper", 50px);
 }
 
 // Overwrites the default bootstrap label-info styling.
