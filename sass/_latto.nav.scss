@@ -92,3 +92,44 @@
     }
   }
 }
+
+// A vertical menu, used one some pages to display specific links for the current page.
+//
+// No styleguide reference
+.v-menu {
+  @include border-radius(4px);
+  @include rgba-background($sidebar-background-color,.75);
+
+  border-top: 1px solid rgba($sidebar-background-color, .5);
+  border-bottom: 1px solid rgba($white, .2);
+  margin: 0;
+  margin-left: $default-spacing / 2;
+
+  li {
+    @include rgba-background($sidebar-background-color, .25);
+    border-top: 1px solid rgba($white, .2);
+    border-bottom: 1px solid rgba($sidebar-background-color, .75);
+
+    a {
+      color: $sidebar-text-color;
+      display: block;
+      padding-top: $sidebar-item-spacing;
+      padding-bottom: $sidebar-item-spacing;
+      text-decoration: none;
+    }
+    &:hover {
+      color: lighten($sidebar-text-color, 75%);
+    }
+  }
+  &.first {
+    border-top: 0;
+  }
+  &.last {
+    border-bottom: 1px solid rgba($sidebar-background-color, .5);
+  }
+  &.active {
+    border-top: 0;
+    border-bottom: 0;
+    @include rgba-background($sidebar-background-color, .5);
+  }
+}
