@@ -105,7 +105,7 @@
   margin: 0;
   margin-left: $default-spacing / 2;
 
-  li {
+  > .link {
     @include rgba-background($sidebar-background-color, .25);
     border-top: 1px solid rgba($white, .2);
     border-bottom: 1px solid rgba($sidebar-background-color, .75);

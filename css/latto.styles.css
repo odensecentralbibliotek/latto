@@ -2145,7 +2145,7 @@ ul.icons li .icon-large:before {
   margin-left: 10px;
 }
 /* line 108, ../sass/_latto.nav.scss */
-.v-menu li {
+.v-menu > .link {
   background-color: rgba(255, 255, 255, 0.25);
   zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#40FFFFFF,endColorstr=#40FFFFFF);
@@ -2153,7 +2153,7 @@ ul.icons li .icon-large:before {
   border-bottom: 1px solid rgba(255, 255, 255, 0.75);
 }
 /* line 113, ../sass/_latto.nav.scss */
-.v-menu li a {
+.v-menu > .link a {
   color: black;
   display: block;
   padding-top: 10px;
@@ -2161,7 +2161,7 @@ ul.icons li .icon-large:before {
   text-decoration: none;
 }
 /* line 120, ../sass/_latto.nav.scss */
-.v-menu li:hover {
+.v-menu > .link:hover {
   color: #bfbfbf;
 }
 /* line 124, ../sass/_latto.nav.scss */
