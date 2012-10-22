@@ -19,14 +19,12 @@ and open the template in the editor.
       @include rem('padding',10px 0 2px 5px);<br />
       @include rem('font-size',10px);</p>
     <br /><br />
-    <h3>input-icons-inside()</h3>
-    <p class="alert">Candidate for a name change.</p>
+    <h3>input-inline()</h3>
     <p>This mixins positions a button and an icons inside an input field, calculating the position of the icon and button from the $height parameter.</p>
-    <p>All the elements must be placed within a wrapper element, which includes this mixin.</p>
-    <p>Icons must be of in I element and button must have 'btn' class.</p>
-    <p>NOTE: If the an icon is included, the input field must have 'indent' in class name.</p>
+    <p>All the elements must be placed within a wrapper element, which ID or class you parse to this mixin.</p>
+    <p>Icons must be of in I element.</p>
     <p class="example">Basic usage:<br />
-      @include input-icons-inside();<br />
-      @include input-icons-inside(50px);</p>
+      @include input-icons-inside(".wrapper");<br />
+      @include input-icons-inside(".wrapper", 50px);</p>
   </body>
 </html>
