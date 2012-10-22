@@ -225,7 +225,7 @@
                   <div class="panel-pane pane-views pane-ding-news">
 
                     <div class="pane-content">
-                      <?php include '../markup/lists/list-7-compact.inc'; ?>
+                      <?php include '../markup/lists/list-8-date-list-compact.inc'; ?>
                     </div>
 
                   </div>
