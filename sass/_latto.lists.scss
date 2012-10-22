@@ -136,6 +136,8 @@
       color: lighten($text-primary-color, 25%);
     }
     .heading {
+      @include rem('font-size', $theme-font-size * 1.4);
+      
       display: table-cell;
       margin-left: $default-spacing;
     }
