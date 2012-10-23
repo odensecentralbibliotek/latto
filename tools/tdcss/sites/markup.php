@@ -29,8 +29,8 @@
             }
             // Sort the array so elements appear in alphabetically order, both in menu and in the actually list.
             sort($elements);
-            // Initialize empty variable to hold the HTML for the main content.
-            $html_main = '';
+            // Initialize empty variable to hold the HTML for the left hand menu.
+            $html_menu = '';
             
             // Iterate through the elements and add each element to the menu.
             foreach($elements as $link) { 
