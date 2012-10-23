@@ -99,17 +99,17 @@
 .v-menu {
   @include border-radius(4px);
   @include rgba-background($sidebar-background-color,.75);
-
+  
   border-top: 1px solid rgba($sidebar-background-color, .5);
   border-bottom: 1px solid rgba($white, .2);
   margin: 0;
   margin-left: $default-spacing / 2;
 
-  > .link {
+  > .item {
     @include rgba-background($sidebar-background-color, .25);
     border-top: 1px solid rgba($white, .2);
     border-bottom: 1px solid rgba($sidebar-background-color, .75);
-
+    
     a {
       color: $sidebar-text-color;
       display: block;
