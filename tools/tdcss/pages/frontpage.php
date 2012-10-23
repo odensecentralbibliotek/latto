@@ -23,10 +23,7 @@
         <div class="header-inner">        
           <div class="grid-row grid-content">
             <div class="grid-6-left">
-              <div class="site-name">
-                <a href="/" title="Home" rel="home">Biblioteksnavn</a>
-                <div class="site-slogan">Her kan der evt. stå et slogan</div>
-              </div>
+              <?php include_once('../markup/miscellaneous/misc-06-site-name.inc'); ?>
             </div>  
             <div class="grid-10-right">
               <div class="login-block" style="float: right;">
