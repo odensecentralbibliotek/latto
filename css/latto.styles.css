@@ -2293,7 +2293,7 @@ ul.icons li .icon-large:before {
 .input-append {
   margin-bottom: 5px;
 }
-/* line 8, ../sass/_latto.forms.scss */
+/* line 9, ../sass/_latto.forms.scss */
 .input-prepend input,
 .input-prepend select,
 .input-prepend .uneditable-input,
@@ -2303,12 +2303,14 @@ ul.icons li .icon-large:before {
   position: relative;
   margin-bottom: 1px;
   *margin-left: 0;
-  vertical-align: baseline;
   -webkit-border-radius: 0 5px 5px 0;
   -moz-border-radius: 0 5px 5px 0;
   -ms-border-radius: 0 5px 5px 0;
   -o-border-radius: 0 5px 5px 0;
   border-radius: 0 5px 5px 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
 }
 /* line 15, ../sass/_latto.forms.scss */
 .input-prepend input:focus,
@@ -2324,9 +2326,12 @@ ul.icons li .icon-large:before {
 .input-append .uneditable-input {
   border-left-color: #ccc;
 }
-/* line 22, ../sass/_latto.forms.scss */
+/* line 23, ../sass/_latto.forms.scss */
 .input-prepend .add-on,
 .input-append .add-on {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
   display: inline-block;
   width: auto;
   height: 18px;
@@ -2336,11 +2341,10 @@ ul.icons li .icon-large:before {
   line-height: 18px;
   text-align: center;
   text-shadow: 0 1px 0 white;
-  vertical-align: baseline;
   background-color: #e7e7e7;
   border: 1px solid #ccc;
 }
-/* line 37, ../sass/_latto.forms.scss */
+/* line 38, ../sass/_latto.forms.scss */
 .input-prepend .add-on,
 .input-prepend .btn,
 .input-append .add-on,
@@ -2352,19 +2356,19 @@ ul.icons li .icon-large:before {
   -o-border-radius: 0;
   border-radius: 0;
 }
-/* line 41, ../sass/_latto.forms.scss */
+/* line 42, ../sass/_latto.forms.scss */
 .input-prepend .active,
 .input-append .active {
   background-color: #a7f4a0;
   border-color: #2be01b;
 }
 
-/* line 48, ../sass/_latto.forms.scss */
+/* line 49, ../sass/_latto.forms.scss */
 .input-prepend .add-on,
 .input-prepend .btn {
   margin-right: -1px;
 }
-/* line 52, ../sass/_latto.forms.scss */
+/* line 53, ../sass/_latto.forms.scss */
 .input-prepend .add-on:first-child,
 .input-prepend .btn:first-child {
   -webkit-border-radius: 5px 0 0 5px;
@@ -2374,7 +2378,7 @@ ul.icons li .icon-large:before {
   border-radius: 5px 0 0 5px;
 }
 
-/* line 59, ../sass/_latto.forms.scss */
+/* line 60, ../sass/_latto.forms.scss */
 .input-append input,
 .input-append select,
 .input-append .uneditable-input {
@@ -2384,12 +2388,12 @@ ul.icons li .icon-large:before {
   -o-border-radius: 5px 0 0 5px;
   border-radius: 5px 0 0 5px;
 }
-/* line 62, ../sass/_latto.forms.scss */
+/* line 63, ../sass/_latto.forms.scss */
 .input-append .uneditable-input {
   border-right-color: #ccc;
   border-left-color: #eee;
 }
-/* line 67, ../sass/_latto.forms.scss */
+/* line 68, ../sass/_latto.forms.scss */
 .input-append .add-on:last-child,
 .input-append .btn:last-child {
   -webkit-border-radius: 0 5px 5px 0;
@@ -2399,7 +2403,7 @@ ul.icons li .icon-large:before {
   border-radius: 0 5px 5px 0;
 }
 
-/* line 75, ../sass/_latto.forms.scss */
+/* line 76, ../sass/_latto.forms.scss */
 .input-prepend.input-append input,
 .input-prepend.input-append select,
 .input-prepend.input-append .uneditable-input {
@@ -2409,7 +2413,7 @@ ul.icons li .icon-large:before {
   -o-border-radius: 0;
   border-radius: 0;
 }
-/* line 79, ../sass/_latto.forms.scss */
+/* line 80, ../sass/_latto.forms.scss */
 .input-prepend.input-append .add-on:first-child,
 .input-prepend.input-append .btn:first-child {
   margin-right: -1px;
@@ -2419,7 +2423,7 @@ ul.icons li .icon-large:before {
   -o-border-radius: 5px 0 0 5px;
   border-radius: 5px 0 0 5px;
 }
-/* line 84, ../sass/_latto.forms.scss */
+/* line 85, ../sass/_latto.forms.scss */
 .input-prepend.input-append .add-on:last-child,
 .input-prepend.input-append .btn:last-child {
   margin-left: -1px;
@@ -2431,11 +2435,6 @@ ul.icons li .icon-large:before {
 }
 
 /* line 91, ../sass/_latto.forms.scss */
-.form-inline .btn {
-  vertical-align: baseline;
-}
-
-/* line 97, ../sass/_latto.forms.scss */
 .form-inside {
   position: relative;
 }
@@ -2477,7 +2476,7 @@ ul.icons li .icon-large:before {
   padding-left: 24px;
 }
 
-/* line 100, ../sass/_latto.forms.scss */
+/* line 94, ../sass/_latto.forms.scss */
 .form-inside-large {
   position: relative;
 }
