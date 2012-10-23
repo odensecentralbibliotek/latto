@@ -30,17 +30,7 @@
             </div>  
             <div class="grid-10-right">
               <div class="login-block" style="float: right;">
-                <form class="form-inline">
-                  <div class="input-prepend">
-                    <span class="add-on"><i class="icon-user"></i></span>
-                    <input type="text" class="has-example" title="Låner- eller cpr-nr:" />
-                  </div>
-                  <div class="input-prepend">
-                    <span class="add-on"><i class="icon-key"></i></span>
-                    <input type="text" class="has-example" title="Adgangskode" />
-                  </div>
-                  <input type="button" class="btn btn-success" value="Log Ind" />
-                </form>
+                <?php include_once('../markup/miscellaneous/misc-03-login.inc'); ?>
               </div>
             </div>
           </div>

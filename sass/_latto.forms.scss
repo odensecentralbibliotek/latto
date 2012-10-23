@@ -9,7 +9,7 @@
     position: relative; // placed here by default so that on :focus we can place the input above the .add-on for full border and box-shadow goodness
     margin-bottom: 1px; // prevent bottom margin from screwing up alignment in stacked forms
     *margin-left: 0;
-    vertical-align: middle;
+    vertical-align: baseline;
     @include border-radius(0 $form-border-radius $form-border-radius 0);
     // Make input on top when focused so blue border and shadow always show
     &:focus {
@@ -29,7 +29,7 @@
     line-height: $theme-line-height;
     text-align: center;
     text-shadow: 0 1px 0 $white;
-    vertical-align: middle;
+    vertical-align: baseline;
     background-color: $gray-light;
     border: 1px solid #ccc;
   }
@@ -87,3 +87,10 @@
   }
 }
 
+.form-inline {
+  .btn {
+    // Override the default bootstrap vertical align for buttons (middle) in form-inline,
+    // to make sure it aligns with the text fields in all browsers.
+    vertical-align: baseline;
+  }
+}

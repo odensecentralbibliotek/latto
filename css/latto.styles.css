@@ -2340,7 +2340,7 @@ ul.icons li .icon-large:before {
   position: relative;
   margin-bottom: 1px;
   *margin-left: 0;
-  vertical-align: middle;
+  vertical-align: baseline;
   -webkit-border-radius: 0 5px 5px 0;
   -moz-border-radius: 0 5px 5px 0;
   -ms-border-radius: 0 5px 5px 0;
@@ -2373,7 +2373,7 @@ ul.icons li .icon-large:before {
   line-height: 18px;
   text-align: center;
   text-shadow: 0 1px 0 white;
-  vertical-align: middle;
+  vertical-align: baseline;
   background-color: #e7e7e7;
   border: 1px solid #ccc;
 }
@@ -2465,4 +2465,9 @@ ul.icons li .icon-large:before {
   -ms-border-radius: 0 5px 5px 0;
   -o-border-radius: 0 5px 5px 0;
   border-radius: 0 5px 5px 0;
+}
+
+/* line 91, ../sass/_latto.forms.scss */
+.form-inline .btn {
+  vertical-align: baseline;
 }
