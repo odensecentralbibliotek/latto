@@ -96,6 +96,7 @@
 }
 .form-inside {
   @include input-inline(); 
-  
-  position: relative;
+}
+.form-inside-large {
+  @include input-inline(50px);  
 }

@@ -45,7 +45,7 @@
       
       <div class="search-wrapper panel-pane pane-block pane-search-form">
         <div class="search-inner-wrapper">
-          <?php include_once('../markup/miscellaneous/misc-07-search-form.inc'); ?>
+          <?php include_once('../markup/forms/form-03-4-indent-large.inc'); ?>
         </div>
       </div>
 
