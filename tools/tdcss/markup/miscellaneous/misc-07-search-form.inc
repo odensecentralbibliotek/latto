@@ -1,6 +1,6 @@
 <!-- : SEARCH FORM -->
 
-<form accept-charset="UTF-8" id="search-block-form" method="post" action="/">
+<form accept-charset="UTF-8" id="search-block-form" method="post" action="/" class="form-inside">
   <div>
     <h2 class="element-invisible">Search form</h2>
     <div class="form-item form-type-textfield form-item-search-block-form">

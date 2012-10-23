@@ -758,8 +758,12 @@ hr {
   max-width: 70%;
   position: relative;
 }
-/* line 92, ../sass/_latto.mixins.scss */
-.search-wrapper .search-inner-wrapper .form-text {
+/* line 123, ../sass/_latto.base.scss */
+.search-wrapper .form-inside {
+  position: relative;
+}
+/* line 94, ../sass/_latto.mixins.scss */
+.search-wrapper .form-inside .form-text {
   font-size: 25px;
   font-size: 1.5625rem;
   -webkit-box-sizing: border-box;
@@ -768,35 +772,35 @@ hr {
   height: 50px;
   width: 100%;
 }
-/* line 100, ../sass/_latto.mixins.scss */
-.search-wrapper .search-inner-wrapper .form-actions {
+/* line 102, ../sass/_latto.mixins.scss */
+.search-wrapper .form-inside .form-actions {
   position: absolute;
   top: 4px;
   right: 4px;
 }
-/* line 104, ../sass/_latto.mixins.scss */
-.search-wrapper .search-inner-wrapper .form-actions input {
+/* line 106, ../sass/_latto.mixins.scss */
+.search-wrapper .form-inside .form-actions input {
   height: 42px;
   line-height: 34px;
   padding-right: 25px;
   padding-left: 25px;
   width: 100%;
 }
-/* line 115, ../sass/_latto.mixins.scss */
-.search-wrapper .search-inner-wrapper i {
+/* line 117, ../sass/_latto.mixins.scss */
+.search-wrapper .form-inside i {
   font-size: 25px;
   font-size: 1.5625rem;
   left: 12.5px;
   position: absolute;
-  top: 17.5px;
+  top: 12.5px;
   color: #bdbdbd;
 }
-/* line 124, ../sass/_latto.mixins.scss */
-.search-wrapper .search-inner-wrapper .form-text {
+/* line 126, ../sass/_latto.mixins.scss */
+.search-wrapper .form-inside .form-text {
   padding-left: 40px;
 }
 
-/* line 133, ../sass/_latto.base.scss */
+/* line 135, ../sass/_latto.base.scss */
 .label-info,
 .label-info[href],
 .badge-info,
@@ -805,22 +809,22 @@ hr {
   background-color: #00b7e7;
 }
 
-/* line 141, ../sass/_latto.base.scss */
+/* line 143, ../sass/_latto.base.scss */
 .label a {
   color: white;
   text-decoration: none;
 }
-/* line 145, ../sass/_latto.base.scss */
+/* line 147, ../sass/_latto.base.scss */
 .label a:hover {
   text-decoration: none;
 }
 
-/* line 155, ../sass/_latto.base.scss */
+/* line 157, ../sass/_latto.base.scss */
 .image {
   margin-bottom: 10px;
 }
 
-/* line 159, ../sass/_latto.base.scss */
+/* line 161, ../sass/_latto.base.scss */
 .lead {
   font-size: 14.3px;
   font-size: 0.89375rem;
@@ -829,7 +833,7 @@ hr {
   margin-bottom: 0;
 }
 
-/* line 166, ../sass/_latto.base.scss */
+/* line 168, ../sass/_latto.base.scss */
 .pull-right {
   float: right;
 }
@@ -2470,4 +2474,47 @@ ul.icons li .icon-large:before {
 /* line 91, ../sass/_latto.forms.scss */
 .form-inline .btn {
   vertical-align: baseline;
+}
+
+/* line 97, ../sass/_latto.forms.scss */
+.form-inside {
+  position: relative;
+  position: relative;
+}
+/* line 94, ../sass/_latto.mixins.scss */
+.form-inside .form-text {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 30px;
+  width: 100%;
+}
+/* line 102, ../sass/_latto.mixins.scss */
+.form-inside .form-actions {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+/* line 106, ../sass/_latto.mixins.scss */
+.form-inside .form-actions input {
+  height: 22px;
+  line-height: 14px;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+/* line 117, ../sass/_latto.mixins.scss */
+.form-inside i {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  left: 7.5px;
+  position: absolute;
+  top: 7.5px;
+  color: #bdbdbd;
+}
+/* line 126, ../sass/_latto.mixins.scss */
+.form-inside .form-text {
+  padding-left: 24px;
 }

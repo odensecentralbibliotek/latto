@@ -120,7 +120,9 @@ hr {
     position: relative;
   }
   
-  @include input-inline(".search-inner-wrapper", 50px);
+  .form-inside {
+    @include input-inline(50px);  
+  }
 }
 
 // Overwrites the default bootstrap label-info styling.

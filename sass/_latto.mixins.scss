@@ -87,9 +87,11 @@ $prefixes: ("-webkit-","-moz-", "-o-", "");
 //
 // $wrapper: ID or Class on the wrapper element.
 // $height: Height on the textfield. Icon and button height will be calculated from this value.
-@mixin input-inline($wrapper, $height: 30px) {
+@mixin input-inline($height: 30px) {  
+  position: relative;
+  
   // Style the input field inside the wrapper.
-  #{$wrapper} .form-text {
+  .form-text {
     @include rem('font-size', $height * .5);   
     @include box-sizing(border-box);
     
@@ -97,7 +99,7 @@ $prefixes: ("-webkit-","-moz-", "-o-", "");
     width: 100%; 
   }
   // Style the submit button inside the wrapper.
-  #{$wrapper} .form-actions {
+  .form-actions {
     position: absolute;
     top: 4px;
     right: 4px;
@@ -111,17 +113,17 @@ $prefixes: ("-webkit-","-moz-", "-o-", "");
   }
   
   // Checks if there is an icon inside the wrapper.
-  @if #{$wrapper} i != null {
-    #{$wrapper} i {
+  @if i != null {
+    i {
       @include rem('font-size', $height * .5);
       
       left: $height * 0.25;
       position: absolute;      
-      top: ($height / 2) * 0.7;      
+      top: $height * 0.25;      
       
       color: $gray-dark;
     } 
-    #{$wrapper} .form-text {
+    .form-text {
       padding-left: $height * .8;  
     }
   }

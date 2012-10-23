@@ -94,3 +94,8 @@
     vertical-align: baseline;
   }
 }
+.form-inside {
+  @include input-inline(); 
+  
+  position: relative;
+}
