@@ -59,6 +59,11 @@ header {
   }
 }
 
+img {
+  display: inline;
+  max-width: 100%;
+}
+
 p {
   margin-bottom: $default-spacing / 3;
 }

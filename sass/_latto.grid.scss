@@ -4,7 +4,7 @@
 
 @import "zen";
 
-$zen-column-count: 16;
+$zen-column-count: $grid-column-count;
 $zen-gutter-width: $default-spacing;
 
 /* See: http://zengrids.com/help/#vars-legacy */
@@ -50,6 +50,10 @@ $box-sizing-polyfill-path: '../scripts/boxsizing.htc';
 
 .grid-4-center-left { 
   @include zen-grid-item(4, 5);
+}
+
+.grid-4-center {
+  @include zen-grid-item(4, 5);  
 }
 
 .grid-4-center-right {
