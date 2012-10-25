@@ -88,6 +88,14 @@ $box-sizing-polyfill-path: '../scripts/boxsizing.htc';
   @include zen-grid-item(8, 1, right);
 }
 
+.grid-9-left {
+  @include zen-grid-item(9, 1);
+}
+
+.grid-9-right {
+  @include zen-grid-item(9, 1, right);
+}
+
 .grid-10-left {
   @include zen-grid-item(10, 1);
 }
