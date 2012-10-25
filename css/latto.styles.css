@@ -7,22 +7,13 @@
 }
 
 /* equivalent to font-size: 100% */
-@font-face {
-  font-family: "Amble Light Condensed";
-  src: url('fonts/amble/Amble-LightCondensed-webfont.eot');
-  src: url('fonts/amble/Amble-LightCondensed-webfont.eot?#iefix') format('eot'), url('fonts/amble/Amble-LightCondensed-webfont.woff') format('woff'), url('fonts/amble/Amble-LightCondensed-webfont.ttf') format('truetype'), url('fonts/amble/Amble-LightCondensed-webfont.svg') format('svg');
-  font-weight: "normal";
-  font-style: "normal";
-}
-
-/* equivalent to font-size: 100% */
-/* line 5, ../sass/_latto.typography.scss */
+/* line 3, ../sass/_latto.typography.scss */
 html {
   font-size: 16px;
   font-size: 1rem;
 }
 
-/* line 9, ../sass/_latto.typography.scss */
+/* line 7, ../sass/_latto.typography.scss */
 body {
   font-size: 13px;
   font-size: 0.8125rem;
@@ -56,7 +47,7 @@ body {
   background: #e7e7e7;
 }
 
-/* line 38, ../sass/_latto.typography.scss */
+/* line 36, ../sass/_latto.typography.scss */
 h1,
 h2,
 h3,
@@ -66,7 +57,7 @@ h6 {
   color: #1b1b1b;
   font-weight: normal;
 }
-/* line 42, ../sass/_latto.typography.scss */
+/* line 40, ../sass/_latto.typography.scss */
 h1 a:link,
 h2 a:link,
 h3 a:link,
@@ -76,7 +67,7 @@ h6 a:link {
   color: #1b1b1b;
   text-decoration: none;
 }
-/* line 46, ../sass/_latto.typography.scss */
+/* line 44, ../sass/_latto.typography.scss */
 h1 a:visited,
 h2 a:visited,
 h3 a:visited,
@@ -85,7 +76,7 @@ h5 a:visited,
 h6 a:visited {
   color: #1b1b1b;
 }
-/* line 49, ../sass/_latto.typography.scss */
+/* line 47, ../sass/_latto.typography.scss */
 h1 a:hover,
 h2 a:hover,
 h3 a:hover,
@@ -94,7 +85,7 @@ h5 a:hover,
 h6 a:hover {
   color: black;
 }
-/* line 52, ../sass/_latto.typography.scss */
+/* line 50, ../sass/_latto.typography.scss */
 h1 a:focus,
 h2 a:focus,
 h3 a:focus,
@@ -103,7 +94,7 @@ h5 a:focus,
 h6 a:focus {
   color: #006681;
 }
-/* line 55, ../sass/_latto.typography.scss */
+/* line 53, ../sass/_latto.typography.scss */
 h1 a:active,
 h2 a:active,
 h3 a:active,
@@ -114,20 +105,20 @@ h6 a:active {
   color: #1b1b1b;
 }
 
-/* line 62, ../sass/_latto.typography.scss */
+/* line 60, ../sass/_latto.typography.scss */
 h1 {
   font-size: 32.5px;
   font-size: 2.03125rem;
   color: #1b1b1b;
 }
 
-/* line 68, ../sass/_latto.typography.scss */
+/* line 66, ../sass/_latto.typography.scss */
 h2 {
   font-size: 28.6px;
   font-size: 1.7875rem;
 }
 
-/* line 72, ../sass/_latto.typography.scss */
+/* line 70, ../sass/_latto.typography.scss */
 h3 {
   font-size: 24.7px;
   font-size: 1.54375rem;
@@ -135,31 +126,31 @@ h3 {
   line-height: 1.40625rem;
 }
 
-/* line 77, ../sass/_latto.typography.scss */
+/* line 75, ../sass/_latto.typography.scss */
 h4 {
   font-size: 20.8px;
   font-size: 1.3rem;
 }
 
-/* line 81, ../sass/_latto.typography.scss */
+/* line 79, ../sass/_latto.typography.scss */
 h5 {
   font-size: 16.9px;
   font-size: 1.05625rem;
 }
 
-/* line 85, ../sass/_latto.typography.scss */
+/* line 83, ../sass/_latto.typography.scss */
 h6 {
   font-size: 14.3px;
   font-size: 0.89375rem;
 }
 
-/* line 94, ../sass/_latto.typography.scss */
+/* line 92, ../sass/_latto.typography.scss */
 .page-title {
   margin-bottom: 10px;
   margin-bottom: 0.625rem;
 }
 
-/* line 99, ../sass/_latto.typography.scss */
+/* line 97, ../sass/_latto.typography.scss */
 .block-title {
   margin-bottom: 13.33333px;
   margin-bottom: 0.83333rem;
@@ -168,57 +159,57 @@ h6 {
   background-color: #e7e7e7;
 }
 
-/* line 107, ../sass/_latto.typography.scss */
+/* line 105, ../sass/_latto.typography.scss */
 a:link {
   color: #00b7e7;
   text-decoration: none;
 }
-/* line 111, ../sass/_latto.typography.scss */
+/* line 109, ../sass/_latto.typography.scss */
 a:visited {
   color: #007a9b;
 }
-/* line 114, ../sass/_latto.typography.scss */
+/* line 112, ../sass/_latto.typography.scss */
 a:hover {
   color: #006681;
   text-decoration: underline;
 }
-/* line 118, ../sass/_latto.typography.scss */
+/* line 116, ../sass/_latto.typography.scss */
 a:focus {
   color: #006681;
 }
 
-/* line 125, ../sass/_latto.typography.scss */
+/* line 123, ../sass/_latto.typography.scss */
 b,
 strong,
 .strong {
   font-weight: bold;
 }
 
-/* line 142, ../sass/_latto.typography.scss */
+/* line 140, ../sass/_latto.typography.scss */
 .small {
   font-size: 6.5px;
   font-size: 0.40625rem;
 }
 
-/* line 146, ../sass/_latto.typography.scss */
+/* line 144, ../sass/_latto.typography.scss */
 .medium {
   font-size: 9.75px;
   font-size: 0.60938rem;
 }
 
-/* line 150, ../sass/_latto.typography.scss */
+/* line 148, ../sass/_latto.typography.scss */
 .big {
   font-size: 16.25px;
   font-size: 1.01563rem;
 }
 
-/* line 154, ../sass/_latto.typography.scss */
+/* line 152, ../sass/_latto.typography.scss */
 .bigger {
   font-size: 17.875px;
   font-size: 1.11719rem;
 }
 
-/* line 158, ../sass/_latto.typography.scss */
+/* line 156, ../sass/_latto.typography.scss */
 .biggest {
   font-size: 19.5px;
   font-size: 1.21875rem;

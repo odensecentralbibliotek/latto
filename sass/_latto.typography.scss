@@ -1,7 +1,5 @@
 // Default typography for the theme.
 
-@import 'latto.variables.scss';
-
 html{
   @include rem('font-size',$base-font-size);
 }
