@@ -7,6 +7,10 @@
 // The default font
 @include font-face("Amble Light Condensed", font-files("amble/Amble-LightCondensed-webfont.woff", "amble/Amble-LightCondensed-webfont.ttf", "amble/Amble-LightCondensed-webfont.svg"), "amble/Amble-LightCondensed-webfont.eot", 'normal', 'normal');
 
+// Basic settings
+$grid-max-width:  1200px;
+
+
 // Standard color definitions.
 $black:                 #000    !default;
 $gray-dark:             #bdbdbd !default;
