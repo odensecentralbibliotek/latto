@@ -66,11 +66,12 @@ $theme-block-inverse-background:  $theme-secondary-color !default;
 $form-border-radius: 5px !default;
 
 // Navigation
-$navbar-bg-color:         #00a8e1 !default;
-$navbar-bg-active-color   transparent !default;
-$navbar-font-size:        15px !default;
-$navbar-text-color:       lighten($gray-light, 25%) !default;
-$navbar-item-spacing:     $default-spacing / 2 $default-spacing !default;
+$navbar-bg-color:           #00a8e1 !default;
+$navbar-bg-active-color:    transparent !default;
+$navbar-font-size:          15px !default;
+$navbar-text-color:         lighten($gray-light, 25%) !default;
+$navbar-text-color-active:  lighten($gray-light, 25%) !default;
+$navbar-item-spacing:       $default-spacing / 2 $default-spacing !default;
 
 
 // Sidebar
