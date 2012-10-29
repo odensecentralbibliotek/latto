@@ -52,10 +52,11 @@ header {
 
   .site-slogan {
     @include rem('font-size', $base-font-size * 1.15);
+    @include rem('line-height', $base-font-size * 1.25);
 
     clear: left;
     color: darken($gray-dark, 50%);
-    margin-left: $default-spacing * 1.2;
+    margin-left: $default-spacing / 4;
   }
 }
 

@@ -814,23 +814,25 @@ header .site-name a:visited {
 header .site-slogan {
   font-size: 18.4px;
   font-size: 1.15rem;
+  line-height: 20px;
+  line-height: 1.25rem;
   clear: left;
   color: #3e3e3e;
-  margin-left: 24px;
+  margin-left: 5px;
 }
 
-/* line 62, ../sass/_latto.base.scss */
+/* line 63, ../sass/_latto.base.scss */
 img {
   display: inline;
   max-width: 100%;
 }
 
-/* line 67, ../sass/_latto.base.scss */
+/* line 68, ../sass/_latto.base.scss */
 p {
   margin-bottom: 6.66667px;
 }
 
-/* line 77, ../sass/_latto.base.scss */
+/* line 78, ../sass/_latto.base.scss */
 .form-actions {
   margin: 0;
   padding: 0;
@@ -839,7 +841,7 @@ p {
   display: inline-block;
 }
 
-/* line 89, ../sass/_latto.base.scss */
+/* line 90, ../sass/_latto.base.scss */
 hr {
   background: #d5d5d5;
   color: #d5d5d5;
@@ -852,7 +854,7 @@ hr {
   margin-bottom: 10px;
 }
 
-/* line 100, ../sass/_latto.base.scss */
+/* line 101, ../sass/_latto.base.scss */
 .grid-content .grid-inner {
   background-color: rgba(255, 255, 255, 0.75);
   zoom: 1;
@@ -860,7 +862,7 @@ hr {
   padding: 20px;
 }
 
-/* line 112, ../sass/_latto.base.scss */
+/* line 113, ../sass/_latto.base.scss */
 .search-wrapper {
   background-color: rgba(0, 0, 0, 0.15);
   zoom: 1;
@@ -871,14 +873,14 @@ hr {
   margin-left: 10px;
   overflow: hidden;
 }
-/* line 121, ../sass/_latto.base.scss */
+/* line 122, ../sass/_latto.base.scss */
 .search-wrapper .search-inner-wrapper {
   margin: 40px auto;
   max-width: 70%;
   position: relative;
 }
 
-/* line 139, ../sass/_latto.base.scss */
+/* line 140, ../sass/_latto.base.scss */
 .label-info,
 .label-info[href],
 .badge-info,
@@ -887,22 +889,22 @@ hr {
   background-color: #00b7e7;
 }
 
-/* line 147, ../sass/_latto.base.scss */
+/* line 148, ../sass/_latto.base.scss */
 .label a {
   color: white;
   text-decoration: none;
 }
-/* line 151, ../sass/_latto.base.scss */
+/* line 152, ../sass/_latto.base.scss */
 .label a:hover {
   text-decoration: none;
 }
 
-/* line 161, ../sass/_latto.base.scss */
+/* line 162, ../sass/_latto.base.scss */
 .image {
   margin-bottom: 10px;
 }
 
-/* line 165, ../sass/_latto.base.scss */
+/* line 166, ../sass/_latto.base.scss */
 .lead {
   font-size: 14.3px;
   font-size: 0.89375rem;
@@ -911,7 +913,7 @@ hr {
   margin-bottom: 0;
 }
 
-/* line 172, ../sass/_latto.base.scss */
+/* line 173, ../sass/_latto.base.scss */
 .pull-right {
   float: right;
 }
