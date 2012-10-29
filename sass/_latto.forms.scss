@@ -8,7 +8,6 @@
   select,
   .uneditable-input {
     position: relative; // placed here by default so that on :focus we can place the input above the .add-on for full border and box-shadow goodness
-    margin-bottom: 1px; // prevent bottom margin from screwing up alignment in stacked forms
     *margin-left: 0;
     @include border-radius(0 $form-border-radius $form-border-radius 0);
     // Make input on top when focused so blue border and shadow always show
