@@ -91,20 +91,13 @@ hr {
   @include colruler();
 }
 
-// The wrapper for the grid layout.
-//
-// .grid-inner        - Styling for each element in .grid-content wrapper.
-//                      Includes mixin rgba-background() (latto.mixins.scss)
-//
+
+// Content wrapper for the grid layout.
+// 
 // No styleguide reference
 .grid-content {
-  .grid-inner {
-    @include rgba-background($theme-content-background, .75);
-
-    padding: $default-spacing;
-  }
+  @include rgba-background($theme-content-background, .75);
 }
-
 
 
 // The wrapper for the search field.
