@@ -107,41 +107,41 @@ h6 a:active {
 
 /* line 60, ../sass/_latto.typography.scss */
 h1 {
-  font-size: 32.5px;
-  font-size: 2.03125rem;
+  font-size: 26px;
+  font-size: 1.625rem;
   color: #1b1b1b;
 }
 
 /* line 66, ../sass/_latto.typography.scss */
 h2 {
-  font-size: 28.6px;
-  font-size: 1.7875rem;
+  font-size: 23.4px;
+  font-size: 1.4625rem;
 }
 
 /* line 70, ../sass/_latto.typography.scss */
 h3 {
-  font-size: 24.7px;
-  font-size: 1.54375rem;
+  font-size: 20.8px;
+  font-size: 1.3rem;
   line-height: 22.5px;
   line-height: 1.40625rem;
 }
 
 /* line 75, ../sass/_latto.typography.scss */
 h4 {
-  font-size: 20.8px;
-  font-size: 1.3rem;
+  font-size: 18.2px;
+  font-size: 1.1375rem;
 }
 
 /* line 79, ../sass/_latto.typography.scss */
 h5 {
-  font-size: 16.9px;
-  font-size: 1.05625rem;
+  font-size: 14.3px;
+  font-size: 0.89375rem;
 }
 
 /* line 83, ../sass/_latto.typography.scss */
 h6 {
-  font-size: 14.3px;
-  font-size: 0.89375rem;
+  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 /* line 92, ../sass/_latto.typography.scss */
