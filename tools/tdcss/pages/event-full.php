@@ -10,8 +10,8 @@
   
   <title>Ding2tal mockup page: Event, full </title>
 
-  <?php include 'mockup_head.inc'; ?>
-  <?php include 'scripts.inc'; ?>
+  <?php include 'includes/mockup_head.inc'; ?>
+  <?php include 'includes/scripts.inc'; ?>
 </head>
 <body>
 
