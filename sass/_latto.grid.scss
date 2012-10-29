@@ -124,11 +124,6 @@ $box-sizing-polyfill-path: '../scripts/boxsizing.htc';
   @include zen-grid-item(13, 1, right);
 }
 
-.grid-full {
-  @include zen-clear(both);
-  @include zen-grid-item($zen-column-count, 1);
-}
-
 .grid-clear-both {
   @include zen-clear(both);
 }
