@@ -25,15 +25,7 @@
     padding-bottom: $list-item-spacing * 1.5;
     margin-bottom: $list-item-spacing * 1.5;
 
-    .image-container {
-
-      img {
-        height: auto;
-        max-width: 100%;
-      }
-    }
-
-    .subheading {
+    .meta {
       margin-top: $list-item-spacing;
       margin-bottom: $list-item-spacing;
 
@@ -96,10 +88,6 @@
     margin-top: $default-spacing;
 
     letter-spacing: -4px;
-
-    div, p, a, span {
-      letter-spacing: normal;
-    }
 
     .list-item {
       border-bottom: 0;
