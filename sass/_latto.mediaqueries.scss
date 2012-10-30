@@ -21,4 +21,9 @@
 
 // Desktops
 @media only screen and (min-width : 1024px) {
+  .template-1 {
+    background-color: Blue;
+    @extend .display-one;
+    @extend .attachment-four;
+  }
 }

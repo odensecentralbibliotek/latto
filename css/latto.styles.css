@@ -774,6 +774,134 @@ strong,
   _overflow-y: visible;
 }
 
+/* line 169, ../sass/_latto.grid.scss */
+.display-one .primary-content {
+  float: left;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("../scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 172, ../sass/_latto.grid.scss */
+.display-one .seconday-content {
+  float: right;
+  width: 25%;
+  margin-right: 25%;
+  margin-left: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("../scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 175, ../sass/_latto.grid.scss */
+.display-one .tertiary-content {
+  float: right;
+  width: 25%;
+  margin-right: 0%;
+  margin-left: -25%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("../scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+
+/* line 181, ../sass/_latto.grid.scss */
+.attachment-four .attachment-1 {
+  float: left;
+  width: 25%;
+  margin-left: 0%;
+  margin-right: -25%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("../scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 184, ../sass/_latto.grid.scss */
+.attachment-four .attachment-2 {
+  float: left;
+  width: 25%;
+  margin-left: 25%;
+  margin-right: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("../scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 187, ../sass/_latto.grid.scss */
+.attachment-four .attachment-3 {
+  float: right;
+  width: 25%;
+  margin-right: 25%;
+  margin-left: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("../scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 190, ../sass/_latto.grid.scss */
+.attachment-four .attachment-4 {
+  float: right;
+  width: 25%;
+  margin-right: 0%;
+  margin-left: -25%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("../scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+
 /* line 13, ../sass/_latto.base.scss */
 body {
   background: url("../images/default-bg-pattern.png") white;
@@ -2644,4 +2772,16 @@ ul.icons li .icon-large:before {
 /* line 124, ../sass/_latto.mixins.scss */
 .form-inside-large i + .form-text {
   padding-left: 40px;
+}
+
+/*
+/ Handles all media queries for phones.
+/
+/ This is only beta and width should be reconsidered and tested properly.
+*/
+@media only screen and (min-width: 1024px) {
+  /* line 24, ../sass/_latto.mediaqueries.scss */
+  .template-1 {
+    background-color: Blue;
+  }
 }

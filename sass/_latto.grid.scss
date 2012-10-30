@@ -165,3 +165,29 @@ $box-sizing-polyfill-path: '../scripts/boxsizing.htc';
 
 // NEW GRIDS
 
+.display-one {
+  .primary-content {
+    @include zen-grid-item(8, 1);      
+  }
+  .seconday-content {
+    @include zen-grid-item(4, 5, right);  
+  }
+  .tertiary-content {
+    @include zen-grid-item(4, 1, right);  
+  }
+}
+
+.attachment-four {
+  .attachment-1 {
+    @include zen-grid-item(4, 1);      
+  }
+  .attachment-2 {
+    @include zen-grid-item(4, 5);  
+  }
+  .attachment-3 {
+    @include zen-grid-item(4, 5, right);  
+  }
+  .attachment-4 {
+    @include zen-grid-item(4, 1, right);  
+  }
+}
