@@ -26,6 +26,10 @@
 ;----------// Plugins
   settings[load_equalize] = 1
 
+;----------// Layout plugins
+  ; Panels Module layouts
+  plugins[panels][layouts] = layouts/panels
+
 ;----------// Stylesheets
 
   settings[enable_exclude_css] = 0
