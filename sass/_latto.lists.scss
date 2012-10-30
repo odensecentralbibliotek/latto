@@ -16,7 +16,6 @@
 .list {
   margin: 0;
   padding: 0;
-  width: 100%;
 
   list-style-type: none;
 
@@ -87,22 +86,13 @@
   &.highlighted {
     margin-top: $default-spacing;
 
-    letter-spacing: -4px;
-
     .list-item {
       border-bottom: 0;
       display: inline-block;
+      margin-right: -4px; // Fix for using display inline-block
       max-width: 50%;
     }
   }
-}
-
-// We temporary @extend .list-image to make sure we don't break the styling
-// already used.
-
-// @TODO: Remove all uses of class="list floated".
-.list.floated {
-  @extend .list-image;
 }
 
 // @END .list-image
@@ -130,13 +120,6 @@
       margin-left: $default-spacing;
     }
   }
-}
-
-// We temporary @extend .list-compact to make sure we don't break the styling
-
-// @TODO: Remove all uses of class="list simple".
-.list.simple {
-  @extend .list-compact;
 }
 
 // @END .list-compact

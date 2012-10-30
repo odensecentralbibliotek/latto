@@ -1,0 +1,15 @@
+// We temporary @extend .list-compact to make sure we don't break the styling
+
+// @TODO: Remove all uses of class="list simple".
+.list.simple {
+  @extend .list-compact;
+}
+
+
+// We temporary @extend .list-image to make sure we don't break the styling
+// already used.
+
+// @TODO: Remove all uses of class="list floated".
+.list.floated {
+  @extend .list-image;
+}
