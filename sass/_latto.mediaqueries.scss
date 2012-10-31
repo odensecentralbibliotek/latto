@@ -1,29 +1,320 @@
-/*
-/ Handles all media queries for phones.
-/
-/ This is only beta and width should be reconsidered and tested properly.
-*/
+//
+// Handles media queries for all devices.
+//
 
-// Smartphones portrait
-@media only screen and (min-width : 320px) {
-  
+// Note: The “only” keyword after @media is optional and only there so that
+// older browsers ignore the media query if they don’t support it.
+// http://mobile.smashingmagazine.com/2012/10/24/beyond-common-media-query-breakpoints/
+
+@import '_latto.mixins.scss';
+@import '_latto.variables.scss';
+@import '_latto.grid.scss';
+
+//
+// Breakpoint variables
+
+$breakpoint-small:    480px;
+$breakpoint-medium:   768px;
+
+
+//
+// The respond-to mixin
+
+@mixin respond-to($media) {
+
+	// Sizes
+	@if $media == small {
+		@media only screen and (max-width: $breakpoint-small) { @content; }
+	}
+
+	@else if $media == medium {
+		@media only screen and (min-width: $breakpoint-small + 1) and (max-width: $breakpoint-medium) { @content; }
+	}
+
+	@else if $media == large {
+		@media only screen and (min-width: $breakpoint-medium + 1) { @content; }
+	}
+
 }
 
-// Smartphones landscape
-@media only screen and (min-width : 480px) {
 
+//
+// Size mixins
+
+@mixin small {
+  @include respond-to(small) { @content; }
 }
 
-// iPads
-@media only screen and (min-width : 768px) {
-
+@mixin medium {
+  @include respond-to(medium) { @content; }
 }
 
-// Desktops
-@media only screen and (min-width : 1024px) {
-  .template-1 {
-    background-color: Blue;
-    @extend .display-one;
-    @extend .attachment-four;
+@mixin large {
+  @include respond-to(large) { @content; }
+}
+
+
+//
+// Styling for testing
+
+.grid-wrapper {
+  @include small() {
+    border: 3px dashed red;
   }
+
+  @include medium() {
+    border: 3px dashed green;
+  }
+
+  @include large() {
+    border: 3px dashed blue;
+  }
+}
+
+.content-inner {
+  background: GreenYellow;
+  border: 3px solid Green;
+  margin: 10px;
+  padding: 10px;
+}
+
+
+//
+// Display template one (default layout template)
+//
+// Small:   100-100-100 (stacked)
+//          -------------------------------
+//          |           Primary           |
+//          -------------------------------
+//          -------------------------------
+//          |           Secondary         |
+//          -------------------------------
+//          -------------------------------
+//          |           Tertiary          |
+//          -------------------------------
+//
+// Medium:  100-50-50 (primary-content 100%, secondary 50%, tertiary 50%)
+//          -------------------------------
+//          |           Primary           |
+//          -------------------------------
+//          -------------------------------
+//          |  Secondary   |   Tertiary   |
+//          -------------------------------
+//
+//
+// Large:   50-25-25 (primary 50%, secondary 25%, tertiary 25%)
+//          -------------------------------
+//          |    Primary    | Ter. | Sec. |
+//          -------------------------------
+
+
+%display-template-one {
+
+  .primary-content {
+    @include small() {
+      @include zen-grid-item($grid-column-count, 1);
+    }
+
+    @include medium() {
+      @include zen-grid-item($grid-column-count, 1);
+    }
+
+    @include large() {
+      @include zen-grid-item($grid-column-count / 2, 1);
+    }
+  }
+
+  .secondary-content {
+    @include small() {
+      @include zen-clear(both);
+      @include zen-grid-item($grid-column-count, 1);
+    }
+
+    @include medium() {
+      @include zen-clear(both);
+      @include zen-grid-item($grid-column-count / 2, 1);
+    }
+
+    @include large() {
+      @include zen-grid-item($grid-column-count / 4, ($grid-column-count / 2) + 1);
+    }
+  }
+
+  .tertiary-content {
+    @include small() {
+      @include zen-clear(both);
+      @include zen-grid-item($grid-column-count, 1);
+    }
+
+    @include medium() {
+      @include zen-grid-item($grid-column-count / 2, 1, right);
+    }
+
+    @include large() {
+      @include zen-grid-item($grid-column-count / 4, 1, right);
+    }
+  }
+
+}
+
+//
+// Display template two
+//
+// Small:   100-100-100 (stacked)
+//          -------------------------------
+//          |           Primary           |
+//          -------------------------------
+//          -------------------------------
+//          |           Secondary         |
+//          -------------------------------
+//          -------------------------------
+//          |           Tertiary          |
+//          -------------------------------
+//
+// Medium:  25-75-100 (Secondary 25%, primary 75%, tertiary 100%)
+//          -------------------------------
+//          | Sec. |       Primary        |
+//          -------------------------------
+//          -------------------------------
+//          |           Tertiary          |
+//          -------------------------------
+//
+// Large:   50-25-25 (primary 50%, secondary 25%, tertiary 25%)
+//          -------------------------------
+//          |    Primary    | Ter. | Sec. |
+//          -------------------------------
+
+
+%display-template-two {
+  
+  @extend %display-template-one;
+
+  .primary-content {
+    @include medium() {
+      @include zen-grid-item($grid-column-count / 1.5, 1, right);
+    }    
+    
+    @include large() {
+      @include zen-grid-item($grid-column-count / 2, $grid-column-count / 4 + 1);
+    }
+  }
+
+  .secondary-content {
+    @include medium() {
+      @include zen-clear();      
+      @include zen-grid-item($grid-column-count / 3, 1);
+    }
+    
+    @include large() {
+      @include zen-grid-item($grid-column-count / 4, 1);
+    }
+  }
+  
+  .tertiary-content {
+    @include medium() {
+      @include zen-clear(both);      
+      @include zen-grid-item($grid-column-count, 1);
+    }
+  } 
+}
+
+.layout-template-default {
+  @extend %display-template-one;
+}
+
+.layout-template-two {
+  @extend %display-template-two;
+}
+
+.layout-tpl-third {
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content-attachments {
+  @include zen-clear(both);
+
+  .attachment-first {
+
+    @include small() {
+      @include zen-clear(both);
+      @include zen-grid-item($grid-column-count, 1);
+    }
+
+    @include medium() {
+      @include zen-grid-item($grid-column-count / 2, 1);
+    }
+
+    @include large() {
+      @include zen-grid-item($grid-column-count / 2, 1);
+    }
+
+  }
+
+  .attachment-second {
+
+    @include small() {
+      @include zen-clear(both);
+      @include zen-grid-item($grid-column-count, 1);
+    }
+
+    @include medium() {
+      @include zen-grid-item($grid-column-count / 2, 1, right);
+    }
+
+    @include large() {
+      @include zen-grid-item($grid-column-count / 2, 1, right);
+    }
+
+  }
+
+  .attachment-third {
+
+    @include small() {
+      @include zen-clear(both);
+      @include zen-grid-item($grid-column-count, 1);
+    }
+
+    @include medium() {
+      @include zen-clear(both);
+      @include zen-grid-item($grid-column-count / 2, 1);
+    }
+
+    @include large() {
+      @include zen-clear(both);
+      @include zen-grid-item($grid-column-count / 2, 1);
+    }
+
+  }
+
+  .attachment-fourth {
+
+    @include small() {
+      @include zen-clear(both);
+      @include zen-grid-item($grid-column-count, 1);
+    }
+
+    @include medium() {
+      @include zen-grid-item($grid-column-count / 2, 1, right);
+    }
+
+    @include large() {
+      @include zen-grid-item($grid-column-count / 2, 1, right);
+    }
+
+  }
+
 }
