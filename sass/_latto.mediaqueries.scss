@@ -10,15 +10,25 @@
 @import '_latto.variables.scss';
 @import '_latto.grid.scss';
 
-//
-// Breakpoint variables
+
+// -----------------------------------------------------------------------------
+// Variables
+// -----------------------------------------------------------------------------
 
 $breakpoint-small:    480px;
 $breakpoint-medium:   768px;
 
 
-//
+$grid-25: $grid-column-count * .25;
+$grid-33: $grid-column-count * .3333333333;
+$grid-50: $grid-column-count * .5;
+$grid-66: $grid-column-count * .6666666666;
+$grid-75: $grid-column-count * .75;
+
+
+// -----------------------------------------------------------------------------
 // The respond-to mixin
+// -----------------------------------------------------------------------------
 
 @mixin respond-to($media) {
 
@@ -38,8 +48,9 @@ $breakpoint-medium:   768px;
 }
 
 
-//
+// -----------------------------------------------------------------------------
 // Size mixins
+// -----------------------------------------------------------------------------
 
 @mixin small {
   @include respond-to(small) { @content; }
@@ -54,10 +65,11 @@ $breakpoint-medium:   768px;
 }
 
 
-//
+// -----------------------------------------------------------------------------
 // Styling for testing
+// -----------------------------------------------------------------------------
 
-.grid-wrapper {
+.grid-wrapper {  
   @include small() {
     border: 3px dashed red;
   }
@@ -68,8 +80,9 @@ $breakpoint-medium:   768px;
 
   @include large() {
     border: 3px dashed blue;
-  }
+  }  
 }
+
 
 .content-inner {
   background: GreenYellow;
@@ -79,6 +92,27 @@ $breakpoint-medium:   768px;
 }
 
 
+// -----------------------------------------------------------------------------
+// Default grid styling
+// -----------------------------------------------------------------------------
+
+.primary-content,
+.secondary-content,
+.tertiary-content,
+.attachment-first,
+.attachment-second,
+.attachment-third,
+.attachment-fourth {
+  display: block;
+  padding-left: $default-spacing / 2;
+  padding-right: $default-spacing / 2;
+}
+
+
+// -----------------------------------------------------------------------------
+// Displays
+// -----------------------------------------------------------------------------
+//
 //
 // Display template one (default layout template)
 //
@@ -108,11 +142,10 @@ $breakpoint-medium:   768px;
 //          -------------------------------
 
 
-%display-template-one {
+%display-template-default {
 
   .primary-content {
     @include small() {
-      @include zen-grid-item($grid-column-count, 1);
     }
 
     @include medium() {
@@ -120,45 +153,103 @@ $breakpoint-medium:   768px;
     }
 
     @include large() {
-      @include zen-grid-item($grid-column-count / 2, 1);
+      @include zen-grid-item($grid-50, 1);
     }
   }
 
   .secondary-content {
     @include small() {
-      @include zen-clear(both);
-      @include zen-grid-item($grid-column-count, 1);
     }
 
     @include medium() {
       @include zen-clear(both);
-      @include zen-grid-item($grid-column-count / 2, 1);
+      @include zen-grid-item($grid-50, 1);
     }
 
     @include large() {
-      @include zen-grid-item($grid-column-count / 4, ($grid-column-count / 2) + 1);
+      @include zen-grid-item($grid-25, ($grid-50) + 1);
     }
   }
 
   .tertiary-content {
     @include small() {
-      @include zen-clear(both);
-      @include zen-grid-item($grid-column-count, 1);
     }
 
     @include medium() {
-      @include zen-grid-item($grid-column-count / 2, 1, right);
+      @include zen-grid-item($grid-50, 1, right);
     }
 
     @include large() {
-      @include zen-grid-item($grid-column-count / 4, 1, right);
+      @include zen-grid-item($grid-25, 1, right);
     }
   }
 
 }
 
-//
+
 // Display template two
+//
+// Small:   100-100-100 (stacked)
+//          -------------------------------
+//          |           Primary           |
+//          -------------------------------
+//          -------------------------------
+//          |           Secondary         |
+//          -------------------------------
+//          -------------------------------
+//          |           Tertiary          |
+//          -------------------------------
+//
+// Medium:  25-75-100 (Secondary 25%, primary 75%, tertiary 100%)
+//          -------------------------------
+//          |       Primary        | Sec. |
+//          -------------------------------
+//          -------------------------------
+//          |           Tertiary          |
+//          -------------------------------
+//
+// Large:   50-25-25 (primary 50%, secondary 25%, tertiary 25%)
+//          -------------------------------
+//          |    Primary    | Ter. | Sec. |
+//          -------------------------------
+
+
+%display-template-two {
+  
+  .primary-content {
+    @include medium() {
+      @include zen-grid-item($grid-66, 1);
+    }    
+    
+    @include large() {
+      @include zen-grid-item($grid-50, $grid-25 + 1);
+    }
+  }
+
+  .secondary-content {
+    @include medium() {
+      @include zen-grid-item($grid-33, 1, right);
+    }
+    
+    @include large() {
+      @include zen-grid-item($grid-25, 1);
+    }
+  }
+  
+  .tertiary-content {
+    @include medium() {
+      @include zen-clear(both);      
+      @include zen-grid-item($grid-column-count, 1);
+    }
+    
+    @include large() {
+      @include zen-grid-item($grid-25, 1, right);
+    }    
+  } 
+}
+
+
+// Display template three
 //
 // Small:   100-100-100 (stacked)
 //          -------------------------------
@@ -179,142 +270,290 @@ $breakpoint-medium:   768px;
 //          |           Tertiary          |
 //          -------------------------------
 //
-// Large:   50-25-25 (primary 50%, secondary 25%, tertiary 25%)
+// Large:   25-75-100 (secondary 25%, primary 75%, tertiary 100%)
 //          -------------------------------
-//          |    Primary    | Ter. | Sec. |
+//          | Sec. |       Primary        |
+//          -------------------------------
+//          -------------------------------
+//          |           Tertiary          |
 //          -------------------------------
 
-
-%display-template-two {
+%display-template-three {
   
-  @extend %display-template-one;
+  @extend %display-template-two;
 
   .primary-content {
-    @include medium() {
-      @include zen-grid-item($grid-column-count / 1.5, 1, right);
-    }    
     
     @include large() {
-      @include zen-grid-item($grid-column-count / 2, $grid-column-count / 4 + 1);
+      @include zen-grid-item($grid-75, $grid-25 + 1);
     }
   }
 
-  .secondary-content {
-    @include medium() {
-      @include zen-clear();      
-      @include zen-grid-item($grid-column-count / 3, 1);
-    }
-    
+  .secondary-content {    
     @include large() {
-      @include zen-grid-item($grid-column-count / 4, 1);
+      @include zen-grid-item($grid-25, 1);
     }
   }
   
   .tertiary-content {
-    @include medium() {
+    @include large() {
       @include zen-clear(both);      
       @include zen-grid-item($grid-column-count, 1);
     }
   } 
 }
 
-.layout-template-default {
-  @extend %display-template-one;
-}
 
-.layout-template-two {
-  @extend %display-template-two;
-}
-
-.layout-tpl-third {
+//
+// -----------------------------------------------------------------------------
+// Attachments
+// -----------------------------------------------------------------------------
 
 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.content-attachments {
+// Make sure the attachments wrapper clears
+//
+.attachments-wrapper {
   @include zen-clear(both);
+}
 
+
+// Attachments display default
+//
+// Small:   100-100-100-100 (stacked)
+//          -------------------------------
+//          |         Attachment 1        |
+//          -------------------------------
+//          -------------------------------
+//          |         Attachment 2        |
+//          -------------------------------
+//          -------------------------------
+//          |         Attachment 3        |
+//          -------------------------------
+//          -------------------------------
+//          |         Attachment 4        |
+//          -------------------------------
+//
+// Medium:  50-50-50-50 (side-by-side)
+//          -------------------------------
+//          | Attachment 1 | Attachment 2 |
+//          -------------------------------
+//          -------------------------------
+//          | Attachment 3 | Attachment 4 |
+//          -------------------------------
+//
+//
+// Large:   50-50-50-50 (side-by-side)
+//          -------------------------------
+//          | Attachment 1 | Attachment 2 |
+//          -------------------------------
+//          -------------------------------
+//          | Attachment 3 | Attachment 4 |
+//          -------------------------------
+
+%attachments-display-default {
   .attachment-first {
-
-    @include small() {
-      @include zen-clear(both);
-      @include zen-grid-item($grid-column-count, 1);
-    }
-
     @include medium() {
-      @include zen-grid-item($grid-column-count / 2, 1);
+      @include zen-grid-item($grid-50, 1);
     }
 
     @include large() {
-      @include zen-grid-item($grid-column-count / 2, 1);
+      @include zen-grid-item($grid-50, 1);
     }
 
   }
 
   .attachment-second {
-
-    @include small() {
-      @include zen-clear(both);
-      @include zen-grid-item($grid-column-count, 1);
-    }
-
     @include medium() {
-      @include zen-grid-item($grid-column-count / 2, 1, right);
+      @include zen-grid-item($grid-50, 1, right);
     }
 
     @include large() {
-      @include zen-grid-item($grid-column-count / 2, 1, right);
+      @include zen-grid-item($grid-50, 1, right);
     }
 
   }
 
   .attachment-third {
-
-    @include small() {
-      @include zen-clear(both);
-      @include zen-grid-item($grid-column-count, 1);
-    }
-
     @include medium() {
       @include zen-clear(both);
-      @include zen-grid-item($grid-column-count / 2, 1);
+      @include zen-grid-item($grid-50, 1);
     }
 
     @include large() {
-      @include zen-clear(both);
-      @include zen-grid-item($grid-column-count / 2, 1);
+      @include zen-grid-item($grid-50, 1);
     }
 
   }
 
   .attachment-fourth {
-
-    @include small() {
-      @include zen-clear(both);
-      @include zen-grid-item($grid-column-count, 1);
-    }
-
     @include medium() {
-      @include zen-grid-item($grid-column-count / 2, 1, right);
+      @include zen-grid-item($grid-50, 1, right);
     }
 
     @include large() {
-      @include zen-grid-item($grid-column-count / 2, 1, right);
+      @include zen-grid-item($grid-50, 1, right);
     }
 
+  }  
+}
+
+
+// Attachments display two
+//
+// Small:   100-100-100-100 (stacked)
+//          -------------------------------
+//          |         Attachment 1        |
+//          -------------------------------
+//          -------------------------------
+//          |         Attachment 2        |
+//          -------------------------------
+//          -------------------------------
+//          |         Attachment 3        |
+//          -------------------------------
+//          -------------------------------
+//          |         Attachment 4        |
+//          -------------------------------
+//
+// Medium:  50-50-50-50 (side-by-side)
+//          -------------------------------
+//          | Attachment 1 | Attachment 2 |
+//          -------------------------------
+//          -------------------------------
+//          | Attachment 3 | Attachment 4 |
+//          -------------------------------
+//
+//
+// Large:   25-25-25-25
+//          -------------------------------
+//          |   1   |  2   |  3   |   4   |
+//          -------------------------------
+
+%attachments-display-two {
+  @extend %attachments-display-default;
+  
+  .attachment-first {
+    @include large() {
+      @include zen-grid-item($grid-25, 1);
+    }
   }
 
+  .attachment-second {
+    @include large() {
+      @include zen-grid-item($grid-25, $grid-25 + 1);
+    }
+  }
+
+  .attachment-third {
+    @include large() {
+      @include zen-grid-item($grid-25, $grid-25 + 1, right);
+    }
+  }
+
+  .attachment-fourth {
+    @include large() {
+      @include zen-grid-item($grid-25, 1, right);
+    }
+  }  
+}
+
+
+// Attachments display two
+//
+// Small:   100-100-100-100 (stacked)
+//          -------------------------------
+//          |         Attachment 1        |
+//          -------------------------------
+//          -------------------------------
+//          |         Attachment 2        |
+//          -------------------------------
+//          -------------------------------
+//          |         Attachment 3        |
+//          -------------------------------
+//          -------------------------------
+//          |         Attachment 4        |
+//          -------------------------------
+//
+// Medium:  50-50-100-100
+//          -------------------------------
+//          | Attachment 1 | Attachment 2 |
+//          -------------------------------
+//          -------------------------------
+//          |         Attachment 3        |
+//          -------------------------------
+//          -------------------------------
+//          |         Attachment 4        |
+//          -------------------------------
+//
+//
+// Large:   33-33-33-100
+//          -------------------------------
+//          |    1    |    2    |    3    |
+//          -------------------------------
+//          -------------------------------
+//          |         Attachment 4        |
+//          -------------------------------
+
+%attachments-display-three {
+  
+  .attachment-first {     
+    @include medium() {
+      @include zen-grid-item($grid-50, 1);
+    }
+    
+    @include large() {
+      @include zen-grid-item($grid-33, 1);
+    }
+  }
+
+  .attachment-second {    
+    @include medium() {
+      @include zen-grid-item($grid-50, 1, right);
+    }
+    
+    @include large() {
+      @include zen-grid-item($grid-33, $grid-33 + 1);
+    }
+  }
+
+  .attachment-third {
+    @include medium() {
+      @include zen-clear(both);
+      @include zen-grid-item($grid-column-count, 1);
+    }    
+    
+    @include large() {
+      @include zen-grid-item($grid-33, 1, right);
+    }
+  }
+
+  .attachment-fourth {    
+    @include medium() {
+      @include zen-clear(both);
+      @include zen-grid-item($grid-column-count, 1);
+    }
+    
+    @include large() {
+      @include zen-clear(both);
+      @include zen-grid-item($grid-column-count, 1);
+    }
+  }  
+}
+
+
+// Layout templates
+// The templates extends displays and attachments
+
+.layout-template-default {
+  @extend %display-template-default;
+  @extend %attachments-display-two;
+}
+
+.layout-template-two {
+  @extend %display-template-two;
+  @extend %attachments-display-two;
+}
+
+.layout-template-three {
+  @extend %display-template-three;
+  @extend %attachments-display-three;
 }
