@@ -7,7 +7,35 @@
 
   <?php include 'includes/mockup_head.inc'; ?>
   <?php include 'includes/scripts.inc'; ?>
-  
+  <style type="text/css">
+
+
+    @media only screen and (max-width: 480px) {
+      .grid-wrapper {
+        border: 3px dashed red;
+      }
+    }
+
+    @media only screen and (min-width: 481px) and (max-width: 768px) {
+      .grid-wrapper {
+        border: 3px dashed green;
+      }
+    }
+
+    @media only screen and (min-width: 769px) {
+      .grid-wrapper {
+        border: 3px dashed blue;
+      }  
+    }
+
+    .content-inner {
+      background: GreenYellow;
+      border: 3px solid Green;
+      margin: 10px;
+      padding: 10px;
+    }    
+
+  </style>
 </head>
 <body>
    

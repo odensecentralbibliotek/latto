@@ -221,12 +221,12 @@ strong,
   *position: relative;
   *zoom: 1;
 }
-/* line 52, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 52, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:before, #page:after {
   content: "";
   display: table;
 }
-/* line 56, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 56, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:after {
   clear: both;
 }
@@ -2646,34 +2646,7 @@ ul.icons li .icon-large:before {
   padding-left: 40px;
 }
 
-@media only screen and (max-width: 480px) {
-  /* line 68, ../sass/_latto.mediaqueries.scss */
-  .grid-wrapper {
-    border: 3px dashed red;
-  }
-}
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  /* line 68, ../sass/_latto.mediaqueries.scss */
-  .grid-wrapper {
-    border: 3px dashed green;
-  }
-}
-@media only screen and (min-width: 769px) {
-  /* line 68, ../sass/_latto.mediaqueries.scss */
-  .grid-wrapper {
-    border: 3px dashed blue;
-  }
-}
-
-/* line 83, ../sass/_latto.mediaqueries.scss */
-.content-inner {
-  background: GreenYellow;
-  border: 3px solid Green;
-  margin: 10px;
-  padding: 10px;
-}
-
-/* line 101, ../sass/_latto.mediaqueries.scss */
+/* line 74, ../sass/_latto.mediaqueries.scss */
 .primary-content,
 .secondary-content,
 .tertiary-content,
@@ -2801,12 +2774,12 @@ ul.icons li .icon-large:before {
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  /* line 66, ../sass/_latto.mq.displays.scss */
+  /* line 93, ../sass/_latto.mq.displays.scss */
   .layout-template-two .primary-content {
     float: left;
-    width: 66.66667%;
-    margin-left: 0%;
-    margin-right: -66.66667%;
+    width: 75%;
+    margin-left: 25%;
+    margin-right: -100%;
     padding-left: 10px;
     padding-right: 10px;
     -moz-box-sizing: border-box;
@@ -2819,12 +2792,12 @@ ul.icons li .icon-large:before {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 70, ../sass/_latto.mq.displays.scss */
+  /* line 97, ../sass/_latto.mq.displays.scss */
   .layout-template-two .secondary-content {
-    float: right;
-    width: 33.33333%;
-    margin-right: 0%;
-    margin-left: -33.33333%;
+    float: left;
+    width: 25%;
+    margin-left: 0%;
+    margin-right: -25%;
     padding-left: 10px;
     padding-right: 10px;
     -moz-box-sizing: border-box;
@@ -2837,7 +2810,7 @@ ul.icons li .icon-large:before {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 74, ../sass/_latto.mq.displays.scss */
+  /* line 101, ../sass/_latto.mq.displays.scss */
   .layout-template-two .tertiary-content {
     clear: both;
     float: left;
@@ -2858,29 +2831,11 @@ ul.icons li .icon-large:before {
   }
 }
 @media only screen and (min-width: 769px) {
-  /* line 41, ../sass/_latto.mq.displays.scss */
+  /* line 117, ../sass/_latto.mq.displays.scss */
   .layout-template-two .primary-content {
     float: left;
     width: 50%;
-    margin-left: 0%;
-    margin-right: -50%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    *behavior: url("../scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
-  }
-  /* line 45, ../sass/_latto.mq.displays.scss */
-  .layout-template-two .secondary-content {
-    float: left;
-    width: 25%;
-    margin-left: 50%;
+    margin-left: 25%;
     margin-right: -75%;
     padding-left: 10px;
     padding-right: 10px;
@@ -2894,7 +2849,25 @@ ul.icons li .icon-large:before {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 49, ../sass/_latto.mq.displays.scss */
+  /* line 121, ../sass/_latto.mq.displays.scss */
+  .layout-template-two .secondary-content {
+    float: left;
+    width: 25%;
+    margin-left: 0%;
+    margin-right: -25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("../scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+  /* line 125, ../sass/_latto.mq.displays.scss */
   .layout-template-two .tertiary-content {
     float: right;
     width: 25%;

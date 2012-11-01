@@ -10,7 +10,7 @@
 // -----------------------------------------------------------------------------
 // Variables
 // -----------------------------------------------------------------------------
-
+//
 $breakpoint-small:    480px;
 $breakpoint-medium:   768px;
 
@@ -25,7 +25,7 @@ $grid-75: $grid-column-count * .75;
 // -----------------------------------------------------------------------------
 // The respond-to mixin
 // -----------------------------------------------------------------------------
-
+//
 @mixin respond-to($media) {
 
 	// Sizes
@@ -47,7 +47,7 @@ $grid-75: $grid-column-count * .75;
 // -----------------------------------------------------------------------------
 // Size mixins
 // -----------------------------------------------------------------------------
-
+//
 @mixin small {
   @include respond-to(small) { @content; }
 }
@@ -62,36 +62,9 @@ $grid-75: $grid-column-count * .75;
 
 
 // -----------------------------------------------------------------------------
-// Styling for testing
-// -----------------------------------------------------------------------------
-
-.grid-wrapper {  
-  @include small() {
-    border: 3px dashed red;
-  }
-
-  @include medium() {
-    border: 3px dashed green;
-  }
-
-  @include large() {
-    border: 3px dashed blue;
-  }  
-}
-
-
-.content-inner {
-  background: GreenYellow;
-  border: 3px solid Green;
-  margin: 10px;
-  padding: 10px;
-}
-
-
-// -----------------------------------------------------------------------------
 // Default grid styling
 // -----------------------------------------------------------------------------
-
+//
 .primary-content,
 .secondary-content,
 .tertiary-content,
@@ -111,7 +84,7 @@ $grid-75: $grid-column-count * .75;
 
 // Layout templates
 // The templates extends displays and attachments
-
+//
 .layout-template-default {
   @extend %content-display-default;
   @extend %attachments-display-two;

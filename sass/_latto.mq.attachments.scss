@@ -13,20 +13,20 @@
 // Columns stacked
 // -----------------------------------------------------------------------------
 //
-//          -------------------------------
-//          |         Attachment 1        |
-//          -------------------------------
-//          -------------------------------
-//          |         Attachment 2        |
-//          -------------------------------
-//          -------------------------------
-//          |         Attachment 3        |
-//          -------------------------------
-//          -------------------------------
-//          |         Attachment 4        |
-//          -------------------------------
+// -------------------------------
+// |         Attachment 1        |
+// -------------------------------
+// -------------------------------
+// |         Attachment 2        |
+// -------------------------------
+// -------------------------------
+// |         Attachment 3        |
+// -------------------------------
+// -------------------------------
+// |         Attachment 4        |
+// -------------------------------
 //
-@mixin attachment-display-stacked {
+@mixin attachment-100-100-100-100 {
   .attachment-first,
   .attachment-second,
   .attachment-third,
@@ -41,14 +41,14 @@
 // 2 columns side by side
 // -----------------------------------------------------------------------------
 //
-//          -------------------------------
-//          | Attachment 1 | Attachment 2 |
-//          -------------------------------
-//          -------------------------------
-//          | Attachment 3 | Attachment 4 |
-//          -------------------------------
+// -------------------------------
+// | Attachment 1 | Attachment 2 |
+// -------------------------------
+// -------------------------------
+// | Attachment 3 | Attachment 4 |
+// -------------------------------
 //
-@mixin attachment-display-2-side-by-side {
+@mixin attachment-50-50-50-50 {
   .attachment-first {
     @include zen-grid-item($grid-50, 1);
   }
@@ -68,17 +68,17 @@
 // 2 columns side by side + 2 stacked
 // -----------------------------------------------------------------------------
 //
-//          -------------------------------
-//          | Attachment 1 | Attachment 2 |
-//          -------------------------------
-//          -------------------------------
-//          |         Attachment 3        |
-//          -------------------------------
-//          -------------------------------
-//          |         Attachment 4        |
-//          -------------------------------
+// -------------------------------
+// | Attachment 1 | Attachment 2 |
+// -------------------------------
+// -------------------------------
+// |         Attachment 3        |
+// -------------------------------
+// -------------------------------
+// |         Attachment 4        |
+// -------------------------------
 //
-@mixin attachment-display-2-side-by-side-2-stacked {
+@mixin attachment-50-50-100-100 {
   .attachment-first {
     @include zen-grid-item($grid-50, 1);
   }
@@ -103,14 +103,14 @@
 // 3 column + 1 stacked (4th column optional)
 // -----------------------------------------------------------------------------
 //
-//          -------------------------------
-//          |    1    |    2    |    3    |
-//          -------------------------------
-//          -------------------------------
-//          |         Attachment 4        |
-//          -------------------------------
+// -------------------------------
+// |    1    |    2    |    3    |
+// -------------------------------
+// -------------------------------
+// |         Attachment 4        |
+// -------------------------------
 //
-@mixin attachment-display-3-stacked {
+@mixin attachment-33-33-33-100 {
   .attachment-first {
     @include zen-grid-item($grid-33, 1);
   }
@@ -134,11 +134,11 @@
 // 4 columns side by side
 // -----------------------------------------------------------------------------
 //
-//          -------------------------------
-//          |   1   |  2   |  3   |   4   |
-//          -------------------------------
+// -------------------------------
+// |   1   |  2   |  3   |   4   |
+// -------------------------------
 //
-@mixin attachment-display-4-side-by-side {
+@mixin attachment-25-25-25-25 {
   .attachment-first {
     @include zen-grid-item($grid-25, 1);
   }
@@ -163,11 +163,11 @@
 //
 %attachments-display-default {
   @include medium() {
-    @include attachment-display-2-side-by-side;
+    @include attachment-50-50-50-50;
   }
 
   @include large() {
-    @include attachment-display-2-side-by-side;
+    @include attachment-50-50-50-50;
   }
 }
 
@@ -178,11 +178,11 @@
 //
 %attachments-display-two {
   @include medium() {
-    @include attachment-display-2-side-by-side;
+    @include attachment-50-50-50-50;
   }
 
   @include large() {
-    @include attachment-display-4-side-by-side;
+    @include attachment-25-25-25-25;
   }
 }
 
@@ -193,11 +193,11 @@
 //
 %attachments-display-three {
   @include medium() {
-    @include attachment-display-2-side-by-side-2-stacked;
+    @include attachment-50-50-100-100;
   }
 
   @include large() {
-    @include attachment-display-3-stacked;
+    @include attachment-33-33-33-100;
   }
 }
 
@@ -208,11 +208,11 @@
 //
 %attachments-display-four {
   @include medium() {
-    @include attachment-display-2-side-by-side;
+    @include attachment-50-50-50-50;
   }
 
   @include large() {
-    @include attachment-display-4-side-by-side;
+    @include attachment-25-25-25-25;
   }
 }
 
@@ -223,10 +223,10 @@
 //
 %attachments-display-five {
   @include medium() {
-    @include attachment-display-stacked;
+    @include attachment-100-100-100-100;
   }
 
   @include large() {
-    @include attachment-display-4-side-by-side;
+    @include attachment-25-25-25-25;
   }
 }

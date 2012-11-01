@@ -3,17 +3,17 @@
 // -----------------------------------------------------------------------------
 
 // -----------------------------------------------------------------------------
-// Stacked-side-by-side:  100-50-50 (primary-content 100%, secondary 50%, tertiary 50%)
+// Primary 100% stacked secondary and tertiary 50% side by side
 // -----------------------------------------------------------------------------
 //
-//          -------------------------------
-//          |           Primary           |
-//          -------------------------------
-//          -------------------------------
-//          |  Secondary   |   Tertiary   |
-//          -------------------------------
+// -------------------------------
+// |           Primary           |
+// -------------------------------
+// -------------------------------
+// |  Secondary   |   Tertiary   |
+// -------------------------------
 //
-@mixin stacked-side-by-side {
+@mixin display-100-50-50 {
 
   .primary-content {
     @include zen-grid-item($grid-column-count, 1);
@@ -30,14 +30,14 @@
 }
 
 // -----------------------------------------------------------------------------
-// Primary-side-by-side:  50-25-25 (primary 50%, secondary 25%, tertiary 25%)
+// Primary 50% secondary and tertiary 25%
 // -----------------------------------------------------------------------------
 //
-//          -------------------------------
-//          |    Primary    | Ter. | Sec. |
-//          -------------------------------
+// -------------------------------
+// |    Primary    | Ter. | Sec. |
+// -------------------------------
 //
-@mixin primary-side-by-side {
+@mixin display-50-25-25 {
   .primary-content {
     @include zen-grid-item($grid-50, 1);
   }
@@ -52,17 +52,17 @@
 }
 
 // -----------------------------------------------------------------------------
-// Primary-side-by-side-stacked:  25-75-100 (Secondary 25%, primary 75%, tertiary 100%)
+// Primary 66% secondary 33% tertiary 100% stacked
 // -----------------------------------------------------------------------------
 //
-//          -------------------------------
-//          |       Primary        | Sec. |
-//          -------------------------------
-//          -------------------------------
-//          |           Tertiary          |
-//          -------------------------------
+// -------------------------------
+// |       Primary        | Sec. |
+// -------------------------------
+// -------------------------------
+// |           Tertiary          |
+// -------------------------------
 //
-@mixin primary-side-by-side-stacked {
+@mixin display-66-33-stacked {
   .primary-content {
     @include zen-grid-item($grid-66, 1);
   }
@@ -77,19 +77,19 @@
   } 
 }
 
-//
+
 // -----------------------------------------------------------------------------
-// Secondary-side-by-side-stacked:  25-75-100 (secondary 25%, primary 75%, tertiary 100%)
+// Secondary 33% primary 66% tertiary 100% stacked
 // -----------------------------------------------------------------------------
 //
-//          -------------------------------
-//          | Sec. |       Primary        |
-//          -------------------------------
-//          -------------------------------
-//          |           Tertiary          |
-//          -------------------------------
+// -------------------------------
+// | Sec. |       Primary        |
+// -------------------------------
+// -------------------------------
+// |           Tertiary          |
+// -------------------------------
 //
-@mixin secondary-side-by-side-stacked {
+@mixin display-33-66-stacked {
   .primary-content {
     @include zen-grid-item($grid-75, $grid-25 + 1);
   }
@@ -104,19 +104,44 @@
   } 
 }
 
+
+// -----------------------------------------------------------------------------
+// Secondary 25% primary 50% tertiary 25%
+// -----------------------------------------------------------------------------
+//
+// -------------------------------
+// | Sec. |    Primary    | Ter. |
+// -------------------------------
+//
+@mixin display-25-50-25 {
+  .primary-content {
+    @include zen-grid-item($grid-50, $grid-25 + 1);
+  }
+
+  .secondary-content {  
+    @include zen-grid-item($grid-25, 1);
+  }
+  
+  .tertiary-content {
+    @include zen-grid-item($grid-25, 1, right);
+  } 
+}
+
+
 // -----------------------------------------------------------------------------
 // Content display 1 (default)
 // -----------------------------------------------------------------------------
 //
 %content-display-default {
   @include medium() {
-    @include stacked-side-by-side;
+    @include display-100-50-50;
   }
 
   @include large() {
-    @include primary-side-by-side;
+    @include display-50-25-25;
   }
 }
+
 
 // -----------------------------------------------------------------------------
 // Content display 2
@@ -124,13 +149,14 @@
 //
 %content-display-two {
   @include medium() {
-    @include primary-side-by-side-stacked;
+    @include display-33-66-stacked;
   }    
 
   @include large() {
-    @include primary-side-by-side;
+    @include display-25-50-25;
   }
 }
+
 
 // -----------------------------------------------------------------------------
 // Content display 3
@@ -138,9 +164,9 @@
 //
 %content-display-three {
   @include medium() {
-    @include secondary-side-by-side-stacked;  
+    @include display-33-66-stacked;  
   }
   @include large() {
-    @include secondary-side-by-side-stacked;
+    @include display-33-66-stacked;
   }
 }
