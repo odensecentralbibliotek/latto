@@ -1,15 +1,18 @@
-// The default stylesheet for the Latto theme.
+// -----------------------------------------------------------------------------
+// The default stylesheet for the Latto theme
+// -----------------------------------------------------------------------------
 //
-// Documentation written in KSS (https://github.com/kneath/kss/blob/master/SPEC.md)
-// Find a styleguide at ding2tal.ting.dk/profiles/ding2/themes/latto/tools/tdcss/index.html
+// Styleguide: ding2tal.ting.dk/profiles/ding2/themes/latto/tools/tdcss/index.html
 //
-//
-// Compass version 0.12.2 (Alnilam)
-// Zen Grids version 1.2
 
 @import 'compass/css3/box-sizing';
 @import 'compass/css3/box-shadow';
 
+
+// -----------------------------------------------------------------------------
+// Basic styling
+// -----------------------------------------------------------------------------
+//
 body {
   background: $theme-background-pattern $theme-background-color;
   margin: 0;
@@ -17,52 +20,16 @@ body {
 }
 
 header {
-  background: $theme-header-pattern;
-  overflow: hidden;
 
-  .header-inner {
-    margin-left: $default-spacing / 2;
-    margin-right: $default-spacing / 2;
-    overflow: hidden;
-    padding-top: $default-spacing * 1.5;
-
-    background-color: $theme-header-background;
-   }
-
-  .logo {
-    float: left;
-    margin-left: $default-spacing;
-  }
-
+  .logo,
   .site-name {
-    @include rem('font-size', $base-font-size * 4);
-
-    color: $black;
     float: left;
-    line-height: 100%;
-    margin-left: $default-spacing;
-
-    a,
-    a:link,
-    a:visited {
-      color: inherit;
-      text-decoration: inherit;
-    }
   }
 
-  .site-slogan {
-    @include rem('font-size', $base-font-size * 1.15);
-    @include rem('line-height', $base-font-size * 1.25);
-
-    clear: left;
-    color: darken($gray-dark, 50%);
-    margin-left: $default-spacing / 4;
-  }
 }
 
 img {
   display: inline;
-  height: auto;
   max-width: 100%;
 }
 
@@ -70,12 +37,13 @@ p {
   margin-bottom: $default-spacing / 3;
 }
 
-// The next section reset some standard Drupal CSS classes.
-// This makes twitter bootstrap look as intended.
+
+// -----------------------------------------------------------------------------
+// Reset standard Drupal classes
+// -----------------------------------------------------------------------------
 //
 // Form action is a standard class for all button wrappers in Drupal.
 //
-// No styleguide reference
 .form-actions {
   margin: 0;
   padding: 0;
@@ -84,85 +52,23 @@ p {
   display: inline-block;
 }
 
-// Stylinf horizontal ruler. Used a mixin colruler(), which enables an easy way
+
+// -----------------------------------------------------------------------------
+// Horizontal ruler
+// -----------------------------------------------------------------------------
+//
+// Styling of the <hr> tag, uses the colruler() mixin, which enables an easy way
 // to change color of the ruler.
-// (latto.mixins.scss)
 //
 hr {
   @include colruler();
 }
 
 
-// Content wrapper for the grid layout.
-// 
-// No styleguide reference
-.grid-content {
-  @include rgba-background($theme-content-background, .75);
-}
-
-
-// The wrapper for the search field.
+// -----------------------------------------------------------------------------
+// Miscellanous helper classes
+// -----------------------------------------------------------------------------
 //
-// No styleguide reference
-.search-wrapper {
-  @include rgba-background($black, .15);
-
-  margin-top: $default-spacing;
-  margin-right: $default-spacing / 2;
-  margin-bottom: $default-spacing;
-  margin-left: $default-spacing / 2;
-  overflow: hidden;
-  
-  .search-inner-wrapper {
-    margin: $default-spacing * 2 auto;
-    max-width: 70%;
-    position: relative;
-  }
-  
-  .form-inside {
-    //@include input-inline(50px);  
-  }
-}
-
-// Overwrites the default bootstrap label-info styling.
-// A label suitable for attracting user attention.
-//
-// No styleguide reference
-.label-info,
-.label-info[href],
-.badge-info,
-.badge-info[href] {
-  color: $theme-primary-color;
-  background-color: $theme-secondary-color;
-}
-
-
-// Make sure links inside labels get the correct color.
-.label {
-  a {
-    color: $white;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: none;
-    }
-  }
-}
-
-// Styling for layout elements.
-// .image             - Adds spacing below
-// .lead              - Overwrite styling from bootstrap
-
-.image {
-  margin-bottom: $default-spacing / 2;
-}
-
-.lead {
-  @include rem('font-size', $theme-font-size * 1.1);
-  @include rem('line-height', $theme-line-height * 1.1);
-
-  margin-bottom: 0;
-}
 
 .pull-right {
   float: right;

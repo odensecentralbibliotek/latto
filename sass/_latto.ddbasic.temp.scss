@@ -1,0 +1,20 @@
+
+// -----------------------------------------------------------------------------
+// This is a temporary file containing possible DDBasic styling
+// -----------------------------------------------------------------------------
+//
+.search-wrapper {
+  @include rgba-background($black, .15);
+
+  margin-top: $default-spacing;
+  margin-right: $default-spacing / 2;
+  margin-bottom: $default-spacing;
+  margin-left: $default-spacing / 2;
+  overflow: hidden;
+  
+  .search-inner-wrapper {
+    margin: $default-spacing * 2 auto;
+    max-width: 70%;
+    position: relative;
+  }  
+}
