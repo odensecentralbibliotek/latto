@@ -2,21 +2,7 @@
 // Displays for media queries
 // -----------------------------------------------------------------------------
 
-
-// Display template one (default layout template)
-//
-// Small:   100-100-100 (stacked)
-//          -------------------------------
-//          |           Primary           |
-//          -------------------------------
-//          -------------------------------
-//          |           Secondary         |
-//          -------------------------------
-//          -------------------------------
-//          |           Tertiary          |
-//          -------------------------------
-//
-// Medium:  100-50-50 (primary-content 100%, secondary 50%, tertiary 50%)
+// Stacked-side-by-side:  100-50-50 (primary-content 100%, secondary 50%, tertiary 50%)
 //          -------------------------------
 //          |           Primary           |
 //          -------------------------------
@@ -24,71 +10,43 @@
 //          |  Secondary   |   Tertiary   |
 //          -------------------------------
 //
-// Large:   50-25-25 (primary 50%, secondary 25%, tertiary 25%)
-//          -------------------------------
-//          |    Primary    | Ter. | Sec. |
-//          -------------------------------
 
-
-%content-display-default {
+@mixin stacked-side-by-side {
 
   .primary-content {
-    @include small() {
-    }
-
-    @include medium() {
-      @include zen-grid-item($grid-column-count, 1);
-    }
-
-    @include large() {
-      @include zen-grid-item($grid-50, 1);
-    }
+    @include zen-grid-item($grid-column-count, 1);
   }
 
   .secondary-content {
-    @include small() {
-    }
-
-    @include medium() {
-      @include zen-clear(both);
-      @include zen-grid-item($grid-50, 1);
-    }
-
-    @include large() {
-      @include zen-grid-item($grid-25, ($grid-50) + 1);
-    }
+    @include zen-clear(both);
+    @include zen-grid-item($grid-50, 1);
   }
 
   .tertiary-content {
-    @include small() {
-    }
-
-    @include medium() {
-      @include zen-grid-item($grid-50, 1, right);
-    }
-
-    @include large() {
-      @include zen-grid-item($grid-25, 1, right);
-    }
+    @include zen-grid-item($grid-50, 1, right);
   }
-
 }
 
+// Primary-side-by-side:  50-25-25 (primary 50%, secondary 25%, tertiary 25%)
+//          -------------------------------
+//          |    Primary    | Ter. | Sec. |
+//          -------------------------------
+//
+@mixin primary-side-by-side {
+  .primary-content {
+    @include zen-grid-item($grid-50, 1);
+  }
 
-// Display template two
-//
-// Small:   100-100-100 (stacked)
-//          -------------------------------
-//          |           Primary           |
-//          -------------------------------
-//          -------------------------------
-//          |           Secondary         |
-//          -------------------------------
-//          -------------------------------
-//          |           Tertiary          |
-//          -------------------------------
-//
-// Medium:  25-75-100 (Secondary 25%, primary 75%, tertiary 100%)
+  .secondary-content {
+    @include zen-grid-item($grid-25, ($grid-50) + 1);
+  }
+
+  .tertiary-content {
+    @include zen-grid-item($grid-25, 1, right);
+  }
+}
+
+// primary-side-by-side-stacked:  25-75-100 (Secondary 25%, primary 75%, tertiary 100%)
 //          -------------------------------
 //          |       Primary        | Sec. |
 //          -------------------------------
@@ -96,97 +54,72 @@
 //          |           Tertiary          |
 //          -------------------------------
 //
-// Large:   50-25-25 (primary 50%, secondary 25%, tertiary 25%)
-//          -------------------------------
-//          |    Primary    | Ter. | Sec. |
-//          -------------------------------
-
-
-%content-display-two {
-  
+@mixin primary-side-by-side-stacked {
   .primary-content {
-    @include medium() {
-      @include zen-grid-item($grid-66, 1);
-    }    
-    
-    @include large() {
-      @include zen-grid-item($grid-50, $grid-25 + 1);
-    }
+    @include zen-grid-item($grid-66, 1);
   }
 
   .secondary-content {
-    @include medium() {
-      @include zen-grid-item($grid-33, 1, right);
-    }
-    
-    @include large() {
-      @include zen-grid-item($grid-25, 1);
-    }
+    @include zen-grid-item($grid-33, 1, right);
   }
   
   .tertiary-content {
-    @include medium() {
-      @include zen-clear(both);      
-      @include zen-grid-item($grid-column-count, 1);
-    }
-    
-    @include large() {
-      @include zen-grid-item($grid-25, 1, right);
-    }    
+    @include zen-clear(both);      
+    @include zen-grid-item($grid-column-count, 1);   
+  } 
+}
+
+// secondary-side-by-side-stacked:  25-75-100 (secondary 25%, primary 75%, tertiary 100%)
+//          -------------------------------
+//          | Sec. |       Primary        |
+//          -------------------------------
+//          -------------------------------
+//          |           Tertiary          |
+//          -------------------------------
+//
+@mixin secondary-side-by-side-stacked {
+  .primary-content {
+    @include zen-grid-item($grid-75, $grid-25 + 1);
+  }
+
+  .secondary-content {  
+    @include zen-grid-item($grid-25, 1);
+  }
+  
+  .tertiary-content {
+    @include zen-clear(both);      
+    @include zen-grid-item($grid-column-count, 1);
   } 
 }
 
 
-// Display template three
-//
-// Small:   100-100-100 (stacked)
-//          -------------------------------
-//          |           Primary           |
-//          -------------------------------
-//          -------------------------------
-//          |           Secondary         |
-//          -------------------------------
-//          -------------------------------
-//          |           Tertiary          |
-//          -------------------------------
-//
-// Medium:  25-75-100 (Secondary 25%, primary 75%, tertiary 100%)
-//          -------------------------------
-//          | Sec. |       Primary        |
-//          -------------------------------
-//          -------------------------------
-//          |           Tertiary          |
-//          -------------------------------
-//
-// Large:   25-75-100 (secondary 25%, primary 75%, tertiary 100%)
-//          -------------------------------
-//          | Sec. |       Primary        |
-//          -------------------------------
-//          -------------------------------
-//          |           Tertiary          |
-//          -------------------------------
+%content-display-default {
+  @include medium() {
+    @include stacked-side-by-side;
+  }
+
+  @include large() {
+    @include primary-side-by-side;
+  }
+}
+
+
+
+%content-display-two {
+  @include medium() {
+    @include primary-side-by-side-stacked;
+  }    
+
+  @include large() {
+    @include primary-side-by-side;
+  }
+}
 
 %content-display-three {
-  
-  @extend %content-display-two;
-
-  .primary-content {
-    
-    @include large() {
-      @include zen-grid-item($grid-75, $grid-25 + 1);
-    }
+  @include medium() {
+    @include secondary-side-by-side-stacked;  
   }
-
-  .secondary-content {    
-    @include large() {
-      @include zen-grid-item($grid-25, 1);
-    }
+  @include large() {
+    @include secondary-side-by-side-stacked;
   }
-  
-  .tertiary-content {
-    @include large() {
-      @include zen-clear(both);      
-      @include zen-grid-item($grid-column-count, 1);
-    }
-  } 
 }
