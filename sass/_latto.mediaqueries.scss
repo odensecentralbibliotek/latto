@@ -131,3 +131,8 @@ $grid-75: $grid-column-count * .75;
   @extend %content-display-three;
   @extend %attachments-display-four;
 }
+
+.layout-template-five {
+  @extend %content-display-three;
+  @extend %attachments-display-five;
+}

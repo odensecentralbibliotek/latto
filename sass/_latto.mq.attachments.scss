@@ -9,6 +9,33 @@
   @include zen-clear(both);
 }
 
+// -----------------------------------------------------------------------------
+// Columns stacked
+// -----------------------------------------------------------------------------
+//
+//          -------------------------------
+//          |         Attachment 1        |
+//          -------------------------------
+//          -------------------------------
+//          |         Attachment 2        |
+//          -------------------------------
+//          -------------------------------
+//          |         Attachment 3        |
+//          -------------------------------
+//          -------------------------------
+//          |         Attachment 4        |
+//          -------------------------------
+//
+@mixin attachment-display-stacked {
+  .attachment-first,
+  .attachment-second,
+  .attachment-third,
+  .attachment-fourth {
+    @include zen-clear(both);
+    @include zen-grid-item($grid-column-count, 1);
+  }
+}
+
 
 // -----------------------------------------------------------------------------
 // 2 columns side by side
@@ -20,7 +47,7 @@
 //          -------------------------------
 //          | Attachment 3 | Attachment 4 |
 //          -------------------------------
-
+//
 @mixin attachment-display-2-side-by-side {
   .attachment-first {
     @include zen-grid-item($grid-50, 1);
@@ -50,7 +77,7 @@
 //          -------------------------------
 //          |         Attachment 4        |
 //          -------------------------------
-
+//
 @mixin attachment-display-2-side-by-side-2-stacked {
   .attachment-first {
     @include zen-grid-item($grid-50, 1);
@@ -82,7 +109,7 @@
 //          -------------------------------
 //          |         Attachment 4        |
 //          -------------------------------
-
+//
 @mixin attachment-display-3-stacked {
   .attachment-first {
     @include zen-grid-item($grid-33, 1);
@@ -110,7 +137,7 @@
 //          -------------------------------
 //          |   1   |  2   |  3   |   4   |
 //          -------------------------------
-
+//
 @mixin attachment-display-4-side-by-side {
   .attachment-first {
     @include zen-grid-item($grid-25, 1);
@@ -133,7 +160,7 @@
 // -----------------------------------------------------------------------------
 // Attachments display 1 (default)
 // -----------------------------------------------------------------------------
-
+//
 %attachments-display-default {
   @include medium() {
     @include attachment-display-2-side-by-side;
@@ -146,9 +173,9 @@
 
 
 // -----------------------------------------------------------------------------
-// Attachments display 2 (default)
+// Attachments display 2
 // -----------------------------------------------------------------------------
-
+//
 %attachments-display-two {
   @include medium() {
     @include attachment-display-2-side-by-side;
@@ -159,10 +186,11 @@
   }
 }
 
-// -----------------------------------------------------------------------------
-// Attachments display 3 (default)
-// -----------------------------------------------------------------------------
 
+// -----------------------------------------------------------------------------
+// Attachments display 3
+// -----------------------------------------------------------------------------
+//
 %attachments-display-three {
   @include medium() {
     @include attachment-display-2-side-by-side-2-stacked;
@@ -173,13 +201,29 @@
   }
 }
 
-// -----------------------------------------------------------------------------
-// Attachments display 4 (default)
-// -----------------------------------------------------------------------------
 
+// -----------------------------------------------------------------------------
+// Attachments display 4
+// -----------------------------------------------------------------------------
+//
 %attachments-display-four {
   @include medium() {
     @include attachment-display-2-side-by-side;
+  }
+
+  @include large() {
+    @include attachment-display-4-side-by-side;
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// Attachments display 5
+// -----------------------------------------------------------------------------
+//
+%attachments-display-five {
+  @include medium() {
+    @include attachment-display-stacked;
   }
 
   @include large() {
