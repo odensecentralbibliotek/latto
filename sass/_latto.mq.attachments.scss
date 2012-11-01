@@ -1,0 +1,233 @@
+// -----------------------------------------------------------------------------
+// Attachments for media queries
+// -----------------------------------------------------------------------------
+
+
+// Make sure the attachments wrapper clears
+//
+.attachments-wrapper {
+  @include zen-clear(both);
+}
+
+
+// Attachments display default
+//
+// Small:   100-100-100-100 (stacked)
+//          -------------------------------
+//          |         Attachment 1        |
+//          -------------------------------
+//          -------------------------------
+//          |         Attachment 2        |
+//          -------------------------------
+//          -------------------------------
+//          |         Attachment 3        |
+//          -------------------------------
+//          -------------------------------
+//          |         Attachment 4        |
+//          -------------------------------
+//
+// Medium:  50-50-50-50 (side-by-side)
+//          -------------------------------
+//          | Attachment 1 | Attachment 2 |
+//          -------------------------------
+//          -------------------------------
+//          | Attachment 3 | Attachment 4 |
+//          -------------------------------
+//
+//
+// Large:   50-50-50-50 (side-by-side)
+//          -------------------------------
+//          | Attachment 1 | Attachment 2 |
+//          -------------------------------
+//          -------------------------------
+//          | Attachment 3 | Attachment 4 |
+//          -------------------------------
+
+%attachments-display-default {
+  .attachment-first {
+    @include medium() {
+      @include zen-grid-item($grid-50, 1);
+    }
+
+    @include large() {
+      @include zen-grid-item($grid-50, 1);
+    }
+
+  }
+
+  .attachment-second {
+    @include medium() {
+      @include zen-grid-item($grid-50, 1, right);
+    }
+
+    @include large() {
+      @include zen-grid-item($grid-50, 1, right);
+    }
+
+  }
+
+  .attachment-third {
+    @include medium() {
+      @include zen-clear(both);
+      @include zen-grid-item($grid-50, 1);
+    }
+
+    @include large() {
+      @include zen-grid-item($grid-50, 1);
+    }
+
+  }
+
+  .attachment-fourth {
+    @include medium() {
+      @include zen-grid-item($grid-50, 1, right);
+    }
+
+    @include large() {
+      @include zen-grid-item($grid-50, 1, right);
+    }
+
+  }  
+}
+
+
+// Attachments display two
+//
+// Small:   100-100-100-100 (stacked)
+//          -------------------------------
+//          |         Attachment 1        |
+//          -------------------------------
+//          -------------------------------
+//          |         Attachment 2        |
+//          -------------------------------
+//          -------------------------------
+//          |         Attachment 3        |
+//          -------------------------------
+//          -------------------------------
+//          |         Attachment 4        |
+//          -------------------------------
+//
+// Medium:  50-50-50-50 (side-by-side)
+//          -------------------------------
+//          | Attachment 1 | Attachment 2 |
+//          -------------------------------
+//          -------------------------------
+//          | Attachment 3 | Attachment 4 |
+//          -------------------------------
+//
+//
+// Large:   25-25-25-25
+//          -------------------------------
+//          |   1   |  2   |  3   |   4   |
+//          -------------------------------
+
+%attachments-display-two {
+  @extend %attachments-display-default;
+  
+  .attachment-first {
+    @include large() {
+      @include zen-grid-item($grid-25, 1);
+    }
+  }
+
+  .attachment-second {
+    @include large() {
+      @include zen-grid-item($grid-25, $grid-25 + 1);
+    }
+  }
+
+  .attachment-third {
+    @include large() {
+      @include zen-grid-item($grid-25, $grid-25 + 1, right);
+    }
+  }
+
+  .attachment-fourth {
+    @include large() {
+      @include zen-grid-item($grid-25, 1, right);
+    }
+  }  
+}
+
+
+// Attachments display two
+//
+// Small:   100-100-100-100 (stacked)
+//          -------------------------------
+//          |         Attachment 1        |
+//          -------------------------------
+//          -------------------------------
+//          |         Attachment 2        |
+//          -------------------------------
+//          -------------------------------
+//          |         Attachment 3        |
+//          -------------------------------
+//          -------------------------------
+//          |         Attachment 4        |
+//          -------------------------------
+//
+// Medium:  50-50-100-100
+//          -------------------------------
+//          | Attachment 1 | Attachment 2 |
+//          -------------------------------
+//          -------------------------------
+//          |         Attachment 3        |
+//          -------------------------------
+//          -------------------------------
+//          |         Attachment 4        |
+//          -------------------------------
+//
+//
+// Large:   33-33-33-100
+//          -------------------------------
+//          |    1    |    2    |    3    |
+//          -------------------------------
+//          -------------------------------
+//          |         Attachment 4        |
+//          -------------------------------
+
+%attachments-display-three {
+  
+  .attachment-first {     
+    @include medium() {
+      @include zen-grid-item($grid-50, 1);
+    }
+    
+    @include large() {
+      @include zen-grid-item($grid-33, 1);
+    }
+  }
+
+  .attachment-second {    
+    @include medium() {
+      @include zen-grid-item($grid-50, 1, right);
+    }
+    
+    @include large() {
+      @include zen-grid-item($grid-33, $grid-33 + 1);
+    }
+  }
+
+  .attachment-third {
+    @include medium() {
+      @include zen-clear(both);
+      @include zen-grid-item($grid-column-count, 1);
+    }    
+    
+    @include large() {
+      @include zen-grid-item($grid-33, 1, right);
+    }
+  }
+
+  .attachment-fourth {    
+    @include medium() {
+      @include zen-clear(both);
+      @include zen-grid-item($grid-column-count, 1);
+    }
+    
+    @include large() {
+      @include zen-clear(both);
+      @include zen-grid-item($grid-column-count, 1);
+    }
+  }  
+}
