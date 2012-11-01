@@ -24,14 +24,13 @@
 //          |  Secondary   |   Tertiary   |
 //          -------------------------------
 //
-//
 // Large:   50-25-25 (primary 50%, secondary 25%, tertiary 25%)
 //          -------------------------------
 //          |    Primary    | Ter. | Sec. |
 //          -------------------------------
 
 
-%display-template-default {
+%content-display-default {
 
   .primary-content {
     @include small() {
@@ -103,7 +102,7 @@
 //          -------------------------------
 
 
-%display-template-two {
+%content-display-two {
   
   .primary-content {
     @include medium() {
@@ -167,9 +166,9 @@
 //          |           Tertiary          |
 //          -------------------------------
 
-%display-template-three {
+%content-display-three {
   
-  @extend %display-template-two;
+  @extend %content-display-two;
 
   .primary-content {
     

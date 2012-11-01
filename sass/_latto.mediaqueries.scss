@@ -6,10 +6,6 @@
 // older browsers ignore the media query if they don’t support it.
 // http://mobile.smashingmagazine.com/2012/10/24/beyond-common-media-query-breakpoints/
 
-@import '_latto.mixins.scss';
-@import '_latto.variables.scss';
-@import '_latto.grid.scss';
-
 
 // -----------------------------------------------------------------------------
 // Variables
@@ -18,7 +14,7 @@
 $breakpoint-small:    480px;
 $breakpoint-medium:   768px;
 
-
+// Calculate column count
 $grid-25: $grid-column-count * .25;
 $grid-33: $grid-column-count * .3333333333;
 $grid-50: $grid-column-count * .5;
@@ -117,16 +113,21 @@ $grid-75: $grid-column-count * .75;
 // The templates extends displays and attachments
 
 .layout-template-default {
-  @extend %display-template-default;
+  @extend %content-display-default;
   @extend %attachments-display-two;
 }
 
 .layout-template-two {
-  @extend %display-template-two;
+  @extend %content-display-two;
   @extend %attachments-display-two;
 }
 
 .layout-template-three {
-  @extend %display-template-three;
+  @extend %content-display-three;
   @extend %attachments-display-three;
+}
+
+.layout-template-four {
+  @extend %content-display-three;
+  @extend %attachments-display-four;
 }
