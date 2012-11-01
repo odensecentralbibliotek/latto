@@ -1,7 +1,7 @@
 <?php
-  $plugin = array(
-    'title'     => t('Latto default template'),
-    'icon'      => 'layout-template-default.png',
+  $plugin['layout_template_default'] = array(
+    'title'     => t('Latto default template, FOOOO'),
+    'icon'      => 'layout_template_default.png',
     'theme'     => 'layout_template_default',
     'category'  => 'Latto framework',
     'regions'   => array(

@@ -28,7 +28,7 @@
 
 ;----------// Layout plugins
   ; Panels Module layouts
-  plugins[panels][layouts] = layouts/panels
+  plugins[panels][layouts] = layouts/panels
 
 ;----------// Stylesheets
 
