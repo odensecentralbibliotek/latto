@@ -213,8 +213,48 @@
 
       </div>
     </div>      
+        
+    <br /><hr /><br />    
     
-  </div>
-  
+    <h2>Template 6</h2>
+    <div class="grid-wrapper layout-template-five">    
+      <div class="grid-inner">
+
+        <div class="primary-content">
+          <div class="content-inner">primary-content</div>
+        </div>
+
+        <div class="secondary-content">
+          <div class="content-inner">secondary-content</div>
+        </div>
+
+        <div class="tertiary-content">
+          <div class="content-inner">tertiary-content</div>
+        </div>    
+
+        <div class="attachments-wrapper">
+
+          <div class="attachment-first">
+            <div class="content-inner">attachment-first</div>
+          </div>
+
+          <div class="attachment-second">
+            <div class="content-inner">attachment-second</div>
+          </div>
+
+          <div class="attachment-third">
+            <div class="content-inner">attachment-third</div>
+          </div>
+
+          <div class="attachment-fourth">
+            <div class="content-inner">attachment-fourth</div>
+          </div>
+          
+        </div>
+
+      </div>
+    </div>      
+    
+  </div> 
 </body>
 </html>

@@ -2810,7 +2810,7 @@ ul.icons li .icon-large:before {
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   /* line 107, ../sass/_latto.mq.displays.scss */
-  .layout-template-three .primary-content, .layout-template-four .primary-content, .layout-template-two .primary-content {
+  .layout-template-three .primary-content, .layout-template-four .primary-content, .layout-template-five .primary-content, .layout-template-two .primary-content {
     float: left;
     width: 66.66667%;
     margin-left: 0%;
@@ -2830,7 +2830,7 @@ ul.icons li .icon-large:before {
 }
 @media only screen and (min-width: 769px) {
   /* line 107, ../sass/_latto.mq.displays.scss */
-  .layout-template-three .primary-content, .layout-template-four .primary-content, .layout-template-two .primary-content {
+  .layout-template-three .primary-content, .layout-template-four .primary-content, .layout-template-five .primary-content, .layout-template-two .primary-content {
     float: left;
     width: 50%;
     margin-left: 25%;
@@ -2850,7 +2850,7 @@ ul.icons li .icon-large:before {
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   /* line 117, ../sass/_latto.mq.displays.scss */
-  .layout-template-three .secondary-content, .layout-template-four .secondary-content, .layout-template-two .secondary-content {
+  .layout-template-three .secondary-content, .layout-template-four .secondary-content, .layout-template-five .secondary-content, .layout-template-two .secondary-content {
     float: right;
     width: 33.33333%;
     margin-right: 0%;
@@ -2870,7 +2870,7 @@ ul.icons li .icon-large:before {
 }
 @media only screen and (min-width: 769px) {
   /* line 117, ../sass/_latto.mq.displays.scss */
-  .layout-template-three .secondary-content, .layout-template-four .secondary-content, .layout-template-two .secondary-content {
+  .layout-template-three .secondary-content, .layout-template-four .secondary-content, .layout-template-five .secondary-content, .layout-template-two .secondary-content {
     float: left;
     width: 25%;
     margin-left: 0%;
@@ -2890,7 +2890,7 @@ ul.icons li .icon-large:before {
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   /* line 127, ../sass/_latto.mq.displays.scss */
-  .layout-template-three .tertiary-content, .layout-template-four .tertiary-content, .layout-template-two .tertiary-content {
+  .layout-template-three .tertiary-content, .layout-template-four .tertiary-content, .layout-template-five .tertiary-content, .layout-template-two .tertiary-content {
     clear: both;
     float: left;
     width: 100%;
@@ -2911,7 +2911,7 @@ ul.icons li .icon-large:before {
 }
 @media only screen and (min-width: 769px) {
   /* line 127, ../sass/_latto.mq.displays.scss */
-  .layout-template-three .tertiary-content, .layout-template-four .tertiary-content, .layout-template-two .tertiary-content {
+  .layout-template-three .tertiary-content, .layout-template-four .tertiary-content, .layout-template-five .tertiary-content, .layout-template-two .tertiary-content {
     float: right;
     width: 25%;
     margin-right: 0%;
@@ -2932,7 +2932,7 @@ ul.icons li .icon-large:before {
 
 @media only screen and (min-width: 769px) {
   /* line 173, ../sass/_latto.mq.displays.scss */
-  .layout-template-three .primary-content, .layout-template-four .primary-content {
+  .layout-template-three .primary-content, .layout-template-four .primary-content, .layout-template-five .primary-content {
     float: left;
     width: 75%;
     margin-left: 25%;
@@ -2952,7 +2952,7 @@ ul.icons li .icon-large:before {
 }
 @media only screen and (min-width: 769px) {
   /* line 180, ../sass/_latto.mq.displays.scss */
-  .layout-template-three .secondary-content, .layout-template-four .secondary-content {
+  .layout-template-three .secondary-content, .layout-template-four .secondary-content, .layout-template-five .secondary-content {
     float: left;
     width: 25%;
     margin-left: 0%;
@@ -2972,7 +2972,7 @@ ul.icons li .icon-large:before {
 }
 @media only screen and (min-width: 769px) {
   /* line 186, ../sass/_latto.mq.displays.scss */
-  .layout-template-three .tertiary-content, .layout-template-four .tertiary-content {
+  .layout-template-three .tertiary-content, .layout-template-four .tertiary-content, .layout-template-five .tertiary-content {
     clear: both;
     float: left;
     width: 100%;
@@ -2998,7 +2998,7 @@ ul.icons li .icon-large:before {
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  /* line 25, ../sass/_latto.mq.attachments.scss */
+  /* line 52, ../sass/_latto.mq.attachments.scss */
   .layout-template-default .attachment-first, .layout-template-two .attachment-first {
     float: left;
     width: 50%;
@@ -3016,7 +3016,7 @@ ul.icons li .icon-large:before {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 29, ../sass/_latto.mq.attachments.scss */
+  /* line 56, ../sass/_latto.mq.attachments.scss */
   .layout-template-default .attachment-third, .layout-template-two .attachment-third {
     clear: both;
     float: left;
@@ -3035,7 +3035,7 @@ ul.icons li .icon-large:before {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 35, ../sass/_latto.mq.attachments.scss */
+  /* line 62, ../sass/_latto.mq.attachments.scss */
   .layout-template-default .attachment-second, .layout-template-two .attachment-second,
   .layout-template-default .attachment-fourth,
   .layout-template-two .attachment-fourth {
@@ -3057,7 +3057,7 @@ ul.icons li .icon-large:before {
   }
 }
 @media only screen and (min-width: 769px) {
-  /* line 115, ../sass/_latto.mq.attachments.scss */
+  /* line 142, ../sass/_latto.mq.attachments.scss */
   .layout-template-default .attachment-first, .layout-template-two .attachment-first {
     float: left;
     width: 25%;
@@ -3075,7 +3075,7 @@ ul.icons li .icon-large:before {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 119, ../sass/_latto.mq.attachments.scss */
+  /* line 146, ../sass/_latto.mq.attachments.scss */
   .layout-template-default .attachment-second, .layout-template-two .attachment-second {
     float: left;
     width: 25%;
@@ -3093,7 +3093,7 @@ ul.icons li .icon-large:before {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 123, ../sass/_latto.mq.attachments.scss */
+  /* line 150, ../sass/_latto.mq.attachments.scss */
   .layout-template-default .attachment-third, .layout-template-two .attachment-third {
     float: right;
     width: 25%;
@@ -3111,7 +3111,7 @@ ul.icons li .icon-large:before {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 127, ../sass/_latto.mq.attachments.scss */
+  /* line 154, ../sass/_latto.mq.attachments.scss */
   .layout-template-default .attachment-fourth, .layout-template-two .attachment-fourth {
     float: right;
     width: 25%;
@@ -3132,7 +3132,7 @@ ul.icons li .icon-large:before {
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  /* line 55, ../sass/_latto.mq.attachments.scss */
+  /* line 82, ../sass/_latto.mq.attachments.scss */
   .layout-template-three .attachment-first {
     float: left;
     width: 50%;
@@ -3150,7 +3150,7 @@ ul.icons li .icon-large:before {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 59, ../sass/_latto.mq.attachments.scss */
+  /* line 86, ../sass/_latto.mq.attachments.scss */
   .layout-template-three .attachment-second {
     float: right;
     width: 50%;
@@ -3168,7 +3168,7 @@ ul.icons li .icon-large:before {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 63, ../sass/_latto.mq.attachments.scss */
+  /* line 90, ../sass/_latto.mq.attachments.scss */
   .layout-template-three .attachment-third {
     clear: both;
     float: left;
@@ -3187,7 +3187,7 @@ ul.icons li .icon-large:before {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 68, ../sass/_latto.mq.attachments.scss */
+  /* line 95, ../sass/_latto.mq.attachments.scss */
   .layout-template-three .attachment-fourth {
     clear: both;
     float: left;
@@ -3208,7 +3208,7 @@ ul.icons li .icon-large:before {
   }
 }
 @media only screen and (min-width: 769px) {
-  /* line 87, ../sass/_latto.mq.attachments.scss */
+  /* line 114, ../sass/_latto.mq.attachments.scss */
   .layout-template-three .attachment-first {
     float: left;
     width: 33.33333%;
@@ -3226,7 +3226,7 @@ ul.icons li .icon-large:before {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 91, ../sass/_latto.mq.attachments.scss */
+  /* line 118, ../sass/_latto.mq.attachments.scss */
   .layout-template-three .attachment-second {
     float: left;
     width: 33.33333%;
@@ -3244,7 +3244,7 @@ ul.icons li .icon-large:before {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 95, ../sass/_latto.mq.attachments.scss */
+  /* line 122, ../sass/_latto.mq.attachments.scss */
   .layout-template-three .attachment-third {
     float: right;
     width: 33.33333%;
@@ -3262,7 +3262,7 @@ ul.icons li .icon-large:before {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 99, ../sass/_latto.mq.attachments.scss */
+  /* line 126, ../sass/_latto.mq.attachments.scss */
   .layout-template-three .attachment-fourth {
     clear: both;
     float: left;
@@ -3284,7 +3284,7 @@ ul.icons li .icon-large:before {
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  /* line 25, ../sass/_latto.mq.attachments.scss */
+  /* line 52, ../sass/_latto.mq.attachments.scss */
   .layout-template-four .attachment-first {
     float: left;
     width: 50%;
@@ -3302,7 +3302,7 @@ ul.icons li .icon-large:before {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 29, ../sass/_latto.mq.attachments.scss */
+  /* line 56, ../sass/_latto.mq.attachments.scss */
   .layout-template-four .attachment-third {
     clear: both;
     float: left;
@@ -3321,7 +3321,7 @@ ul.icons li .icon-large:before {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 35, ../sass/_latto.mq.attachments.scss */
+  /* line 62, ../sass/_latto.mq.attachments.scss */
   .layout-template-four .attachment-second,
   .layout-template-four .attachment-fourth {
     float: right;
@@ -3342,7 +3342,7 @@ ul.icons li .icon-large:before {
   }
 }
 @media only screen and (min-width: 769px) {
-  /* line 115, ../sass/_latto.mq.attachments.scss */
+  /* line 142, ../sass/_latto.mq.attachments.scss */
   .layout-template-four .attachment-first {
     float: left;
     width: 25%;
@@ -3360,7 +3360,7 @@ ul.icons li .icon-large:before {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 119, ../sass/_latto.mq.attachments.scss */
+  /* line 146, ../sass/_latto.mq.attachments.scss */
   .layout-template-four .attachment-second {
     float: left;
     width: 25%;
@@ -3378,7 +3378,7 @@ ul.icons li .icon-large:before {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 123, ../sass/_latto.mq.attachments.scss */
+  /* line 150, ../sass/_latto.mq.attachments.scss */
   .layout-template-four .attachment-third {
     float: right;
     width: 25%;
@@ -3396,8 +3396,107 @@ ul.icons li .icon-large:before {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 127, ../sass/_latto.mq.attachments.scss */
+  /* line 154, ../sass/_latto.mq.attachments.scss */
   .layout-template-four .attachment-fourth {
+    float: right;
+    width: 25%;
+    margin-right: 0%;
+    margin-left: -25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("../scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* line 33, ../sass/_latto.mq.attachments.scss */
+  .layout-template-five .attachment-first,
+  .layout-template-five .attachment-second,
+  .layout-template-five .attachment-third,
+  .layout-template-five .attachment-fourth {
+    clear: both;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("../scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+}
+@media only screen and (min-width: 769px) {
+  /* line 142, ../sass/_latto.mq.attachments.scss */
+  .layout-template-five .attachment-first {
+    float: left;
+    width: 25%;
+    margin-left: 0%;
+    margin-right: -25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("../scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+  /* line 146, ../sass/_latto.mq.attachments.scss */
+  .layout-template-five .attachment-second {
+    float: left;
+    width: 25%;
+    margin-left: 25%;
+    margin-right: -50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("../scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+  /* line 150, ../sass/_latto.mq.attachments.scss */
+  .layout-template-five .attachment-third {
+    float: right;
+    width: 25%;
+    margin-right: 25%;
+    margin-left: -50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("../scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+  /* line 154, ../sass/_latto.mq.attachments.scss */
+  .layout-template-five .attachment-fourth {
     float: right;
     width: 25%;
     margin-right: 0%;
