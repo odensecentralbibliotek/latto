@@ -52,14 +52,6 @@
         <?php endif; ?>
 
       </div>
-
     </div>
-  </div>
-
-  <div class="grid-8-left">
-    <div class="grid-inner"></div>
-  </div>
-  <div class="grid-8-right">
-    <div class="grid-inner"><?php print $content['grid_8_right']; ?></div>
   </div>
 </div>
