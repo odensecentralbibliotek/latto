@@ -7,48 +7,37 @@
 // Default list @extend on other lists
 // -----------------------------------------------------------------------------
 //
-.list {
+%list {
   margin: 0;
   padding: 0;
 
-  list-style-type: none;
+  list-style-type: none;      
+}
 
-  > li {
-    padding-bottom: $list-item-spacing * 1.5;
-    margin-bottom: $list-item-spacing * 1.5;
 
-    .meta {
-      margin-top: $list-item-spacing;
-      margin-bottom: $list-item-spacing;
+%list-content {
+  display: block;
+  margin-top: $default-spacing / 2;
+  margin-bottom: $default-spacing / 2;
+}
 
-      .date {
-        color: lighten($text-primary-color, 25%);
-      }
-    }
-
-    &.last {
-      margin-bottom: 0;
-      padding-bottom: 0;
-
-    }
-  }
-
-  &.highlighted {
-    > .list-item {
-      border-bottom: 0;
-    }
+.list {
+  @extend %list;
+  
+  .meta,
+  .content,
+  .image {
+    @extend %list-content;
   }
 }
 
 
 // -----------------------------------------------------------------------------
-// .list-image
+// List with images
 // -----------------------------------------------------------------------------
 //
-// List with image (either left or right, depends on markup order)
-//
 .list-image {
-  @extend .list;
+  @extend %list;
 
   > .list-item {
 

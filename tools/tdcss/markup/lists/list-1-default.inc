@@ -1,6 +1,6 @@
 <!-- : LIST (default) -->
 <ul class="list">
-  <li class="list-item">
+  <li>
     <h3 class="heading">
       <a href="#">Lorum Ipsum</a>
     </h3>
@@ -9,7 +9,7 @@
       <span class="date">10. august 2012</span>
       <span class="author">af <a href="#" title="View user profile." class="username">Author name</a></span>
     </div>
-    <div class="image-container">
+    <div class="image">
       <a href="#"><img src="http://lorempixel.com/800/200/city/" /></a>
     </div>
     <p class="content">
@@ -17,7 +17,7 @@
     </p>
     <a href="#">Read more</a>
   </li>
-  <li class="list-item">
+  <li>
     <h3 class="heading">
       <a href="#">Lorum Ipsum</a>
     </h3>
@@ -31,7 +31,7 @@
     </p>
     <a href="#">Read more</a>
   </li>
-  <li class="list-item last">
+  <li>
     <h3 class="heading">
       <a href="#">Lorum Ipsum</a>
     </h3>
@@ -40,7 +40,7 @@
       <span class="date">10. august 2012</span>
       <span class="author">af <a href="#" title="View user profile." class="username">Author name</a></span>
     </div>
-    <div class="image-container">
+    <div class="image">
       <a href="#"><img src="http://lorempixel.com/800/200/city/" /></a>
     </div>
     <p class="content">
