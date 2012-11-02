@@ -2,14 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr">
 <head profile="http://www.w3.org/1999/xhtml/vocab">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
   <title>Grid test</title>
-
-  <?php include 'includes/mockup_head.inc'; ?>
-  <?php include 'includes/scripts.inc'; ?>
   <style type="text/css">
-
-
     @media only screen and (max-width: 480px) {
       .grid-wrapper {
         border: 3px dashed red;
@@ -33,8 +27,7 @@
       border: 3px solid Green;
       margin: 10px;
       padding: 10px;
-    }    
-
+    }
   </style>
 </head>
 <body>
