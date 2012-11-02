@@ -1,32 +1,42 @@
-// Mixins used in the other stylesheets.
-////
-// Compass version 0.12.2 (Alnilam)
+// =============================================================================
+// Mixins used in the other stylesheets
+// =============================================================================
 
+// -----------------------------------------------------------------------------
+// Variables
+// -----------------------------------------------------------------------------
+//
 $prefixes: ("-webkit-","-moz-", "-o-", "");
 
-// Adds trailing margin.
+
+// -----------------------------------------------------------------------------
+// Adds trailing margin
+// -----------------------------------------------------------------------------
 //
 // $amount - The amount of margin appended to the bottom.
 //
-// Compatible in IE9+, Firefox 1+, Opera 9,2+, Chrome 2+x, Safari 1,3+.
 @mixin append-bottom($amount: $default-spacing) {
   margin-bottom: $amount;
 }
 
-// Adds leading margin.
+
+// -----------------------------------------------------------------------------
+// Adds leading margin
+// -----------------------------------------------------------------------------
 //
 // $amount - The amount of margin appended to the top.
 //
-// Compatible in IE9+, Firefox 1+, Opera 9,2+, Chrome 2+, Safari 1,3+.
 @mixin prepend-top($amount: $default-spacing) {
   margin-top: $amount;
 }
 
-// Add default Latto styling to an HTML <HR> ruler across any column.
+
+// -----------------------------------------------------------------------------
+// Add default styling to <hr>
+// -----------------------------------------------------------------------------
 //
 // $border-color - The color of the HTML ruler.
 //
-// Compatible in IE9+, Firefox 3,5+, Opera 9,5+, Chrome 4+, Safari 3,1+.
 @mixin colruler($border-color: $gray) {
   background: $border-color;
   color: $border-color;
@@ -39,13 +49,16 @@ $prefixes: ("-webkit-","-moz-", "-o-", "");
   @include append-bottom($default-spacing/2);
  }
 
+ 
+// -----------------------------------------------------------------------------
 // Mixin for transparent backgrounds, maing it cross browser compatible
+// ----------------------------------------------------------------------------- 
+// 
 // including IE8+. (https://gist.github.com/1949202)
 //
 // $color - The color of the background.
 // $alpha - The alpha value for transparency.
 //
-// Compatible in IE8+, Firefox 1+, Opera 9,2+, Chrome 2+, Safari 3,1+.
 @mixin rgba-background($color, $alpha) {
   $rgba: rgba($color, $alpha);
   $ie-hex-str: ie-hex-str($rgba);
@@ -54,13 +67,14 @@ $prefixes: ("-webkit-","-moz-", "-o-", "");
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
 }
 
-// Mixin for the CSS ::selection, which allows specify selected text background
-// color.
+
+// -----------------------------------------------------------------------------
+// Mixin for ::selection, which allows specify selected text background color
+// ----------------------------------------------------------------------------- 
 //
 // $color - The color for the selected text.
 // $background - The background color for the selected text.
 //
-// Compatible in IE9+, Opera 9,2+, Chrome 5+, Safari 3+.
 @mixin selection($color, $background) {
   @each $prefix in $prefixes {
     ::#{$prefix}selection {
@@ -70,8 +84,11 @@ $prefixes: ("-webkit-","-moz-", "-o-", "");
   }
 }
 
+
+// -----------------------------------------------------------------------------
 // Add a backup background color for IE
-// Placed at top so it comes before background-image
+// ----------------------------------------------------------------------------- 
+//
 @mixin ie-gradient-fix($background, $svg: true) {
   background: $background;
 
@@ -80,58 +97,17 @@ $prefixes: ("-webkit-","-moz-", "-o-", "");
   }
 }
 
-// Places an icon and a button inside a textfield. The button will be placed right,
-// inline with the text, while the icon (if any) will be placed before the text in the left side.
-// 
-// The wrapper you passes to thin mixin, must contain at least a textfield and a button.
+
+// -----------------------------------------------------------------------------
+// Mixin that converts pixel values to rem values
+// ----------------------------------------------------------------------------- 
 //
-// $wrapper: ID or Class on the wrapper element.
-// $height: Height on the textfield. Icon and button height will be calculated from this value.
-@mixin input-inline($height: 30px) {  
-  position: relative;
-  
-  // Style the input field inside the wrapper.
-  .form-text {
-    @include rem('font-size', $height * .5);   
-    @include box-sizing(border-box);
-    
-    height: $height;
-    width: 100%; 
-  }
-  // Style the submit button inside the wrapper.
-  .form-actions {
-    position: absolute;
-    top: 4px;
-    right: 4px;
-    input {
-      height: $height - 8px;
-      line-height: $height - 16px;
-      padding-right: $height / 2;
-      padding-left: $height / 2; 
-      width: 100%;
-    }
-  }
-  
-  i {
-    @include rem('font-size', $height * .5);
-
-    left: $height * 0.25;
-    position: absolute;      
-    bottom: $height * 0.45;      
-
-    color: $gray-dark;
-  } 
-  i + .form-text {
-    padding-left: $height * .8;
-  }
-}
-
-// Mixin that converts pixel values to rem values for whatever property is passed to it.
-// Returns two lines of code — one of the regular pixel values (for older browsers),
-// and another with the converted rem values (for everyone else).
+// Returns two lines of code — one of the regular pixel values (for older 
+// browsers), and another with the converted rem values (for everything else).
 //
 // Basic usage: @include rem('padding',10px 0 2px 5px);
 //              @include rem('font-size',10px);
+//
 @mixin rem($property, $px-values) {
   // Convert the baseline into rems
   $baseline-rem: $baseline-px / 1rem;

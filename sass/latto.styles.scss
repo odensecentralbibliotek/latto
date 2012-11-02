@@ -1,10 +1,9 @@
-// This file imports all of the stylesheets and is the only included in the theme.
+// =============================================================================
+// This file imports all of the stylesheets
+// =============================================================================
 //
-// Documentation written in KSS (https://github.com/kneath/kss/blob/master/SPEC.md)
-// Find a styleguide at ding2tal.ting.dk/profiles/ding2/themes/latto/tools/tdcss/index.html
-//
-// Compass version 0.12.2 (Alnilam)
-// Zen Grids version 1.2
+// Styleguide: http://ding2tal.ting.dk/profiles/ding2/themes/latto/tools/tdcss/index.html
+
 
 @import '_latto.variables.scss';
 @import '_latto.mixins.scss';
@@ -12,7 +11,6 @@
 @import '_latto.grid.scss';
 @import '_latto.base.scss';
 @import '_latto.font-awesome.scss';
-@import '_latto.ting.scss';
 @import '_latto.nav.scss';
 @import '_latto.lists.scss';
 @import '_latto.forms.scss';

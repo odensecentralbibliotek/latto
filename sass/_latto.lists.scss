@@ -1,26 +1,18 @@
-// Styling of lists.
-// Suitable for displaying news, events, headlines etc.
+// =============================================================================
+// Lists
+// =============================================================================
+
+// -----------------------------------------------------------------------------
+// Default list @extend on other lists
+// -----------------------------------------------------------------------------
 //
-// .list          - The default styling for an unordered list in Latto theme.
-// .list-image    - Implementation of the default list with an image floated to
-//                  the left of the summary.
-// .list-compact  - A list displaying headlines with a date (optional).
-
-//
-// Styleguide reference:
-// http://ding2tal.ting.dk/profiles/ding2/themes/latto/tools/tdcss/#lists
-
-
-// @START .list
-// Default .list which is used to @extend on other list types
 .list {
   margin: 0;
   padding: 0;
 
   list-style-type: none;
 
-  > .list-item {
-    border-bottom: 1px solid $gray-light;
+  > li {
     padding-bottom: $list-item-spacing * 1.5;
     margin-bottom: $list-item-spacing * 1.5;
 
@@ -34,7 +26,6 @@
     }
 
     &.last {
-      border-bottom: 0;
       margin-bottom: 0;
       padding-bottom: 0;
 
@@ -48,12 +39,13 @@
   }
 }
 
-// @END .list
 
-
-// @START .list-image
+// -----------------------------------------------------------------------------
+// .list-image
+// -----------------------------------------------------------------------------
+//
 // List with image (either left or right, depends on markup order)
-
+//
 .list-image {
   @extend .list;
 
@@ -95,12 +87,13 @@
   }
 }
 
-// @END .list-image
 
-
-// @START .list-compact
+// -----------------------------------------------------------------------------
+// .list-compact
+// -----------------------------------------------------------------------------
+//
 // A compact list in one line, can include a date
-
+//
 .list-compact {
   @extend .list;
 
@@ -122,15 +115,14 @@
   }
 }
 
-// @END .list-compact
 
+// -----------------------------------------------------------------------------
+// .date-list
+// -----------------------------------------------------------------------------
+//
 // Styling of a default date-list in Latto theme. Suitable for displaying
 // upcomming events.
 //
-// .date-list         - A list containing events with information about date,
-//                      location, time and entrence fee.
-//
-// No styleguide reference
 .date-list {
   @extend .list;
 

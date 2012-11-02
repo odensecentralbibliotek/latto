@@ -21,31 +21,29 @@
 </head>
 <body data-spy="scroll" data-target=".docs-sidebar" onload="prettyPrint()">
   
-  <div class="grid-row">
-    <ul class="docs-menu">
-      <li class="title"><a href='/profiles/ding2/themes/latto/tools/tdcss/index.php'>Latto Documentation</a></li>
-      <?php
-      if (!empty($_SERVER['QUERY_STRING'])) {
-        $query_string = explode('=', $_SERVER['QUERY_STRING']);
-        $current_page = $query_string[1];
+  <ul class="docs-menu">
+    <li class="title"><a href='/profiles/ding2/themes/latto/tools/tdcss/index.php'>Latto Documentation</a></li>
+    <?php
+    if (!empty($_SERVER['QUERY_STRING'])) {
+      $query_string = explode('=', $_SERVER['QUERY_STRING']);
+      $current_page = $query_string[1];
+    }
+    else {
+      $current_page = 'markup.php';
+    }
+
+    foreach (scandir('sites') as $page) {
+      if(strpos($page, '.') > 0) {
+        $page_content = file_get_contents('sites/' . $page);
+        $found_title = preg_match("/<title>(.*)<\/title>/i", $page_content, $title);
+
+        $class = $page == $current_page ? 'active' : '';
+
+        print '<li class=' . $class . '><a href=?page=' . $page . '>' . ($found_title ? (empty($title[1]) ? $page : $title[1]) : $page) . '</a></li>';
       }
-      else {
-        $current_page = 'markup.php';
-      }
-      
-      foreach (scandir('sites') as $page) {
-        if(strpos($page, '.') > 0) {
-          $page_content = file_get_contents('sites/' . $page);
-          $found_title = preg_match("/<title>(.*)<\/title>/i", $page_content, $title);
-          
-          $class = $page == $current_page ? 'active' : '';
-          
-          print '<li class=' . $class . '><a href=?page=' . $page . '>' . ($found_title ? (empty($title[1]) ? $page : $title[1]) : $page) . '</a></li>';
-        }
-      }
-      ?>
-    </ul>
-  </div>
+    }
+    ?>
+  </ul>
   <div id="content">
     <?php 
     

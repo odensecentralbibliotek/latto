@@ -1,4 +1,7 @@
-// Default typography for the theme.
+// =============================================================================
+// Default typography
+// =============================================================================
+
 
 html{
   @include rem('font-size',$base-font-size);
@@ -12,13 +15,17 @@ body {
   font-family: $theme-font-family;
 }
 
-// The default colors for ::selection.
-// (latto.mixins.scss)
+
+// -----------------------------------------------------------------------------
+// The default colors for ::selection
+// -----------------------------------------------------------------------------
 //
-// No styleguide reference
 @include selection($text-selection-color, $text-selection-background);
 
-// The default Latto styling for headers and links inside headers.
+
+// -----------------------------------------------------------------------------
+// Styling for headers and links inside headers
+// -----------------------------------------------------------------------------
 //
 // :link              - Style for a link nested in a header.
 // :visited           - Style for a visited link nested in a header.
@@ -26,8 +33,6 @@ body {
 // :focus             - Style for a link in focus nested inside a header.
 // :active            - Style for an active link inside a header.
 //
-// No styleguide reference
-
 h1,
 h2,
 h3,
@@ -59,8 +64,6 @@ h6 {
 
 h1 {
   @include rem('font-size', $theme-font-size * 2);
-
-  color: $text-primary-color;
 }
 
 h2 {
@@ -84,11 +87,11 @@ h6 {
   @include rem('font-size', $theme-font-size * 1);
 }
 
-// Classes for use on headlines.
-//
-// .page-title        - used on large headlines e.g. page title.
-// .block-title       - used on block headlines.
 
+// -----------------------------------------------------------------------------
+// Header classes
+// -----------------------------------------------------------------------------
+//
 .page-title {
   @include rem('margin-bottom', $default-spacing / 2);
 
@@ -101,6 +104,11 @@ h6 {
   background-color: $gray-light;
 }
 
+
+// -----------------------------------------------------------------------------
+// Link styling
+// -----------------------------------------------------------------------------
+//
 a {
   &:link {
     color: $link-color;
@@ -118,6 +126,11 @@ a {
   }
 }
 
+
+// -----------------------------------------------------------------------------
+// Strong, bold, emphasized styling
+// -----------------------------------------------------------------------------
+//
 b,
 strong,
 .strong {
@@ -128,31 +141,27 @@ em {
   // Custom styling for emphasized text goes here.
 }
 
-// Classes to apply elements for different font sizes.
+
+// -----------------------------------------------------------------------------
+// Classes to apply elements for different font sizes
+// -----------------------------------------------------------------------------
 //
-// .small             - Half the predefined font size.
-// .medium            - 3/4 the predefined font size.
-// .big               - 25% bigger than the predefined font size.
-// .bigger               - 37,5% bigger than the predefined font size.
-// .biggest               - 50% bigger than the predefined font size.
-//
-// No styleguide reference
-.small {
+.text-small {
   @include rem('font-size', $theme-font-size * .5);
 }
 
-.medium {
+.text-medium {
   @include rem('font-size', $theme-font-size * .75);
 }
 
-.big {
+.text-big {
   @include rem('font-size', $theme-font-size * 1.25);
 }
 
-.bigger {
+.text-bigger {
   @include rem('font-size', $theme-font-size * 1.375);
 }
 
-.biggest {
+.text-biggest {
   @include rem('font-size', $theme-font-size * 1.5);
 }
