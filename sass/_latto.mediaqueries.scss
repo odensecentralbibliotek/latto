@@ -85,9 +85,9 @@ $grid-75: $grid-column-count * .75;
 // Layout templates
 // The templates extends displays and attachments
 //
-.layout-template-default {
-  @extend %content-display-default;
-  @extend %attachments-display-two;
+.layout-template-one {
+  @extend %content-display-one;
+  @extend %attachments-display-one;
 }
 
 .layout-template-two {
@@ -100,12 +100,16 @@ $grid-75: $grid-column-count * .75;
   @extend %attachments-display-three;
 }
 
-.layout-template-four {
-  @extend %content-display-three;
-  @extend %attachments-display-four;
+
+// This is an example layout demonstrating how you can mix displays and
+// attachments.
+//
+.latto-example-template-one {
+  @extend %content-display-one;
+  @extend %attachments-display-three;
 }
 
-.layout-template-five {
+.latto-example-template-two {
   @extend %content-display-three;
-  @extend %attachments-display-five;
+  @extend %attachments-display-two;
 }

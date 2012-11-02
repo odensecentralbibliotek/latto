@@ -89,7 +89,7 @@
 // |           Tertiary          |
 // -------------------------------
 //
-@mixin display-33-66-stacked {
+@mixin display-33-66-100 {
   .primary-content {
     @include zen-grid-item($grid-75, $grid-25 + 1);
   }
@@ -129,10 +129,10 @@
 
 
 // -----------------------------------------------------------------------------
-// Content display 1 (default)
+// Content display 1
 // -----------------------------------------------------------------------------
 //
-%content-display-default {
+%content-display-one {
   @include medium() {
     @include display-100-50-50;
   }
@@ -149,7 +149,7 @@
 //
 %content-display-two {
   @include medium() {
-    @include display-33-66-stacked;
+    @include display-33-66-100;
   }    
 
   @include large() {
@@ -164,9 +164,9 @@
 //
 %content-display-three {
   @include medium() {
-    @include display-33-66-stacked;  
+    @include display-33-66-100;  
   }
   @include large() {
-    @include display-33-66-stacked;
+    @include display-33-66-100;
   }
 }

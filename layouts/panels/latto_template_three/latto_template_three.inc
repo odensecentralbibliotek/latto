@@ -1,8 +1,9 @@
 <?php
-  $plugin['layout_template_default'] = array(
-    'title'     => t('Latto default template'),
-    'icon'      => 'layout_template_default.png',
-    'theme'     => 'layout_template_default',
+  $plugin['latto_template_three'] = array(
+    'title'     => t('Latto template 3'),
+    'icon'      => 'latto_template_three.png',
+    'theme'     => 'latto_template_three',
+    'admin css' => '../../../css/latto.styles.css',
     'category'  => 'Latto framework',
     'regions'   => array(
       'primary_content'   => t('Primary content'),

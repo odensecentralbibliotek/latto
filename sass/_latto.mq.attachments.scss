@@ -161,7 +161,7 @@
 // Attachments display 1 (default)
 // -----------------------------------------------------------------------------
 //
-%attachments-display-default {
+%attachments-display-one {
   @include medium() {
     @include attachment-50-50-50-50;
   }
@@ -198,35 +198,5 @@
 
   @include large() {
     @include attachment-33-33-33-100;
-  }
-}
-
-
-// -----------------------------------------------------------------------------
-// Attachments display 4
-// -----------------------------------------------------------------------------
-//
-%attachments-display-four {
-  @include medium() {
-    @include attachment-50-50-50-50;
-  }
-
-  @include large() {
-    @include attachment-25-25-25-25;
-  }
-}
-
-
-// -----------------------------------------------------------------------------
-// Attachments display 5
-// -----------------------------------------------------------------------------
-//
-%attachments-display-five {
-  @include medium() {
-    @include attachment-100-100-100-100;
-  }
-
-  @include large() {
-    @include attachment-25-25-25-25;
   }
 }
