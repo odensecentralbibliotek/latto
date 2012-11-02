@@ -3,15 +3,24 @@
 // =============================================================================
 
 
-.nav-wrapper {
-  margin-top: $default-spacing;
+// -----------------------------------------------------------------------------
+// Easy-to-read class names extending more generic classes
+// -----------------------------------------------------------------------------
+//
+.main-menu {
+  @extend .horizontal-menu;
 }
+
+.sub-menu {
+  @extend .vertical-menu;
+}
+
 
 // -----------------------------------------------------------------------------
 // The navigation bar used for the main-menu
 // -----------------------------------------------------------------------------
 //
-.nav {
+.horizontal-menu {
   @include rem('font-size', $navbar-font-size);
 
   display: table;
@@ -25,74 +34,20 @@
   }
 
   &.nav-inline {
-    @include ie-gradient-fix($navbar-bg-color);
-
-    @include border-radius(4px);
-    @include background-image(linear-gradient($navbar-bg-color, darken($navbar-bg-color, 2%)));
 
     margin: 0;
     li {
-      @include ie-gradient-fix($navbar-bg-color);
-      @include background-image(linear-gradient(darken($navbar-bg-color, 10%), $navbar-bg-color));
-
-      border-left: 1px solid darken($navbar-bg-color, 15%);
       display: table-cell;
       text-align: center;
 
-      &:hover {
-        @include ie-gradient-fix(darken($navbar-bg-color, 10%));
-        @include background-image(linear-gradient(darken($navbar-bg-color, 15%), darken($navbar-bg-color, 5%)));
-      }
-
       a {
-        border-left: 1px solid lighten($navbar-bg-color, 3%);
-        color: $navbar-text-color;
         display: block;
         height: 100%;
         min-width: 100px;
         padding: $navbar-item-spacing;
         text-decoration: none;
-        &:hover {
-          color: lighten($navbar-text-color, 75%);
-        }
       }
 
-      &.first,
-      &.first.active {
-        @include border-radius(4px 0 0 4px);
-
-        border-left: 0;
-
-        a {
-          border-left: 0;
-        }
-      }
-
-      &.last {
-        @include border-radius(0 4px 4px 0);
-
-
-        a,
-        &.active a {
-        }
-      }
-
-      &.active {
-        @include ie-gradient-fix(darken($navbar-bg-color, 10%));
-        @include background-image(linear-gradient(darken($navbar-bg-color, 15%), darken($navbar-bg-color, 25%)));
-
-        border-left: 1px solid lighten($navbar-bg-color, 3%);
-
-        &:hover {
-          @include ie-gradient-fix(darken($navbar-bg-color, 15%));
-          @include background-image(linear-gradient(darken($navbar-bg-color, 20%), darken($navbar-bg-color, 30%)));
-        }
-
-        a {
-          border-left: 1px solid darken($navbar-bg-color, 15%);
-          border-right: 0;
-        }
-      }
     }
   }
 }
@@ -102,44 +57,17 @@
 // Vertical menu
 // -----------------------------------------------------------------------------
 //
-.v-menu {
-  @include border-radius(4px);
-  @include rgba-background($sidebar-background-color,.75);
-  
-  border-top: 1px solid rgba($sidebar-background-color, .5);
-  border-bottom: 1px solid rgba($white, .2);
+.vertical-menu {
   margin: 0;
-  margin-left: $default-spacing / 2;
 
-  > li,
-  > .item {
-    @include rgba-background($sidebar-background-color, .25);
-    
-    border-top: 1px solid rgba($white, .2);
-    border-bottom: 1px solid rgba($sidebar-background-color, .75);
+  > li {
     
     display: block;
-    
+
     a {
-      color: $sidebar-text-color;
       display: block;
       padding-top: $sidebar-item-spacing;
       padding-bottom: $sidebar-item-spacing;
-      text-decoration: none;
     }
-    &:hover {
-      color: lighten($sidebar-text-color, 75%);
-    }
-  }
-  &.first {
-    border-top: 0;
-  }
-  &.last {
-    border-bottom: 1px solid rgba($sidebar-background-color, .5);
-  }
-  &.active {
-    border-top: 0;
-    border-bottom: 0;
-    @include rgba-background($sidebar-background-color, .5);
   }
 }

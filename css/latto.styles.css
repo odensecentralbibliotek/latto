@@ -1447,200 +1447,66 @@ ul.icons li .icon-large:before {
   content: "\f200";
 }
 
-/* line 6, ../sass/_latto.nav.scss */
-.nav-wrapper {
-  margin-top: 20px;
-}
-
-/* line 14, ../sass/_latto.nav.scss */
-.nav {
+/* line 23, ../sass/_latto.nav.scss */
+.horizontal-menu, .main-menu {
   font-size: 15px;
   font-size: 0.9375rem;
   display: table;
   width: 100%;
 }
-/* line 20, ../sass/_latto.nav.scss */
-.nav.fixed {
+/* line 29, ../sass/_latto.nav.scss */
+.horizontal-menu.fixed, .fixed.main-menu {
   position: fixed;
   top: 0;
   z-index: 99;
   width: auto;
 }
-/* line 27, ../sass/_latto.nav.scss */
-.nav.nav-inline {
-  background: #00a8e1;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwYThlMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwYTBkNyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00a8e1), color-stop(100%, #00a0d7));
-  background-image: -webkit-linear-gradient(#00a8e1, #00a0d7);
-  background-image: -moz-linear-gradient(#00a8e1, #00a0d7);
-  background-image: -o-linear-gradient(#00a8e1, #00a0d7);
-  background-image: linear-gradient(#00a8e1, #00a0d7);
+/* line 36, ../sass/_latto.nav.scss */
+.horizontal-menu.nav-inline, .nav-inline.main-menu {
   margin: 0;
 }
-/* line 34, ../sass/_latto.nav.scss */
-.nav.nav-inline li {
-  background: #00a8e1;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwODJhZSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwYThlMSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0082ae), color-stop(100%, #00a8e1));
-  background-image: -webkit-linear-gradient(#0082ae, #00a8e1);
-  background-image: -moz-linear-gradient(#0082ae, #00a8e1);
-  background-image: -o-linear-gradient(#0082ae, #00a8e1);
-  background-image: linear-gradient(#0082ae, #00a8e1);
-  border-left: 1px solid #006f95;
+/* line 39, ../sass/_latto.nav.scss */
+.horizontal-menu.nav-inline li, .nav-inline.main-menu li {
   display: table-cell;
   text-align: center;
 }
-/* line 42, ../sass/_latto.nav.scss */
-.nav.nav-inline li:hover {
-  background: #0082ae;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNmY5NSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwOTVjOCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #006f95), color-stop(100%, #0095c8));
-  background-image: -webkit-linear-gradient(#006f95, #0095c8);
-  background-image: -moz-linear-gradient(#006f95, #0095c8);
-  background-image: -o-linear-gradient(#006f95, #0095c8);
-  background-image: linear-gradient(#006f95, #0095c8);
-}
-/* line 47, ../sass/_latto.nav.scss */
-.nav.nav-inline li a {
-  border-left: 1px solid #00b3f0;
-  color: white;
+/* line 43, ../sass/_latto.nav.scss */
+.horizontal-menu.nav-inline li a, .nav-inline.main-menu li a {
   display: block;
   height: 100%;
   min-width: 100px;
   padding: 10px 20px;
   text-decoration: none;
 }
-/* line 55, ../sass/_latto.nav.scss */
-.nav.nav-inline li a:hover {
-  color: white;
-}
-/* line 61, ../sass/_latto.nav.scss */
-.nav.nav-inline li.first, .nav.nav-inline li.first.active {
-  -webkit-border-radius: 4px 0 0 4px;
-  -moz-border-radius: 4px 0 0 4px;
-  -ms-border-radius: 4px 0 0 4px;
-  -o-border-radius: 4px 0 0 4px;
-  border-radius: 4px 0 0 4px;
-  border-left: 0;
-}
-/* line 66, ../sass/_latto.nav.scss */
-.nav.nav-inline li.first a, .nav.nav-inline li.first.active a {
-  border-left: 0;
-}
-/* line 71, ../sass/_latto.nav.scss */
-.nav.nav-inline li.last {
-  -webkit-border-radius: 0 4px 4px 0;
-  -moz-border-radius: 0 4px 4px 0;
-  -ms-border-radius: 0 4px 4px 0;
-  -o-border-radius: 0 4px 4px 0;
-  border-radius: 0 4px 4px 0;
-}
-/* line 80, ../sass/_latto.nav.scss */
-.nav.nav-inline li.active {
-  background: #0082ae;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNmY5NSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwNDk2MiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #006f95), color-stop(100%, #004962));
-  background-image: -webkit-linear-gradient(#006f95, #004962);
-  background-image: -moz-linear-gradient(#006f95, #004962);
-  background-image: -o-linear-gradient(#006f95, #004962);
-  background-image: linear-gradient(#006f95, #004962);
-  border-left: 1px solid #00b3f0;
-}
-/* line 86, ../sass/_latto.nav.scss */
-.nav.nav-inline li.active:hover {
-  background: #006f95;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNWM3YiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMzY0OCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #005c7b), color-stop(100%, #003648));
-  background-image: -webkit-linear-gradient(#005c7b, #003648);
-  background-image: -moz-linear-gradient(#005c7b, #003648);
-  background-image: -o-linear-gradient(#005c7b, #003648);
-  background-image: linear-gradient(#005c7b, #003648);
-}
-/* line 91, ../sass/_latto.nav.scss */
-.nav.nav-inline li.active a {
-  border-left: 1px solid #006f95;
-  border-right: 0;
-}
 
-/* line 105, ../sass/_latto.nav.scss */
-.v-menu {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.75);
-  zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#BFFFFFFF,endColorstr=#BFFFFFFF);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+/* line 60, ../sass/_latto.nav.scss */
+.vertical-menu, .sub-menu {
   margin: 0;
-  margin-left: 10px;
 }
-/* line 115, ../sass/_latto.nav.scss */
-.v-menu > li,
-.v-menu > .item {
-  background-color: rgba(255, 255, 255, 0.25);
-  zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#40FFFFFF,endColorstr=#40FFFFFF);
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+/* line 63, ../sass/_latto.nav.scss */
+.vertical-menu > li, .sub-menu > li {
   display: block;
 }
-/* line 123, ../sass/_latto.nav.scss */
-.v-menu > li a,
-.v-menu > .item a {
-  color: black;
+/* line 67, ../sass/_latto.nav.scss */
+.vertical-menu > li a, .sub-menu > li a {
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
-  text-decoration: none;
-}
-/* line 130, ../sass/_latto.nav.scss */
-.v-menu > li:hover,
-.v-menu > .item:hover {
-  color: #bfbfbf;
-}
-/* line 134, ../sass/_latto.nav.scss */
-.v-menu.first {
-  border-top: 0;
-}
-/* line 137, ../sass/_latto.nav.scss */
-.v-menu.last {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-/* line 140, ../sass/_latto.nav.scss */
-.v-menu.active {
-  border-top: 0;
-  border-bottom: 0;
-  background-color: rgba(255, 255, 255, 0.5);
-  zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80FFFFFF,endColorstr=#80FFFFFF);
 }
 
 /* line 10, ../sass/_latto.lists.scss */
-.list, .list-image, .list.floated, .list-compact, .list.simple, .date-list {
+.list, .list-image, .list-compact, .date-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 /* line 16, ../sass/_latto.lists.scss */
-.list > li, .list-image > li, .list.floated > li, .list-compact > li, .list.simple > li, .date-list > li {
+.list > li, .list-image > li, .list-compact > li, .date-list > li {
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
 /* line 20, ../sass/_latto.lists.scss */
-.list > li .meta, .list-image > li .meta, .list.floated > li .meta, .list-compact > li .meta, .list.simple > li .meta, .date-list > li .meta {
+.list > li .meta, .list-image > li .meta, .list-compact > li .meta, .date-list > li .meta {
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -1649,7 +1515,7 @@ ul.icons li .icon-large:before {
   color: #5b5b5b;
 }
 /* line 29, ../sass/_latto.lists.scss */
-.list > li.last, .list-image > li.last, .list.floated > li.last, .list-compact > li.last, .list.simple > li.last, .date-list > li.last {
+.list > li.last, .list-image > li.last, .list-compact > li.last, .date-list > li.last {
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -1659,13 +1525,13 @@ ul.icons li .icon-large:before {
 }
 
 /* line 55, ../sass/_latto.lists.scss */
-.list-image > .list-item .image-container, .list.floated > .list-item .image-container, .floated.list-compact > .list-item .image-container, .floated.list.simple > .list-item .image-container, .floated.date-list > .list-item .image-container {
+.list-image > .list-item .image-container {
   display: table-cell;
   margin-bottom: 10px;
   max-width: 25%;
 }
 /* line 60, ../sass/_latto.lists.scss */
-.list-image > .list-item .image-container img, .list.floated > .list-item .image-container img, .floated.list-compact > .list-item .image-container img, .floated.list.simple > .list-item .image-container img, .floated.date-list > .list-item .image-container img {
+.list-image > .list-item .image-container img {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1676,7 +1542,7 @@ ul.icons li .icon-large:before {
   max-width: 100%;
 }
 /* line 70, ../sass/_latto.lists.scss */
-.list-image > .list-item .content, .list.floated > .list-item .content, .floated.list-compact > .list-item .content, .floated.list.simple > .list-item .content, .floated.date-list > .list-item .content {
+.list-image > .list-item .content {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1684,11 +1550,11 @@ ul.icons li .icon-large:before {
   vertical-align: top;
 }
 /* line 79, ../sass/_latto.lists.scss */
-.list-image.highlighted, .highlighted.list.floated, .highlighted.floated.list-image, .highlighted.floated.list-compact, .highlighted.floated.list.simple, .highlighted.floated.date-list {
+.list-image.highlighted {
   margin-top: 20px;
 }
 /* line 82, ../sass/_latto.lists.scss */
-.list-image.highlighted .list-item, .highlighted.list.floated .list-item, .highlighted.floated.list-compact .list-item, .highlighted.floated.list.simple .list-item, .highlighted.floated.date-list .list-item {
+.list-image.highlighted .list-item {
   border-bottom: 0;
   display: inline-block;
   margin-right: -4px;
@@ -1696,17 +1562,17 @@ ul.icons li .icon-large:before {
 }
 
 /* line 101, ../sass/_latto.lists.scss */
-.list-compact > .list-item, .list.simple > .list-item, .simple.list-image > .list-item, .simple.list.floated > .list-item, .simple.list-compact > .list-item, .simple.date-list > .list-item {
+.list-compact > .list-item {
   display: table;
 }
 /* line 104, ../sass/_latto.lists.scss */
-.list-compact > .list-item .date, .list.simple > .list-item .date, .simple.list-image > .list-item .date, .simple.list.floated > .list-item .date, .simple.date-list > .list-item .date {
+.list-compact > .list-item .date {
   display: table-cell;
   min-width: 60px;
   color: #5b5b5b;
 }
 /* line 110, ../sass/_latto.lists.scss */
-.list-compact > .list-item .heading, .list.simple > .list-item .heading, .simple.list-image > .list-item .heading, .simple.list.floated > .list-item .heading, .simple.date-list > .list-item .heading {
+.list-compact > .list-item .heading {
   font-size: 18.2px;
   font-size: 1.1375rem;
   display: table-cell;
