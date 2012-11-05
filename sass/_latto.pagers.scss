@@ -1,16 +1,32 @@
-/*
-Document   : _latto.pagers
-Created on : Nov 5, 2012, 2:01:58 PM
-Author     : kristiankaa
-Description:
-Purpose of the stylesheet follows.
-*/
+// PAGER
+// -----
 
-/*
-TODO customize this sample style
-Syntax recommendation http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
-*/
-
-root {
-  display: block;
+.pager {
+  margin-left: 0;
+  list-style: none;
+  text-align: center;
+  
+  
+  li {
+    display: inline-block;
+    padding: 5px 15px;
+    background: $gray-light;
+  }
+  
+  .previous a {
+    float: left;  
+  }
+  
+  .next a {
+    float: right;  
+  }
+  
+  .disabled,
+  .disabled a,
+  .disabled a:hover {
+    color: $gray-light;
+    background-color: #fff;
+    cursor: default;
+    text-decoration: none;
+  }
 }

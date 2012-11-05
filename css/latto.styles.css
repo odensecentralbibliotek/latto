@@ -269,20 +269,34 @@ blockquote .blockquote-source:before {
   overflow: hidden;
 }
 
-/*
-Document   : _latto.pagers
-Created on : Nov 5, 2012, 2:01:58 PM
-Author     : kristiankaa
-Description:
-Purpose of the stylesheet follows.
-*/
-/*
-TODO customize this sample style
-Syntax recommendation http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
-*/
-/* line 14, ../sass/_latto.pagers.scss */
-root {
-  display: block;
+/* line 4, ../sass/_latto.pagers.scss */
+.pager {
+  margin-left: 0;
+  list-style: none;
+  text-align: center;
+}
+/* line 10, ../sass/_latto.pagers.scss */
+.pager li {
+  display: inline-block;
+  padding: 5px 15px;
+  background: #e7e7e7;
+}
+/* line 16, ../sass/_latto.pagers.scss */
+.pager .previous a {
+  float: left;
+}
+/* line 20, ../sass/_latto.pagers.scss */
+.pager .next a {
+  float: right;
+}
+/* line 26, ../sass/_latto.pagers.scss */
+.pager .disabled,
+.pager .disabled a,
+.pager .disabled a:hover {
+  color: #e7e7e7;
+  background-color: #fff;
+  cursor: default;
+  text-decoration: none;
 }
 
 /* line 16, ../sass/_latto.base.scss */
