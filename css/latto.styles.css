@@ -48,77 +48,107 @@ body {
 }
 
 /* line 41, ../sass/_latto.typography.scss */
-h1,
+h1, .text-largest,
 h2,
+.text-larger,
 h3,
+.text-large,
 h4,
+.text-medium,
 h5,
-h6 {
+.text-small,
+h6,
+.text-smallest {
   color: #1b1b1b;
   font-weight: normal;
 }
 /* line 45, ../sass/_latto.typography.scss */
-h1 a:link,
+h1 a:link, .text-largest a:link,
 h2 a:link,
+.text-larger a:link,
 h3 a:link,
+.text-large a:link,
 h4 a:link,
+.text-medium a:link,
 h5 a:link,
-h6 a:link {
+.text-small a:link,
+h6 a:link,
+.text-smallest a:link {
   color: #1b1b1b;
   text-decoration: none;
 }
 /* line 49, ../sass/_latto.typography.scss */
-h1 a:visited,
+h1 a:visited, .text-largest a:visited,
 h2 a:visited,
+.text-larger a:visited,
 h3 a:visited,
+.text-large a:visited,
 h4 a:visited,
+.text-medium a:visited,
 h5 a:visited,
-h6 a:visited {
+.text-small a:visited,
+h6 a:visited,
+.text-smallest a:visited {
   color: #1b1b1b;
 }
 /* line 52, ../sass/_latto.typography.scss */
-h1 a:hover,
+h1 a:hover, .text-largest a:hover,
 h2 a:hover,
+.text-larger a:hover,
 h3 a:hover,
+.text-large a:hover,
 h4 a:hover,
+.text-medium a:hover,
 h5 a:hover,
-h6 a:hover {
+.text-small a:hover,
+h6 a:hover,
+.text-smallest a:hover {
   color: black;
 }
 /* line 55, ../sass/_latto.typography.scss */
-h1 a:focus,
+h1 a:focus, .text-largest a:focus,
 h2 a:focus,
+.text-larger a:focus,
 h3 a:focus,
+.text-large a:focus,
 h4 a:focus,
+.text-medium a:focus,
 h5 a:focus,
-h6 a:focus {
+.text-small a:focus,
+h6 a:focus,
+.text-smallest a:focus {
   color: #006681;
 }
 /* line 58, ../sass/_latto.typography.scss */
-h1 a:active,
+h1 a:active, .text-largest a:active,
 h2 a:active,
+.text-larger a:active,
 h3 a:active,
+.text-large a:active,
 h4 a:active,
+.text-medium a:active,
 h5 a:active,
-h6 a:active {
+.text-small a:active,
+h6 a:active,
+.text-smallest a:active {
   background-color: #e7e7e7;
   color: #1b1b1b;
 }
 
 /* line 65, ../sass/_latto.typography.scss */
-h1 {
+h1, .text-largest {
   font-size: 26px;
   font-size: 1.625rem;
 }
 
 /* line 69, ../sass/_latto.typography.scss */
-h2 {
+h2, .text-larger {
   font-size: 23.4px;
   font-size: 1.4625rem;
 }
 
 /* line 73, ../sass/_latto.typography.scss */
-h3 {
+h3, .text-large {
   font-size: 20.8px;
   font-size: 1.3rem;
   line-height: 22.5px;
@@ -126,19 +156,19 @@ h3 {
 }
 
 /* line 78, ../sass/_latto.typography.scss */
-h4 {
+h4, .text-medium {
   font-size: 18.2px;
   font-size: 1.1375rem;
 }
 
 /* line 82, ../sass/_latto.typography.scss */
-h5 {
+h5, .text-small {
   font-size: 14.3px;
   font-size: 0.89375rem;
 }
 
 /* line 86, ../sass/_latto.typography.scss */
-h6 {
+h6, .text-smallest {
   font-size: 13px;
   font-size: 0.8125rem;
 }
@@ -184,48 +214,18 @@ strong,
   font-weight: bold;
 }
 
-/* line 149, ../sass/_latto.typography.scss */
-.text-small {
-  font-size: 6.5px;
-  font-size: 0.40625rem;
-}
-
-/* line 153, ../sass/_latto.typography.scss */
-.text-medium {
-  font-size: 9.75px;
-  font-size: 0.60938rem;
-}
-
-/* line 157, ../sass/_latto.typography.scss */
-.text-big {
-  font-size: 16.25px;
-  font-size: 1.01563rem;
-}
-
-/* line 161, ../sass/_latto.typography.scss */
-.text-bigger {
-  font-size: 17.875px;
-  font-size: 1.11719rem;
-}
-
-/* line 165, ../sass/_latto.typography.scss */
-.text-biggest {
-  font-size: 19.5px;
-  font-size: 1.21875rem;
-}
-
 /* See: http://zengrids.com/help/#vars-legacy */
 /* line 16, ../sass/_latto.grid.scss */
 #page {
   *position: relative;
   *zoom: 1;
 }
-/* line 52, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 52, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:before, #page:after {
   content: "";
   display: table;
 }
-/* line 56, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 56, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:after {
   clear: both;
 }

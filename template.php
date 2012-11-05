@@ -305,7 +305,7 @@ function latto_load_plugins() {
   if (theme_get_setting('main_menu_sticky')) {    
         
     // Add variable to js so we can check if it is set
-    drupal_add_js(array('latto_settings' => array('main_menu_sticky' => theme_get_setting('main_menu_sticky'),)), 'setting');
+    drupal_add_js(array('latto' => array('main_menu_sticky' => theme_get_setting('main_menu_sticky'),)), 'setting');
     
   }
   
@@ -316,7 +316,7 @@ function latto_load_plugins() {
     drupal_add_js($path_to_latto_core . '/scripts/equalize.min.js');
     
     // Add variable to js so we can check if it is set
-    drupal_add_js(array('latto_settings' => array('load_equalize' => theme_get_setting('load_equalize'),)), 'setting');
+    drupal_add_js(array('latto' => array('load_equalize' => theme_get_setting('load_equalize'),)), 'setting');
     
   }  
   
