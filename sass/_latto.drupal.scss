@@ -1,0 +1,18 @@
+// =============================================================================
+// Drupal specific styling
+// =============================================================================
+
+
+// -----------------------------------------------------------------------------
+// Reset standard Drupal classes
+// -----------------------------------------------------------------------------
+//
+// Form action is a standard class for all button wrappers in Drupal.
+//
+.form-actions {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: inherit;
+  display: inline-block;
+}

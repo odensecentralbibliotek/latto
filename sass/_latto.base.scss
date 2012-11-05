@@ -38,19 +38,12 @@ p {
   margin-bottom: $default-spacing / 3;
 }
 
-
-// -----------------------------------------------------------------------------
-// Reset standard Drupal classes
-// -----------------------------------------------------------------------------
-//
-// Form action is a standard class for all button wrappers in Drupal.
-//
-.form-actions {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  background: inherit;
-  display: inline-block;
+select,
+textarea,
+input {
+  @include rem('font-size', $theme-font-size);
+  
+  padding: $default-spacing / 5;
 }
 
 
@@ -74,6 +67,8 @@ hr {
 }
 
 .lead {
+  @extend strong;
+  @extend .text-large;
 }
 
 .meta {
@@ -86,12 +81,13 @@ hr {
 
 .image-inline-pull-right {
   @extend .pull-right;
-  
+
   margin-left: $default-spacing / 4;
 }
 
 .content {
 }
+
 
 // -----------------------------------------------------------------------------
 // Miscellanous helper classes
