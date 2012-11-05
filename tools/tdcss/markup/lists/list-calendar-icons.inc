@@ -10,7 +10,7 @@
       </div>
     </div>
     <div class="list-content">      
-      <p><i class="icon-home"></i>Biblioteket</p>
+      <p><i class="icon-home"></i>Stedet</p>
       <p><i class="icon-time"></i>10.00 - 11.00</p>
       <p><i class="icon-credit-card"></i>Kr. 20,-</p>
     </div>
@@ -25,7 +25,7 @@
       </div>
     </div>
     <div class="list-content">      
-      <p><i class="icon-home"></i>Biblioteket</p>
+      <p><i class="icon-home"></i>Stedet</p>
       <p><i class="icon-time"></i>10.00 - 11.00</p>
       <p><i class="icon-credit-card"></i>Kr. 20,-</p>
     </div>
@@ -40,7 +40,7 @@
       </div>
     </div>
     <div class="list-content">      
-      <p><i class="icon-home"></i>Biblioteket</p>
+      <p><i class="icon-home"></i>Stedet</p>
       <p><i class="icon-time"></i>10.00 - 11.00</p>
       <p><i class="icon-credit-card"></i>Kr. 20,-</p>
     </div>
@@ -55,7 +55,7 @@
       </div>
     </div>
     <div class="list-content">      
-      <p><i class="icon-home"></i>Biblioteket</p>
+      <p><i class="icon-home"></i>Stedet</p>
       <p><i class="icon-time"></i>10.00 - 11.00</p>
       <p><i class="icon-credit-card"></i>Kr. 20,-</p>
     </div>

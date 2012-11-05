@@ -10,7 +10,7 @@
       </div>
     </div>
     <div class="list-content">      
-      <p>Sted: Biblioteket</p>
+      <p>Sted: Stedet</p>
       <p>Tidspunkt: 10.00 - 11.00</p>
       <p>Pris: Kr. 20,-</p>
     </div>
@@ -25,7 +25,7 @@
       </div>
     </div>
     <div class="list-content">      
-      <p>Sted: Biblioteket</p>
+      <p>Sted: Stedet</p>
       <p>Tidspunkt: 10.00 - 11.00</p>
       <p>Pris: Kr. 20,-</p>
     </div>
@@ -40,7 +40,7 @@
       </div>
     </div>
     <div class="list-content">      
-      <p>Sted: Biblioteket</p>
+      <p>Sted: Stedet</p>
       <p>Tidspunkt: 10.00 - 11.00</p>
       <p>Pris: Kr. 20,-</p>
     </div>
@@ -55,7 +55,7 @@
       </div>
     </div>
     <div class="list-content">      
-      <p>Sted: Biblioteket</p>
+      <p>Sted: Stedet</p>
       <p>Tidspunkt: 10.00 - 11.00</p>
       <p>Pris: Kr. 20,-</p>
     </div>

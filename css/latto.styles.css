@@ -1550,22 +1550,22 @@ ul.icons li .icon-large:before {
   margin-top: 0;
 }
 
-/* line 79, ../sass/_latto.lists.scss */
+/* line 80, ../sass/_latto.lists.scss */
 .list-compact .list-date {
   margin-right: 5px;
 }
-/* line 83, ../sass/_latto.lists.scss */
+/* line 84, ../sass/_latto.lists.scss */
 .list-compact .list-heading {
   display: inline;
   margin: 0;
 }
 
-/* line 95, ../sass/_latto.lists.scss */
+/* line 96, ../sass/_latto.lists.scss */
 .list-heading {
   margin-top: 0;
 }
 
-/* line 101, ../sass/_latto.lists.scss */
+/* line 102, ../sass/_latto.lists.scss */
 .list-meta,
 .list-content,
 .list-image {
