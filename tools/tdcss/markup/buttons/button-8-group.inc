@@ -1,7 +1,0 @@
-<!-- : Button group -->
-<div class="btn-group">
-  <button class="btn">Left</button>
-  <button class="btn">Middle</button>
-  <button class="btn">Right</button>
-</div>
-

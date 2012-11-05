@@ -1,0 +1,2 @@
+<!-- : Label -->
+<label>This is a label</label>
