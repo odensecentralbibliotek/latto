@@ -89,7 +89,7 @@ h6 {
 
 
 // -----------------------------------------------------------------------------
-// Header classes
+// Content classes
 // -----------------------------------------------------------------------------
 //
 .page-title {
@@ -102,6 +102,11 @@ h6 {
   @include rem('padding', $default-spacing / 3 $default-spacing / 1.5);
 
   background-color: $gray-light;
+}
+
+.lead {
+  @extend strong;
+  @extend .text-large;
 }
 
 
