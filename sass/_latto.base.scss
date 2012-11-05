@@ -34,6 +34,7 @@ img {
 }
 
 p {
+  margin-top: 0;
   margin-bottom: $default-spacing / 3;
 }
 
@@ -64,6 +65,33 @@ hr {
   @include colruler();
 }
 
+
+// -----------------------------------------------------------------------------
+// Base classes used for extending
+// -----------------------------------------------------------------------------
+//
+.label {
+}
+
+.lead {
+}
+
+.meta {
+}
+
+.image-inline {
+  float: left;
+  margin-right: $default-spacing / 4;
+}
+
+.image-inline-pull-right {
+  @extend .pull-right;
+  
+  margin-left: $default-spacing / 4;
+}
+
+.content {
+}
 
 // -----------------------------------------------------------------------------
 // Miscellanous helper classes
