@@ -1,6 +1,6 @@
 <!-- : TABS (pills) -->
 
-<ul class="nav nav-pills">
+<ul class="">
   <li class="active">
     <a href="#">Home</a>
   </li>

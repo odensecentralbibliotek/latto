@@ -1,6 +1,6 @@
 <!-- : TABS (default) -->
 
-<ul class="nav nav-tabs">
+<ul class="tabs">
   <li><a href="#">Home</a></li>
   <li class="active">
     <a href="#">About</a>
