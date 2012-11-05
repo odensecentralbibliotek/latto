@@ -4,7 +4,7 @@
 
 
 // -----------------------------------------------------------------------------
-// Default list @extend's
+// Default list @extend
 // -----------------------------------------------------------------------------
 //
 %list {
@@ -13,14 +13,25 @@
 
   list-style-type: none;
 
-  > li {
+  > li,
+  > dd {
     border-bottom: 1px solid $gray-light;
 
     clear: both;
     margin-bottom: $default-spacing;
+    margin-left: 0;
     padding-bottom: $default-spacing; 
     overflow: hidden;
   }
+}
+
+
+// -----------------------------------------------------------------------------
+// Standard HTML modifications
+// -----------------------------------------------------------------------------
+//
+dl {
+  @extend %list;
 }
 
 
