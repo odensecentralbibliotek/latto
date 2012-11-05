@@ -248,12 +248,12 @@ blockquote .blockquote-source:before {
   *position: relative;
   *zoom: 1;
 }
-/* line 52, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 52, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:before, #page:after {
   content: "";
   display: table;
 }
-/* line 56, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 56, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:after {
   clear: both;
 }
@@ -274,34 +274,68 @@ blockquote .blockquote-source:before {
   overflow: hidden;
 }
 
-/* line 4, ../sass/_latto.pagers.scss */
+/* line 9, ../sass/_latto.pagers.scss */
 .pager {
   margin-left: 0;
   list-style: none;
   text-align: center;
 }
-/* line 10, ../sass/_latto.pagers.scss */
+/* line 15, ../sass/_latto.pagers.scss */
 .pager li {
   display: inline-block;
   padding: 5px 15px;
   background: #e7e7e7;
 }
-/* line 16, ../sass/_latto.pagers.scss */
+/* line 21, ../sass/_latto.pagers.scss */
 .pager .previous a {
   float: left;
 }
-/* line 20, ../sass/_latto.pagers.scss */
+/* line 25, ../sass/_latto.pagers.scss */
 .pager .next a {
   float: right;
 }
-/* line 26, ../sass/_latto.pagers.scss */
+/* line 31, ../sass/_latto.pagers.scss */
 .pager .disabled,
 .pager .disabled a,
 .pager .disabled a:hover {
   color: #e7e7e7;
-  background-color: #fff;
+  background-color: #f4f4f4;
   cursor: default;
   text-decoration: none;
+}
+
+/* line 10, ../sass/_latto.pagination.scss */
+.pagination li, .pagination-centered li, .pagination-right li {
+  background-color: #e7e7e7;
+  display: inline-block;
+  padding: 5px 15px;
+}
+/* line 17, ../sass/_latto.pagination.scss */
+.pagination .active a, .pagination-centered .active a, .pagination-right .active a,
+.pagination .active a:hover,
+.pagination-centered .active a:hover,
+.pagination-right .active a:hover {
+  cursor: default;
+  text-decoration: underline;
+}
+/* line 22, ../sass/_latto.pagination.scss */
+.pagination .disabled, .pagination-centered .disabled, .pagination-right .disabled {
+  background-color: #f4f4f4;
+}
+/* line 25, ../sass/_latto.pagination.scss */
+.pagination .disabled a:hover, .pagination-centered .disabled a:hover, .pagination-right .disabled a:hover {
+  cursor: default;
+  text-decoration: none;
+}
+
+/* line 35, ../sass/_latto.pagination.scss */
+.pagination-centered {
+  text-align: center;
+}
+
+/* line 45, ../sass/_latto.pagination.scss */
+.pagination-right {
+  text-align: right;
 }
 
 /* line 16, ../sass/_latto.base.scss */

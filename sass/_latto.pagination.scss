@@ -1,0 +1,49 @@
+// =============================================================================
+// PAGER
+// =============================================================================
+
+// -----------------------------------------------------------------------------
+// Default styling for pagination.
+// -----------------------------------------------------------------------------
+//
+.pagination {    
+  li {
+    background-color: $gray-light;
+    display: inline-block;
+    padding: $default-spacing * 0.25 $default-spacing * 0.75;
+  }
+  
+  .active a,
+  .active a:hover {
+    cursor: default;
+    text-decoration: underline;  
+  }
+  
+  .disabled {
+    background-color: $gray-lighter;  
+  }
+  .disabled a:hover {
+    cursor: default; 
+    text-decoration: none;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Styling for a centered pagination. Extends the default pagination.
+// -----------------------------------------------------------------------------
+//
+.pagination-centered {
+  @extend .pagination;
+  
+  text-align: center;
+}
+
+// -----------------------------------------------------------------------------
+// Styling for a right positioned pagination. Extends the default pagination.
+// -----------------------------------------------------------------------------
+//
+.pagination-right {
+  @extend .pagination;
+  
+  text-align: right;
+}
