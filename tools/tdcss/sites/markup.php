@@ -39,7 +39,7 @@
     </div>    
     
     <div class="secondary-content">
-      <ul class="nav nav-list docs-sidenav affix">
+      <ul class="sub-menu docs-sidenav affix">
         <?php
 
           // Initialize empty variable to hold the HTML for the left hand menu.
