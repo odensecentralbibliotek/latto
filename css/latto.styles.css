@@ -180,6 +180,11 @@ a:focus {
 b,
 strong,
 .lead,
+dl > dt,
+.list-content > dt,
+.list-news > dt,
+.list-calendar > dt,
+.list-compact > dt,
 .strong {
   font-weight: bold;
 }
@@ -1535,7 +1540,7 @@ dl, .list-content, .list-news, .list-calendar, .list-compact {
   padding: 0;
   list-style-type: none;
 }
-/* line 17, ../sass/_latto.lists.scss */
+/* line 21, ../sass/_latto.lists.scss */
 dl > li, .list-content > li, .list-news > li, .list-calendar > li, .list-compact > li,
 dl > dd,
 .list-content > dd,
@@ -1550,11 +1555,11 @@ dl > dd,
   overflow: hidden;
 }
 
-/* line 55, ../sass/_latto.lists.scss */
+/* line 59, ../sass/_latto.lists.scss */
 .list-calendar i[class^=icon] {
   margin-right: 5px;
 }
-/* line 59, ../sass/_latto.lists.scss */
+/* line 63, ../sass/_latto.lists.scss */
 .list-calendar .list-date-wrapper {
   display: inline-block;
   margin-right: 5px;
@@ -1563,38 +1568,38 @@ dl > dd,
   text-align: center;
   vertical-align: top;
 }
-/* line 68, ../sass/_latto.lists.scss */
+/* line 72, ../sass/_latto.lists.scss */
 .list-calendar .list-date-wrapper .list-day {
   background-color: #00b7e7;
   color: white;
 }
-/* line 72, ../sass/_latto.lists.scss */
+/* line 76, ../sass/_latto.lists.scss */
 .list-calendar .list-date-wrapper .list-date-wrapper-inner {
   background: white;
   border: 1px solid #d9d9d9;
 }
-/* line 81, ../sass/_latto.lists.scss */
+/* line 85, ../sass/_latto.lists.scss */
 .list-calendar .list-content {
   display: inline-block;
   margin-top: 0;
 }
 
-/* line 91, ../sass/_latto.lists.scss */
+/* line 95, ../sass/_latto.lists.scss */
 .list-compact .list-date {
   margin-right: 5px;
 }
-/* line 95, ../sass/_latto.lists.scss */
+/* line 99, ../sass/_latto.lists.scss */
 .list-compact .list-heading {
   display: inline;
   margin: 0;
 }
 
-/* line 107, ../sass/_latto.lists.scss */
+/* line 111, ../sass/_latto.lists.scss */
 .list-heading {
   margin-top: 0;
 }
 
-/* line 113, ../sass/_latto.lists.scss */
+/* line 117, ../sass/_latto.lists.scss */
 .list-meta,
 .list-content,
 .list-image {
