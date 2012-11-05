@@ -21,9 +21,10 @@
 // -----------------------------------------------------------------------------
 //
 .horizontal-menu {
-  @include rem('font-size', $navbar-font-size);
+  @include rem('font-size', $theme-font-size * 1.25);
 
   display: table;
+  margin: 0;
   width: 100%;
 
   &.fixed {
@@ -33,22 +34,30 @@
     width: auto;
   }
 
-  &.nav-inline {
+  > li {
+    display: table-cell;
+    text-align: center;
 
-    margin: 0;
-    li {
-      display: table-cell;
-      text-align: center;
+    a {
+      display: block;
+      height: 100%;
+      margin-right: $navbar-item-spacing;
+      min-width: 100px;
+      padding: $navbar-item-spacing;
 
-      a {
-        display: block;
-        height: 100%;
-        min-width: 100px;
-        padding: $navbar-item-spacing;
-        text-decoration: none;
+      background-color: lighten($gray-light, 5%);
+      text-decoration: none;
+      
+      &:hover,
+      &.active {
+        background-color: $navbar-bg-color;
       }
 
+      &.last {
+        margin-right: 0;
+      }
     }
+
   }
 }
 
@@ -61,13 +70,13 @@
   margin: 0;
 
   > li {
-    
+
     display: block;
 
     a {
       display: block;
-      padding-top: $sidebar-item-spacing;
-      padding-bottom: $sidebar-item-spacing;
+      padding-top: $navbar-item-spacing;
+      padding-bottom: $navbar-item-spacing;
     }
   }
 }

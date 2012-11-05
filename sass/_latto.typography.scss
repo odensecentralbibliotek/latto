@@ -83,7 +83,7 @@ h5 {
 }
 
 h6 {
-  @include rem('font-size', $theme-font-size * 1);
+  @include rem('font-size', $theme-font-size);
 }
 
 

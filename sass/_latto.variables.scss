@@ -7,18 +7,11 @@
 
 
 // -----------------------------------------------------------------------------
-// The default font
-// -----------------------------------------------------------------------------
-//
-@include font-face("Amble Light Condensed", font-files("amble/Amble-LightCondensed-webfont.woff", "amble/Amble-LightCondensed-webfont.ttf", "amble/Amble-LightCondensed-webfont.svg"), "amble/Amble-LightCondensed-webfont.eot", 'normal', 'normal');
-
-
-// -----------------------------------------------------------------------------
 // Basic settings: Grid, spacing etc.
 // -----------------------------------------------------------------------------
 //
-$grid-max-width:    1200px;
-$grid-column-count: 12;
+$grid-max-width:    1200px !default;
+$grid-column-count: 12 !default;
 
 $default-spacing: 20px !default;
 
@@ -33,7 +26,6 @@ $gray:                  #d5d5d5 !default;
 $gray-light:            #e7e7e7 !default;
 $gray-lighter:          lighten($gray-light, 5%) !default;
 $white:                 #fff    !default;
-$green:                 #2BE01B !default;
 
 
 // -----------------------------------------------------------------------------
@@ -42,11 +34,6 @@ $green:                 #2BE01B !default;
 //
 $theme-primary-color:           #fff !default;
 $theme-secondary-color:         #00b7e7 !default;
-$theme-background-color:        #fff !default;
-$theme-background-pattern:      url('../images/default-bg-pattern.png') !default;
-$theme-header-background:       #fff !default;
-$theme-header-pattern:          #fff !default; //url('../images/primary-pattern.png') !default;
-$theme-content-background:      #fff !default;
 
 
 // -----------------------------------------------------------------------------
@@ -55,7 +42,7 @@ $theme-content-background:      #fff !default;
 //
 $theme-font-size:     13px !default;
 $theme-line-height:   18px !default;
-$theme-font-family:   "Amble Light Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$theme-font-family:   "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 
 // -----------------------------------------------------------------------------
@@ -93,36 +80,11 @@ $theme-block-inverse-background:  $theme-secondary-color !default;
 
 
 // -----------------------------------------------------------------------------
-// Forms
-// -----------------------------------------------------------------------------
-//
-$form-border-radius: 5px !default;
-
-
-// -----------------------------------------------------------------------------
 // Navigation
 // -----------------------------------------------------------------------------
 //
-$navbar-bg-color:           #00a8e1 !default;
-$navbar-bg-active-color:    transparent !default;
-$navbar-font-size:          15px !default;
+$navbar-bg-color:           $gray-light !default;
+$navbar-bg-active-color:    $gray !default;
 $navbar-text-color:         lighten($gray-light, 25%) !default;
 $navbar-text-color-active:  lighten($gray-light, 25%) !default;
-$navbar-item-spacing:       $default-spacing / 2 $default-spacing !default;
-
-
-// -----------------------------------------------------------------------------
-// Sidebar
-// -----------------------------------------------------------------------------
-//
-$sidebar-background-color:  White !default;
-$sidebar-text-color:        Black !default;
-$sidebar-item-spacing:      $default-spacing / 2;
-
-
-// -----------------------------------------------------------------------------
-// Lists
-// -----------------------------------------------------------------------------
-//
-$list-item-spacing:         10px !default;
-$list-picture-width:        25% !default;
+$navbar-item-spacing:       $default-spacing / 2 !default;
