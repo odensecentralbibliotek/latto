@@ -143,25 +143,37 @@ em {
 
 
 // -----------------------------------------------------------------------------
-// Classes to apply elements for different font sizes
+// Classes to apply elements for different font sizes.
+// Each font size is equal to a specific H element:
+// .text-biggest = H1, .text-bigger = H2 etc.
 // -----------------------------------------------------------------------------
 //
-.text-small {
-  @include rem('font-size', $theme-font-size * .5);
+.text-largest {
+  @extend h1;
+}
+
+.text-larger {
+  @extend h2;
+}
+
+.text-large {
+  @extend h3;
 }
 
 .text-medium {
-  @include rem('font-size', $theme-font-size * .75);
+  @extend h4;
 }
 
-.text-big {
-  @include rem('font-size', $theme-font-size * 1.25);
+.text-small {
+  @extend h5;
 }
 
-.text-bigger {
-  @include rem('font-size', $theme-font-size * 1.375);
+.text-smallest {
+  @extend h6;  
 }
 
-.text-biggest {
-  @include rem('font-size', $theme-font-size * 1.5);
-}
+
+
+
+
+
