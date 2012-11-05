@@ -4,6 +4,12 @@
 
 
 // -----------------------------------------------------------------------------
+// Variables
+// -----------------------------------------------------------------------------
+//
+$table-border-radius: $default-spacing / 5;
+
+// -----------------------------------------------------------------------------
 // Base tables
 // -----------------------------------------------------------------------------
 //
@@ -20,24 +26,24 @@ table {
 //
 .table {
   width: 100%;
-  
+
   th,
   td {
     border-top: 1px solid $gray;
     padding: $default-spacing / 3;
-    
+
     text-align: left;
     vertical-align: top;
   }
-  
+
   th {
     font-weight: bold;
   }
-  
+
   thead th {
     vertical-align: bottom;
   }
-  
+
   caption + thead tr:first-child th,
   caption + thead tr:first-child td,
   colgroup + thead tr:first-child th,
@@ -46,7 +52,7 @@ table {
   thead:first-child tr:first-child td {
     border-top: 0;
   }
-  
+
   tbody + tbody {
     border-top: 2px solid $gray;
   }
@@ -70,18 +76,18 @@ table {
 // -----------------------------------------------------------------------------
 //
 .table-bordered {
-  @include border-radius(4px);
-  
+  @include border-radius($default-spacing / 5);
+
   border: 1px solid $gray;
   border-collapse: separate; // Done so we can round those corners!
   *border-collapse: collapsed; // IE7 can't round corners anyway
   border-left: 0;
-  
+
   th,
   td {
     border-left: 1px solid $gray;
   }
-  
+
   caption + thead tr:first-child th,
   caption + tbody tr:first-child th,
   caption + tbody tr:first-child td,
@@ -93,37 +99,26 @@ table {
   tbody:first-child tr:first-child td {
     border-top: 0;
   }
-  
+
   thead:first-child tr:first-child th:first-child,
   tbody:first-child tr:first-child td:first-child {
-    -webkit-border-top-left-radius: 4px;
-    border-top-left-radius: 4px;
-    -moz-border-radius-topleft: 4px;
+    @include border-radius($table-border-radius 0 0);
   }
-  
+
   thead:first-child tr:first-child th:last-child,
   tbody:first-child tr:first-child td:last-child {
-    -webkit-border-top-right-radius: 4px;
-    border-top-right-radius: 4px;
-    -moz-border-radius-topright: 4px;
+    @include border-radius(0 $table-border-radius 0 0);
   }
-    
+
   thead:last-child tr:last-child th:first-child,
   tbody:last-child tr:last-child td:first-child {
-    @include border-radius(0 0 0 4px);
-    
-    -webkit-border-bottom-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    -moz-border-radius-bottomleft: 4px;
+    @include border-radius(0 0 0 $table-border-radius);
   }
   thead:last-child tr:last-child th:last-child,
   tbody:last-child tr:last-child td:last-child {
-    -webkit-border-bottom-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    -moz-border-radius-bottomright: 4px;
+    @include border-radius(0 $table-border-radius 0 0);
   }
 }
-
 
 
 // -----------------------------------------------------------------------------
@@ -138,8 +133,6 @@ table {
     }
   }
 }
-
-
 
 
 // -----------------------------------------------------------------------------

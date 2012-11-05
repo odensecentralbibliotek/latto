@@ -46,8 +46,8 @@ $prefixes: ("-webkit-","-moz-", "-o-", "");
   width: 100%;
   height: 0.1em;
   border: none;
-  @include prepend-top($default-spacing/2);
-  @include append-bottom($default-spacing/2);
+  @include prepend-top($default-spacing / 2);
+  @include append-bottom($default-spacing / 2);
  }
 
  

@@ -30,242 +30,6 @@
   overflow: hidden;
 }
 
-/* line 5, ../sass/_latto.typography.scss */
-html {
-  font-size: 16px;
-  font-size: 1rem;
-}
-
-/* line 9, ../sass/_latto.typography.scss */
-body {
-  font-size: 13px;
-  font-size: 0.8125rem;
-  line-height: 18px;
-  line-height: 1.125rem;
-  color: #1b1b1b;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-/* line 81, ../sass/_latto.mixins.scss */
-::-webkit-selection {
-  color: #1b1b1b;
-  background: #e7e7e7;
-}
-
-/* line 81, ../sass/_latto.mixins.scss */
-::-moz-selection {
-  color: #1b1b1b;
-  background: #e7e7e7;
-}
-
-/* line 81, ../sass/_latto.mixins.scss */
-::-o-selection {
-  color: #1b1b1b;
-  background: #e7e7e7;
-}
-
-/* line 81, ../sass/_latto.mixins.scss */
-::selection {
-  color: #1b1b1b;
-  background: #e7e7e7;
-}
-
-/* line 40, ../sass/_latto.typography.scss */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #1b1b1b;
-  font-weight: normal;
-}
-/* line 44, ../sass/_latto.typography.scss */
-h1 a:link,
-h2 a:link,
-h3 a:link,
-h4 a:link,
-h5 a:link,
-h6 a:link {
-  color: #1b1b1b;
-  text-decoration: none;
-}
-/* line 48, ../sass/_latto.typography.scss */
-h1 a:visited,
-h2 a:visited,
-h3 a:visited,
-h4 a:visited,
-h5 a:visited,
-h6 a:visited {
-  color: #1b1b1b;
-}
-/* line 51, ../sass/_latto.typography.scss */
-h1 a:hover,
-h2 a:hover,
-h3 a:hover,
-h4 a:hover,
-h5 a:hover,
-h6 a:hover {
-  color: black;
-}
-/* line 54, ../sass/_latto.typography.scss */
-h1 a:focus,
-h2 a:focus,
-h3 a:focus,
-h4 a:focus,
-h5 a:focus,
-h6 a:focus {
-  color: #006681;
-}
-/* line 57, ../sass/_latto.typography.scss */
-h1 a:active,
-h2 a:active,
-h3 a:active,
-h4 a:active,
-h5 a:active,
-h6 a:active {
-  background-color: #e7e7e7;
-  color: #1b1b1b;
-}
-
-/* line 64, ../sass/_latto.typography.scss */
-h1 {
-  font-size: 26px;
-  font-size: 1.625rem;
-}
-
-/* line 68, ../sass/_latto.typography.scss */
-h2 {
-  font-size: 23.4px;
-  font-size: 1.4625rem;
-}
-
-/* line 72, ../sass/_latto.typography.scss */
-h3 {
-  font-size: 20.8px;
-  font-size: 1.3rem;
-  line-height: 22.5px;
-  line-height: 1.40625rem;
-}
-
-/* line 77, ../sass/_latto.typography.scss */
-h4 {
-  font-size: 18.2px;
-  font-size: 1.1375rem;
-}
-
-/* line 81, ../sass/_latto.typography.scss */
-h5 {
-  font-size: 14.3px;
-  font-size: 0.89375rem;
-}
-
-/* line 85, ../sass/_latto.typography.scss */
-h6 {
-  font-size: 13px;
-  font-size: 0.8125rem;
-}
-
-/* line 94, ../sass/_latto.typography.scss */
-.page-title {
-  margin-bottom: 10px;
-  margin-bottom: 0.625rem;
-}
-
-/* line 99, ../sass/_latto.typography.scss */
-.block-title {
-  margin-bottom: 13.33333px;
-  margin-bottom: 0.83333rem;
-  padding: 6.66667px 13.33333px;
-  padding:  0.41667rem 0.83333rem;
-  background-color: #e7e7e7;
-}
-
-/* line 117, ../sass/_latto.typography.scss */
-a:link {
-  color: #00b7e7;
-  text-decoration: none;
-}
-/* line 121, ../sass/_latto.typography.scss */
-a:visited {
-  color: #007a9b;
-}
-/* line 124, ../sass/_latto.typography.scss */
-a:hover {
-  color: #006681;
-  text-decoration: underline;
-}
-/* line 128, ../sass/_latto.typography.scss */
-a:focus {
-  color: #006681;
-}
-
-/* line 140, ../sass/_latto.typography.scss */
-b,
-strong,
-.lead,
-dl > dt,
-.list-content > dt,
-.list-news > dt,
-.list-calendar > dt,
-.list-compact > dt,
-.strong {
-  font-weight: bold;
-}
-
-/* line 148, ../sass/_latto.typography.scss */
-blockquote {
-  border-left: 5px solid #e7e7e7;
-  margin: 0;
-  margin-bottom: 20px;
-  padding-left: 13.33333px;
-}
-/* line 154, ../sass/_latto.typography.scss */
-blockquote.pull-right, blockquote.image-inline-pull-right {
-  border-left: 0;
-  border-right: 5px solid #e7e7e7;
-  padding-right: 13.33333px;
-}
-/* line 159, ../sass/_latto.typography.scss */
-blockquote.pull-right .blockquote-source, blockquote.image-inline-pull-right .blockquote-source {
-  display: block;
-  text-align: right;
-}
-/* line 168, ../sass/_latto.typography.scss */
-blockquote .blockquote-source:before {
-  content: '\2014 \00A0';
-}
-
-/* line 179, ../sass/_latto.typography.scss */
-.text-largest {
-  font-size: 19.5px;
-  font-size: 1.21875rem;
-}
-
-/* line 183, ../sass/_latto.typography.scss */
-.text-larger {
-  font-size: 16.25px;
-  font-size: 1.01563rem;
-}
-
-/* line 187, ../sass/_latto.typography.scss */
-.text-large, .lead {
-  font-size: 14.3px;
-  font-size: 0.89375rem;
-}
-
-/* line 191, ../sass/_latto.typography.scss */
-.text-small, blockquote .blockquote-source {
-  font-size: 11.7px;
-  font-size: 0.73125rem;
-}
-
-/* line 195, ../sass/_latto.typography.scss */
-.text-smallest {
-  font-size: 10.4px;
-  font-size: 0.65rem;
-}
-
 /* line 16, ../sass/_latto.base.scss */
 body {
   background-color: white;
@@ -324,23 +88,259 @@ hr {
   margin-left: 5px;
 }
 
-/* line 101, ../sass/_latto.base.scss */
+/* line 102, ../sass/_latto.base.scss */
 .pull-right, .image-inline-pull-right {
   float: right;
 }
 
-/* line 10, ../sass/_latto.tables.scss */
+/* line 5, ../sass/_latto.typography.scss */
+html {
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+/* line 9, ../sass/_latto.typography.scss */
+body {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 18px;
+  line-height: 1.125rem;
+  color: #1b1b1b;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 81, ../sass/_latto.mixins.scss */
+::-webkit-selection {
+  color: #1b1b1b;
+  background: #efefef;
+}
+
+/* line 81, ../sass/_latto.mixins.scss */
+::-moz-selection {
+  color: #1b1b1b;
+  background: #efefef;
+}
+
+/* line 81, ../sass/_latto.mixins.scss */
+::-o-selection {
+  color: #1b1b1b;
+  background: #efefef;
+}
+
+/* line 81, ../sass/_latto.mixins.scss */
+::selection {
+  color: #1b1b1b;
+  background: #efefef;
+}
+
+/* line 40, ../sass/_latto.typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #1b1b1b;
+  font-weight: normal;
+}
+/* line 44, ../sass/_latto.typography.scss */
+h1 a:link,
+h2 a:link,
+h3 a:link,
+h4 a:link,
+h5 a:link,
+h6 a:link {
+  color: #1b1b1b;
+  text-decoration: none;
+}
+/* line 48, ../sass/_latto.typography.scss */
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited {
+  color: #1b1b1b;
+}
+/* line 51, ../sass/_latto.typography.scss */
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  color: black;
+}
+/* line 54, ../sass/_latto.typography.scss */
+h1 a:focus,
+h2 a:focus,
+h3 a:focus,
+h4 a:focus,
+h5 a:focus,
+h6 a:focus {
+  color: #006681;
+}
+/* line 57, ../sass/_latto.typography.scss */
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active {
+  background-color: #efefef;
+  color: #1b1b1b;
+}
+
+/* line 64, ../sass/_latto.typography.scss */
+h1 {
+  font-size: 26px;
+  font-size: 1.625rem;
+}
+
+/* line 68, ../sass/_latto.typography.scss */
+h2 {
+  font-size: 23.4px;
+  font-size: 1.4625rem;
+}
+
+/* line 72, ../sass/_latto.typography.scss */
+h3 {
+  font-size: 20.8px;
+  font-size: 1.3rem;
+  line-height: 22.5px;
+  line-height: 1.40625rem;
+}
+
+/* line 77, ../sass/_latto.typography.scss */
+h4 {
+  font-size: 18.2px;
+  font-size: 1.1375rem;
+}
+
+/* line 81, ../sass/_latto.typography.scss */
+h5 {
+  font-size: 14.3px;
+  font-size: 0.89375rem;
+}
+
+/* line 85, ../sass/_latto.typography.scss */
+h6 {
+  font-size: 13px;
+  font-size: 0.8125rem;
+}
+
+/* line 94, ../sass/_latto.typography.scss */
+.page-title {
+  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
+}
+
+/* line 99, ../sass/_latto.typography.scss */
+.block-title {
+  margin-bottom: 13.33333px;
+  margin-bottom: 0.83333rem;
+  padding: 6.66667px 13.33333px;
+  padding:  0.41667rem 0.83333rem;
+  background-color: #efefef;
+}
+
+/* line 117, ../sass/_latto.typography.scss */
+a:link {
+  color: #00b7e7;
+  text-decoration: none;
+}
+/* line 121, ../sass/_latto.typography.scss */
+a:visited {
+  color: #007a9b;
+}
+/* line 124, ../sass/_latto.typography.scss */
+a:hover {
+  color: #006681;
+  text-decoration: underline;
+}
+/* line 128, ../sass/_latto.typography.scss */
+a:focus {
+  color: #006681;
+}
+
+/* line 140, ../sass/_latto.typography.scss */
+b,
+strong,
+.lead,
+dl > dt,
+.list-content > dt,
+.list-news > dt,
+.list-calendar > dt,
+.list-compact > dt,
+.strong {
+  font-weight: bold;
+}
+
+/* line 148, ../sass/_latto.typography.scss */
+blockquote {
+  border-left: 5px solid #efefef;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-left: 13.33333px;
+}
+/* line 154, ../sass/_latto.typography.scss */
+blockquote.pull-right, blockquote.image-inline-pull-right {
+  border-left: 0;
+  border-right: 5px solid #efefef;
+  padding-right: 13.33333px;
+}
+/* line 159, ../sass/_latto.typography.scss */
+blockquote.pull-right .blockquote-source, blockquote.image-inline-pull-right .blockquote-source {
+  display: block;
+  text-align: right;
+}
+/* line 168, ../sass/_latto.typography.scss */
+blockquote .blockquote-source:before {
+  content: '\2014 \00A0';
+}
+
+/* line 179, ../sass/_latto.typography.scss */
+.text-largest {
+  font-size: 19.5px;
+  font-size: 1.21875rem;
+}
+
+/* line 183, ../sass/_latto.typography.scss */
+.text-larger {
+  font-size: 16.25px;
+  font-size: 1.01563rem;
+}
+
+/* line 187, ../sass/_latto.typography.scss */
+.text-large, .lead {
+  font-size: 14.3px;
+  font-size: 0.89375rem;
+}
+
+/* line 191, ../sass/_latto.typography.scss */
+.text-small, blockquote .blockquote-source {
+  font-size: 11.7px;
+  font-size: 0.73125rem;
+}
+
+/* line 195, ../sass/_latto.typography.scss */
+.text-smallest {
+  font-size: 10.4px;
+  font-size: 0.65rem;
+}
+
+/* line 16, ../sass/_latto.tables.scss */
 table {
   max-width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 21, ../sass/_latto.tables.scss */
+/* line 27, ../sass/_latto.tables.scss */
 .table {
   width: 100%;
 }
-/* line 25, ../sass/_latto.tables.scss */
+/* line 31, ../sass/_latto.tables.scss */
 .table th,
 .table td {
   border-top: 1px solid #d5d5d5;
@@ -348,15 +348,15 @@ table {
   text-align: left;
   vertical-align: top;
 }
-/* line 33, ../sass/_latto.tables.scss */
+/* line 39, ../sass/_latto.tables.scss */
 .table th {
   font-weight: bold;
 }
-/* line 37, ../sass/_latto.tables.scss */
+/* line 43, ../sass/_latto.tables.scss */
 .table thead th {
   vertical-align: bottom;
 }
-/* line 46, ../sass/_latto.tables.scss */
+/* line 52, ../sass/_latto.tables.scss */
 .table caption + thead tr:first-child th,
 .table caption + thead tr:first-child td,
 .table colgroup + thead tr:first-child th,
@@ -365,18 +365,18 @@ table {
 .table thead:first-child tr:first-child td {
   border-top: 0;
 }
-/* line 50, ../sass/_latto.tables.scss */
+/* line 56, ../sass/_latto.tables.scss */
 .table tbody + tbody {
   border-top: 2px solid #d5d5d5;
 }
 
-/* line 62, ../sass/_latto.tables.scss */
+/* line 68, ../sass/_latto.tables.scss */
 .table-condensed th,
 .table-condensed td {
   padding: 4px 5px;
 }
 
-/* line 72, ../sass/_latto.tables.scss */
+/* line 78, ../sass/_latto.tables.scss */
 .table-bordered {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -388,12 +388,12 @@ table {
   *border-collapse: collapsed;
   border-left: 0;
 }
-/* line 81, ../sass/_latto.tables.scss */
+/* line 87, ../sass/_latto.tables.scss */
 .table-bordered th,
 .table-bordered td {
   border-left: 1px solid #d5d5d5;
 }
-/* line 93, ../sass/_latto.tables.scss */
+/* line 99, ../sass/_latto.tables.scss */
 .table-bordered caption + thead tr:first-child th,
 .table-bordered caption + tbody tr:first-child th,
 .table-bordered caption + tbody tr:first-child td,
@@ -405,21 +405,25 @@ table {
 .table-bordered tbody:first-child tr:first-child td {
   border-top: 0;
 }
-/* line 98, ../sass/_latto.tables.scss */
+/* line 104, ../sass/_latto.tables.scss */
 .table-bordered thead:first-child tr:first-child th:first-child,
 .table-bordered tbody:first-child tr:first-child td:first-child {
-  -webkit-border-top-left-radius: 4px;
-  border-top-left-radius: 4px;
-  -moz-border-radius-topleft: 4px;
+  -webkit-border-radius: 4px 0 0;
+  -moz-border-radius: 4px 0 0;
+  -ms-border-radius: 4px 0 0;
+  -o-border-radius: 4px 0 0;
+  border-radius: 4px 0 0;
 }
-/* line 105, ../sass/_latto.tables.scss */
+/* line 109, ../sass/_latto.tables.scss */
 .table-bordered thead:first-child tr:first-child th:last-child,
 .table-bordered tbody:first-child tr:first-child td:last-child {
-  -webkit-border-top-right-radius: 4px;
-  border-top-right-radius: 4px;
-  -moz-border-radius-topright: 4px;
+  -webkit-border-radius: 0 4px 0 0;
+  -moz-border-radius: 0 4px 0 0;
+  -ms-border-radius: 0 4px 0 0;
+  -o-border-radius: 0 4px 0 0;
+  border-radius: 0 4px 0 0;
 }
-/* line 112, ../sass/_latto.tables.scss */
+/* line 114, ../sass/_latto.tables.scss */
 .table-bordered thead:last-child tr:last-child th:first-child,
 .table-bordered tbody:last-child tr:last-child td:first-child {
   -webkit-border-radius: 0 0 0 4px;
@@ -427,58 +431,91 @@ table {
   -ms-border-radius: 0 0 0 4px;
   -o-border-radius: 0 0 0 4px;
   border-radius: 0 0 0 4px;
-  -webkit-border-bottom-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  -moz-border-radius-bottomleft: 4px;
 }
-/* line 120, ../sass/_latto.tables.scss */
+/* line 118, ../sass/_latto.tables.scss */
 .table-bordered thead:last-child tr:last-child th:last-child,
 .table-bordered tbody:last-child tr:last-child td:last-child {
-  -webkit-border-bottom-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-  -moz-border-radius-bottomright: 4px;
+  -webkit-border-radius: 0 4px 0 0;
+  -moz-border-radius: 0 4px 0 0;
+  -ms-border-radius: 0 4px 0 0;
+  -o-border-radius: 0 4px 0 0;
+  border-radius: 0 4px 0 0;
 }
 
-/* line 136, ../sass/_latto.tables.scss */
+/* line 131, ../sass/_latto.tables.scss */
 .table-striped tbody tr:nth-child(odd) td,
 .table-striped tbody tr:nth-child(odd) th {
-  background-color: #e7e7e7;
+  background-color: white;
 }
 
-/* line 153, ../sass/_latto.tables.scss */
+/* line 146, ../sass/_latto.tables.scss */
 .table tbody tr:hover td,
 .table tbody tr:hover th {
-  background-color: #e7e7e7;
+  background-color: #efefef;
 }
 
-/* line 4, ../sass/_latto.pagers.scss */
+/* line 9, ../sass/_latto.pagers.scss */
 .pager {
   margin-left: 0;
   list-style: none;
   text-align: center;
 }
-/* line 10, ../sass/_latto.pagers.scss */
+/* line 15, ../sass/_latto.pagers.scss */
 .pager li {
   display: inline-block;
   padding: 5px 15px;
-  background: #e7e7e7;
+  background: #efefef;
 }
-/* line 16, ../sass/_latto.pagers.scss */
+/* line 21, ../sass/_latto.pagers.scss */
 .pager .previous a {
   float: left;
 }
-/* line 20, ../sass/_latto.pagers.scss */
+/* line 25, ../sass/_latto.pagers.scss */
 .pager .next a {
   float: right;
 }
-/* line 26, ../sass/_latto.pagers.scss */
+/* line 31, ../sass/_latto.pagers.scss */
 .pager .disabled,
 .pager .disabled a,
 .pager .disabled a:hover {
-  color: #e7e7e7;
-  background-color: #fff;
+  color: #efefef;
+  background-color: white;
   cursor: default;
   text-decoration: none;
+}
+
+/* line 10, ../sass/_latto.pagination.scss */
+.pagination li, .pagination-centered li, .pagination-right li {
+  background-color: #efefef;
+  display: inline-block;
+  padding: 5px 15px;
+}
+/* line 17, ../sass/_latto.pagination.scss */
+.pagination .active a, .pagination-centered .active a, .pagination-right .active a,
+.pagination .active a:hover,
+.pagination-centered .active a:hover,
+.pagination-right .active a:hover {
+  cursor: default;
+  text-decoration: underline;
+}
+/* line 22, ../sass/_latto.pagination.scss */
+.pagination .disabled, .pagination-centered .disabled, .pagination-right .disabled {
+  background-color: white;
+}
+/* line 25, ../sass/_latto.pagination.scss */
+.pagination .disabled a:hover, .pagination-centered .disabled a:hover, .pagination-right .disabled a:hover {
+  cursor: default;
+  text-decoration: none;
+}
+
+/* line 35, ../sass/_latto.pagination.scss */
+.pagination-centered {
+  text-align: center;
+}
+
+/* line 45, ../sass/_latto.pagination.scss */
+.pagination-right {
+  text-align: right;
 }
 
 /* line 23, ../sass/_latto.nav.scss */
@@ -508,12 +545,12 @@ table {
   margin-right: 10px;
   min-width: 100px;
   padding: 10px;
-  background-color: #f4f4f4;
+  background-color: #fbfbfb;
   text-decoration: none;
 }
 /* line 52, ../sass/_latto.nav.scss */
 .horizontal-menu > li a:hover, .main-menu > li a:hover, .horizontal-menu > li a.active, .main-menu > li a.active {
-  background-color: #e7e7e7;
+  background-color: #efefef;
 }
 /* line 56, ../sass/_latto.nav.scss */
 .horizontal-menu > li a.last, .main-menu > li a.last {
@@ -548,7 +585,7 @@ dl > dd,
 .list-news > dd,
 .list-calendar > dd,
 .list-compact > dd {
-  border-bottom: 1px solid #e7e7e7;
+  border-bottom: 1px solid #efefef;
   clear: both;
   margin-bottom: 20px;
   margin-left: 0;

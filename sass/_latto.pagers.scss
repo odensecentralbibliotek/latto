@@ -1,6 +1,11 @@
+// =============================================================================
 // PAGER
-// -----
+// =============================================================================
 
+// -----------------------------------------------------------------------------
+// Default styling for a pager with previous and next link.
+// -----------------------------------------------------------------------------
+//
 .pager {
   margin-left: 0;
   list-style: none;
@@ -9,7 +14,7 @@
   
   li {
     display: inline-block;
-    padding: 5px 15px;
+    padding: $default-spacing * 0.25 $default-spacing * 0.75;
     background: $gray-light;
   }
   
@@ -25,7 +30,7 @@
   .disabled a,
   .disabled a:hover {
     color: $gray-light;
-    background-color: #fff;
+    background-color: $gray-lighter;
     cursor: default;
     text-decoration: none;
   }
