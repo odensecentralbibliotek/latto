@@ -1,24 +1,11 @@
 <?php
 
-/**
- * Preprocess and Process Functions SEE: http://drupal.org/node/254940#variables-processor
- * 1. Rename each function and instance of "adaptivetheme_subtheme" to match
- *    your subthemes name, e.g. if your theme name is "footheme" then the function
- *    name will be "footheme_preprocess_hook". Tip - you can search/replace
- *    on "adaptivetheme_subtheme".
- * 2. Uncomment the required function to use.
- * 3. Read carefully, especially within adaptivetheme_subtheme_preprocess_html(), there
- *    are extra goodies you might want to leverage such as a very simple way of adding
- *    stylesheets for Internet Explorer and a browser detection script to add body classes.
- */
-
 global $theme_key, $path_to_latto_core;
 $theme_key = $GLOBALS['theme_key'];
 $path_to_latto_core = drupal_get_path('theme', 'latto');
 
-// We need some functions
 /**
- * @TODO: What functions ?
+ * Includes frequently used theme functions that get theme info, css files etc.
  */
 include_once($path_to_latto_core . '/inc/functions.inc');
 
@@ -165,27 +152,6 @@ function latto_menu_tree__menu_block__1($vars) {
 }
 
 /**
- * Implements theme_form_alter().
- *
- * Adds two bootstrap classes to the default Drupal search form submit button.
- * Adds the default-value to the search field.
- *
- * @param type $vars
- */
-function latto_form_alter(&$form, &$form_state, $form_id) {
-  if ($form_id == "search_block_form") {
-    $form['search_block_form']['#attributes']['title'] = t('Søg efter materialer fra biblioteket..');
-    // Add a specify class to the search form to tell JavaScript this should
-    // have the example functionallyty functionality.
-    $form['search_block_form']['#attributes']['class'][] = 'has-example';
-    
-    $form['actions']['submit']['#attributes']['class'][] = 'btn';
-    $form['actions']['submit']['#attributes']['class'][] = 'btn-large';
-    $form['actions']['submit']['#attributes']['class'][] = 'btn-info';
-  }
-}
-
-/**
  * Implements theme_menu_link().
  */
 function latto_menu_link($vars) {
@@ -238,11 +204,13 @@ function latto_menu_link($vars) {
 }
 
 /**
- * Return an array of file names.
+ * Polyfill is used to enable HTML5 on browsers who doesn't natively support it.
+ * Polyfill adds the missing functionality by 'filling' in scripts that add the 
+ * HTML5 functionality the browser doesn't offer.
+ * 
+ * Return an array of filenames (scripts) to include.
  *
- * @TODO: What is polyfilles and what do it do ?
- *
- * @param $theme_name
+ * @param string $theme_name  :   Name of the theme.
  */
 function latto_load_polyfills($theme_name) {
   global $path_to_latto_core;
@@ -716,17 +684,4 @@ function latto_item_list($variables) {
     $output .= "</$type>";
   }
   return $output;
-}
-
-/**
- * Implement theme_breadcrumb().
- * 
- * Implemented for the purpose of changing >> to > in the default breadcrumb.
- */
-function latto_breadcrumb ($variables) {
-  $breadcrumb = $variables['breadcrumb'];
-  
-  if(!empty($breadcrumb)) {
-    return '<div class="breadcrumb">' . implode(' > ', $breadcrumb) . '</div>';
-  }
 }
