@@ -24,6 +24,7 @@
 
 ;----------// Polyfills
   settings[load_html5js] = 1
+  settings[load_selectivizr] = 1
 
 ;----------// Plugins
   settings[load_equalize] = 1
