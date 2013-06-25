@@ -9,6 +9,8 @@
   stylesheets[all][] = css/latto.reset.css
   stylesheets[all][] = css/latto.bootstrap.css
   stylesheets[all][] = css/latto.styles.css
+  stylesheets[all][] = css/font-awesome-ie7.min.css
+  stylesheets[all][] = css/font-awesome.min.css
 
   ; Import javascripts.
   ; scripts[] = scripts/script.js
