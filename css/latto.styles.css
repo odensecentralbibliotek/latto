@@ -1842,7 +1842,7 @@ textarea {
 /* line 50, ../sass/latto.bootstrap.forms.scss */
 input,
 button,
-select option,
+select,
 textarea {
   font-family: "Amble Light Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -3292,7 +3292,7 @@ a.label:hover, a.badge:hover {
 /* line 123, ../sass/latto.bootstrap.navs.scss */
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover {
-  color: #d5d5d5;
+  color: black;
   background-color: white;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
