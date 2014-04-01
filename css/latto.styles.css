@@ -1683,7 +1683,7 @@ input[type="submit"].btn.btn-mini {
 table {
   max-width: 100%;
   background-color: transparent;
-  border-collapse: collapse;
+  border-collapse: separate;
 }
 
 /* line 17, ../sass/latto.bootstrap.tables.scss */
